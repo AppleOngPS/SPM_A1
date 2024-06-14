@@ -91,6 +91,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Q1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Q1.Designer.cs">
+      <DependentUpon>Q1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Q2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Q2.Designer.cs">
+      <DependentUpon>Q2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Q3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Q3.Designer.cs">
+      <DependentUpon>Q3.cs</DependentUpon>
+    </Compile>
     <Compile Include="SharedData.cs" />
     <Compile Include="SignUp.cs">
       <SubType>Form</SubType>
@@ -135,6 +153,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Q1.resx">
+      <DependentUpon>Q1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Q2.resx">
+      <DependentUpon>Q2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Q3.resx">
+      <DependentUpon>Q3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>

@@ -37,6 +37,7 @@ namespace assignment1
             {
                 string name = dr["Name"].ToString();
                 SharedData.Data = name;
+                SharedData.t = true;
                 menu menu = new menu();
                 menu.Show();
                 
@@ -49,7 +50,7 @@ namespace assignment1
             {
                 usernameInput.Text = "";
                 passwordInput.Text = "";
-
+                SharedData.t = false;
                 MessageBox.Show("Please choose a unique username or wrong password.", "Invalid Message", MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
             con.Close();

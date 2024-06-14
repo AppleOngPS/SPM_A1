@@ -51,3 +51,17 @@ C:\Users\ongap\OneDrive\Desktop\NP\SPM\Assignment1_2nd_edit\SPM-ASG1\assignment1
 C:\Users\ongap\OneDrive\Desktop\NP\SPM\Assignment1_2nd_edit\SPM-ASG1\assignment1\bin\Debug\assignment1.exe.config
 C:\Users\ongap\OneDrive\Desktop\NP\SPM\Assignment1_2nd_edit\SPM-ASG1\assignment1\bin\Debug\assignment1.exe
 C:\Users\ongap\OneDrive\Desktop\NP\SPM\Assignment1_2nd_edit\SPM-ASG1\assignment1\bin\Debug\assignment1.pdb
+C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.csproj.AssemblyReference.cache
+C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.arcadeMode.resources
+C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.displayHighScore.resources
+C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.freeGameMode.resources
+C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.Login.resources
+C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.SignUp.resources
+C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.gameInstructionForArcadeMode.resources
+C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.gameInstructionForFreePlay.resources
+C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.menu.resources
+C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.Properties.Resources.resources
+C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.csproj.GenerateResource.cache
+C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.csproj.CoreCompileInputs.cache
+C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.exe
+C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.pdb
