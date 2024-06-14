@@ -43,14 +43,7 @@ namespace assignment1
             lblPoint.Text = point.ToString();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            // Set the flag to true when the End Turn button is clicked
-            flag = true;
-
-            Q1 q1 = new Q1();
-            q1.Show();
-        }
+       
 
 
         private PictureBox FindPictureBoxById(string id)
@@ -126,6 +119,15 @@ namespace assignment1
 
                 }
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            // Set the flag to true when the End Turn button is clicked
+            flag = true;
+
+            Q1 q1 = new Q1();
+            q1.Show();
         }
     }
 }

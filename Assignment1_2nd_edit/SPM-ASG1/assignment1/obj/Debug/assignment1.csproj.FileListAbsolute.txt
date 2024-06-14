@@ -65,3 +65,11 @@ C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignmen
 C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.csproj.CoreCompileInputs.cache
 C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.exe
 C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.pdb
+C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\bin\Debug\Database1.mdf
+C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\bin\Debug\Database1_log.ldf
+C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\bin\Debug\assignment1.exe.config
+C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\bin\Debug\assignment1.exe
+C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\bin\Debug\assignment1.pdb
+C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.Q1.resources
+C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.Q2.resources
+C:\NP.2\SPM\SPM_A1\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.Q3.resources

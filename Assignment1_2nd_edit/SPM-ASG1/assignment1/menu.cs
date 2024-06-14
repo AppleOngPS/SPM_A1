@@ -21,6 +21,19 @@ namespace assignment1
         private void menu_Load(object sender, EventArgs e)
         {
             lblName.Text = SharedData.Data;
+            if (SharedData.t == true)
+            {
+                button2.Hide();
+                button1.Text = "Logout";
+                DisplayHighScoreBtn.Enabled = true;
+                LoadSaveBtn.Enabled = true;
+
+            }
+            else
+            {
+                DisplayHighScoreBtn.Enabled = false;
+                LoadSaveBtn.Enabled = false;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -68,9 +81,21 @@ namespace assignment1
 
         private void button1_Click_4(object sender, EventArgs e)
         {
-            Login login = new Login();
-            login.Show();
-            this.Hide();
+            if (button1.Text == "Login")
+            {
+                Login login = new Login();
+                login.Show();
+                this.Hide();
+            }
+            else
+            {
+                lblName.Text = "";
+                button1.Text = "Login";
+                button2.Show();
+                SharedData.t = false;
+                DisplayHighScoreBtn.Enabled = false;
+                LoadSaveBtn.Enabled = false;
+            }
         }
     }
 }
