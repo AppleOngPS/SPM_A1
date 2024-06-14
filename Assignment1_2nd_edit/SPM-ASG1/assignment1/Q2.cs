@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,12 @@ namespace assignment1
 {
     public partial class Q2 : Form
     {
+     
         public Q2()
         {
             InitializeComponent();
+       
+
         }
 
 
@@ -76,18 +80,21 @@ namespace assignment1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(textBox1.Text) && !string.IsNullOrEmpty(textBox1.Text))
+            if (!string.IsNullOrEmpty(textBox1.Text) && !string.IsNullOrEmpty(textBox2.Text))
             {
                 string row = textBox1.Text;
                 string column = textBox2.Text;
                 SharedData.Row = row;
                 SharedData.Column = column;
                 this.Close();
+                
             }
             else
             {
                 MessageBox.Show("Please enter a valid number.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+
+          
         }
     }
 }

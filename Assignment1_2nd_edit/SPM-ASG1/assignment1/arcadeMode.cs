@@ -46,7 +46,7 @@ namespace assignment1
        
 
 
-        private PictureBox FindPictureBoxById(string id)
+        public PictureBox FindPictureBoxById(string id)
         {
             foreach (Control control in tableLayoutPanel1.Controls)
             {
@@ -83,18 +83,18 @@ namespace assignment1
                 if (pictureBox != null)
                 {
                     // PictureBox found, perform actions
-                    pictureBox.BackColor = Color.Red; // Example action
+                    pictureBox.Image = Image.FromFile(@"C:\NP.2\SPM\C#\SPM-ASG1\assignment1\Resources\Screenshot 2024-06-10 222221.png");
                 }
                 else
                 {
                     // PictureBox not found with the specified ID
                     MessageBox.Show($"PictureBox with ID {id} not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                pictureBox.Image = Image.FromFile(@"C:\NP.2\SPM\C#\SPM-ASG1\assignment1\Resources\Screenshot 2024-06-10 222221.png");
+      
 
 
             }
-            if (i > 2)
+            /*if (i > 2)
             {
                 if (!String.IsNullOrEmpty(SharedData.Row) && !String.IsNullOrEmpty(SharedData.Column))
                 {
@@ -107,18 +107,19 @@ namespace assignment1
                     PictureBox pictureBox = FindPictureBoxById(id);
                     if (pictureBox != null)
                     {
+
                         // PictureBox found, perform actions
-                        pictureBox.BackColor = Color.Red; // Example action
+                        pictureBox.Image = Image.FromFile(@"C:\NP.2\SPM\C#\SPM-ASG1\assignment1\Resources\Screenshot 2024-06-10 222221.png");
                     }
                     else
                     {
                         // PictureBox not found with the specified ID
                         MessageBox.Show($"PictureBox with ID {id} not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-                    pictureBox.Image = Image.FromFile(@"C:\NP.2\SPM\C#\SPM-ASG1\assignment1\Resources\Screenshot 2024-06-10 222221.png");
+                    
 
                 }
-            }
+            }*/
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -129,5 +130,7 @@ namespace assignment1
             Q1 q1 = new Q1();
             q1.Show();
         }
+
+
     }
 }
