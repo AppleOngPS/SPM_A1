@@ -32,14 +32,6 @@
             System.Windows.Forms.PictureBox X3Y2;
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.nav = new System.Windows.Forms.Panel();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.EndTurn = new System.Windows.Forms.Button();
-            this.lblTurn = new System.Windows.Forms.Label();
-            this.lblCoins = new System.Windows.Forms.Label();
-            this.lblPoint = new System.Windows.Forms.Label();
-            this.homeIconBtn = new System.Windows.Forms.PictureBox();
             this.X1Y2 = new System.Windows.Forms.PictureBox();
             this.X1Y1 = new System.Windows.Forms.PictureBox();
             this.X1Y3 = new System.Windows.Forms.PictureBox();
@@ -439,11 +431,19 @@
             this.X20Y18 = new System.Windows.Forms.PictureBox();
             this.X20Y19 = new System.Windows.Forms.PictureBox();
             this.X20Y20 = new System.Windows.Forms.PictureBox();
+            this.nav = new System.Windows.Forms.Panel();
+            this.lblPoint = new System.Windows.Forms.Label();
+            this.lblCoins = new System.Windows.Forms.Label();
+            this.lblTurn = new System.Windows.Forms.Label();
+            this.EndTurn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.homeIconBtn = new System.Windows.Forms.PictureBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.Save = new System.Windows.Forms.Button();
             X3Y2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(X3Y2)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.nav.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.homeIconBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y3)).BeginInit();
@@ -461,7 +461,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.X1Y8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X2Y8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X3Y1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(X3Y2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X3Y3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X3Y4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X3Y5)).BeginInit();
@@ -844,7 +843,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.X20Y18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X20Y19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X20Y20)).BeginInit();
+            this.nav.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.homeIconBtn)).BeginInit();
             this.SuspendLayout();
+            // 
+            // X3Y2
+            // 
+            X3Y2.Location = new System.Drawing.Point(133, 261);
+            X3Y2.Margin = new System.Windows.Forms.Padding(2);
+            X3Y2.Name = "X3Y2";
+            X3Y2.Size = new System.Drawing.Size(67, 32);
+            X3Y2.TabIndex = 27;
+            X3Y2.TabStop = false;
             // 
             // flowLayoutPanel1
             // 
@@ -880,7 +890,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 124F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 127F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 157F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
             this.tableLayoutPanel1.Controls.Add(this.X1Y2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.X1Y1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.X1Y3, 2, 0);
@@ -1304,91 +1314,8 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 125F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 125F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 125F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(2596, 2563);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(2599, 2563);
             this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // nav
-            // 
-            this.nav.Controls.Add(this.lblPoint);
-            this.nav.Controls.Add(this.lblCoins);
-            this.nav.Controls.Add(this.lblTurn);
-            this.nav.Controls.Add(this.EndTurn);
-            this.nav.Controls.Add(this.button1);
-            this.nav.Controls.Add(this.homeIconBtn);
-            this.nav.Dock = System.Windows.Forms.DockStyle.Right;
-            this.nav.Location = new System.Drawing.Point(1832, 0);
-            this.nav.Name = "nav";
-            this.nav.Size = new System.Drawing.Size(92, 1055);
-            this.nav.TabIndex = 2;
-            // 
-            // imageList1
-            // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(6, 116);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Start";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // EndTurn
-            // 
-            this.EndTurn.Location = new System.Drawing.Point(3, 188);
-            this.EndTurn.Name = "EndTurn";
-            this.EndTurn.Size = new System.Drawing.Size(75, 23);
-            this.EndTurn.TabIndex = 2;
-            this.EndTurn.Text = "EndTurn";
-            this.EndTurn.UseVisualStyleBackColor = true;
-            this.EndTurn.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // lblTurn
-            // 
-            this.lblTurn.AutoSize = true;
-            this.lblTurn.Location = new System.Drawing.Point(18, 239);
-            this.lblTurn.Name = "lblTurn";
-            this.lblTurn.Size = new System.Drawing.Size(51, 16);
-            this.lblTurn.TabIndex = 3;
-            this.lblTurn.Text = " lblTurn";
-            // 
-            // lblCoins
-            // 
-            this.lblCoins.AutoSize = true;
-            this.lblCoins.Location = new System.Drawing.Point(6, 268);
-            this.lblCoins.Name = "lblCoins";
-            this.lblCoins.Size = new System.Drawing.Size(44, 16);
-            this.lblCoins.TabIndex = 4;
-            this.lblCoins.Text = "label2";
-            // 
-            // lblPoint
-            // 
-            this.lblPoint.AutoSize = true;
-            this.lblPoint.Location = new System.Drawing.Point(9, 317);
-            this.lblPoint.Name = "lblPoint";
-            this.lblPoint.Size = new System.Drawing.Size(44, 16);
-            this.lblPoint.TabIndex = 5;
-            this.lblPoint.Text = "label3";
-            // 
-            // homeIconBtn
-            // 
-            this.homeIconBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.homeIconBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.homeIconBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.homeIconBtn.Image = global::assignment1.Properties.Resources.homeIcon1;
-            this.homeIconBtn.InitialImage = global::assignment1.Properties.Resources.homeIcon1;
-            this.homeIconBtn.Location = new System.Drawing.Point(19, 42);
-            this.homeIconBtn.Margin = new System.Windows.Forms.Padding(2);
-            this.homeIconBtn.Name = "homeIconBtn";
-            this.homeIconBtn.Size = new System.Drawing.Size(49, 54);
-            this.homeIconBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.homeIconBtn.TabIndex = 0;
-            this.homeIconBtn.TabStop = false;
-            this.homeIconBtn.Click += new System.EventHandler(this.pictureBox2_Click_1);
             // 
             // X1Y2
             // 
@@ -1542,15 +1469,6 @@
             this.X3Y1.Size = new System.Drawing.Size(84, 77);
             this.X3Y1.TabIndex = 26;
             this.X3Y1.TabStop = false;
-            // 
-            // X3Y2
-            // 
-            X3Y2.Location = new System.Drawing.Point(133, 261);
-            X3Y2.Margin = new System.Windows.Forms.Padding(2);
-            X3Y2.Name = "X3Y2";
-            X3Y2.Size = new System.Drawing.Size(67, 32);
-            X3Y2.TabIndex = 27;
-            X3Y2.TabStop = false;
             // 
             // X3Y3
             // 
@@ -4990,6 +4908,100 @@
             this.X20Y20.TabIndex = 409;
             this.X20Y20.TabStop = false;
             // 
+            // nav
+            // 
+            this.nav.Controls.Add(this.Save);
+            this.nav.Controls.Add(this.lblPoint);
+            this.nav.Controls.Add(this.lblCoins);
+            this.nav.Controls.Add(this.lblTurn);
+            this.nav.Controls.Add(this.EndTurn);
+            this.nav.Controls.Add(this.button1);
+            this.nav.Controls.Add(this.homeIconBtn);
+            this.nav.Dock = System.Windows.Forms.DockStyle.Right;
+            this.nav.Location = new System.Drawing.Point(1832, 0);
+            this.nav.Name = "nav";
+            this.nav.Size = new System.Drawing.Size(92, 1055);
+            this.nav.TabIndex = 2;
+            // 
+            // lblPoint
+            // 
+            this.lblPoint.AutoSize = true;
+            this.lblPoint.Location = new System.Drawing.Point(15, 376);
+            this.lblPoint.Name = "lblPoint";
+            this.lblPoint.Size = new System.Drawing.Size(44, 16);
+            this.lblPoint.TabIndex = 5;
+            this.lblPoint.Text = "label3";
+            // 
+            // lblCoins
+            // 
+            this.lblCoins.AutoSize = true;
+            this.lblCoins.Location = new System.Drawing.Point(9, 336);
+            this.lblCoins.Name = "lblCoins";
+            this.lblCoins.Size = new System.Drawing.Size(44, 16);
+            this.lblCoins.TabIndex = 4;
+            this.lblCoins.Text = "label2";
+            // 
+            // lblTurn
+            // 
+            this.lblTurn.AutoSize = true;
+            this.lblTurn.Location = new System.Drawing.Point(11, 289);
+            this.lblTurn.Name = "lblTurn";
+            this.lblTurn.Size = new System.Drawing.Size(51, 16);
+            this.lblTurn.TabIndex = 3;
+            this.lblTurn.Text = " lblTurn";
+            // 
+            // EndTurn
+            // 
+            this.EndTurn.Location = new System.Drawing.Point(3, 188);
+            this.EndTurn.Name = "EndTurn";
+            this.EndTurn.Size = new System.Drawing.Size(75, 23);
+            this.EndTurn.TabIndex = 2;
+            this.EndTurn.Text = "EndTurn";
+            this.EndTurn.UseVisualStyleBackColor = true;
+            this.EndTurn.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(6, 116);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Start";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // homeIconBtn
+            // 
+            this.homeIconBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.homeIconBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.homeIconBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.homeIconBtn.Image = global::assignment1.Properties.Resources.homeIcon1;
+            this.homeIconBtn.InitialImage = global::assignment1.Properties.Resources.homeIcon1;
+            this.homeIconBtn.Location = new System.Drawing.Point(19, 42);
+            this.homeIconBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.homeIconBtn.Name = "homeIconBtn";
+            this.homeIconBtn.Size = new System.Drawing.Size(49, 54);
+            this.homeIconBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.homeIconBtn.TabIndex = 0;
+            this.homeIconBtn.TabStop = false;
+            this.homeIconBtn.Click += new System.EventHandler(this.pictureBox2_Click_1);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // Save
+            // 
+            this.Save.Location = new System.Drawing.Point(6, 231);
+            this.Save.Name = "Save";
+            this.Save.Size = new System.Drawing.Size(75, 23);
+            this.Save.TabIndex = 6;
+            this.Save.Text = "Save";
+            this.Save.UseVisualStyleBackColor = true;
+            this.Save.Click += new System.EventHandler(this.Save_Click);
+            // 
             // arcadeMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -4997,16 +5009,14 @@
             this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.nav);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "arcadeMode";
             this.Text = "arcadeMode";
             this.Load += new System.EventHandler(this.arcadeMode_Load);
+            ((System.ComponentModel.ISupportInitialize)(X3Y2)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.nav.ResumeLayout(false);
-            this.nav.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.homeIconBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y3)).EndInit();
@@ -5024,7 +5034,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.X1Y8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X2Y8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X3Y1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(X3Y2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X3Y3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X3Y4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X3Y5)).EndInit();
@@ -5407,6 +5416,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.X20Y18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X20Y19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X20Y20)).EndInit();
+            this.nav.ResumeLayout(false);
+            this.nav.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.homeIconBtn)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -5821,5 +5833,6 @@
         private System.Windows.Forms.Label lblTurn;
         private System.Windows.Forms.Button EndTurn;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Save;
     }
 }

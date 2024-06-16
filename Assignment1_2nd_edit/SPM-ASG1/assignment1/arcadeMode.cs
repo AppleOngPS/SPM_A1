@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Reflection.Emit;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -71,7 +73,7 @@ namespace assignment1
                 flag = false;
             }
 
-            if (!String.IsNullOrEmpty(SharedData.building))
+           /* if (!String.IsNullOrEmpty(SharedData.building))
             {
                 string row;
                 string column;
@@ -93,7 +95,7 @@ namespace assignment1
       
 
 
-            }
+            }*/
             /*if (i > 2)
             {
                 if (!String.IsNullOrEmpty(SharedData.Row) && !String.IsNullOrEmpty(SharedData.Column))
@@ -129,8 +131,79 @@ namespace assignment1
 
             Q1 q1 = new Q1();
             q1.Show();
+            this.Refresh();
         }
 
+        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\NP.2\\SPM\\SPM_A1\\Assignment1_2nd_edit\\SPM-ASG1\\assignment1\\Database1.mdf;Integrated Security=True");
+        private void Save_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "Select * From [dbo].[Table] WHERE name='" +SharedData.Data +"'";
+            cmd.ExecuteNonQuery();
 
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            con.Close();
+            List<PictureBoxInfo> pictureBoxInfos = GetAllPictureBoxInfos();
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                if (dt.Rows[i][1].ToString() == SharedData.Data)
+                {
+                    con.Open();
+                    foreach (var info in pictureBoxInfos)
+                    {
+                        using (SqlCommand cmd2 = new SqlCommand("INSERT INTO PictureBoxInfo (SId,RowColumn,Building,Point,Coin,Turn,Version) VALUES (@ID, @Image, @Building, @Point, @Coin, @Turn, @Version)", con))
+                        {
+                            cmd2.Parameters.AddWithValue("@ID", info.ID);
+                            cmd2.Parameters.AddWithValue("@Image", info.ID);
+                            cmd2.Parameters.AddWithValue("@Building", info.Image);
+                            cmd2.Parameters.AddWithValue("@Point", SharedData.point);
+                            cmd2.Parameters.AddWithValue("@Coin", SharedData.coins);
+                            cmd2.Parameters.AddWithValue("@Turn", SharedData.turn);
+                            cmd2.Parameters.AddWithValue("@Version",SharedData.Version);
+
+                            try
+                            {
+                                cmd2.ExecuteNonQuery();
+                                con.Close();
+                            }
+                            catch (SqlException ex)
+                            {
+                                MessageBox.Show("Error inserting data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private List<PictureBoxInfo> GetAllPictureBoxInfos()
+        {
+            List<PictureBoxInfo> pictureBoxInfos = new List<PictureBoxInfo>();
+
+            foreach (Control control in tableLayoutPanel1.Controls)
+            {
+                if (control is PictureBox pictureBox)
+                {
+                    PictureBoxInfo info = new PictureBoxInfo
+                    {
+                        ID = pictureBox.Name,
+                        Image = pictureBox.Image
+                    };
+                    pictureBoxInfos.Add(info);
+                }
+            }
+
+            return pictureBoxInfos;
+        }
+
+        public class PictureBoxInfo
+        {
+            public string ID { get; set; }
+            public Image Image { get; set; }
+        }
     }
 }

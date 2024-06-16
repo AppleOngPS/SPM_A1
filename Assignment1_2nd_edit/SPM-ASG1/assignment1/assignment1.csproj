@@ -213,6 +213,7 @@
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
     <Content Include="homeIcon.jpg" />
+    <Content Include="Screenshot 2024-06-10 222221.png" />
     <None Include="Resources\Screenshot 2024-06-10 222221.png" />
   </ItemGroup>
   <ItemGroup>

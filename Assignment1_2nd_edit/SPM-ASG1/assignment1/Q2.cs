@@ -13,11 +13,10 @@ namespace assignment1
 {
     public partial class Q2 : Form
     {
-     
+        arcadeMode arcadeMode;
         public Q2()
         {
             InitializeComponent();
-       
 
         }
 
@@ -80,21 +79,65 @@ namespace assignment1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            /* if (!string.IsNullOrEmpty(textBox1.Text) && !string.IsNullOrEmpty(textBox2.Text))
+             {
+                 string row = textBox1.Text;
+                 string column = textBox2.Text;
+                 SharedData.Row = row;
+                 SharedData.Column = column;
+
+
+             }
+             else
+             {
+                 MessageBox.Show("Please enter a valid number.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+             }*/
+            arcadeMode arcadeForm = new arcadeMode();
+            UpdatePictureBoxImage(arcadeForm);
+            arcadeForm.Refresh();
+
+        }
+
+
+        public void UpdatePictureBoxImage(arcadeMode arcadeForm)
+        {
             if (!string.IsNullOrEmpty(textBox1.Text) && !string.IsNullOrEmpty(textBox2.Text))
             {
                 string row = textBox1.Text;
                 string column = textBox2.Text;
                 SharedData.Row = row;
                 SharedData.Column = column;
-                this.Close();
-                
+
+                if (!string.IsNullOrEmpty(SharedData.building))
+                {
+                    string id = "X" + row + "Y" + column;
+                    PictureBox pictureBox = arcadeForm.FindPictureBoxById(id);
+                    if (pictureBox != null)
+                    {
+                        try
+                        {
+                            // PictureBox found, perform actions
+                            pictureBox.Image = Image.FromFile(@"C:\NP.2\SPM\C#\SPM-ASG1\assignment1\Resources\Screenshot 2024-06-10 222221.png");
+                            this.Close();
+                        }
+                        catch (Exception ex)
+                        {
+                            // Handle file not found or other exceptions
+                            MessageBox.Show($"Error loading image: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                    else
+                    {
+                        // PictureBox not found with the specified ID
+                        MessageBox.Show($"PictureBox with ID {id} not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
             }
             else
             {
                 MessageBox.Show("Please enter a valid number.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
-          
         }
+
     }
 }
