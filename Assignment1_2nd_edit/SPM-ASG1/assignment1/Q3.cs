@@ -32,18 +32,17 @@ namespace assignment1
                 SharedData.Row = x.ToString();
                 SharedData.Column = y.ToString();
                 moveimage();
-                this.Close();
-                /*if (flag == false)
+                if (flag == false)
                 {
-                  //  x = Convert.ToInt32(SharedData.Row) + 1;
-                    //SharedData.Row = x.ToString();
+                    x = Convert.ToInt32(SharedData.Row) + 1;
+                    SharedData.Row = x.ToString();
                 }
                 else
                 {
                     this.Close();
                     arcade.Refresh();
                 }
-                */
+                
                 if (SharedData.building== "Road") 
                 {
                     SharedData.point += 2;
@@ -71,17 +70,16 @@ namespace assignment1
                 SharedData.Row = x.ToString();
                 SharedData.Column = y.ToString();
                 moveimage();
-                this.Close();
-                /*if (flag == false)
+                if (flag == false)
                 {
-                   // x = Convert.ToInt32(SharedData.Row) - 1;
-                  //  SharedData.Row = x.ToString();
+                   x = Convert.ToInt32(SharedData.Row) - 1;
+                   SharedData.Row = x.ToString();
                 }
                 else
                 {
                     this.Close();
                     arcade.Refresh();
-                }*/
+                }
 
             }
             else
@@ -103,8 +101,7 @@ namespace assignment1
                 SharedData.Row = x.ToString();
                 SharedData.Column = y.ToString();
                 moveimage();
-                this.Close();
-                /*if (flag == false)
+                if (flag == false)
                 {
                     y = Convert.ToInt32(SharedData.Column) + 1;
                     SharedData.Column = y.ToString();
@@ -113,7 +110,7 @@ namespace assignment1
                 {
                     this.Close();
                     arcade.Refresh();
-                }*/
+                }
 
 
             }
@@ -139,8 +136,7 @@ namespace assignment1
                 SharedData.Row = x.ToString();
                 SharedData.Column = y.ToString();
                 moveimage();
-                this.Close();
-                /*if(flag==false)
+                if(flag==false)
                 {
                    y= Convert.ToInt32(SharedData.Column) - 1;
                     SharedData.Column=y.ToString();
@@ -149,7 +145,7 @@ namespace assignment1
                 {
                     this.Close();
                     arcade.Refresh();
-                }*/
+                }
                 
             }
             else
@@ -163,44 +159,77 @@ namespace assignment1
         {
             //if (SharedData.turn >= 2)
             //{
-                if (!string.IsNullOrEmpty(SharedData.Row) && !string.IsNullOrEmpty(SharedData.Column))
+            if (!string.IsNullOrEmpty(SharedData.Row) && !string.IsNullOrEmpty(SharedData.Column))
+            {
+                string row;
+                string column;
+                row = SharedData.x.ToString();
+
+                column = SharedData.y.ToString();
+                string id = "X" + row + "Y" + column;
+                PictureBox pictureBox = arcade.FindPictureBoxById(id);
+                if (pictureBox != null)
                 {
-                    string row;
-                    string column;
-                    row = SharedData.x.ToString();
-
-                    column = SharedData.y.ToString();
-                    string id = "X" + row + "Y" + column;
-                    PictureBox pictureBox =arcade.FindPictureBoxById(id);
-                    if (pictureBox != null)
+                    if (pictureBox.Image == null)
                     {
-                        if (pictureBox.Image == null)
-                        {
-                           
-                            pictureBox.Image = Image.FromFile(@"C:\NP.2\SPM\C#\SPM-ASG1\assignment1\Resources\Screenshot 2024-06-10 222221.png");
-                            flag = true;
-                            
+                        SetBuildingImage(pictureBox);
 
-                        }
-                        else
-                        {
-                            MessageBox.Show("This PictureBox already has an image.",
-                                                                  "Warning",
-                                                                  MessageBoxButtons.OK,
-                                                                  MessageBoxIcon.Warning);
-                            flag = false;
-                        }
+                        flag = true;
 
 
                     }
                     else
                     {
-                        // PictureBox not found with the specified ID
-                        MessageBox.Show($"PictureBox with ID {id} not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("This PictureBox already has an image.",
+                                                              "Warning",
+                                                              MessageBoxButtons.OK,
+                                                              MessageBoxIcon.Warning);
+                        flag = false;
                     }
 
 
+                }
+                else
+                {
+                    // PictureBox not found with the specified ID
+                    MessageBox.Show($"PictureBox with ID {id} not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+
                 //}
+            }
+        }
+
+        private void SetBuildingImage(PictureBox pictureBox)
+        {
+            if (SharedData.building == "Road")
+            {
+                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox.Image = Image.FromFile(@"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\Road.png");
+            }
+            else if (SharedData.building == "Park")
+            {
+                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox.Image = Image.FromFile(@"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\park.png");
+            }
+            else if (SharedData.building == "Commercial")
+            {
+                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox.Image = Image.FromFile(@"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\commercial.png");
+            }
+            else if (SharedData.building == "Industry")
+            {
+                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox.Image = Image.FromFile(@"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\industry.png");
+            }
+            else if (SharedData.building == "Residential")
+            {
+                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox.Image = Image.FromFile(@"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\residential.png");
+            }
+            else
+            {
+                MessageBox.Show("Invalid building type.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

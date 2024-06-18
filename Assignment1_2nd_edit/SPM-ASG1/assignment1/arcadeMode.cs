@@ -87,8 +87,18 @@ namespace assignment1
                 PictureBox pictureBox = FindPictureBoxById(id);
                 if (pictureBox != null)
                 {
-                    // PictureBox found, perform actions
-                    pictureBox.Image = Image.FromFile(@"C:\NP.2\SPM\C#\SPM-ASG1\assignment1\Resources\Screenshot 2024-06-10 222221.png");
+                    if (pictureBox.Image == null)
+                    {
+                        // PictureBox found, perform actions
+                        SetBuildingImage(pictureBox);
+                    }
+                    else
+                    {
+                        MessageBox.Show("This PictureBox already has an image.",
+                                                              "Warning",
+                                                              MessageBoxButtons.OK,
+                                                              MessageBoxIcon.Warning);
+                    }
                 }
                 else
                 {
@@ -125,6 +135,39 @@ namespace assignment1
 
                 }
             }*/
+        }
+
+        private void SetBuildingImage(PictureBox pictureBox)
+        {
+            if (SharedData.building == "Road")
+            {
+                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox.Image = Image.FromFile(@"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\Road.png");
+            }
+            else if (SharedData.building == "Park")
+            {
+                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox.Image = Image.FromFile(@"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\park.png");
+            }
+            else if (SharedData.building == "Commercial")
+            {
+                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox.Image = Image.FromFile(@"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\commercial.png");
+            }
+            else if (SharedData.building == "Industry")
+            {
+                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox.Image = Image.FromFile(@"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\industry.png");
+            }
+            else if (SharedData.building == "Residential")
+            {
+                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox.Image = Image.FromFile(@"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\residential.png");
+            }
+            else
+            {
+                MessageBox.Show("Invalid building type.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button1_Click_1(object sender, EventArgs e)
