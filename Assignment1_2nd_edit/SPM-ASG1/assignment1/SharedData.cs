@@ -18,7 +18,7 @@ namespace assignment1
         public static int coins { get; set; }
         public static int point { get; set; }
 
-        public static int Version { get; set; }
+        public static string Version { get; set; }
         public static int x { get; set; }
         public static int y { get; set; }
     }

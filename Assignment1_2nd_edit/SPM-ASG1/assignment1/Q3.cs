@@ -32,7 +32,8 @@ namespace assignment1
                 SharedData.Row = x.ToString();
                 SharedData.Column = y.ToString();
                 moveimage();
-                if (flag == false)
+                this.Close();
+                /*if (flag == false)
                 {
                   //  x = Convert.ToInt32(SharedData.Row) + 1;
                     //SharedData.Row = x.ToString();
@@ -40,6 +41,16 @@ namespace assignment1
                 else
                 {
                     this.Close();
+                    arcade.Refresh();
+                }
+                */
+                if (SharedData.building== "Road") 
+                {
+                    SharedData.point += 2;
+                }
+                else if (SharedData.building == "I")
+                {
+
                 }
             }
             else
@@ -60,7 +71,8 @@ namespace assignment1
                 SharedData.Row = x.ToString();
                 SharedData.Column = y.ToString();
                 moveimage();
-                if (flag == false)
+                this.Close();
+                /*if (flag == false)
                 {
                    // x = Convert.ToInt32(SharedData.Row) - 1;
                   //  SharedData.Row = x.ToString();
@@ -68,7 +80,8 @@ namespace assignment1
                 else
                 {
                     this.Close();
-                }
+                    arcade.Refresh();
+                }*/
 
             }
             else
@@ -90,7 +103,8 @@ namespace assignment1
                 SharedData.Row = x.ToString();
                 SharedData.Column = y.ToString();
                 moveimage();
-                if (flag == false)
+                this.Close();
+                /*if (flag == false)
                 {
                     y = Convert.ToInt32(SharedData.Column) + 1;
                     SharedData.Column = y.ToString();
@@ -98,9 +112,14 @@ namespace assignment1
                 else
                 {
                     this.Close();
-                }
+                    arcade.Refresh();
+                }*/
 
 
+            }
+            else if (SharedData.Row != SharedData.Row)
+            {
+                MessageBox.Show("This PictureBox already has an image.","Warning",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
             else
             {
@@ -120,7 +139,8 @@ namespace assignment1
                 SharedData.Row = x.ToString();
                 SharedData.Column = y.ToString();
                 moveimage();
-                if(flag==false)
+                this.Close();
+                /*if(flag==false)
                 {
                    y= Convert.ToInt32(SharedData.Column) - 1;
                     SharedData.Column=y.ToString();
@@ -128,7 +148,8 @@ namespace assignment1
                 else
                 {
                     this.Close();
-                }
+                    arcade.Refresh();
+                }*/
                 
             }
             else
@@ -142,7 +163,7 @@ namespace assignment1
         {
             //if (SharedData.turn >= 2)
             //{
-                if (!String.IsNullOrEmpty(SharedData.Row) && !String.IsNullOrEmpty(SharedData.Column))
+                if (!string.IsNullOrEmpty(SharedData.Row) && !string.IsNullOrEmpty(SharedData.Column))
                 {
                     string row;
                     string column;

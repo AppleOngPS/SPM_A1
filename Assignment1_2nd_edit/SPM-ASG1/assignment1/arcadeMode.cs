@@ -16,10 +16,18 @@ namespace assignment1
     public partial class arcadeMode : Form
     {
         int i = 1;
+        int coins = 16;
+        int point = 0;
         bool flag = false;
+
         public arcadeMode()
         {
             InitializeComponent();
+            lblTurn.Text = i.ToString();
+            SharedData.turn = i;
+            
+            lblCoins.Text = coins.ToString();
+            lblPoint.Text = SharedData.point.ToString();
         }
 
         private void label8_Click(object sender, EventArgs e)
@@ -37,12 +45,7 @@ namespace assignment1
 
         private void arcadeMode_Load(object sender, EventArgs e)
         {
-            lblTurn.Text = i.ToString();
-            SharedData.turn = i;
-            int coins = 16;
-            int point = 0;
-            lblCoins.Text = coins.ToString();
-            lblPoint.Text = point.ToString();
+          
         }
 
        
@@ -62,8 +65,9 @@ namespace assignment1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            lblPoint.Text = SharedData.point.ToString();
             // Perform some action if the flag is true
-            if (flag)
+            if (flag==true)
             {
                 // Example action: increment x and update label2
                 i++;
@@ -72,8 +76,7 @@ namespace assignment1
                 // Reset the flag if needed
                 flag = false;
             }
-
-           /* if (!String.IsNullOrEmpty(SharedData.building))
+            if (!string.IsNullOrEmpty(SharedData.building))
             {
                 string row;
                 string column;
@@ -95,7 +98,7 @@ namespace assignment1
       
 
 
-            }*/
+            }
             /*if (i > 2)
             {
                 if (!String.IsNullOrEmpty(SharedData.Row) && !String.IsNullOrEmpty(SharedData.Column))
@@ -131,7 +134,7 @@ namespace assignment1
 
             Q1 q1 = new Q1();
             q1.Show();
-            this.Refresh();
+           this.Refresh();
         }
 
         SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\NP.2\\SPM\\SPM_A1\\Assignment1_2nd_edit\\SPM-ASG1\\assignment1\\Database1.mdf;Integrated Security=True");
@@ -153,16 +156,19 @@ namespace assignment1
                 if (dt.Rows[i][1].ToString() == SharedData.Data)
                 {
                     con.Open();
+                    SqlCommand cmd3 = con.CreateCommand();
+                    cmd3.CommandType = CommandType.Text;
+                    cmd3.CommandText = "INSERT INTO  (SId,RowColumn,Building,Version) VALUES (@ID, @Image, @Building,@Version)";
+                    cmd3.ExecuteNonQuery();
+                    con.Close();
+                    con.Open();
                     foreach (var info in pictureBoxInfos)
                     {
-                        using (SqlCommand cmd2 = new SqlCommand("INSERT INTO PictureBoxInfo (SId,RowColumn,Building,Point,Coin,Turn,Version) VALUES (@ID, @Image, @Building, @Point, @Coin, @Turn, @Version)", con))
+                        using (SqlCommand cmd2 = new SqlCommand("INSERT INTO PictureBoxInfo (SId,RowColumn,Building,Version) VALUES (@ID, @Image, @Building,@Version)", con))
                         {
-                            cmd2.Parameters.AddWithValue("@ID", info.ID);
+                            cmd2.Parameters.AddWithValue("@ID", dt.Rows[i][0]);
                             cmd2.Parameters.AddWithValue("@Image", info.ID);
                             cmd2.Parameters.AddWithValue("@Building", info.Image);
-                            cmd2.Parameters.AddWithValue("@Point", SharedData.point);
-                            cmd2.Parameters.AddWithValue("@Coin", SharedData.coins);
-                            cmd2.Parameters.AddWithValue("@Turn", SharedData.turn);
                             cmd2.Parameters.AddWithValue("@Version",SharedData.Version);
 
                             try

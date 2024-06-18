@@ -79,22 +79,24 @@ namespace assignment1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            /* if (!string.IsNullOrEmpty(textBox1.Text) && !string.IsNullOrEmpty(textBox2.Text))
-             {
+            if (!string.IsNullOrEmpty(textBox1.Text) && !string.IsNullOrEmpty(textBox2.Text))
+            {
                  string row = textBox1.Text;
                  string column = textBox2.Text;
                  SharedData.Row = row;
                  SharedData.Column = column;
+                this.Close();
 
 
-             }
-             else
-             {
+            }
+            else
+            {
                  MessageBox.Show("Please enter a valid number.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-             }*/
-            arcadeMode arcadeForm = new arcadeMode();
-            UpdatePictureBoxImage(arcadeForm);
-            arcadeForm.Refresh();
+            }
+           // arcadeMode arcadeForm = new arcadeMode();
+           // UpdatePictureBoxImage(arcadeForm);
+          //  arcadeForm.Refresh();
+
 
         }
 
