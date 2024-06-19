@@ -29,7 +29,6 @@ namespace assignment1
                 
                 SharedData.PreviousOption = SharedData.building;
                 SharedData.building = button1.Text;
-                //SharedData.building = SharedData.Temp2;
                 SharedData.CurrentOption = SharedData.building;
 
                 Q2 q2 = new Q2();
@@ -42,7 +41,6 @@ namespace assignment1
                 
                 SharedData.PreviousOption = SharedData.building;
                 SharedData.building = button1.Text;
-                //SharedData.building = SharedData.Temp2;
                 SharedData.CurrentOption = SharedData.building;
 
                 Q3 q3 = new Q3();
@@ -63,7 +61,6 @@ namespace assignment1
                 
                 SharedData.PreviousOption = SharedData.building;
                 SharedData.building = button2.Text;
-                //SharedData.building = SharedData.Temp2;
                 SharedData.CurrentOption = SharedData.building;
 
 
@@ -76,7 +73,6 @@ namespace assignment1
                 
                 SharedData.PreviousOption = SharedData.building;
                 SharedData.building = button2.Text;
-                // SharedData.building = SharedData.Temp2;
                 SharedData.CurrentOption = SharedData.building;
 
                 Q3 q3 = new Q3();
@@ -90,7 +86,7 @@ namespace assignment1
         {
             List<string> names = new List<string> { "Residential", "Industry", "Commercial", "Park", "Road" };
 
-            // Create an instance of Random
+            // Create an instance of Random       //"Residential", "Industry", "Commercial", "Park", "Road"
             Random random = new Random();
 
             // Generate two unique random indices
@@ -115,13 +111,14 @@ namespace assignment1
                 if (SharedData.building == "Residential" && SharedData.PreviousOption == "Park")
                 {
 
-                    SharedData.point += 2;
+                    SharedData.point += 1;
                     
                 }
-                else
+                else if (SharedData.building == "Park"&&SharedData.PreviousOption== "Residential")
                 {
-
+                    SharedData.point += 1;
                 }
+                
             }
         }
     }

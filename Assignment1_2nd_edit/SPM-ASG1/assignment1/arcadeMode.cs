@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Security.Cryptography;
@@ -19,6 +20,8 @@ namespace assignment1
         int coins = 16;
         int point = 0;
         bool flag = false;
+
+        int v = 0;
 
         public arcadeMode()
         {
@@ -45,6 +48,11 @@ namespace assignment1
 
         private void arcadeMode_Load(object sender, EventArgs e)
         {
+            if (SharedData.t == true)
+            {
+                Save.Enabled = true;
+            }
+            else { Save.Enabled = false; }
           
         }
 
@@ -67,13 +75,13 @@ namespace assignment1
         {
             lblPoint.Text=SharedData.point.ToString();
             lblCoins.Text=SharedData.PreviousOption;
-            lblTurn.Text=SharedData.CurrentOption;
+            lblTurn.Text=SharedData.building;
             // Perform some action if the flag is true
             if (flag==true)
             {
                 // Example action: increment x and update label2
                 i++;
-             //   lblTurn.Text = i.ToString();
+              // lblTurn.Text = i.ToString();
                 SharedData.turn = i;
                 // Reset the flag if needed
                 flag = false;
@@ -146,28 +154,38 @@ namespace assignment1
         {
             if (SharedData.building == "Road")
             {
+                string imagePath = @"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\Road.png";
                 pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureBox.Image = Image.FromFile(@"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\Road.png");
+                pictureBox.Image = Image.FromFile(imagePath);
+                pictureBox.Tag = imagePath;
             }
             else if (SharedData.building == "Park")
             {
+                string imagePath = @"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\park.png";
                 pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureBox.Image = Image.FromFile(@"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\park.png");
+                pictureBox.Image = Image.FromFile(imagePath);
+                pictureBox.Tag = imagePath;
             }
             else if (SharedData.building == "Commercial")
             {
+                string imagePath = @"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\commercial.png";
                 pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureBox.Image = Image.FromFile(@"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\commercial.png");
+                pictureBox.Image = Image.FromFile(imagePath);
+                pictureBox.Tag = imagePath;
             }
             else if (SharedData.building == "Industry")
             {
+                string imagePath = @"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\industry.png";
                 pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureBox.Image = Image.FromFile(@"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\industry.png");
+                pictureBox.Image = Image.FromFile(imagePath);
+                pictureBox.Tag = imagePath;
             }
             else if (SharedData.building == "Residential")
             {
+                string imagePath = @"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\residential.png";
                 pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureBox.Image = Image.FromFile(@"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\residential.png");
+                pictureBox.Image = Image.FromFile(imagePath);
+                pictureBox.Tag = imagePath;
             }
             else
             {
@@ -185,9 +203,13 @@ namespace assignment1
            this.Refresh();
         }
 
-        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\NP.2\\SPM\\SPM_A1\\Assignment1_2nd_edit\\SPM-ASG1\\assignment1\\Database1.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\NP.2\\SPM\\vvvvv\\Assignment1_2nd_edit\\SPM-ASG1\\assignment1\\Database1.mdf;Integrated Security=True");
         private void Save_Click(object sender, EventArgs e)
         {
+            v++;
+            string Version = "V"+v.ToString();
+            SharedData.Version = Version;
+
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
@@ -206,30 +228,30 @@ namespace assignment1
                     con.Open();
                     SqlCommand cmd3 = con.CreateCommand();
                     cmd3.CommandType = CommandType.Text;
-                    cmd3.CommandText = "INSERT INTO  (SId,RowColumn,Building,Version) VALUES (@ID, @Image, @Building,@Version)";
+                    cmd3.CommandText = "INSERT INTO [dbo].[SaveSystem] (Point,Coin,Turn,Version) VALUES ('"+SharedData.point+"','"+SharedData.coins+"','"+SharedData.turn+"','"+SharedData.Version+"')";
                     cmd3.ExecuteNonQuery();
                     con.Close();
                     con.Open();
                     foreach (var info in pictureBoxInfos)
                     {
-                        using (SqlCommand cmd2 = new SqlCommand("INSERT INTO PictureBoxInfo (SId,RowColumn,Building,Version) VALUES (@ID, @Image, @Building,@Version)", con))
+                        using (SqlCommand cmd2 = new SqlCommand("INSERT INTO [dbo].[SaveData] (SId,XY,Building,Version) VALUES ('" + dt.Rows[i][0] + "','" + info.ID + "','"+ info.ImageSource + "','"+SharedData.Version+"')", con))
                         {
-                            cmd2.Parameters.AddWithValue("@ID", dt.Rows[i][0]);
-                            cmd2.Parameters.AddWithValue("@Image", info.ID);
-                            cmd2.Parameters.AddWithValue("@Building", info.Image);
-                            cmd2.Parameters.AddWithValue("@Version",SharedData.Version);
+                           
 
                             try
                             {
                                 cmd2.ExecuteNonQuery();
-                                con.Close();
+                              
                             }
                             catch (SqlException ex)
                             {
                                 MessageBox.Show("Error inserting data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
+                            
                         }
                     }
+                    con.Close();
+                    MessageBox.Show("Successfully Save","Success",MessageBoxButtons.OK);
                 }
             }
         }
@@ -240,24 +262,26 @@ namespace assignment1
 
             foreach (Control control in tableLayoutPanel1.Controls)
             {
-                if (control is PictureBox pictureBox)
+                if (control is PictureBox pictureBox && !string.IsNullOrEmpty(pictureBox.Name) && pictureBox.Image != null)
                 {
                     PictureBoxInfo info = new PictureBoxInfo
                     {
                         ID = pictureBox.Name,
-                        Image = pictureBox.Image
+                        ImageSource = pictureBox.Tag as string // Store the image source (file path or resource name)
                     };
                     pictureBoxInfos.Add(info);
                 }
             }
-
             return pictureBoxInfos;
         }
 
+
+
+        
         public class PictureBoxInfo
         {
             public string ID { get; set; }
-            public Image Image { get; set; }
+            public string ImageSource { get; set; }
         }
     }
 }
