@@ -31,26 +31,12 @@ namespace assignment1
                SharedData.x = x; SharedData.y = y;
                 SharedData.Row = x.ToString();
                 SharedData.Column = y.ToString();
-                moveimage();
-                if (flag == false)
-                {
-                    x = Convert.ToInt32(SharedData.Row) + 1;
-                    SharedData.Row = x.ToString();
-                }
-                else
-                {
-                    this.Close();
-                    arcade.Refresh();
-                }
+                SharedData.TempRow = SharedData.Row;
+                SharedData.TempColumn = SharedData.Column;
+             
+                this.Close();
+              
                 
-                if (SharedData.building== "Road") 
-                {
-                    SharedData.point += 2;
-                }
-                else if (SharedData.building == "I")
-                {
-
-                }
             }
             else
             {
@@ -69,17 +55,11 @@ namespace assignment1
                 SharedData.x = x; SharedData.y = y;
                 SharedData.Row = x.ToString();
                 SharedData.Column = y.ToString();
-                moveimage();
-                if (flag == false)
-                {
-                   x = Convert.ToInt32(SharedData.Row) - 1;
-                   SharedData.Row = x.ToString();
-                }
-                else
-                {
-                    this.Close();
-                    arcade.Refresh();
-                }
+                SharedData.TempRow = SharedData.Row;
+                SharedData.TempColumn = SharedData.Column;
+                
+                this.Close();
+             
 
             }
             else
@@ -100,17 +80,11 @@ namespace assignment1
                 SharedData.x = x; SharedData.y = y;
                 SharedData.Row = x.ToString();
                 SharedData.Column = y.ToString();
-                moveimage();
-                if (flag == false)
-                {
-                    y = Convert.ToInt32(SharedData.Column) + 1;
-                    SharedData.Column = y.ToString();
-                }
-                else
-                {
-                    this.Close();
-                    arcade.Refresh();
-                }
+                SharedData.TempRow = SharedData.Row;
+                SharedData.TempColumn = SharedData.Column;
+                
+                this.Close();
+               
 
 
             }
@@ -135,17 +109,11 @@ namespace assignment1
                 SharedData.x = x; SharedData.y = y;
                 SharedData.Row = x.ToString();
                 SharedData.Column = y.ToString();
-                moveimage();
-                if(flag==false)
-                {
-                   y= Convert.ToInt32(SharedData.Column) - 1;
-                    SharedData.Column=y.ToString();
-                }
-                else
-                {
-                    this.Close();
-                    arcade.Refresh();
-                }
+                SharedData.TempRow = SharedData.Row;
+                SharedData.TempColumn = SharedData.Column;
+             
+                this.Close();
+             
                 
             }
             else
@@ -155,50 +123,6 @@ namespace assignment1
             
         }
 
-        private void moveimage()
-        {
-            //if (SharedData.turn >= 2)
-            //{
-            if (!string.IsNullOrEmpty(SharedData.Row) && !string.IsNullOrEmpty(SharedData.Column))
-            {
-                string row;
-                string column;
-                row = SharedData.x.ToString();
-
-                column = SharedData.y.ToString();
-                string id = "X" + row + "Y" + column;
-                PictureBox pictureBox = arcade.FindPictureBoxById(id);
-                if (pictureBox != null)
-                {
-                    if (pictureBox.Image == null)
-                    {
-                        SetBuildingImage(pictureBox);
-
-                        flag = true;
-
-
-                    }
-                    else
-                    {
-                        MessageBox.Show("This PictureBox already has an image.",
-                                                              "Warning",
-                                                              MessageBoxButtons.OK,
-                                                              MessageBoxIcon.Warning);
-                        flag = false;
-                    }
-
-
-                }
-                else
-                {
-                    // PictureBox not found with the specified ID
-                    MessageBox.Show($"PictureBox with ID {id} not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-
-
-                //}
-            }
-        }
 
         private void SetBuildingImage(PictureBox pictureBox)
         {

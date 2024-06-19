@@ -25,7 +25,7 @@ namespace assignment1
             InitializeComponent();
             lblTurn.Text = i.ToString();
             SharedData.turn = i;
-            
+
             lblCoins.Text = coins.ToString();
             lblPoint.Text = SharedData.point.ToString();
         }
@@ -65,13 +65,15 @@ namespace assignment1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            lblPoint.Text = SharedData.point.ToString();
+            lblPoint.Text=SharedData.point.ToString();
+            lblCoins.Text=SharedData.PreviousOption;
+            lblTurn.Text=SharedData.CurrentOption;
             // Perform some action if the flag is true
             if (flag==true)
             {
                 // Example action: increment x and update label2
                 i++;
-                lblTurn.Text = i.ToString();
+             //   lblTurn.Text = i.ToString();
                 SharedData.turn = i;
                 // Reset the flag if needed
                 flag = false;
@@ -91,6 +93,7 @@ namespace assignment1
                     {
                         // PictureBox found, perform actions
                         SetBuildingImage(pictureBox);
+                        
                     }
                     else
                     {
@@ -98,6 +101,8 @@ namespace assignment1
                                                               "Warning",
                                                               MessageBoxButtons.OK,
                                                               MessageBoxIcon.Warning);
+                        SharedData.Row = SharedData.TempRow;
+                        SharedData.Column = SharedData.TempColumn;
                     }
                 }
                 else

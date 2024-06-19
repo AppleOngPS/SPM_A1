@@ -22,18 +22,32 @@ namespace assignment1
         private void button1_Click(object sender, EventArgs e)
         {
             SharedData.point += 1;
+          
             if (SharedData.turn == 1)
             {
+                
+                
+                SharedData.PreviousOption = SharedData.building;
                 SharedData.building = button1.Text;
+                //SharedData.building = SharedData.Temp2;
+                SharedData.CurrentOption = SharedData.building;
+
                 Q2 q2 = new Q2();
                 q2.Show();
                 this.Close();
             }
             else
             {
-                SharedData.building = button2.Text;
+                
+                
+                SharedData.PreviousOption = SharedData.building;
+                SharedData.building = button1.Text;
+                //SharedData.building = SharedData.Temp2;
+                SharedData.CurrentOption = SharedData.building;
+
                 Q3 q3 = new Q3();
                 q3.Show();
+                pointSystem();
                 this.Close();
             }
 
@@ -42,18 +56,32 @@ namespace assignment1
         private void button2_Click(object sender, EventArgs e)
         {
             SharedData.point += 1;
+            
             if (SharedData.turn == 1)
             {
+
+                
+                SharedData.PreviousOption = SharedData.building;
                 SharedData.building = button2.Text;
+                //SharedData.building = SharedData.Temp2;
+                SharedData.CurrentOption = SharedData.building;
+
+
                 Q2 q2 = new Q2();
                 q2.Show();
                 this.Close();
             }
             else
             {
+                
+                SharedData.PreviousOption = SharedData.building;
                 SharedData.building = button2.Text;
+                // SharedData.building = SharedData.Temp2;
+                SharedData.CurrentOption = SharedData.building;
+
                 Q3 q3 = new Q3();
                 q3.Show();
+                pointSystem();
                 this.Close();
             }
         }
@@ -78,6 +106,23 @@ namespace assignment1
             string name2 = names[index2];
             button1.Text = name1;
             button2.Text = name2;
+        }
+
+        private void pointSystem()
+        {
+            if (!string.IsNullOrEmpty(SharedData.building) && !string.IsNullOrEmpty(SharedData.PreviousOption))
+            {
+                if (SharedData.building == "Residential" && SharedData.PreviousOption == "Park")
+                {
+
+                    SharedData.point += 2;
+                    
+                }
+                else
+                {
+
+                }
+            }
         }
     }
 }

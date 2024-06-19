@@ -11,12 +11,19 @@ namespace assignment1
         public static string Data { get; set; }
         public static bool t { get; set; }
         public static string building { get; set; }
-
+        // for building
+        public static string PreviousOption {  get; set; }
+        public static string CurrentOption { get; set; }
+        // for row
+        public static string TempRow { get; set; }
+        //for Column
+        public static string TempColumn { get; set; }
+        public static bool flag { get; set; }
         public static string Column { get; set; }
         public static string Row { get; set; }
         public static int turn { get; set; }
         public static int coins { get; set; }
-        public static int point { get; set; }
+        public static int point { get; set; } = 0;
 
         public static string Version { get; set; }
         public static int x { get; set; }
