@@ -39,6 +39,7 @@
             this.tableBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.database1DataSet1 = new assignment1.Database1DataSet();
+            this.Homebtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
@@ -98,8 +99,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView1.Location = new System.Drawing.Point(84, 66);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridView1.Location = new System.Drawing.Point(56, 42);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -116,7 +116,7 @@
             this.dataGridView1.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1024, 564);
+            this.dataGridView1.Size = new System.Drawing.Size(683, 361);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -125,13 +125,23 @@
             this.database1DataSet1.DataSetName = "Database1DataSet";
             this.database1DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // Homebtn
+            // 
+            this.Homebtn.Location = new System.Drawing.Point(12, 12);
+            this.Homebtn.Name = "Homebtn";
+            this.Homebtn.Size = new System.Drawing.Size(75, 23);
+            this.Homebtn.TabIndex = 1;
+            this.Homebtn.Text = "back";
+            this.Homebtn.UseVisualStyleBackColor = true;
+            this.Homebtn.Click += new System.EventHandler(this.Homebtn_Click);
+            // 
             // displayHighScore
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 703);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Homebtn);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "displayHighScore";
             this.Text = "displayHighScore";
             this.Load += new System.EventHandler(this.displayHighScore_Load);
@@ -153,5 +163,6 @@
         private System.Windows.Forms.BindingSource tableBindingSource1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private Database1DataSet database1DataSet1;
+        private System.Windows.Forms.Button Homebtn;
     }
 }

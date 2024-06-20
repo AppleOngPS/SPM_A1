@@ -26,11 +26,11 @@ namespace assignment1
         public arcadeMode()
         {
             InitializeComponent();
-            lblTurn.Text = i.ToString();
+            lblTurn.Text ="Turn "+ i.ToString();
             SharedData.turn = i;
 
-            lblCoins.Text = coins.ToString();
-            lblPoint.Text = SharedData.point.ToString();
+            lblCoins.Text ="Coin "+ coins.ToString();
+            lblPoint.Text = "Point "+SharedData.point.ToString();
         }
 
         private void label8_Click(object sender, EventArgs e)
@@ -73,15 +73,14 @@ namespace assignment1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            lblPoint.Text=SharedData.point.ToString();
-            lblCoins.Text=SharedData.PreviousOption;
-            lblTurn.Text=SharedData.building;
+            lblPoint.Text="Point " + SharedData.point.ToString();
+
             // Perform some action if the flag is true
             if (flag==true)
             {
                 // Example action: increment x and update label2
                 i++;
-              // lblTurn.Text = i.ToString();
+               lblTurn.Text ="Turn "+ i.ToString();
                 SharedData.turn = i;
                 // Reset the flag if needed
                 flag = false;
