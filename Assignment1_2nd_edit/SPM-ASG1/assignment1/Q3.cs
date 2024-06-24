@@ -49,14 +49,15 @@ namespace assignment1
         {
             if (Convert.ToInt32(SharedData.Row) != 20)
             {
+                SharedData.TempRow = SharedData.Row;
+                SharedData.TempColumn = SharedData.Column;
                 int x, y;
                 x = Convert.ToInt32(SharedData.Row) + 1;
                 y = Convert.ToInt32(SharedData.Column);
                 SharedData.x = x; SharedData.y = y;
                 SharedData.Row = x.ToString();
                 SharedData.Column = y.ToString();
-                SharedData.TempRow = SharedData.Row;
-                SharedData.TempColumn = SharedData.Column;
+                
                 
                 this.Close();
              
@@ -74,14 +75,15 @@ namespace assignment1
         {
             if (Convert.ToInt32(SharedData.Column) != 1 || Convert.ToInt32(SharedData.Column) != 20)
             {
+                SharedData.TempRow = SharedData.Row;
+                SharedData.TempColumn = SharedData.Column;
                 int x, y;
                 x = Convert.ToInt32(SharedData.Row);
                 y = Convert.ToInt32(SharedData.Column) - 1;
                 SharedData.x = x; SharedData.y = y;
                 SharedData.Row = x.ToString();
                 SharedData.Column = y.ToString();
-                SharedData.TempRow = SharedData.Row;
-                SharedData.TempColumn = SharedData.Column;
+                
                 
                 this.Close();
                
@@ -103,14 +105,15 @@ namespace assignment1
         {
             if (Convert.ToInt32(SharedData.Column) != 1 || Convert.ToInt32(SharedData.Column) != 20)
             {
+                SharedData.TempRow = SharedData.Row;
+                SharedData.TempColumn = SharedData.Column;
                 int x, y;
                 x = Convert.ToInt32(SharedData.Row);
                 y = Convert.ToInt32(SharedData.Column) + 1;
                 SharedData.x = x; SharedData.y = y;
                 SharedData.Row = x.ToString();
                 SharedData.Column = y.ToString();
-                SharedData.TempRow = SharedData.Row;
-                SharedData.TempColumn = SharedData.Column;
+                
              
                 this.Close();
              

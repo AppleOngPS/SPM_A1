@@ -110,6 +110,9 @@ namespace assignment1
                                                               MessageBoxIcon.Warning);
                         SharedData.Row = SharedData.TempRow;
                         SharedData.Column = SharedData.TempColumn;
+                        pickAlt pickAlt = new pickAlt();
+                        pickAlt.Show();
+                        flag = false;
                     }
                 }
                 else
