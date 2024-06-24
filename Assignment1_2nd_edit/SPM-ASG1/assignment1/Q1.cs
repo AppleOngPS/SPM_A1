@@ -21,7 +21,7 @@ namespace assignment1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SharedData.point += 1;
+            
           
             if (SharedData.turn == 1)
             {
@@ -37,8 +37,8 @@ namespace assignment1
             }
             else
             {
-                
-                
+                SharedData.point += 1;
+
                 SharedData.PreviousOption = SharedData.building;
                 SharedData.building = button1.Text;
                 SharedData.CurrentOption = SharedData.building;
@@ -53,7 +53,7 @@ namespace assignment1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SharedData.point += 1;
+            
             
             if (SharedData.turn == 1)
             {
@@ -70,7 +70,7 @@ namespace assignment1
             }
             else
             {
-                
+                SharedData.point += 1;
                 SharedData.PreviousOption = SharedData.building;
                 SharedData.building = button2.Text;
                 SharedData.CurrentOption = SharedData.building;

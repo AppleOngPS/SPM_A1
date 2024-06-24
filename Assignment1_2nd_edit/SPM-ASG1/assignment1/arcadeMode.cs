@@ -53,10 +53,29 @@ namespace assignment1
                 Save.Enabled = true;
             }
             else { Save.Enabled = false; }
-          
-        }
+            con.Open();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "Select * From [dbo].[Table] WHERE name='" + SharedData.Data + "'";
+            cmd.ExecuteNonQuery();
 
-       
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            con.Close();
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                if (dt.Rows[i][1].ToString() == SharedData.Data)
+                {
+                    PictureBox pictureBox = FindPictureBoxById(dt.Rows[i][2].ToString());
+                    if (pictureBox != null)
+                    {
+                        string imagePath = dt.Rows[i][3].ToString();
+                        pictureBox.Image = Image.FromFile(@imagePath);
+                    }
+                }
+            }
+        }
 
 
         public PictureBox FindPictureBoxById(string id)
@@ -110,6 +129,7 @@ namespace assignment1
                                                               MessageBoxIcon.Warning);
                         SharedData.Row = SharedData.TempRow;
                         SharedData.Column = SharedData.TempColumn;
+                        SharedData.point-=1;
                         pickAlt pickAlt = new pickAlt();
                         pickAlt.Show();
                         flag = false;
@@ -208,10 +228,6 @@ namespace assignment1
         SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\NP.2\\SPM\\vvvvv\\Assignment1_2nd_edit\\SPM-ASG1\\assignment1\\Database1.mdf;Integrated Security=True");
         private void Save_Click(object sender, EventArgs e)
         {
-            v++;
-            string Version = "V"+v.ToString();
-            SharedData.Version = Version;
-
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
@@ -279,11 +295,14 @@ namespace assignment1
 
 
 
-        
         public class PictureBoxInfo
         {
             public string ID { get; set; }
             public string ImageSource { get; set; }
         }
+
+
+
+
     }
 }

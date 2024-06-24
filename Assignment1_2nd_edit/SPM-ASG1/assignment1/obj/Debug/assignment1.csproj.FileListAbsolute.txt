@@ -96,3 +96,4 @@ C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment
 C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.exe
 C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.pdb
 C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.pickAlt.resources
+C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.Loadpage.resources

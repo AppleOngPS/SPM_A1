@@ -80,6 +80,12 @@
     <Compile Include="displayHighScore.Designer.cs">
       <DependentUpon>displayHighScore.cs</DependentUpon>
     </Compile>
+    <Compile Include="Loadpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loadpage.Designer.cs">
+      <DependentUpon>Loadpage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="freeGameMode.resx">
       <DependentUpon>freeGameMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loadpage.resx">
+      <DependentUpon>Loadpage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
