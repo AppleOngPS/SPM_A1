@@ -38,17 +38,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(130, 76);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(50, 52);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.Size = new System.Drawing.Size(119, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "Choose a direction";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Top
             // 
-            this.Top.Location = new System.Drawing.Point(26, 146);
+            this.Top.Location = new System.Drawing.Point(32, 103);
+            this.Top.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Top.Name = "Top";
-            this.Top.Size = new System.Drawing.Size(75, 23);
+            this.Top.Size = new System.Drawing.Size(56, 27);
             this.Top.TabIndex = 1;
             this.Top.Text = "Top";
             this.Top.UseVisualStyleBackColor = true;
@@ -56,9 +60,10 @@
             // 
             // Bot
             // 
-            this.Bot.Location = new System.Drawing.Point(170, 146);
+            this.Bot.Location = new System.Drawing.Point(128, 103);
+            this.Bot.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Bot.Name = "Bot";
-            this.Bot.Size = new System.Drawing.Size(75, 23);
+            this.Bot.Size = new System.Drawing.Size(56, 27);
             this.Bot.TabIndex = 2;
             this.Bot.Text = "Bottom";
             this.Bot.UseVisualStyleBackColor = true;
@@ -66,9 +71,10 @@
             // 
             // left
             // 
-            this.left.Location = new System.Drawing.Point(26, 212);
+            this.left.Location = new System.Drawing.Point(32, 161);
+            this.left.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.left.Name = "left";
-            this.left.Size = new System.Drawing.Size(75, 23);
+            this.left.Size = new System.Drawing.Size(56, 27);
             this.left.TabIndex = 3;
             this.left.Text = "Left";
             this.left.UseVisualStyleBackColor = true;
@@ -76,9 +82,10 @@
             // 
             // right
             // 
-            this.right.Location = new System.Drawing.Point(170, 212);
+            this.right.Location = new System.Drawing.Point(128, 161);
+            this.right.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.right.Name = "right";
-            this.right.Size = new System.Drawing.Size(75, 23);
+            this.right.Size = new System.Drawing.Size(56, 27);
             this.right.TabIndex = 4;
             this.right.Text = "Right";
             this.right.UseVisualStyleBackColor = true;
@@ -86,14 +93,15 @@
             // 
             // Q3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(307, 278);
+            this.ClientSize = new System.Drawing.Size(230, 226);
             this.Controls.Add(this.right);
             this.Controls.Add(this.left);
             this.Controls.Add(this.Bot);
             this.Controls.Add(this.Top);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Q3";
             this.Text = "Q3";
             this.ResumeLayout(false);

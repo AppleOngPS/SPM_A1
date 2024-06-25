@@ -39,10 +39,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(210, 61);
             this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 39);
+            this.label1.Size = new System.Drawing.Size(80, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Login";
             // 
@@ -51,7 +52,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(57, 127);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(183, 39);
+            this.label2.Size = new System.Drawing.Size(147, 31);
             this.label2.TabIndex = 1;
             this.label2.Text = "Username:";
             // 
@@ -60,7 +61,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(57, 182);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(176, 39);
+            this.label3.Size = new System.Drawing.Size(142, 31);
             this.label3.TabIndex = 2;
             this.label3.Text = "Password:";
             // 
@@ -68,14 +69,14 @@
             // 
             this.usernameInput.Location = new System.Drawing.Point(216, 127);
             this.usernameInput.Name = "usernameInput";
-            this.usernameInput.Size = new System.Drawing.Size(176, 46);
+            this.usernameInput.Size = new System.Drawing.Size(176, 38);
             this.usernameInput.TabIndex = 3;
             // 
             // passwordInput
             // 
             this.passwordInput.Location = new System.Drawing.Point(216, 182);
             this.passwordInput.Name = "passwordInput";
-            this.passwordInput.Size = new System.Drawing.Size(176, 46);
+            this.passwordInput.Size = new System.Drawing.Size(176, 38);
             this.passwordInput.TabIndex = 4;
             // 
             // submitBttn
@@ -90,7 +91,7 @@
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(20F, 39F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(514, 314);
             this.Controls.Add(this.submitBttn);
