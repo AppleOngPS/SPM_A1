@@ -21,5 +21,20 @@ namespace assignment1
         {
 
         }
+
+        private void freeGameMode_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void X6Y3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void X13Y6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
