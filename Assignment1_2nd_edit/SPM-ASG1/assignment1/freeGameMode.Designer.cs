@@ -256,8 +256,10 @@
             this.X15Y13 = new System.Windows.Forms.PictureBox();
             this.X15Y14 = new System.Windows.Forms.PictureBox();
             this.X15Y15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.nav.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y3)).BeginInit();
@@ -483,6 +485,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.X15Y13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -732,14 +735,14 @@
             this.tableLayoutPanel1.Controls.Add(this.X14Y11, 10, 13);
             this.tableLayoutPanel1.Controls.Add(this.X14Y12, 11, 13);
             this.tableLayoutPanel1.Controls.Add(this.X14Y13, 12, 13);
-            this.tableLayoutPanel1.Controls.Add(this.X14Y14, 13, 13);
             this.tableLayoutPanel1.Controls.Add(this.X14Y15, 14, 13);
             this.tableLayoutPanel1.Controls.Add(this.X15Y10, 9, 14);
             this.tableLayoutPanel1.Controls.Add(this.X15Y11, 10, 14);
             this.tableLayoutPanel1.Controls.Add(this.X15Y12, 11, 14);
             this.tableLayoutPanel1.Controls.Add(this.X15Y13, 12, 14);
             this.tableLayoutPanel1.Controls.Add(this.X15Y14, 13, 14);
-            this.tableLayoutPanel1.Controls.Add(this.X15Y15, 14, 14);
+            this.tableLayoutPanel1.Controls.Add(this.X14Y14, 14, 14);
+            this.tableLayoutPanel1.Controls.Add(this.X15Y15, 13, 13);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 5);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -765,6 +768,7 @@
             // 
             // nav
             // 
+            this.nav.Controls.Add(this.pictureBox1);
             this.nav.Dock = System.Windows.Forms.DockStyle.Right;
             this.nav.Location = new System.Drawing.Point(1490, 0);
             this.nav.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -2512,7 +2516,7 @@
             // 
             // X14Y14
             // 
-            this.X14Y14.Location = new System.Drawing.Point(1953, 1953);
+            this.X14Y14.Location = new System.Drawing.Point(2103, 2103);
             this.X14Y14.Name = "X14Y14";
             this.X14Y14.Size = new System.Drawing.Size(144, 144);
             this.X14Y14.TabIndex = 220;
@@ -2568,11 +2572,19 @@
             // 
             // X15Y15
             // 
-            this.X15Y15.Location = new System.Drawing.Point(2103, 2103);
+            this.X15Y15.Location = new System.Drawing.Point(1953, 1953);
             this.X15Y15.Name = "X15Y15";
             this.X15Y15.Size = new System.Drawing.Size(144, 144);
             this.X15Y15.TabIndex = 227;
             this.X15Y15.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(16, 45);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(174, 92);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // freeGameMode
             // 
@@ -2587,6 +2599,7 @@
             this.Load += new System.EventHandler(this.freeGameMode_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.nav.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.X1Y1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y3)).EndInit();
@@ -2812,6 +2825,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.X15Y13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3047,5 +3061,6 @@
         private System.Windows.Forms.PictureBox X15Y13;
         private System.Windows.Forms.PictureBox X15Y14;
         private System.Windows.Forms.PictureBox X15Y15;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
