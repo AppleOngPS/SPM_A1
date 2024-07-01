@@ -121,6 +121,11 @@
     <Compile Include="Q3.Designer.cs">
       <DependentUpon>Q3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
     <Compile Include="SharedData.cs" />
     <Compile Include="SignUp.cs">
       <SubType>Form</SubType>
@@ -180,6 +185,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Q3.resx">
       <DependentUpon>Q3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>

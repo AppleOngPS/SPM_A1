@@ -26,11 +26,11 @@ namespace assignment1
         public arcadeMode()
         {
             InitializeComponent();
-            lblTurn.Text ="Turn "+ i.ToString();
+            lblTurn.Text = "Turn " + i.ToString();
             SharedData.turn = i;
 
-            lblCoins.Text ="Coin "+ coins.ToString();
-            lblPoint.Text = "Point "+SharedData.point.ToString();
+            lblCoins.Text = "Coin " + coins.ToString();
+            lblPoint.Text = "Point " + SharedData.point.ToString();
         }
 
         private void label8_Click(object sender, EventArgs e)
@@ -38,7 +38,7 @@ namespace assignment1
 
         }
 
-      
+
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
             menu menu = new menu();
@@ -92,14 +92,14 @@ namespace assignment1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            lblPoint.Text="Point " + SharedData.point.ToString();
+            lblPoint.Text = "Point " + SharedData.point.ToString();
 
             // Perform some action if the flag is true
-            if (flag==true)
+            if (flag == true)
             {
                 // Example action: increment x and update label2
                 i++;
-               lblTurn.Text ="Turn "+ i.ToString();
+                lblTurn.Text = "Turn " + i.ToString();
                 SharedData.turn = i;
                 // Reset the flag if needed
                 flag = false;
@@ -119,7 +119,7 @@ namespace assignment1
                     {
                         // PictureBox found, perform actions
                         SetBuildingImage(pictureBox);
-                        
+
                     }
                     else
                     {
@@ -129,7 +129,7 @@ namespace assignment1
                                                               MessageBoxIcon.Warning);
                         SharedData.Row = SharedData.TempRow;
                         SharedData.Column = SharedData.TempColumn;
-                        SharedData.point-=1;
+                        SharedData.point -= 1;
                         pickAlt pickAlt = new pickAlt();
                         pickAlt.Show();
                         flag = false;
@@ -140,37 +140,83 @@ namespace assignment1
                     // PictureBox not found with the specified ID
                     MessageBox.Show($"PictureBox with ID {id} not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-      
+
+                int x = Convert.ToInt32(row); int y = Convert.ToInt32(column);
+                string top = "X" + (x + 1) + "Y" + y;
+                string bottom = "X" + (x - 1) + "Y" + y;
+                string right = "X" + x + "Y" + (y + 1);
+                string left = "X" + x + "Y" + (y - 1);
+                PictureBox topPic = FindPictureBoxById(top);
+                PictureBox bottomPic = FindPictureBoxById(bottom);
+                PictureBox rightPic = FindPictureBoxById(right);
+                PictureBox leftPic = FindPictureBoxById(left);
+
+                if (SharedData.building == "Residential" || SharedData.building == "Park")
+                {
+                    if (topPic.Image == Resource1.park || topPic.Image == Resource1.residential)
+                    {
+
+                        point += 2;
+                    }
+                    else if (rightPic.Image == Resource1.park || rightPic.Image == Resource1.residential)
+                    {
+                        point += 2;
+                    }
+                    else if (leftPic.Image == Resource1.park || leftPic.Image == Resource1.residential)
+                    {
+                        point += 2;
+                    }
+                    else if (bottomPic.Image == Resource1.park || bottomPic.Image == Resource1.residential)
+                    {
+                        point += 2;
+                    }
+                    else { point += 1; }
+                }
+                else if (SharedData.building == "Road")
+                {
+
+                    if (rightPic.Image == Resource1.Road)
+                    {
+                        point += 1;
+                    }
+                    else if (leftPic.Image == Resource1.Road)
+                    {
+                        point += 1;
+                    }
+                    else { point += 0; }
+                }
+
+            }
+
+        }
+
+        /*if (i > 2)
+        {
+            if (!String.IsNullOrEmpty(SharedData.Row) && !String.IsNullOrEmpty(SharedData.Column))
+            {
+                string row;
+                string column;
+                row = SharedData.x.ToString();
+
+                column = SharedData.y.ToString();
+                string id = "X" + row + "Y" + column;
+                PictureBox pictureBox = FindPictureBoxById(id);
+                if (pictureBox != null)
+                {
+
+                    // PictureBox found, perform actions
+                    pictureBox.Image = Image.FromFile(@"C:\NP.2\SPM\C#\SPM-ASG1\assignment1\Resources\Screenshot 2024-06-10 222221.png");
+                }
+                else
+                {
+                    // PictureBox not found with the specified ID
+                    MessageBox.Show($"PictureBox with ID {id} not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
 
 
             }
-            /*if (i > 2)
-            {
-                if (!String.IsNullOrEmpty(SharedData.Row) && !String.IsNullOrEmpty(SharedData.Column))
-                {
-                    string row;
-                    string column;
-                    row = SharedData.x.ToString();
-
-                    column = SharedData.y.ToString();
-                    string id = "X" + row + "Y" + column;
-                    PictureBox pictureBox = FindPictureBoxById(id);
-                    if (pictureBox != null)
-                    {
-
-                        // PictureBox found, perform actions
-                        pictureBox.Image = Image.FromFile(@"C:\NP.2\SPM\C#\SPM-ASG1\assignment1\Resources\Screenshot 2024-06-10 222221.png");
-                    }
-                    else
-                    {
-                        // PictureBox not found with the specified ID
-                        MessageBox.Show($"PictureBox with ID {id} not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    
-
-                }
-            }*/
-        }
+        }*/
+    
 
         private void SetBuildingImage(PictureBox pictureBox)
         {
@@ -178,7 +224,8 @@ namespace assignment1
             {
                 string imagePath = @"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\Road.png";
                 pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureBox.Image = Image.FromFile(imagePath);
+                //pictureBox.Image = Image.FromFile(imagePath);
+                pictureBox.Image = Resource1.Road;
                 pictureBox.Tag = imagePath;
             }
             else if (SharedData.building == "Park")
