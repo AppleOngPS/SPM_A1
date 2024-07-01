@@ -65,7 +65,7 @@
             this.label1.Size = new System.Drawing.Size(418, 111);
             this.label1.TabIndex = 2;
             this.label1.Text = "Choose the current location \r\n                  or \r\n    Choose a new location\r\n";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            
             // 
             // pickAlt
             // 

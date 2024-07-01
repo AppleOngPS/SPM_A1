@@ -432,6 +432,8 @@
             this.X18Y2 = new System.Windows.Forms.PictureBox();
             this.X16Y16 = new System.Windows.Forms.PictureBox();
             this.nav = new System.Windows.Forms.Panel();
+            this.changeplaceBtn = new System.Windows.Forms.Button();
+            this.Demolish = new System.Windows.Forms.Button();
             this.Save = new System.Windows.Forms.Button();
             this.lblPoint = new System.Windows.Forms.Label();
             this.lblCoins = new System.Windows.Forms.Label();
@@ -890,7 +892,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 124F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 127F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 171F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 177F));
             this.tableLayoutPanel1.Controls.Add(this.X1Y2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.X1Y1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.X1Y3, 2, 0);
@@ -1314,7 +1316,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 125F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 125F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 125F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(2611, 2563);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(2617, 2563);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // X1Y2
@@ -4911,6 +4913,8 @@
             // nav
             // 
             this.nav.BackColor = System.Drawing.Color.Snow;
+            this.nav.Controls.Add(this.changeplaceBtn);
+            this.nav.Controls.Add(this.Demolish);
             this.nav.Controls.Add(this.Save);
             this.nav.Controls.Add(this.lblPoint);
             this.nav.Controls.Add(this.lblCoins);
@@ -4924,9 +4928,29 @@
             this.nav.Size = new System.Drawing.Size(92, 675);
             this.nav.TabIndex = 2;
             // 
+            // changeplaceBtn
+            // 
+            this.changeplaceBtn.Location = new System.Drawing.Point(6, 228);
+            this.changeplaceBtn.Name = "changeplaceBtn";
+            this.changeplaceBtn.Size = new System.Drawing.Size(75, 44);
+            this.changeplaceBtn.TabIndex = 8;
+            this.changeplaceBtn.Text = "change place";
+            this.changeplaceBtn.UseVisualStyleBackColor = true;
+            this.changeplaceBtn.Click += new System.EventHandler(this.changeplaceBtn_Click);
+            // 
+            // Demolish
+            // 
+            this.Demolish.Location = new System.Drawing.Point(6, 159);
+            this.Demolish.Name = "Demolish";
+            this.Demolish.Size = new System.Drawing.Size(75, 46);
+            this.Demolish.TabIndex = 7;
+            this.Demolish.Text = "Demolish Building";
+            this.Demolish.UseVisualStyleBackColor = true;
+            this.Demolish.Click += new System.EventHandler(this.Demolish_Click);
+            // 
             // Save
             // 
-            this.Save.Location = new System.Drawing.Point(6, 231);
+            this.Save.Location = new System.Drawing.Point(6, 322);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(75, 23);
             this.Save.TabIndex = 6;
@@ -4937,7 +4961,7 @@
             // lblPoint
             // 
             this.lblPoint.AutoSize = true;
-            this.lblPoint.Location = new System.Drawing.Point(15, 376);
+            this.lblPoint.Location = new System.Drawing.Point(23, 487);
             this.lblPoint.Name = "lblPoint";
             this.lblPoint.Size = new System.Drawing.Size(44, 16);
             this.lblPoint.TabIndex = 5;
@@ -4946,7 +4970,7 @@
             // lblCoins
             // 
             this.lblCoins.AutoSize = true;
-            this.lblCoins.Location = new System.Drawing.Point(9, 336);
+            this.lblCoins.Location = new System.Drawing.Point(23, 417);
             this.lblCoins.Name = "lblCoins";
             this.lblCoins.Size = new System.Drawing.Size(44, 16);
             this.lblCoins.TabIndex = 4;
@@ -4956,7 +4980,7 @@
             // 
             this.lblTurn.AutoSize = true;
             this.lblTurn.BackColor = System.Drawing.Color.Snow;
-            this.lblTurn.Location = new System.Drawing.Point(11, 289);
+            this.lblTurn.Location = new System.Drawing.Point(17, 359);
             this.lblTurn.Name = "lblTurn";
             this.lblTurn.Size = new System.Drawing.Size(51, 16);
             this.lblTurn.TabIndex = 3;
@@ -4964,7 +4988,7 @@
             // 
             // EndTurn
             // 
-            this.EndTurn.Location = new System.Drawing.Point(3, 188);
+            this.EndTurn.Location = new System.Drawing.Point(6, 287);
             this.EndTurn.Name = "EndTurn";
             this.EndTurn.Size = new System.Drawing.Size(75, 23);
             this.EndTurn.TabIndex = 2;
@@ -5837,5 +5861,7 @@
         private System.Windows.Forms.Button EndTurn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Save;
+        private System.Windows.Forms.Button changeplaceBtn;
+        private System.Windows.Forms.Button Demolish;
     }
 }

@@ -24,7 +24,9 @@ namespace assignment1
         public static int turn { get; set; }
         public static int coins { get; set; } = 16;
         public static int point { get; set; } = 0;
-
+        public static int rows { get; set; }
+        public static string Dx { get; set; }
+        public static string Dy { get; set; }
         public static string Version { get; set; }
         public static int x { get; set; }
         public static int y { get; set; }

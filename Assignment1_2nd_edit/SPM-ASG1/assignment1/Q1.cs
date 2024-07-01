@@ -45,7 +45,7 @@ namespace assignment1
 
                 pickAlt pickAlt = new pickAlt();
                 pickAlt.Show();
-                pointSystem();
+               // pointSystem();
                 this.Close();
             }
 
@@ -78,7 +78,7 @@ namespace assignment1
 
                 pickAlt pickAlt = new pickAlt();
                 pickAlt.Show();
-                pointSystem();
+                //pointSystem();
                 this.Close();
             }
         }

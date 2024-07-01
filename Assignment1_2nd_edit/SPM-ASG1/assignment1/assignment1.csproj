@@ -121,6 +121,12 @@
     <Compile Include="Q3.Designer.cs">
       <DependentUpon>Q3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Q4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Q4.Designer.cs">
+      <DependentUpon>Q4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Resource1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -186,6 +192,9 @@
     <EmbeddedResource Include="Q3.resx">
       <DependentUpon>Q3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Q4.resx">
+      <DependentUpon>Q4.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resource1.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
@@ -245,6 +254,7 @@
     <Content Include="Resources\park.png" />
     <Content Include="Resources\residential.png" />
     <Content Include="Resources\Road.png" />
+    <None Include="Resources\White.png" />
     <Content Include="Screenshot 2024-06-10 222221.png" />
     <None Include="Resources\Screenshot 2024-06-10 222221.png" />
   </ItemGroup>

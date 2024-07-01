@@ -29,8 +29,8 @@ namespace assignment1
             lblTurn.Text = "Turn " + i.ToString();
             SharedData.turn = i;
             
-            lblCoins.Text = "Coin " + SharedData.coins.ToString();
-            lblPoint.Text = "Point " + SharedData.point.ToString();
+            lblCoins.Text = "Coin " + SharedData.coins;
+            lblPoint.Text = "Point " + SharedData.point;
         }
 
         private void label8_Click(object sender, EventArgs e)
@@ -92,8 +92,9 @@ namespace assignment1
 
         private void button2_Click(object sender, EventArgs e)
         {
-           lblPoint.Text = "Point " + SharedData.point.ToString();
-            lblCoins.Text = "Coin" + SharedData.coins.ToString();
+            // UpdatePictureBoxes();
+            lblPoint.Text = "Point " + SharedData.point;
+            lblCoins.Text = "Coin" + SharedData.coins;
 
             // Perform some action if the flag is true
             if (flag == true)
@@ -105,13 +106,13 @@ namespace assignment1
                 // Reset the flag if needed
                 flag = false;
             }
-            if (!string.IsNullOrEmpty(SharedData.building))
+            if (!string.IsNullOrEmpty(SharedData.CurrentOption))
             {
                 string row;
                 string column;
-                row = SharedData.Row.ToString();
+                row = SharedData.Row;
 
-                column = SharedData.Column.ToString();
+                column = SharedData.Column;
                 string id = "X" + row + "Y" + column;
                 PictureBox pictureBox = FindPictureBoxById(id);
                 if (pictureBox != null)
@@ -151,49 +152,20 @@ namespace assignment1
                 PictureBox bottomPic = FindPictureBoxById(bottom);
                 PictureBox rightPic = FindPictureBoxById(right);
                 PictureBox leftPic = FindPictureBoxById(left);
-                if (SharedData.building == "Industry")
+                if (SharedData.CurrentOption == "Industry")
                 {
-                    
+
                     if (topPic.Image == Resource1.residential)
                     {
                         SharedData.coins += 1;
-                     
-                        lblCoins.Text = "Coin " + SharedData.coins.ToString();
+                        coins += 1;
+                        lblCoins.Text = "Coin " + SharedData.coins  ;
                     }
                     else if (rightPic.Image == Resource1.residential)
                     {
                         SharedData.coins += 1;
-                       
-                        lblCoins.Text = "Coin " + SharedData.coins.ToString();
-                    }
-                    else if (leftPic.Image == Resource1.residential)
-                    {
-                        SharedData.coins += 1;
-                      
-                        lblCoins.Text = "Coin " + SharedData.coins.ToString();
-                    }
-                    else if (bottomPic.Image == Resource1.residential)
-                    {
-                        SharedData.coins += 1;
-                       
-                        lblCoins.Text = "Coin " + SharedData.coins.ToString();
-                    }
-                    else {SharedData.coins += 0; }
-
-                }
-                else if (SharedData.building == "Commercial")
-                {
-                    if ( topPic.Image == Resource1.residential)
-                    {
-                        SharedData.coins += 1;
                         coins += 1;
-                        lblCoins.Text = "Coin " + SharedData.coins.ToString();
-                    }
-                    else if ( rightPic.Image == Resource1.residential)
-                    {
-                        SharedData.coins += 1;
-                        coins += 1;
-                        lblCoins.Text = "Coin " + SharedData.coins.ToString();
+                        lblCoins.Text = "Coin " + SharedData.coins;
                     }
                     else if (leftPic.Image == Resource1.residential)
                     {
@@ -201,111 +173,157 @@ namespace assignment1
                         coins += 1;
                         lblCoins.Text = "Coin " + SharedData.coins;
                     }
-                    else if ( bottomPic.Image == Resource1.residential)
+                    else if (bottomPic.Image == Resource1.residential)
                     {
                         SharedData.coins += 1;
                         coins += 1;
-                        lblCoins.Text = "Coin " + SharedData.coins.ToString();
+                        lblCoins.Text = "Coin " + SharedData.coins;
                     }
-                    else {SharedData.coins += 0; }
+                    else { SharedData.coins += 0; }
 
                 }
-                else if (SharedData.building == "Residential" )
+                else if (SharedData.CurrentOption == "Commercial")
                 {
-                    if (topPic.Image == Resource1.park )
+                    if (topPic.Image == Resource1.residential)
                     {
-                        point += 2;
-                       
+                        SharedData.coins += 1;
+                        coins += 1;
+                        lblCoins.Text = "Coin " + SharedData.coins;
+                    }
+                    else if (rightPic.Image == Resource1.residential)
+                    {
+                        SharedData.coins += 1;
+                        coins += 1;
+                        lblCoins.Text = "Coin " + SharedData.coins;
+                    }
+                    else if (leftPic.Image == Resource1.residential)
+                    {
+                        SharedData.coins += 1;
+                        coins += 1;
+                        lblCoins.Text = "Coin " + SharedData.coins;
+                    }
+                    else if (bottomPic.Image == Resource1.residential)
+                    {
+                        SharedData.coins += 1;
+                        coins += 1;
+                        lblCoins.Text = "Coin " + SharedData.coins;
+                    }
+                    else { SharedData.coins += 0; }
+
+                }
+                else if (SharedData.CurrentOption == "Residential")
+                {
+                    if (topPic.Image == Resource1.park)
+                    {
+                        SharedData.point += 2;
+                        lblPoint.Text = "Point " + SharedData.point;
                     }
                     else if (rightPic.Image == Resource1.park)
                     {
-                        point += 2;
+                        SharedData.point += 2;
+                        lblPoint.Text = "Point " + SharedData.point;
                     }
                     else if (leftPic.Image == Resource1.park)
                     {
-                        point += 2;
+                        SharedData.point += 2;
+                        lblPoint.Text = "Point " + SharedData.point;
                     }
                     else if (bottomPic.Image == Resource1.park)
                     {
-                        point += 2;
+                        SharedData.point += 2;
+                        lblPoint.Text = "Point " + SharedData.point;
                     }
                     else if (topPic.Image == Resource1.industry)
                     {
                         SharedData.coins += 1;
-                        lblCoins.Text = "Coin " + SharedData.coins.ToString();
+                        coins += 1;
+                        lblCoins.Text = "Coin " + SharedData.coins;
 
                     }
                     else if (rightPic.Image == Resource1.industry)
                     {
                         SharedData.coins += 1;
-                        lblCoins.Text = "Coin " + SharedData.coins.ToString();
+                        coins += 1;
+                        lblCoins.Text = "Coin " + SharedData.coins  ;
                     }
                     else if (leftPic.Image == Resource1.industry)
                     {
                         SharedData.coins += 1;
-                        lblCoins.Text = "Coin " + SharedData.coins.ToString();
+                        coins += 1;
+                        lblCoins.Text = "Coin " +   SharedData.coins;
                     }
                     else if (bottomPic.Image == Resource1.industry)
                     {
                         SharedData.coins += 1;
-                        lblCoins.Text = "Coin " + SharedData.coins.ToString();
+                        coins += 1;
+                        lblCoins.Text = "Coin " + SharedData.coins;
                     }
                     else if (topPic.Image == Resource1.commercial)
                     {
                         SharedData.coins += 1;
-                        lblCoins.Text = "Coin " + SharedData.coins.ToString();
+                        coins += 1;
+                        lblCoins.Text = "Coin " + SharedData.coins;
 
                     }
                     else if (rightPic.Image == Resource1.commercial)
                     {
                         SharedData.coins += 1;
-                        lblCoins.Text = "Coin " + SharedData.coins.ToString();
+                        coins += 1;
+                        lblCoins.Text = "Coin " + SharedData.coins;
                     }
                     else if (leftPic.Image == Resource1.commercial)
                     {
                         SharedData.coins += 1;
-                        lblCoins.Text = "Coin " + SharedData.coins.ToString();
+                        coins += 1;
+                        lblCoins.Text = "Coin " + SharedData.coins;
                     }
                     else if (bottomPic.Image == Resource1.commercial)
                     {
                         SharedData.coins += 1;
-                        lblCoins.Text = "Coin " + SharedData.coins.ToString();
+                        coins += 1;
+                        lblCoins.Text = "Coin " + SharedData.coins;
                     }
-                    else { point += 0; SharedData.coins += 0; }
+                    else { SharedData.point += 0; SharedData.coins += 0; }
                 }
-                else if (SharedData.building == "Road")
+                else if (SharedData.CurrentOption == "Road")
                 {
 
                     if (rightPic.Image == Resource1.Road)
                     {
-                        point += 1;
-                        
+                        SharedData.point += 1;
+                        lblPoint.Text = "Point " + SharedData.point ;
+
                     }
                     else if (leftPic.Image == Resource1.Road)
                     {
-                        point += 1;
+                        SharedData.point += 1;
+                        lblPoint.Text = "Point " + SharedData.point;
                     }
-                    else { point += 0; }
+                    else { SharedData.point += 0; }
                 }
-                else if(SharedData.building=="Park") 
+                else if (SharedData.CurrentOption == "Park")
                 {
                     if (topPic.Image == Resource1.residential)
                     {
-                        point += 2;
+                        SharedData.point += 2;
+                        lblPoint.Text = "Point " + SharedData.point ;
                     }
                     else if (rightPic.Image == Resource1.residential)
                     {
-                        point += 2;
+                        SharedData.point += 2;
+                        lblPoint.Text = "Point " + SharedData.point;
                     }
                     else if (leftPic.Image == Resource1.residential)
                     {
-                        point += 2;
+                        SharedData.point += 2;
+                        lblPoint.Text = "Point " + SharedData.point;
                     }
                     else if (bottomPic.Image == Resource1.residential)
                     {
-                        point += 2;
+                        SharedData.point += 2;
+                        lblPoint.Text = "Point " + SharedData.point;
                     }
-                    else { point += 1; }
+                    else { SharedData.point += 1; }
                 }
                 /*if(SharedData.building == "Industry" || SharedData.building== "Residential")
                 {
@@ -353,9 +371,10 @@ namespace assignment1
                         lblCoins.Text = "Coin " + SharedData.coins.ToString();
                     }
 
-                }*/
-            }
+                }
+            }*/
 
+            }
         }
 
         /*if (i > 2)
@@ -384,10 +403,172 @@ namespace assignment1
 
             }
         }*/
-    
-        private void coinsystem()
-        {
 
+        private void UpdateForIndustry(PictureBox topPic, PictureBox bottomPic, PictureBox rightPic, PictureBox leftPic)
+        {
+            if (topPic != null && topPic.Image == Resource1.residential ||
+                bottomPic != null && bottomPic.Image == Resource1.residential ||
+                rightPic != null && rightPic.Image == Resource1.residential ||
+                leftPic != null && leftPic.Image == Resource1.residential)
+            {
+                SharedData.coins += 1;
+                lblCoins.Text = "Coin " + SharedData.coins;
+            }
+        }
+
+        private void UpdateForCommercial(PictureBox topPic, PictureBox bottomPic, PictureBox rightPic, PictureBox leftPic)
+        {
+            if (topPic != null && topPic.Image == Resource1.residential ||
+                bottomPic != null && bottomPic.Image == Resource1.residential ||
+                rightPic != null && rightPic.Image == Resource1.residential ||
+                leftPic != null && leftPic.Image == Resource1.residential)
+            {
+                SharedData.coins += 1;
+                lblCoins.Text = "Coin " + SharedData.coins  ;
+            }
+        }
+
+        private void UpdateForResidential(PictureBox topPic, PictureBox bottomPic, PictureBox rightPic, PictureBox leftPic)
+        {
+            if (topPic != null && topPic.Image == Resource1.park ||
+                bottomPic != null && bottomPic.Image == Resource1.park ||
+                rightPic != null && rightPic.Image == Resource1.park ||
+                leftPic != null && leftPic.Image == Resource1.park)
+            {
+                SharedData.point += 2;
+                lblPoint.Text = "Point " + SharedData.point;
+            }
+
+            if (topPic != null && topPic.Image == Resource1.industry ||
+                bottomPic != null && bottomPic.Image == Resource1.industry ||
+                rightPic != null && rightPic.Image == Resource1.industry ||
+                leftPic != null && leftPic.Image == Resource1.industry ||
+                topPic != null && topPic.Image == Resource1.commercial ||
+                bottomPic != null && bottomPic.Image == Resource1.commercial ||
+                rightPic != null && rightPic.Image == Resource1.commercial ||
+                leftPic != null && leftPic.Image == Resource1.commercial)
+            {
+                SharedData.coins += 1;
+                lblCoins.Text = "Coin " + SharedData.coins;
+            }
+        }
+
+        private void UpdateForRoad(PictureBox rightPic, PictureBox leftPic)
+        {
+            if (rightPic != null && rightPic.Image == Resource1.Road ||
+                leftPic != null && leftPic.Image == Resource1.Road)
+            {
+                SharedData.point += 1;
+                lblPoint.Text = "Point " + SharedData.point ;
+            }
+        }
+
+        private void UpdatePictureBoxes()
+        {
+            // Update labels
+            lblPoint.Text = "Point " + SharedData.point;
+            lblCoins.Text = "Coin " + SharedData.coins;
+
+            // Perform some action if the flag is true
+            if (flag)
+            {
+                // Example action: increment x and update label2
+                i++;
+                lblTurn.Text = "Turn " + i.ToString();
+                SharedData.turn = i;
+                // Reset the flag
+                flag = false;
+            }
+
+            if (!string.IsNullOrEmpty(SharedData.CurrentOption))
+            {
+                string row = SharedData.Row;
+                string column = SharedData.Column   ;
+                string id = "X" + row + "Y" + column;
+                PictureBox pictureBox = FindPictureBoxById(id);
+
+                if (pictureBox != null)
+                {
+                    if (pictureBox.Image == null)
+                    {
+                        // PictureBox found, perform actions
+                        SetBuildingImage(pictureBox);
+                    }
+                    else
+                    {
+                        MessageBox.Show("This PictureBox already has an image.",
+                                        "Warning",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Warning);
+                        SharedData.Row = SharedData.TempRow;
+                        SharedData.Column = SharedData.TempColumn;
+                        SharedData.point -= 1;
+                        pickAlt pickAlt = new pickAlt();
+                        pickAlt.Show();
+                        flag = false;
+                        //return;
+                    }
+                }
+                else
+                {
+                    // PictureBox not found with the specified ID
+                    MessageBox.Show($"PictureBox with ID {id} not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //return;
+                }
+
+                // Determine neighboring PictureBox IDs
+                int x = Convert.ToInt32(row);
+                int y = Convert.ToInt32(column);
+                string top = "X" + (x + 1) + "Y" + y;
+                string bottom = "X" + (x - 1) + "Y" + y;
+                string right = "X" + x + "Y" + (y + 1);
+                string left = "X" + x + "Y" + (y - 1);
+
+                PictureBox topPic = FindPictureBoxById(top);
+                PictureBox bottomPic = FindPictureBoxById(bottom);
+                PictureBox rightPic = FindPictureBoxById(right);
+                PictureBox leftPic = FindPictureBoxById(left);
+
+                // Update points and coins based on current option
+                switch (SharedData.CurrentOption)
+                {
+                    case "Industry":
+                        UpdateForIndustry(topPic, bottomPic, rightPic, leftPic);
+                        break;
+                    case "Commercial":
+                        UpdateForCommercial(topPic, bottomPic, rightPic, leftPic);
+                        break;
+                    case "Residential":
+                        UpdateForResidential(topPic, bottomPic, rightPic, leftPic);
+                        break;
+                    case "Road":
+                        UpdateForRoad(rightPic, leftPic);
+                        break;
+                    case "Park":
+                        UpdateForPark(topPic, bottomPic, rightPic, leftPic);
+                        break;
+                    default:
+                        MessageBox.Show("Invalid option selected.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        break;
+                }
+            }
+        }
+
+        private void UpdateForPark(PictureBox topPic, PictureBox bottomPic, PictureBox rightPic, PictureBox leftPic)
+        {
+            if (topPic != null && topPic.Image == Resource1.residential ||
+                bottomPic != null && bottomPic.Image == Resource1.residential ||
+                rightPic != null && rightPic.Image == Resource1.residential ||
+                leftPic != null && leftPic.Image == Resource1.residential)
+            {
+                SharedData.point += 2;
+                lblPoint.Text = "Point " + SharedData.point;
+            }
+            else
+            {
+                SharedData.point += 1;
+                lblPoint.Text = "Point " + SharedData.point;
+            }
         }
         private void SetBuildingImage(PictureBox pictureBox)
         {
@@ -397,35 +578,36 @@ namespace assignment1
                 pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                 //pictureBox.Image = Image.FromFile(imagePath);
                 pictureBox.Image = Resource1.Road;
-                pictureBox.Tag = imagePath;
+                pictureBox.Tag ="Road";
             }
             else if (SharedData.building == "Park")
             {
                 string imagePath = @"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\park.png";
                 pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureBox.Image = Image.FromFile(imagePath);
-                pictureBox.Tag = imagePath;
+                //pictureBox.Image = Image.FromFile(imagePath);
+                pictureBox.Image= Resource1.park;
+                pictureBox.Tag ="park";
             }
             else if (SharedData.building == "Commercial")
             {
                 string imagePath = @"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\commercial.png";
                 pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureBox.Image = Image.FromFile(imagePath);
-                pictureBox.Tag = imagePath;
+                pictureBox.Image = Resource1.commercial;
+                pictureBox.Tag = "commercial";
             }
             else if (SharedData.building == "Industry")
             {
                 string imagePath = @"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\industry.png";
                 pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureBox.Image = Image.FromFile(imagePath);
-                pictureBox.Tag = imagePath;
+                pictureBox.Image = Resource1.industry;
+                pictureBox.Tag = "industry";
             }
             else if (SharedData.building == "Residential")
             {
                 string imagePath = @"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\residential.png";
                 pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureBox.Image = Image.FromFile(imagePath);
-                pictureBox.Tag = imagePath;
+                pictureBox.Image = Resource1.residential;
+                pictureBox.Tag = "residential";
             }
             else
             {
@@ -519,8 +701,53 @@ namespace assignment1
             public string ImageSource { get; set; }
         }
 
+        private void changeplaceBtn_Click(object sender, EventArgs e)
+        {
+            //issue wrong place 
+            pickAlt pickAlt = new pickAlt();
+            pickAlt.Show();
+        }
 
+        private void Demolish_Click(object sender, EventArgs e)
+        {
+            Q4 q4 = new Q4();
+            q4.Show();
+            string row;
+            string column;
+            row = SharedData.Dx;
 
+            column = SharedData.Dy;
+            string id = "X" + row + "Y" + column;
+            PictureBox pictureBox = FindPictureBoxById(id);
 
+            if (pictureBox != null)
+            {
+                if (pictureBox.Image != null)
+                {
+                    //pictureBox.Image = Resource1.White;
+                    // Dispose of the current image to free up resources
+                    pictureBox.Image.Dispose();
+                   pictureBox.Image = null; // Clear the reference to the disposed image
+                }
+                else
+                {
+                    MessageBox.Show("This PictureBox already has an image.",
+                                    "Warning",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Warning);
+                   
+                    SharedData.point -= 1;
+                   
+                   
+                }
+            }
+            else
+            {
+                // PictureBox not found with the specified ID
+                //MessageBox.Show($"PictureBox with ID {id} not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
+            }
+
+        }
     }
 }
