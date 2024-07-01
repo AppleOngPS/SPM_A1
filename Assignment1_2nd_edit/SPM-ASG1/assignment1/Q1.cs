@@ -71,6 +71,7 @@ namespace assignment1
             else
             {
                 SharedData.point += 1;
+                //SharedData.coins += 1;
                 SharedData.PreviousOption = SharedData.building;
                 SharedData.building = button2.Text;
                 SharedData.CurrentOption = SharedData.building;

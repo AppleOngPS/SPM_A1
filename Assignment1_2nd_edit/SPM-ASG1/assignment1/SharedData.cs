@@ -22,7 +22,7 @@ namespace assignment1
         public static string Column { get; set; }
         public static string Row { get; set; }
         public static int turn { get; set; }
-        public static int coins { get; set; }
+        public static int coins { get; set; } = 16;
         public static int point { get; set; } = 0;
 
         public static string Version { get; set; }
