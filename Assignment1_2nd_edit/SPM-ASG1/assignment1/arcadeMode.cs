@@ -703,9 +703,8 @@ namespace assignment1
 
         private void changeplaceBtn_Click(object sender, EventArgs e)
         {
-            //issue wrong place 
-            pickAlt pickAlt = new pickAlt();
-            pickAlt.Show();
+            Q2 q2 = new Q2();
+            q2.Show();
         }
 
         private void Demolish_Click(object sender, EventArgs e)
