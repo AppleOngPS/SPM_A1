@@ -21,12 +21,14 @@ namespace assignment1
         {
             gameInstructionForArcadeMode gameInstructionForArcadeMode = new gameInstructionForArcadeMode();
             gameInstructionForArcadeMode.Show();
+            this.Close()
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             gameInstructionForFreePlay gameInstructionForFreePlay = new gameInstructionForFreePlay();
             gameInstructionForFreePlay.Show();
+            this.Close()
         }
     }
 }
