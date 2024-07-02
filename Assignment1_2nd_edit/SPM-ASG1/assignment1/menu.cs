@@ -45,9 +45,11 @@ namespace assignment1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            SharedData.TFlag=true;  
             freeGameMode freeGameMode = new freeGameMode();
             freeGameMode.Show();
             this.Hide();
+            
         }
 
         private void button1_Click_2(object sender, EventArgs e)

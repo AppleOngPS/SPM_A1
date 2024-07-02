@@ -30,5 +30,10 @@ namespace assignment1
         public static string Version { get; set; }
         public static int x { get; set; }
         public static int y { get; set; }
+
+        public static bool TFlag { get; set; }
+
+        public static bool TFlag2 { get; set; }
+        public static bool TFlag3 { get; set; }
     }
 }

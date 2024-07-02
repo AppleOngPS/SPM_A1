@@ -86,6 +86,24 @@
     <Compile Include="displayHighScore.Designer.cs">
       <DependentUpon>displayHighScore.cs</DependentUpon>
     </Compile>
+    <Compile Include="FQ1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQ1.Designer.cs">
+      <DependentUpon>FQ1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FQ2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQ2.Designer.cs">
+      <DependentUpon>FQ2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FQ3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQ3.Designer.cs">
+      <DependentUpon>FQ3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Loadpage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +197,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="displayHighScore.resx">
       <DependentUpon>displayHighScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQ1.resx">
+      <DependentUpon>FQ1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQ2.resx">
+      <DependentUpon>FQ2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQ3.resx">
+      <DependentUpon>FQ3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="freeGameMode.resx">
       <DependentUpon>freeGameMode.cs</DependentUpon>

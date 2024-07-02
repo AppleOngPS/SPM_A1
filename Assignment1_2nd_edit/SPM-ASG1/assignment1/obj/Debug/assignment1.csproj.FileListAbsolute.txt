@@ -148,3 +148,6 @@ C:\NP.2\SPM\www\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.
 C:\NP.2\SPM\www\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.pdb
 C:\NP.2\SPM\www\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.Q4.resources
 C:\NP.2\SPM\www\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.ChooseMode.resources
+C:\NP.2\SPM\www\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.FQ1.resources
+C:\NP.2\SPM\www\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.FQ2.resources
+C:\NP.2\SPM\www\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.FQ3.resources

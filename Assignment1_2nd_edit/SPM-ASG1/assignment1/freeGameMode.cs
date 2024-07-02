@@ -2,19 +2,30 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static assignment1.arcadeMode;
 
 namespace assignment1
 {
     public partial class freeGameMode : Form
     {
+        int i = 1;
+        int coins = 16;
+        int point =0;
+        bool flag = false;
+        bool dflag=false;
         public freeGameMode()
         {
             InitializeComponent();
+            lblTurn.Text = "Turn " + i;
+            SharedData.turn = i;
+            lblCoins.Text = "Coin oo";
+            lblPoint.Text = "Point " + point;
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -50,5 +61,275 @@ namespace assignment1
             gameInstructionForFreePlay.Show();
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void start_Click(object sender, EventArgs e)
+        {
+            // Set the flag to true when the End Turn button is clicked
+            flag = true;
+
+            Q1 q1 = new Q1();
+            q1.Show();
+            this.Refresh();
+        }
+
+        private void Demolish_Click(object sender, EventArgs e)
+        {
+            if (dflag == true)
+            {
+                Q4 q4 = new Q4();
+                q4.Show();
+
+                string row;
+                string column;
+                row = SharedData.Dx;
+
+                column = SharedData.Dy;
+                string id = "X" + row + "Y" + column;
+                PictureBox pictureBox = FindPictureBoxById(id);
+
+                if (pictureBox != null)
+                {
+                    if (pictureBox.Image != null)
+                    {
+                        //pictureBox.Image = Resource1.White;
+                        // Dispose of the current image to free up resources
+                        pictureBox.Image.Dispose();
+                        pictureBox.Image = null; // Clear the reference to the disposed image
+                    }
+                    else
+                    {
+                        MessageBox.Show("This PictureBox already has an image.",
+                                        "Warning",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Warning);
+
+                        SharedData.point -= 1;
+
+
+                    }
+                }
+                else
+                {
+                    // PictureBox not found with the specified ID
+                    //MessageBox.Show($"PictureBox with ID {id} not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+            }
+        }
+
+        private void changeplaceBtn_Click(object sender, EventArgs e)
+        {
+            Q2 q2 = new Q2();
+            q2.Show();
+        }
+
+        private void EndTurn_Click(object sender, EventArgs e)
+        {
+            lblPoint.Text = "Point " + point;
+            dflag = true;
+
+            // Perform some action if the flag is true
+            if (flag == true)
+            {
+                // Example action: increment x and update label2
+                i++;
+                lblTurn.Text = "Turn " + i;
+                SharedData.turn = i;
+                // Reset the flag if needed
+                flag = false;
+            }
+            if (!string.IsNullOrEmpty(SharedData.CurrentOption))
+            {
+                string row;
+                string column;
+                row = SharedData.Row;
+
+                column = SharedData.Column;
+                string id = "X" + row + "Y" + column;
+                PictureBox pictureBox = FindPictureBoxById(id);
+                if (pictureBox != null)
+                {
+                    if (pictureBox.Image == null)
+                    {
+                        // PictureBox found, perform actions
+                        SetBuildingImage(pictureBox);
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("This PictureBox already has an image.",
+                                                              "Warning",
+                                                              MessageBoxButtons.OK,
+                                                              MessageBoxIcon.Warning);
+                        SharedData.Row = SharedData.TempRow;
+                        SharedData.Column = SharedData.TempColumn;
+                        point -= 1;
+                        pickAlt pickAlt = new pickAlt();
+                        pickAlt.Show();
+                        flag = false;
+                    }
+                }
+                else
+                {
+                    // PictureBox not found with the specified ID
+                    MessageBox.Show($"PictureBox with ID {id} not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+
+                SharedData.TFlag2 = CheckPictureBoxesInSection(tableLayoutPanel1, 0, 0, 4, 4);
+                SharedData.TFlag3 = CheckPictureBoxesInSection(tableLayoutPanel1, 5,5 , 9, 9);
+
+
+            }
+        }
+
+
+        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\NP.2\\SPM\\www\\Assignment1_2nd_edit\\SPM-ASG1\\assignment1\\Database1.mdf;Integrated Security=True");
+        private void Save_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "Select * From [dbo].[Table] WHERE name='" + SharedData.Data + "'";
+            cmd.ExecuteNonQuery();
+
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            con.Close();
+            List<PictureBoxInfo> pictureBoxInfos = GetAllPictureBoxInfos();
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                if (dt.Rows[i][1].ToString() == SharedData.Data)
+                {
+                    con.Open();
+                    SqlCommand cmd3 = con.CreateCommand();
+                    cmd3.CommandType = CommandType.Text;
+                    cmd3.CommandText = "INSERT INTO [dbo].[SaveSystem] (Point,Coin,Turn,Version) VALUES ('" + SharedData.point + "','" + SharedData.coins + "','" + SharedData.turn + "','" + SharedData.Version + "')";
+                    cmd3.ExecuteNonQuery();
+                    con.Close();
+                    con.Open();
+                    foreach (var info in pictureBoxInfos)
+                    {
+                        using (SqlCommand cmd2 = new SqlCommand("INSERT INTO [dbo].[SaveData] (SId,XY,Building,Version) VALUES ('" + dt.Rows[i][0] + "','" + info.ID + "','" + info.ImageSource + "','" + SharedData.Version + "')", con))
+                        {
+
+
+                            try
+                            {
+                                cmd2.ExecuteNonQuery();
+
+                            }
+                            catch (SqlException ex)
+                            {
+                                MessageBox.Show("Error inserting data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+
+                        }
+                    }
+                    con.Close();
+                    MessageBox.Show("Successfully Save", "Success", MessageBoxButtons.OK);
+                }
+            }
+        }
+
+
+        public PictureBox FindPictureBoxById(string id)
+        {
+            foreach (Control control in tableLayoutPanel1.Controls)
+            {
+                if (control is PictureBox pictureBox && pictureBox.Name == id)
+                {
+                    return pictureBox;
+                }
+            }
+            return null; // PictureBox with specified ID not found
+        }
+
+        private void SetBuildingImage(PictureBox pictureBox)
+        {
+            if (SharedData.building == "Road")
+            {
+                string imagePath = @"C:\Users\ongap\OneDrive\Desktop\NP\SPM\10th edit\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\Road.png";
+                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                //pictureBox.Image = Image.FromFile(imagePath);
+                pictureBox.Image = Resource1.Road;
+                pictureBox.Tag = "Road";
+            }
+            else if (SharedData.building == "Park")
+            {
+                string imagePath = @"C:\Users\ongap\OneDrive\Desktop\NP\SPM\10th edit\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\park.png";
+                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                //pictureBox.Image = Image.FromFile(imagePath);
+                pictureBox.Image = Resource1.park;
+                pictureBox.Tag = "park";
+            }
+            else if (SharedData.building == "Commercial")
+            {
+                string imagePath = @"C:\Users\ongap\OneDrive\Desktop\NP\SPM\10th edit\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\commercial.png";
+                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox.Image = Resource1.commercial;
+                pictureBox.Tag = "commercial";
+            }
+            else if (SharedData.building == "Industry")
+            {
+                string imagePath = @"C:\Users\ongap\OneDrive\Desktop\NP\SPM\10th edit\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\industry.png";
+                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox.Image = Resource1.industry;
+                pictureBox.Tag = "industry";
+            }
+            else if (SharedData.building == "Residential")
+            {
+                string imagePath = @"C:\Users\ongap\OneDrive\Desktop\NP\SPM\10th edit\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\residential.png";
+                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox.Image = Resource1.residential;
+                pictureBox.Tag = "residential";
+            }
+            else
+            {
+                MessageBox.Show("Invalid building type.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private List<PictureBoxInfo> GetAllPictureBoxInfos()
+        {
+            List<PictureBoxInfo> pictureBoxInfos = new List<PictureBoxInfo>();
+
+            foreach (Control control in tableLayoutPanel1.Controls)
+            {
+                if (control is PictureBox pictureBox && !string.IsNullOrEmpty(pictureBox.Name) && pictureBox.Image != null)
+                {
+                    PictureBoxInfo info = new PictureBoxInfo
+                    {
+                        ID = pictureBox.Name,
+                        ImageSource = pictureBox.Tag as string // Store the image source (file path or resource name)
+                    };
+                    pictureBoxInfos.Add(info);
+                }
+            }
+            return pictureBoxInfos;
+        }
+
+
+        private bool CheckPictureBoxesInSection(TableLayoutPanel tableLayoutPanel, int startRow, int startColumn, int rowCount, int columnCount)
+        {
+            for (int row = startRow; row < startRow + rowCount; row++)
+            {
+                for (int column = startColumn; column < startColumn + columnCount; column++)
+                {
+                    Control control = tableLayoutPanel.GetControlFromPosition(column, row);
+                    if (control is PictureBox pictureBox && pictureBox.Image == null)
+                    {
+                        return false; // At least one PictureBox in the section does not have an image
+                    }
+                }
+            }
+            return true; // All PictureBox controls in the section have images
+        }
+
     }
 }

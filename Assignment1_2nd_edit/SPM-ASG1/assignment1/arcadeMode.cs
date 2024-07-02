@@ -97,7 +97,7 @@ namespace assignment1
         {
             // UpdatePictureBoxes();
             lblPoint.Text = "Point " + point;
-            //lblCoins.Text = "Coin " + coins;
+            lblCoins.Text = "Coin " + coins;
             
             // Perform some action if the flag is true
             if (flag == true)
