@@ -57,7 +57,7 @@
             // 
             this.button2.Location = new System.Drawing.Point(379, 225);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(197, 68);
+            this.button2.Size = new System.Drawing.Size(184, 68);
             this.button2.TabIndex = 2;
             this.button2.Text = "Free Game Mode";
             this.button2.UseVisualStyleBackColor = true;
