@@ -52,7 +52,9 @@ namespace assignment1
 
         private void button1_Click_2(object sender, EventArgs e)
         {
-
+            Loadpage loadpage = new Loadpage();
+            loadpage.Show();
+            this.Close();
         }
 
         private void button1_Click_3(object sender, EventArgs e)

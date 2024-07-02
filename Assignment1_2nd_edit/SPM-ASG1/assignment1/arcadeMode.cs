@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
@@ -27,7 +28,7 @@ namespace assignment1
         {
             InitializeComponent();
             lblTurn.Text = "Turn " + i;
-           // SharedData.turn = i;
+            SharedData.turn = i;
             
             lblCoins.Text = "Coin " + coins;
             lblPoint.Text = "Point " + point;
@@ -68,6 +69,7 @@ namespace assignment1
             {
                 if (dt.Rows[i][1].ToString() == SharedData.Data)
                 {
+                    
                     PictureBox pictureBox = FindPictureBoxById(dt.Rows[i][2].ToString());
                     if (pictureBox != null)
                     {
@@ -95,14 +97,14 @@ namespace assignment1
         {
             // UpdatePictureBoxes();
             lblPoint.Text = "Point " + point;
-            lblCoins.Text = "Coin " + coins;
-            lblTurn.Text = SharedData.CurrentOption;
+            //lblCoins.Text = "Coin " + coins;
+            
             // Perform some action if the flag is true
             if (flag == true)
             {
                 // Example action: increment x and update label2
                 i++;
-                //lblTurn.Text = "Turn " + i;
+                lblTurn.Text = "Turn " + i;
                 SharedData.turn = i;
                 // Reset the flag if needed
                 flag = false;
@@ -132,7 +134,7 @@ namespace assignment1
                                                               MessageBoxIcon.Warning);
                         SharedData.Row = SharedData.TempRow;
                         SharedData.Column = SharedData.TempColumn;
-                       // point -= 1;
+                        point -= 1;
                         pickAlt pickAlt = new pickAlt();
                         pickAlt.Show();
                         flag = false;
@@ -153,13 +155,45 @@ namespace assignment1
                 PictureBox bottomPic = FindPictureBoxById(bottom);
                 PictureBox rightPic = FindPictureBoxById(right);
                 PictureBox leftPic = FindPictureBoxById(left);
-                if (SharedData.CurrentOption == "Industry" || SharedData.CurrentOption == "Commercial")
+                
+                if (SharedData.CurrentOption == "Industry")
                 {
                     if (topPic.Tag == "residential" || rightPic.Tag == "residential" || leftPic.Tag == "residential" || bottomPic.Tag == "residential")
                     {
                         coins += 1;
+                        point += 1;
                         lblCoins.Text = "Coin " + coins;
+                        lblPoint.Text = "Point " + point;
+
                     }
+                    else if (topPic.Tag == "industry" || rightPic.Tag == "industry" || leftPic.Tag == "industry" || bottomPic.Tag == "industry")
+                    {
+                        point += 1;
+                        lblPoint.Text = "Point " + point;
+
+                    }
+
+
+                }
+                else if (SharedData.CurrentOption == "Commercial")
+                {
+
+                    if (topPic.Tag == "commercial" || rightPic.Tag == "commercial" || leftPic.Tag == "commercial" || bottomPic.Tag == "commercial")
+                    {
+                        point += 1;
+                        lblPoint.Text = "Point " + point;
+
+
+                    }
+                    else if (topPic.Tag == "residential" || rightPic.Tag == "residential" || leftPic.Tag == "residential" || bottomPic.Tag == "residential")
+                    {
+                        coins += 1;
+                        point += 1;
+                        lblCoins.Text = "Coin " + coins;
+                        lblPoint.Text = "Point " + point;
+
+                    }
+
                 }
                 else if (SharedData.CurrentOption == "Residential")
                 {
@@ -167,13 +201,24 @@ namespace assignment1
                     {
                         point += 2;
                         lblPoint.Text = "Point " + point;
+
                     }
                     else if (topPic.Tag == "industry" || rightPic.Tag == "industry" || leftPic.Tag == "industry" || bottomPic.Tag == "industry" ||
                              topPic.Tag == "commercial" || rightPic.Tag == "commercial" || leftPic.Tag == "commercial" || bottomPic.Tag == "commercial")
                     {
                         coins += 1;
+                        point += 1;
                         lblCoins.Text = "Coin " + coins;
+                        lblPoint.Text = "Point " + point;
+
                     }
+                    else if (topPic.Tag == "residential" || rightPic.Tag == "residential" || leftPic.Tag == "residential" || bottomPic.Tag == "residential")
+                    {
+                        point += 1;
+                        lblPoint.Text = "Point " + point;
+
+                    }
+
                 }
                 else if (SharedData.CurrentOption == "Road")
                 {
@@ -181,7 +226,9 @@ namespace assignment1
                     {
                         point += 1;
                         lblPoint.Text = "Point " + point;
+
                     }
+
                 }
                 else if (SharedData.CurrentOption == "Park")
                 {
@@ -189,7 +236,15 @@ namespace assignment1
                     {
                         point += 2;
                         lblPoint.Text = "Point " + point;
+
                     }
+                    else if (topPic.Tag == "park" || rightPic.Tag == "park" || leftPic.Tag == "park" || bottomPic.Tag == "park")
+                    {
+                        point += 1;
+                        lblPoint.Text = "Point " + point;
+
+                    }
+
                 }
                 /*if (SharedData.CurrentOption == "Industry")
                 {
@@ -442,6 +497,7 @@ namespace assignment1
 
             }
         }*/
+       
         private void SetBuildingImage(PictureBox pictureBox)
         {
             if (SharedData.building == "Road")
@@ -497,7 +553,7 @@ namespace assignment1
            this.Refresh();
         }
 
-        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\ongap\\OneDrive\\Desktop\\NP\\SPM\\10th edit\\Assignment1_2nd_edit\\SPM-ASG1\\assignment1\\Database1.mdf\";Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\NP.2\\SPM\\www\\Assignment1_2nd_edit\\SPM-ASG1\\assignment1\\Database1.mdf;Integrated Security=True");
         private void Save_Click(object sender, EventArgs e)
         {
             SharedData.coins = coins;
