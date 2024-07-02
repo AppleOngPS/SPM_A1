@@ -69,6 +69,12 @@
     <Compile Include="arcadeMode.Designer.cs">
       <DependentUpon>arcadeMode.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChooseMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseMode.Designer.cs">
+      <DependentUpon>ChooseMode.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database1DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -167,6 +173,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="arcadeMode.resx">
       <DependentUpon>arcadeMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseMode.resx">
+      <DependentUpon>ChooseMode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="displayHighScore.resx">
       <DependentUpon>displayHighScore.cs</DependentUpon>

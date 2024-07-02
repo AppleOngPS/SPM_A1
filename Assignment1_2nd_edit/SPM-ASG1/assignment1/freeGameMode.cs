@@ -36,5 +36,19 @@ namespace assignment1
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            menu menu = new menu();
+            menu.Show();
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            gameInstructionForFreePlay gameInstructionForFreePlay = new gameInstructionForFreePlay();
+            gameInstructionForFreePlay.Show();
+
+        }
     }
 }

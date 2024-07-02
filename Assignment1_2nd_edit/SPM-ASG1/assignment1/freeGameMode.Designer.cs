@@ -30,7 +30,6 @@
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.nav = new System.Windows.Forms.Panel();
             this.X1Y1 = new System.Windows.Forms.PictureBox();
             this.X1Y2 = new System.Windows.Forms.PictureBox();
             this.X1Y3 = new System.Windows.Forms.PictureBox();
@@ -137,8 +136,8 @@
             this.X8Y3 = new System.Windows.Forms.PictureBox();
             this.X9Y3 = new System.Windows.Forms.PictureBox();
             this.X10Y3 = new System.Windows.Forms.PictureBox();
-            this.X11Y3 = new System.Windows.Forms.PictureBox();
             this.X12Y3 = new System.Windows.Forms.PictureBox();
+            this.X11Y3 = new System.Windows.Forms.PictureBox();
             this.X7Y4 = new System.Windows.Forms.PictureBox();
             this.X8Y4 = new System.Windows.Forms.PictureBox();
             this.X9Y4 = new System.Windows.Forms.PictureBox();
@@ -158,8 +157,6 @@
             this.X11Y6 = new System.Windows.Forms.PictureBox();
             this.X12Y6 = new System.Windows.Forms.PictureBox();
             this.X7Y7 = new System.Windows.Forms.PictureBox();
-            this.X7Y8 = new System.Windows.Forms.PictureBox();
-            this.X7Y9 = new System.Windows.Forms.PictureBox();
             this.X8Y7 = new System.Windows.Forms.PictureBox();
             this.X8Y8 = new System.Windows.Forms.PictureBox();
             this.X8Y9 = new System.Windows.Forms.PictureBox();
@@ -168,13 +165,15 @@
             this.X9Y9 = new System.Windows.Forms.PictureBox();
             this.X10Y7 = new System.Windows.Forms.PictureBox();
             this.X10Y8 = new System.Windows.Forms.PictureBox();
-            this.X10Y9 = new System.Windows.Forms.PictureBox();
             this.X11Y7 = new System.Windows.Forms.PictureBox();
             this.X11Y8 = new System.Windows.Forms.PictureBox();
             this.X11Y9 = new System.Windows.Forms.PictureBox();
             this.X12Y7 = new System.Windows.Forms.PictureBox();
             this.X12Y8 = new System.Windows.Forms.PictureBox();
             this.X12Y9 = new System.Windows.Forms.PictureBox();
+            this.X7Y9 = new System.Windows.Forms.PictureBox();
+            this.X7Y8 = new System.Windows.Forms.PictureBox();
+            this.X10Y9 = new System.Windows.Forms.PictureBox();
             this.X7Y10 = new System.Windows.Forms.PictureBox();
             this.X7Y11 = new System.Windows.Forms.PictureBox();
             this.X8Y10 = new System.Windows.Forms.PictureBox();
@@ -220,7 +219,6 @@
             this.X13Y7 = new System.Windows.Forms.PictureBox();
             this.X13Y8 = new System.Windows.Forms.PictureBox();
             this.X13Y9 = new System.Windows.Forms.PictureBox();
-            this.X15Y1 = new System.Windows.Forms.PictureBox();
             this.X14Y2 = new System.Windows.Forms.PictureBox();
             this.X14Y3 = new System.Windows.Forms.PictureBox();
             this.X14Y4 = new System.Windows.Forms.PictureBox();
@@ -229,15 +227,16 @@
             this.X14Y7 = new System.Windows.Forms.PictureBox();
             this.X14Y8 = new System.Windows.Forms.PictureBox();
             this.X14Y9 = new System.Windows.Forms.PictureBox();
-            this.X14Y1 = new System.Windows.Forms.PictureBox();
             this.X15Y2 = new System.Windows.Forms.PictureBox();
             this.X15Y3 = new System.Windows.Forms.PictureBox();
             this.X15Y4 = new System.Windows.Forms.PictureBox();
             this.X15Y5 = new System.Windows.Forms.PictureBox();
             this.X15Y6 = new System.Windows.Forms.PictureBox();
             this.X15Y7 = new System.Windows.Forms.PictureBox();
-            this.X15Y8 = new System.Windows.Forms.PictureBox();
             this.X15Y9 = new System.Windows.Forms.PictureBox();
+            this.X14Y1 = new System.Windows.Forms.PictureBox();
+            this.X15Y1 = new System.Windows.Forms.PictureBox();
+            this.X15Y8 = new System.Windows.Forms.PictureBox();
             this.X13Y10 = new System.Windows.Forms.PictureBox();
             this.X13Y11 = new System.Windows.Forms.PictureBox();
             this.X13Y12 = new System.Windows.Forms.PictureBox();
@@ -248,18 +247,19 @@
             this.X14Y11 = new System.Windows.Forms.PictureBox();
             this.X14Y12 = new System.Windows.Forms.PictureBox();
             this.X14Y13 = new System.Windows.Forms.PictureBox();
-            this.X14Y14 = new System.Windows.Forms.PictureBox();
             this.X14Y15 = new System.Windows.Forms.PictureBox();
             this.X15Y10 = new System.Windows.Forms.PictureBox();
             this.X15Y11 = new System.Windows.Forms.PictureBox();
             this.X15Y12 = new System.Windows.Forms.PictureBox();
             this.X15Y13 = new System.Windows.Forms.PictureBox();
             this.X15Y14 = new System.Windows.Forms.PictureBox();
+            this.X14Y14 = new System.Windows.Forms.PictureBox();
             this.X15Y15 = new System.Windows.Forms.PictureBox();
+            this.nav = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.nav.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y3)).BeginInit();
@@ -366,8 +366,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.X8Y3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X9Y3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X10Y3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.X11Y3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X12Y3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X11Y3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X7Y4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X8Y4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X9Y4)).BeginInit();
@@ -387,8 +387,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.X11Y6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X12Y6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X7Y7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.X7Y8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.X7Y9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X8Y7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X8Y8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X8Y9)).BeginInit();
@@ -397,13 +395,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.X9Y9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X10Y7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X10Y8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.X10Y9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X11Y7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X11Y8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X11Y9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X12Y7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X12Y8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X12Y9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X7Y9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X7Y8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X10Y9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X7Y10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X7Y11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X8Y10)).BeginInit();
@@ -449,7 +449,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.X13Y7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X13Y8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X13Y9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.X15Y1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X14Y2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X14Y3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X14Y4)).BeginInit();
@@ -458,15 +457,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.X14Y7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X14Y8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X14Y9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.X14Y1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.X15Y8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X14Y1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X15Y1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X15Y8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X13Y10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X13Y11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X13Y12)).BeginInit();
@@ -477,14 +477,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.X14Y11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X14Y12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X14Y13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.X14Y14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X14Y15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X14Y14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y15)).BeginInit();
+            this.nav.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -492,11 +493,12 @@
             // 
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.AutoSize = true;
+            this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(18, 73);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(47, 94);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1435, 1046);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1413, 977);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -518,7 +520,6 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
-            this.tableLayoutPanel1.Controls.Add(this.X1Y1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.X1Y2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.X1Y3, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.X1Y4, 3, 0);
@@ -743,6 +744,7 @@
             this.tableLayoutPanel1.Controls.Add(this.X15Y14, 13, 14);
             this.tableLayoutPanel1.Controls.Add(this.X14Y14, 14, 14);
             this.tableLayoutPanel1.Controls.Add(this.X15Y15, 13, 13);
+            this.tableLayoutPanel1.Controls.Add(this.X1Y1, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 5);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -766,18 +768,11 @@
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
-            // nav
-            // 
-            this.nav.Controls.Add(this.pictureBox1);
-            this.nav.Dock = System.Windows.Forms.DockStyle.Right;
-            this.nav.Location = new System.Drawing.Point(1490, 0);
-            this.nav.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.nav.Name = "nav";
-            this.nav.Size = new System.Drawing.Size(190, 1198);
-            this.nav.TabIndex = 1;
-            // 
             // X1Y1
             // 
+            this.X1Y1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.X1Y1.Location = new System.Drawing.Point(3, 3);
             this.X1Y1.Name = "X1Y1";
             this.X1Y1.Size = new System.Drawing.Size(144, 144);
@@ -1625,14 +1620,6 @@
             this.X10Y3.TabIndex = 108;
             this.X10Y3.TabStop = false;
             // 
-            // X11Y3
-            // 
-            this.X11Y3.Location = new System.Drawing.Point(303, 1503);
-            this.X11Y3.Name = "X11Y3";
-            this.X11Y3.Size = new System.Drawing.Size(144, 144);
-            this.X11Y3.TabIndex = 109;
-            this.X11Y3.TabStop = false;
-            // 
             // X12Y3
             // 
             this.X12Y3.Location = new System.Drawing.Point(303, 1653);
@@ -1640,6 +1627,14 @@
             this.X12Y3.Size = new System.Drawing.Size(144, 144);
             this.X12Y3.TabIndex = 110;
             this.X12Y3.TabStop = false;
+            // 
+            // X11Y3
+            // 
+            this.X11Y3.Location = new System.Drawing.Point(303, 1503);
+            this.X11Y3.Name = "X11Y3";
+            this.X11Y3.Size = new System.Drawing.Size(144, 144);
+            this.X11Y3.TabIndex = 109;
+            this.X11Y3.TabStop = false;
             // 
             // X7Y4
             // 
@@ -1793,22 +1788,6 @@
             this.X7Y7.TabIndex = 129;
             this.X7Y7.TabStop = false;
             // 
-            // X7Y8
-            // 
-            this.X7Y8.Location = new System.Drawing.Point(1053, 903);
-            this.X7Y8.Name = "X7Y8";
-            this.X7Y8.Size = new System.Drawing.Size(144, 144);
-            this.X7Y8.TabIndex = 130;
-            this.X7Y8.TabStop = false;
-            // 
-            // X7Y9
-            // 
-            this.X7Y9.Location = new System.Drawing.Point(1203, 903);
-            this.X7Y9.Name = "X7Y9";
-            this.X7Y9.Size = new System.Drawing.Size(144, 144);
-            this.X7Y9.TabIndex = 131;
-            this.X7Y9.TabStop = false;
-            // 
             // X8Y7
             // 
             this.X8Y7.Location = new System.Drawing.Point(903, 1053);
@@ -1873,14 +1852,6 @@
             this.X10Y8.TabIndex = 139;
             this.X10Y8.TabStop = false;
             // 
-            // X10Y9
-            // 
-            this.X10Y9.Location = new System.Drawing.Point(1203, 1353);
-            this.X10Y9.Name = "X10Y9";
-            this.X10Y9.Size = new System.Drawing.Size(144, 144);
-            this.X10Y9.TabIndex = 140;
-            this.X10Y9.TabStop = false;
-            // 
             // X11Y7
             // 
             this.X11Y7.Location = new System.Drawing.Point(903, 1503);
@@ -1928,6 +1899,30 @@
             this.X12Y9.Size = new System.Drawing.Size(144, 144);
             this.X12Y9.TabIndex = 146;
             this.X12Y9.TabStop = false;
+            // 
+            // X7Y9
+            // 
+            this.X7Y9.Location = new System.Drawing.Point(1203, 903);
+            this.X7Y9.Name = "X7Y9";
+            this.X7Y9.Size = new System.Drawing.Size(144, 144);
+            this.X7Y9.TabIndex = 131;
+            this.X7Y9.TabStop = false;
+            // 
+            // X7Y8
+            // 
+            this.X7Y8.Location = new System.Drawing.Point(1053, 903);
+            this.X7Y8.Name = "X7Y8";
+            this.X7Y8.Size = new System.Drawing.Size(144, 144);
+            this.X7Y8.TabIndex = 130;
+            this.X7Y8.TabStop = false;
+            // 
+            // X10Y9
+            // 
+            this.X10Y9.Location = new System.Drawing.Point(1203, 1353);
+            this.X10Y9.Name = "X10Y9";
+            this.X10Y9.Size = new System.Drawing.Size(144, 144);
+            this.X10Y9.TabIndex = 140;
+            this.X10Y9.TabStop = false;
             // 
             // X7Y10
             // 
@@ -2290,14 +2285,6 @@
             this.X13Y9.TabIndex = 191;
             this.X13Y9.TabStop = false;
             // 
-            // X15Y1
-            // 
-            this.X15Y1.Location = new System.Drawing.Point(3, 2103);
-            this.X15Y1.Name = "X15Y1";
-            this.X15Y1.Size = new System.Drawing.Size(144, 144);
-            this.X15Y1.TabIndex = 192;
-            this.X15Y1.TabStop = false;
-            // 
             // X14Y2
             // 
             this.X14Y2.Location = new System.Drawing.Point(153, 1953);
@@ -2362,14 +2349,6 @@
             this.X14Y9.TabIndex = 200;
             this.X14Y9.TabStop = false;
             // 
-            // X14Y1
-            // 
-            this.X14Y1.Location = new System.Drawing.Point(3, 1953);
-            this.X14Y1.Name = "X14Y1";
-            this.X14Y1.Size = new System.Drawing.Size(144, 144);
-            this.X14Y1.TabIndex = 201;
-            this.X14Y1.TabStop = false;
-            // 
             // X15Y2
             // 
             this.X15Y2.Location = new System.Drawing.Point(153, 2103);
@@ -2418,14 +2397,6 @@
             this.X15Y7.TabIndex = 207;
             this.X15Y7.TabStop = false;
             // 
-            // X15Y8
-            // 
-            this.X15Y8.Location = new System.Drawing.Point(1053, 2103);
-            this.X15Y8.Name = "X15Y8";
-            this.X15Y8.Size = new System.Drawing.Size(144, 144);
-            this.X15Y8.TabIndex = 208;
-            this.X15Y8.TabStop = false;
-            // 
             // X15Y9
             // 
             this.X15Y9.Location = new System.Drawing.Point(1203, 2103);
@@ -2433,6 +2404,30 @@
             this.X15Y9.Size = new System.Drawing.Size(144, 144);
             this.X15Y9.TabIndex = 209;
             this.X15Y9.TabStop = false;
+            // 
+            // X14Y1
+            // 
+            this.X14Y1.Location = new System.Drawing.Point(3, 1953);
+            this.X14Y1.Name = "X14Y1";
+            this.X14Y1.Size = new System.Drawing.Size(144, 144);
+            this.X14Y1.TabIndex = 201;
+            this.X14Y1.TabStop = false;
+            // 
+            // X15Y1
+            // 
+            this.X15Y1.Location = new System.Drawing.Point(3, 2103);
+            this.X15Y1.Name = "X15Y1";
+            this.X15Y1.Size = new System.Drawing.Size(144, 144);
+            this.X15Y1.TabIndex = 192;
+            this.X15Y1.TabStop = false;
+            // 
+            // X15Y8
+            // 
+            this.X15Y8.Location = new System.Drawing.Point(1053, 2103);
+            this.X15Y8.Name = "X15Y8";
+            this.X15Y8.Size = new System.Drawing.Size(144, 144);
+            this.X15Y8.TabIndex = 208;
+            this.X15Y8.TabStop = false;
             // 
             // X13Y10
             // 
@@ -2514,14 +2509,6 @@
             this.X14Y13.TabIndex = 219;
             this.X14Y13.TabStop = false;
             // 
-            // X14Y14
-            // 
-            this.X14Y14.Location = new System.Drawing.Point(2103, 2103);
-            this.X14Y14.Name = "X14Y14";
-            this.X14Y14.Size = new System.Drawing.Size(144, 144);
-            this.X14Y14.TabIndex = 220;
-            this.X14Y14.TabStop = false;
-            // 
             // X14Y15
             // 
             this.X14Y15.Location = new System.Drawing.Point(2103, 1953);
@@ -2570,6 +2557,14 @@
             this.X15Y14.TabIndex = 226;
             this.X15Y14.TabStop = false;
             // 
+            // X14Y14
+            // 
+            this.X14Y14.Location = new System.Drawing.Point(2103, 2103);
+            this.X14Y14.Name = "X14Y14";
+            this.X14Y14.Size = new System.Drawing.Size(144, 144);
+            this.X14Y14.TabIndex = 220;
+            this.X14Y14.TabStop = false;
+            // 
             // X15Y15
             // 
             this.X15Y15.Location = new System.Drawing.Point(1953, 1953);
@@ -2578,13 +2573,36 @@
             this.X15Y15.TabIndex = 227;
             this.X15Y15.TabStop = false;
             // 
+            // nav
+            // 
+            this.nav.Controls.Add(this.button1);
+            this.nav.Controls.Add(this.pictureBox1);
+            this.nav.Dock = System.Windows.Forms.DockStyle.Right;
+            this.nav.Location = new System.Drawing.Point(1490, 0);
+            this.nav.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.nav.Name = "nav";
+            this.nav.Size = new System.Drawing.Size(190, 1198);
+            this.nav.TabIndex = 1;
+            // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::assignment1.Properties.Resources.homeIcon1;
             this.pictureBox1.Location = new System.Drawing.Point(16, 45);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(174, 92);
+            this.pictureBox1.Size = new System.Drawing.Size(104, 85);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(16, 176);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(160, 38);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Rules";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // freeGameMode
             // 
@@ -2599,7 +2617,6 @@
             this.Load += new System.EventHandler(this.freeGameMode_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.nav.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.X1Y1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y3)).EndInit();
@@ -2706,8 +2723,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.X8Y3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X9Y3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X10Y3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.X11Y3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X12Y3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X11Y3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X7Y4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X8Y4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X9Y4)).EndInit();
@@ -2727,8 +2744,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.X11Y6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X12Y6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X7Y7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.X7Y8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.X7Y9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X8Y7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X8Y8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X8Y9)).EndInit();
@@ -2737,13 +2752,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.X9Y9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X10Y7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X10Y8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.X10Y9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X11Y7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X11Y8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X11Y9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X12Y7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X12Y8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X12Y9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X7Y9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X7Y8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X10Y9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X7Y10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X7Y11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X8Y10)).EndInit();
@@ -2789,7 +2806,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.X13Y7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X13Y8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X13Y9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.X15Y1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X14Y2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X14Y3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X14Y4)).EndInit();
@@ -2798,15 +2814,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.X14Y7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X14Y8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X14Y9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.X14Y1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.X15Y8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X14Y1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X15Y1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X15Y8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X13Y10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X13Y11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X13Y12)).EndInit();
@@ -2817,14 +2834,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.X14Y11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X14Y12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X14Y13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.X14Y14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X14Y15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X14Y14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X15Y15)).EndInit();
+            this.nav.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -3062,5 +3080,6 @@
         private System.Windows.Forms.PictureBox X15Y14;
         private System.Windows.Forms.PictureBox X15Y15;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

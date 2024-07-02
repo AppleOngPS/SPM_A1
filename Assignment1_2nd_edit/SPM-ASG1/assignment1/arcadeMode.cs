@@ -574,7 +574,7 @@ namespace assignment1
         {
             if (SharedData.building == "Road")
             {
-                string imagePath = @"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\Road.png";
+                string imagePath = @"C:\Users\ongap\OneDrive\Desktop\NP\SPM\10th edit\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\Road.png";
                 pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                 //pictureBox.Image = Image.FromFile(imagePath);
                 pictureBox.Image = Resource1.Road;
@@ -582,7 +582,7 @@ namespace assignment1
             }
             else if (SharedData.building == "Park")
             {
-                string imagePath = @"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\park.png";
+                string imagePath = @"C:\Users\ongap\OneDrive\Desktop\NP\SPM\10th edit\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\park.png";
                 pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                 //pictureBox.Image = Image.FromFile(imagePath);
                 pictureBox.Image= Resource1.park;
@@ -590,21 +590,21 @@ namespace assignment1
             }
             else if (SharedData.building == "Commercial")
             {
-                string imagePath = @"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\commercial.png";
+                string imagePath = @"C:\Users\ongap\OneDrive\Desktop\NP\SPM\10th edit\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\commercial.png";
                 pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                 pictureBox.Image = Resource1.commercial;
                 pictureBox.Tag = "commercial";
             }
             else if (SharedData.building == "Industry")
             {
-                string imagePath = @"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\industry.png";
+                string imagePath = @"C:\Users\ongap\OneDrive\Desktop\NP\SPM\10th edit\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\industry.png";
                 pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                 pictureBox.Image = Resource1.industry;
                 pictureBox.Tag = "industry";
             }
             else if (SharedData.building == "Residential")
             {
-                string imagePath = @"C:\NP.2\SPM\vvvvv\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\residential.png";
+                string imagePath = @"C:\Users\ongap\OneDrive\Desktop\NP\SPM\10th edit\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\residential.png";
                 pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                 pictureBox.Image = Resource1.residential;
                 pictureBox.Tag = "residential";
@@ -625,7 +625,7 @@ namespace assignment1
            this.Refresh();
         }
 
-        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\NP.2\\SPM\\vvvvv\\Assignment1_2nd_edit\\SPM-ASG1\\assignment1\\Database1.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\ongap\\OneDrive\\Desktop\\NP\\SPM\\10th edit\\Assignment1_2nd_edit\\SPM-ASG1\\assignment1\\Database1.mdf\";Integrated Security=True");
         private void Save_Click(object sender, EventArgs e)
         {
             con.Open();
@@ -747,6 +747,12 @@ namespace assignment1
                 
             }
 
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            gameInstructionForArcadeMode gameInstructionForArcadeMode = new gameInstructionForArcadeMode();
+            gameInstructionForArcadeMode.Show();
         }
     }
 }

@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gameInstructionForFreePlay));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.StartGameBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -54,23 +53,12 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Game Instruction";
             // 
-            // StartGameBtn
-            // 
-            this.StartGameBtn.Location = new System.Drawing.Point(591, 1049);
-            this.StartGameBtn.Name = "StartGameBtn";
-            this.StartGameBtn.Size = new System.Drawing.Size(530, 55);
-            this.StartGameBtn.TabIndex = 2;
-            this.StartGameBtn.Text = "Start Game";
-            this.StartGameBtn.UseVisualStyleBackColor = true;
-            this.StartGameBtn.Click += new System.EventHandler(this.StartGameBtn_Click);
-            // 
             // gameInstructionForFreePlay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1784, 1132);
-            this.Controls.Add(this.StartGameBtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "gameInstructionForFreePlay";
@@ -84,6 +72,5 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button StartGameBtn;
     }
 }

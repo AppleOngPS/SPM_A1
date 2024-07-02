@@ -38,14 +38,14 @@ namespace assignment1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            gameInstructionForArcadeMode arcademodepage = new gameInstructionForArcadeMode();
-            arcademodepage.Show();
+            arcadeMode arcadeMode = new arcadeMode();
+            arcadeMode.Show();
             this.Hide();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            gameInstructionForFreePlay freeGameMode = new gameInstructionForFreePlay();
+            freeGameMode freeGameMode = new freeGameMode();
             freeGameMode.Show();
             this.Hide();
         }
@@ -96,6 +96,13 @@ namespace assignment1
                 DisplayHighScoreBtn.Enabled = false;
                 LoadSaveBtn.Enabled = false;
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ChooseMode chooseMode = new ChooseMode();
+            chooseMode.Show();
+
         }
     }
 }
