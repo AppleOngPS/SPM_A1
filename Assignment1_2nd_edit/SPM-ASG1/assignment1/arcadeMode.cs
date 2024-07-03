@@ -172,7 +172,41 @@ namespace assignment1
                         lblPoint.Text = "Point " + point;
 
                     }
-
+                    else if(topPic.Tag == "residential" && rightPic.Tag == "residential" && leftPic.Tag == "residential" && bottomPic.Tag == "residential")
+                    {
+                        coins += 1;
+                        point += 1;
+                        lblCoins.Text = "Coin " + coins;
+                        lblPoint.Text = "Point " + point;
+                    }
+                    else if (topPic.Tag == "residential" &&  bottomPic.Tag == "residential")
+                    {
+                        coins += 1;
+                        point += 1;
+                        lblCoins.Text = "Coin " + coins;
+                        lblPoint.Text = "Point " + point;
+                    }
+                    else if (rightPic.Tag == "residential" && leftPic.Tag == "residential")
+                    {
+                        coins += 1;
+                        point += 1;
+                        lblCoins.Text = "Coin " + coins;
+                        lblPoint.Text = "Point " + point;
+                    }
+                    else if (topPic.Tag == "residential" && rightPic.Tag == "residential" && leftPic.Tag == "residential")
+                    {
+                        coins += 1;
+                        point += 1;
+                        lblCoins.Text = "Coin " + coins;
+                        lblPoint.Text = "Point " + point;
+                    }
+                    else if ( rightPic.Tag == "residential" && leftPic.Tag == "residential" && bottomPic.Tag == "residential")
+                    {
+                        coins += 1;
+                        point += 1;
+                        lblCoins.Text = "Coin " + coins;
+                        lblPoint.Text = "Point " + point;
+                    }
 
                 }
                 else if (SharedData.CurrentOption == "Commercial")

@@ -86,6 +86,12 @@
     <Compile Include="displayHighScore.Designer.cs">
       <DependentUpon>displayHighScore.cs</DependentUpon>
     </Compile>
+    <Compile Include="FQ0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQ0.Designer.cs">
+      <DependentUpon>FQ0.cs</DependentUpon>
+    </Compile>
     <Compile Include="FQ1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="displayHighScore.resx">
       <DependentUpon>displayHighScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQ0.resx">
+      <DependentUpon>FQ0.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FQ1.resx">
       <DependentUpon>FQ1.cs</DependentUpon>
