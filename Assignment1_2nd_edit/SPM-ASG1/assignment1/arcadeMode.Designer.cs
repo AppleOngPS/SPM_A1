@@ -443,6 +443,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.homeIconBtn = new System.Windows.Forms.PictureBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.lbl = new System.Windows.Forms.Label();
             X3Y2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(X3Y2)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -853,7 +854,7 @@
             // X3Y2
             // 
             X3Y2.Location = new System.Drawing.Point(133, 261);
-            X3Y2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            X3Y2.Margin = new System.Windows.Forms.Padding(2);
             X3Y2.Name = "X3Y2";
             X3Y2.Size = new System.Drawing.Size(121, 121);
             X3Y2.TabIndex = 27;
@@ -893,7 +894,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 124F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 127F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 182F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 185F));
             this.tableLayoutPanel1.Controls.Add(this.X1Y2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.X1Y1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.X1Y3, 2, 0);
@@ -1317,13 +1318,13 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 125F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 125F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 125F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(2622, 2563);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(2625, 2563);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // X1Y2
             // 
             this.X1Y2.Location = new System.Drawing.Point(133, 5);
-            this.X1Y2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X1Y2.Margin = new System.Windows.Forms.Padding(2);
             this.X1Y2.Name = "X1Y2";
             this.X1Y2.Size = new System.Drawing.Size(121, 121);
             this.X1Y2.TabIndex = 10;
@@ -1332,7 +1333,7 @@
             // X1Y1
             // 
             this.X1Y1.Location = new System.Drawing.Point(5, 5);
-            this.X1Y1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X1Y1.Margin = new System.Windows.Forms.Padding(2);
             this.X1Y1.Name = "X1Y1";
             this.X1Y1.Size = new System.Drawing.Size(121, 121);
             this.X1Y1.TabIndex = 11;
@@ -1341,7 +1342,7 @@
             // X1Y3
             // 
             this.X1Y3.Location = new System.Drawing.Point(261, 5);
-            this.X1Y3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X1Y3.Margin = new System.Windows.Forms.Padding(2);
             this.X1Y3.Name = "X1Y3";
             this.X1Y3.Size = new System.Drawing.Size(121, 121);
             this.X1Y3.TabIndex = 12;
@@ -1350,7 +1351,7 @@
             // X1Y4
             // 
             this.X1Y4.Location = new System.Drawing.Point(389, 5);
-            this.X1Y4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X1Y4.Margin = new System.Windows.Forms.Padding(2);
             this.X1Y4.Name = "X1Y4";
             this.X1Y4.Size = new System.Drawing.Size(121, 117);
             this.X1Y4.TabIndex = 13;
@@ -1359,7 +1360,7 @@
             // X1Y5
             // 
             this.X1Y5.Location = new System.Drawing.Point(517, 5);
-            this.X1Y5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X1Y5.Margin = new System.Windows.Forms.Padding(2);
             this.X1Y5.Name = "X1Y5";
             this.X1Y5.Size = new System.Drawing.Size(121, 121);
             this.X1Y5.TabIndex = 14;
@@ -1368,7 +1369,7 @@
             // X2Y1
             // 
             this.X2Y1.Location = new System.Drawing.Point(5, 133);
-            this.X2Y1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X2Y1.Margin = new System.Windows.Forms.Padding(2);
             this.X2Y1.Name = "X2Y1";
             this.X2Y1.Size = new System.Drawing.Size(121, 121);
             this.X2Y1.TabIndex = 15;
@@ -1377,7 +1378,7 @@
             // X2Y2
             // 
             this.X2Y2.Location = new System.Drawing.Point(133, 133);
-            this.X2Y2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X2Y2.Margin = new System.Windows.Forms.Padding(2);
             this.X2Y2.Name = "X2Y2";
             this.X2Y2.Size = new System.Drawing.Size(121, 121);
             this.X2Y2.TabIndex = 16;
@@ -1386,7 +1387,7 @@
             // X2Y3
             // 
             this.X2Y3.Location = new System.Drawing.Point(261, 133);
-            this.X2Y3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X2Y3.Margin = new System.Windows.Forms.Padding(2);
             this.X2Y3.Name = "X2Y3";
             this.X2Y3.Size = new System.Drawing.Size(121, 121);
             this.X2Y3.TabIndex = 17;
@@ -1395,7 +1396,7 @@
             // X2Y4
             // 
             this.X2Y4.Location = new System.Drawing.Point(389, 133);
-            this.X2Y4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X2Y4.Margin = new System.Windows.Forms.Padding(2);
             this.X2Y4.Name = "X2Y4";
             this.X2Y4.Size = new System.Drawing.Size(121, 121);
             this.X2Y4.TabIndex = 18;
@@ -1404,7 +1405,7 @@
             // X2Y5
             // 
             this.X2Y5.Location = new System.Drawing.Point(517, 133);
-            this.X2Y5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X2Y5.Margin = new System.Windows.Forms.Padding(2);
             this.X2Y5.Name = "X2Y5";
             this.X2Y5.Size = new System.Drawing.Size(121, 121);
             this.X2Y5.TabIndex = 19;
@@ -1413,7 +1414,7 @@
             // X1Y6
             // 
             this.X1Y6.Location = new System.Drawing.Point(645, 5);
-            this.X1Y6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X1Y6.Margin = new System.Windows.Forms.Padding(2);
             this.X1Y6.Name = "X1Y6";
             this.X1Y6.Size = new System.Drawing.Size(121, 121);
             this.X1Y6.TabIndex = 20;
@@ -1422,7 +1423,7 @@
             // X2Y6
             // 
             this.X2Y6.Location = new System.Drawing.Point(645, 133);
-            this.X2Y6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X2Y6.Margin = new System.Windows.Forms.Padding(2);
             this.X2Y6.Name = "X2Y6";
             this.X2Y6.Size = new System.Drawing.Size(121, 121);
             this.X2Y6.TabIndex = 21;
@@ -1431,7 +1432,7 @@
             // X1Y7
             // 
             this.X1Y7.Location = new System.Drawing.Point(773, 5);
-            this.X1Y7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X1Y7.Margin = new System.Windows.Forms.Padding(2);
             this.X1Y7.Name = "X1Y7";
             this.X1Y7.Size = new System.Drawing.Size(121, 121);
             this.X1Y7.TabIndex = 22;
@@ -1440,7 +1441,7 @@
             // X2Y7
             // 
             this.X2Y7.Location = new System.Drawing.Point(773, 133);
-            this.X2Y7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X2Y7.Margin = new System.Windows.Forms.Padding(2);
             this.X2Y7.Name = "X2Y7";
             this.X2Y7.Size = new System.Drawing.Size(121, 121);
             this.X2Y7.TabIndex = 23;
@@ -1449,7 +1450,7 @@
             // X1Y8
             // 
             this.X1Y8.Location = new System.Drawing.Point(901, 5);
-            this.X1Y8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X1Y8.Margin = new System.Windows.Forms.Padding(2);
             this.X1Y8.Name = "X1Y8";
             this.X1Y8.Size = new System.Drawing.Size(121, 121);
             this.X1Y8.TabIndex = 24;
@@ -1458,7 +1459,7 @@
             // X2Y8
             // 
             this.X2Y8.Location = new System.Drawing.Point(901, 133);
-            this.X2Y8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X2Y8.Margin = new System.Windows.Forms.Padding(2);
             this.X2Y8.Name = "X2Y8";
             this.X2Y8.Size = new System.Drawing.Size(121, 121);
             this.X2Y8.TabIndex = 25;
@@ -1467,7 +1468,7 @@
             // X3Y1
             // 
             this.X3Y1.Location = new System.Drawing.Point(5, 261);
-            this.X3Y1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X3Y1.Margin = new System.Windows.Forms.Padding(2);
             this.X3Y1.Name = "X3Y1";
             this.X3Y1.Size = new System.Drawing.Size(121, 121);
             this.X3Y1.TabIndex = 26;
@@ -1476,7 +1477,7 @@
             // X3Y3
             // 
             this.X3Y3.Location = new System.Drawing.Point(261, 261);
-            this.X3Y3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X3Y3.Margin = new System.Windows.Forms.Padding(2);
             this.X3Y3.Name = "X3Y3";
             this.X3Y3.Size = new System.Drawing.Size(121, 121);
             this.X3Y3.TabIndex = 28;
@@ -1485,7 +1486,7 @@
             // X3Y4
             // 
             this.X3Y4.Location = new System.Drawing.Point(389, 261);
-            this.X3Y4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X3Y4.Margin = new System.Windows.Forms.Padding(2);
             this.X3Y4.Name = "X3Y4";
             this.X3Y4.Size = new System.Drawing.Size(121, 121);
             this.X3Y4.TabIndex = 29;
@@ -1494,7 +1495,7 @@
             // X3Y5
             // 
             this.X3Y5.Location = new System.Drawing.Point(517, 261);
-            this.X3Y5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X3Y5.Margin = new System.Windows.Forms.Padding(2);
             this.X3Y5.Name = "X3Y5";
             this.X3Y5.Size = new System.Drawing.Size(121, 121);
             this.X3Y5.TabIndex = 30;
@@ -1503,7 +1504,7 @@
             // X3Y6
             // 
             this.X3Y6.Location = new System.Drawing.Point(645, 261);
-            this.X3Y6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X3Y6.Margin = new System.Windows.Forms.Padding(2);
             this.X3Y6.Name = "X3Y6";
             this.X3Y6.Size = new System.Drawing.Size(121, 121);
             this.X3Y6.TabIndex = 31;
@@ -1512,7 +1513,7 @@
             // X3Y7
             // 
             this.X3Y7.Location = new System.Drawing.Point(773, 261);
-            this.X3Y7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X3Y7.Margin = new System.Windows.Forms.Padding(2);
             this.X3Y7.Name = "X3Y7";
             this.X3Y7.Size = new System.Drawing.Size(121, 121);
             this.X3Y7.TabIndex = 32;
@@ -1521,7 +1522,7 @@
             // X3Y8
             // 
             this.X3Y8.Location = new System.Drawing.Point(901, 261);
-            this.X3Y8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X3Y8.Margin = new System.Windows.Forms.Padding(2);
             this.X3Y8.Name = "X3Y8";
             this.X3Y8.Size = new System.Drawing.Size(121, 121);
             this.X3Y8.TabIndex = 33;
@@ -1530,7 +1531,7 @@
             // X1Y9
             // 
             this.X1Y9.Location = new System.Drawing.Point(1029, 5);
-            this.X1Y9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X1Y9.Margin = new System.Windows.Forms.Padding(2);
             this.X1Y9.Name = "X1Y9";
             this.X1Y9.Size = new System.Drawing.Size(121, 121);
             this.X1Y9.TabIndex = 34;
@@ -1539,7 +1540,7 @@
             // X2Y9
             // 
             this.X2Y9.Location = new System.Drawing.Point(1029, 133);
-            this.X2Y9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X2Y9.Margin = new System.Windows.Forms.Padding(2);
             this.X2Y9.Name = "X2Y9";
             this.X2Y9.Size = new System.Drawing.Size(121, 121);
             this.X2Y9.TabIndex = 35;
@@ -1548,7 +1549,7 @@
             // X3Y9
             // 
             this.X3Y9.Location = new System.Drawing.Point(1029, 261);
-            this.X3Y9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X3Y9.Margin = new System.Windows.Forms.Padding(2);
             this.X3Y9.Name = "X3Y9";
             this.X3Y9.Size = new System.Drawing.Size(121, 121);
             this.X3Y9.TabIndex = 36;
@@ -1557,7 +1558,7 @@
             // X4Y1
             // 
             this.X4Y1.Location = new System.Drawing.Point(5, 389);
-            this.X4Y1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X4Y1.Margin = new System.Windows.Forms.Padding(2);
             this.X4Y1.Name = "X4Y1";
             this.X4Y1.Size = new System.Drawing.Size(121, 121);
             this.X4Y1.TabIndex = 37;
@@ -1566,7 +1567,7 @@
             // X4Y2
             // 
             this.X4Y2.Location = new System.Drawing.Point(133, 389);
-            this.X4Y2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X4Y2.Margin = new System.Windows.Forms.Padding(2);
             this.X4Y2.Name = "X4Y2";
             this.X4Y2.Size = new System.Drawing.Size(121, 121);
             this.X4Y2.TabIndex = 38;
@@ -1575,7 +1576,7 @@
             // X4Y3
             // 
             this.X4Y3.Location = new System.Drawing.Point(261, 389);
-            this.X4Y3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X4Y3.Margin = new System.Windows.Forms.Padding(2);
             this.X4Y3.Name = "X4Y3";
             this.X4Y3.Size = new System.Drawing.Size(121, 121);
             this.X4Y3.TabIndex = 39;
@@ -1584,7 +1585,7 @@
             // X4Y4
             // 
             this.X4Y4.Location = new System.Drawing.Point(389, 389);
-            this.X4Y4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X4Y4.Margin = new System.Windows.Forms.Padding(2);
             this.X4Y4.Name = "X4Y4";
             this.X4Y4.Size = new System.Drawing.Size(121, 121);
             this.X4Y4.TabIndex = 40;
@@ -1593,7 +1594,7 @@
             // X4Y5
             // 
             this.X4Y5.Location = new System.Drawing.Point(517, 389);
-            this.X4Y5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X4Y5.Margin = new System.Windows.Forms.Padding(2);
             this.X4Y5.Name = "X4Y5";
             this.X4Y5.Size = new System.Drawing.Size(121, 121);
             this.X4Y5.TabIndex = 41;
@@ -1602,7 +1603,7 @@
             // X4Y6
             // 
             this.X4Y6.Location = new System.Drawing.Point(645, 389);
-            this.X4Y6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X4Y6.Margin = new System.Windows.Forms.Padding(2);
             this.X4Y6.Name = "X4Y6";
             this.X4Y6.Size = new System.Drawing.Size(121, 121);
             this.X4Y6.TabIndex = 42;
@@ -1611,7 +1612,7 @@
             // X4Y7
             // 
             this.X4Y7.Location = new System.Drawing.Point(773, 389);
-            this.X4Y7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X4Y7.Margin = new System.Windows.Forms.Padding(2);
             this.X4Y7.Name = "X4Y7";
             this.X4Y7.Size = new System.Drawing.Size(121, 121);
             this.X4Y7.TabIndex = 43;
@@ -1620,7 +1621,7 @@
             // X4Y8
             // 
             this.X4Y8.Location = new System.Drawing.Point(901, 389);
-            this.X4Y8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X4Y8.Margin = new System.Windows.Forms.Padding(2);
             this.X4Y8.Name = "X4Y8";
             this.X4Y8.Size = new System.Drawing.Size(121, 121);
             this.X4Y8.TabIndex = 44;
@@ -1629,7 +1630,7 @@
             // X4Y9
             // 
             this.X4Y9.Location = new System.Drawing.Point(1029, 389);
-            this.X4Y9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X4Y9.Margin = new System.Windows.Forms.Padding(2);
             this.X4Y9.Name = "X4Y9";
             this.X4Y9.Size = new System.Drawing.Size(121, 121);
             this.X4Y9.TabIndex = 45;
@@ -1638,7 +1639,7 @@
             // X5Y1
             // 
             this.X5Y1.Location = new System.Drawing.Point(5, 517);
-            this.X5Y1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X5Y1.Margin = new System.Windows.Forms.Padding(2);
             this.X5Y1.Name = "X5Y1";
             this.X5Y1.Size = new System.Drawing.Size(121, 121);
             this.X5Y1.TabIndex = 46;
@@ -1647,7 +1648,7 @@
             // X5Y2
             // 
             this.X5Y2.Location = new System.Drawing.Point(133, 517);
-            this.X5Y2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X5Y2.Margin = new System.Windows.Forms.Padding(2);
             this.X5Y2.Name = "X5Y2";
             this.X5Y2.Size = new System.Drawing.Size(121, 121);
             this.X5Y2.TabIndex = 47;
@@ -1656,7 +1657,7 @@
             // X5Y3
             // 
             this.X5Y3.Location = new System.Drawing.Point(261, 517);
-            this.X5Y3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X5Y3.Margin = new System.Windows.Forms.Padding(2);
             this.X5Y3.Name = "X5Y3";
             this.X5Y3.Size = new System.Drawing.Size(121, 121);
             this.X5Y3.TabIndex = 48;
@@ -1665,7 +1666,7 @@
             // X5Y4
             // 
             this.X5Y4.Location = new System.Drawing.Point(389, 517);
-            this.X5Y4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X5Y4.Margin = new System.Windows.Forms.Padding(2);
             this.X5Y4.Name = "X5Y4";
             this.X5Y4.Size = new System.Drawing.Size(121, 121);
             this.X5Y4.TabIndex = 49;
@@ -1674,7 +1675,7 @@
             // X5Y5
             // 
             this.X5Y5.Location = new System.Drawing.Point(517, 517);
-            this.X5Y5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X5Y5.Margin = new System.Windows.Forms.Padding(2);
             this.X5Y5.Name = "X5Y5";
             this.X5Y5.Size = new System.Drawing.Size(121, 121);
             this.X5Y5.TabIndex = 50;
@@ -1683,7 +1684,7 @@
             // X5Y6
             // 
             this.X5Y6.Location = new System.Drawing.Point(645, 517);
-            this.X5Y6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X5Y6.Margin = new System.Windows.Forms.Padding(2);
             this.X5Y6.Name = "X5Y6";
             this.X5Y6.Size = new System.Drawing.Size(121, 121);
             this.X5Y6.TabIndex = 51;
@@ -1692,7 +1693,7 @@
             // X5Y7
             // 
             this.X5Y7.Location = new System.Drawing.Point(773, 517);
-            this.X5Y7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X5Y7.Margin = new System.Windows.Forms.Padding(2);
             this.X5Y7.Name = "X5Y7";
             this.X5Y7.Size = new System.Drawing.Size(121, 121);
             this.X5Y7.TabIndex = 52;
@@ -1701,7 +1702,7 @@
             // X5Y8
             // 
             this.X5Y8.Location = new System.Drawing.Point(901, 517);
-            this.X5Y8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X5Y8.Margin = new System.Windows.Forms.Padding(2);
             this.X5Y8.Name = "X5Y8";
             this.X5Y8.Size = new System.Drawing.Size(121, 121);
             this.X5Y8.TabIndex = 53;
@@ -1710,7 +1711,7 @@
             // X6Y1
             // 
             this.X6Y1.Location = new System.Drawing.Point(5, 645);
-            this.X6Y1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X6Y1.Margin = new System.Windows.Forms.Padding(2);
             this.X6Y1.Name = "X6Y1";
             this.X6Y1.Size = new System.Drawing.Size(121, 121);
             this.X6Y1.TabIndex = 55;
@@ -1719,7 +1720,7 @@
             // X6Y2
             // 
             this.X6Y2.Location = new System.Drawing.Point(133, 645);
-            this.X6Y2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X6Y2.Margin = new System.Windows.Forms.Padding(2);
             this.X6Y2.Name = "X6Y2";
             this.X6Y2.Size = new System.Drawing.Size(121, 121);
             this.X6Y2.TabIndex = 56;
@@ -1728,7 +1729,7 @@
             // X6Y3
             // 
             this.X6Y3.Location = new System.Drawing.Point(261, 645);
-            this.X6Y3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X6Y3.Margin = new System.Windows.Forms.Padding(2);
             this.X6Y3.Name = "X6Y3";
             this.X6Y3.Size = new System.Drawing.Size(121, 121);
             this.X6Y3.TabIndex = 57;
@@ -1737,7 +1738,7 @@
             // X6Y4
             // 
             this.X6Y4.Location = new System.Drawing.Point(389, 645);
-            this.X6Y4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X6Y4.Margin = new System.Windows.Forms.Padding(2);
             this.X6Y4.Name = "X6Y4";
             this.X6Y4.Size = new System.Drawing.Size(121, 121);
             this.X6Y4.TabIndex = 58;
@@ -1746,7 +1747,7 @@
             // X6Y5
             // 
             this.X6Y5.Location = new System.Drawing.Point(517, 645);
-            this.X6Y5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X6Y5.Margin = new System.Windows.Forms.Padding(2);
             this.X6Y5.Name = "X6Y5";
             this.X6Y5.Size = new System.Drawing.Size(121, 121);
             this.X6Y5.TabIndex = 59;
@@ -1755,7 +1756,7 @@
             // X6Y6
             // 
             this.X6Y6.Location = new System.Drawing.Point(645, 645);
-            this.X6Y6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X6Y6.Margin = new System.Windows.Forms.Padding(2);
             this.X6Y6.Name = "X6Y6";
             this.X6Y6.Size = new System.Drawing.Size(121, 121);
             this.X6Y6.TabIndex = 60;
@@ -1764,7 +1765,7 @@
             // X6Y7
             // 
             this.X6Y7.Location = new System.Drawing.Point(773, 645);
-            this.X6Y7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X6Y7.Margin = new System.Windows.Forms.Padding(2);
             this.X6Y7.Name = "X6Y7";
             this.X6Y7.Size = new System.Drawing.Size(121, 121);
             this.X6Y7.TabIndex = 61;
@@ -1773,7 +1774,7 @@
             // X6Y8
             // 
             this.X6Y8.Location = new System.Drawing.Point(901, 645);
-            this.X6Y8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X6Y8.Margin = new System.Windows.Forms.Padding(2);
             this.X6Y8.Name = "X6Y8";
             this.X6Y8.Size = new System.Drawing.Size(121, 121);
             this.X6Y8.TabIndex = 62;
@@ -1782,7 +1783,7 @@
             // X6Y9
             // 
             this.X6Y9.Location = new System.Drawing.Point(1029, 645);
-            this.X6Y9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X6Y9.Margin = new System.Windows.Forms.Padding(2);
             this.X6Y9.Name = "X6Y9";
             this.X6Y9.Size = new System.Drawing.Size(121, 121);
             this.X6Y9.TabIndex = 63;
@@ -1791,7 +1792,7 @@
             // X7Y1
             // 
             this.X7Y1.Location = new System.Drawing.Point(5, 773);
-            this.X7Y1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X7Y1.Margin = new System.Windows.Forms.Padding(2);
             this.X7Y1.Name = "X7Y1";
             this.X7Y1.Size = new System.Drawing.Size(121, 110);
             this.X7Y1.TabIndex = 64;
@@ -1800,7 +1801,7 @@
             // X7Y2
             // 
             this.X7Y2.Location = new System.Drawing.Point(133, 773);
-            this.X7Y2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X7Y2.Margin = new System.Windows.Forms.Padding(2);
             this.X7Y2.Name = "X7Y2";
             this.X7Y2.Size = new System.Drawing.Size(121, 110);
             this.X7Y2.TabIndex = 65;
@@ -1809,7 +1810,7 @@
             // X7Y3
             // 
             this.X7Y3.Location = new System.Drawing.Point(261, 773);
-            this.X7Y3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X7Y3.Margin = new System.Windows.Forms.Padding(2);
             this.X7Y3.Name = "X7Y3";
             this.X7Y3.Size = new System.Drawing.Size(121, 110);
             this.X7Y3.TabIndex = 66;
@@ -1818,7 +1819,7 @@
             // X7Y4
             // 
             this.X7Y4.Location = new System.Drawing.Point(389, 773);
-            this.X7Y4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X7Y4.Margin = new System.Windows.Forms.Padding(2);
             this.X7Y4.Name = "X7Y4";
             this.X7Y4.Size = new System.Drawing.Size(121, 110);
             this.X7Y4.TabIndex = 67;
@@ -1827,7 +1828,7 @@
             // X7Y5
             // 
             this.X7Y5.Location = new System.Drawing.Point(517, 773);
-            this.X7Y5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X7Y5.Margin = new System.Windows.Forms.Padding(2);
             this.X7Y5.Name = "X7Y5";
             this.X7Y5.Size = new System.Drawing.Size(121, 110);
             this.X7Y5.TabIndex = 68;
@@ -1836,7 +1837,7 @@
             // X7Y6
             // 
             this.X7Y6.Location = new System.Drawing.Point(645, 773);
-            this.X7Y6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X7Y6.Margin = new System.Windows.Forms.Padding(2);
             this.X7Y6.Name = "X7Y6";
             this.X7Y6.Size = new System.Drawing.Size(121, 110);
             this.X7Y6.TabIndex = 69;
@@ -1845,7 +1846,7 @@
             // X7Y7
             // 
             this.X7Y7.Location = new System.Drawing.Point(773, 773);
-            this.X7Y7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X7Y7.Margin = new System.Windows.Forms.Padding(2);
             this.X7Y7.Name = "X7Y7";
             this.X7Y7.Size = new System.Drawing.Size(121, 110);
             this.X7Y7.TabIndex = 70;
@@ -1854,7 +1855,7 @@
             // X7Y8
             // 
             this.X7Y8.Location = new System.Drawing.Point(901, 773);
-            this.X7Y8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X7Y8.Margin = new System.Windows.Forms.Padding(2);
             this.X7Y8.Name = "X7Y8";
             this.X7Y8.Size = new System.Drawing.Size(121, 110);
             this.X7Y8.TabIndex = 71;
@@ -1863,7 +1864,7 @@
             // X7Y9
             // 
             this.X7Y9.Location = new System.Drawing.Point(1029, 773);
-            this.X7Y9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X7Y9.Margin = new System.Windows.Forms.Padding(2);
             this.X7Y9.Name = "X7Y9";
             this.X7Y9.Size = new System.Drawing.Size(121, 110);
             this.X7Y9.TabIndex = 72;
@@ -1872,7 +1873,7 @@
             // X1Y10
             // 
             this.X1Y10.Location = new System.Drawing.Point(1157, 5);
-            this.X1Y10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X1Y10.Margin = new System.Windows.Forms.Padding(2);
             this.X1Y10.Name = "X1Y10";
             this.X1Y10.Size = new System.Drawing.Size(116, 121);
             this.X1Y10.TabIndex = 73;
@@ -1881,7 +1882,7 @@
             // X1Y11
             // 
             this.X1Y11.Location = new System.Drawing.Point(1285, 5);
-            this.X1Y11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X1Y11.Margin = new System.Windows.Forms.Padding(2);
             this.X1Y11.Name = "X1Y11";
             this.X1Y11.Size = new System.Drawing.Size(117, 121);
             this.X1Y11.TabIndex = 74;
@@ -1890,7 +1891,7 @@
             // X1Y12
             // 
             this.X1Y12.Location = new System.Drawing.Point(1413, 5);
-            this.X1Y12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X1Y12.Margin = new System.Windows.Forms.Padding(2);
             this.X1Y12.Name = "X1Y12";
             this.X1Y12.Size = new System.Drawing.Size(115, 117);
             this.X1Y12.TabIndex = 75;
@@ -1899,7 +1900,7 @@
             // X1Y13
             // 
             this.X1Y13.Location = new System.Drawing.Point(1541, 5);
-            this.X1Y13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X1Y13.Margin = new System.Windows.Forms.Padding(2);
             this.X1Y13.Name = "X1Y13";
             this.X1Y13.Size = new System.Drawing.Size(121, 117);
             this.X1Y13.TabIndex = 76;
@@ -1908,7 +1909,7 @@
             // X1Y14
             // 
             this.X1Y14.Location = new System.Drawing.Point(1669, 5);
-            this.X1Y14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X1Y14.Margin = new System.Windows.Forms.Padding(2);
             this.X1Y14.Name = "X1Y14";
             this.X1Y14.Size = new System.Drawing.Size(128, 121);
             this.X1Y14.TabIndex = 77;
@@ -1917,7 +1918,7 @@
             // X1Y15
             // 
             this.X1Y15.Location = new System.Drawing.Point(1804, 5);
-            this.X1Y15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X1Y15.Margin = new System.Windows.Forms.Padding(2);
             this.X1Y15.Name = "X1Y15";
             this.X1Y15.Size = new System.Drawing.Size(115, 117);
             this.X1Y15.TabIndex = 78;
@@ -1926,7 +1927,7 @@
             // X1Y16
             // 
             this.X1Y16.Location = new System.Drawing.Point(1926, 5);
-            this.X1Y16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X1Y16.Margin = new System.Windows.Forms.Padding(2);
             this.X1Y16.Name = "X1Y16";
             this.X1Y16.Size = new System.Drawing.Size(115, 117);
             this.X1Y16.TabIndex = 79;
@@ -1935,7 +1936,7 @@
             // X1Y17
             // 
             this.X1Y17.Location = new System.Drawing.Point(2054, 5);
-            this.X1Y17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X1Y17.Margin = new System.Windows.Forms.Padding(2);
             this.X1Y17.Name = "X1Y17";
             this.X1Y17.Size = new System.Drawing.Size(116, 121);
             this.X1Y17.TabIndex = 80;
@@ -1944,7 +1945,7 @@
             // X1Y18
             // 
             this.X1Y18.Location = new System.Drawing.Point(2182, 5);
-            this.X1Y18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X1Y18.Margin = new System.Windows.Forms.Padding(2);
             this.X1Y18.Name = "X1Y18";
             this.X1Y18.Size = new System.Drawing.Size(120, 121);
             this.X1Y18.TabIndex = 81;
@@ -1953,7 +1954,7 @@
             // X1Y19
             // 
             this.X1Y19.Location = new System.Drawing.Point(2309, 5);
-            this.X1Y19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X1Y19.Margin = new System.Windows.Forms.Padding(2);
             this.X1Y19.Name = "X1Y19";
             this.X1Y19.Size = new System.Drawing.Size(121, 121);
             this.X1Y19.TabIndex = 82;
@@ -1962,7 +1963,7 @@
             // X1Y20
             // 
             this.X1Y20.Location = new System.Drawing.Point(2439, 5);
-            this.X1Y20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X1Y20.Margin = new System.Windows.Forms.Padding(2);
             this.X1Y20.Name = "X1Y20";
             this.X1Y20.Size = new System.Drawing.Size(159, 117);
             this.X1Y20.TabIndex = 83;
@@ -1971,7 +1972,7 @@
             // X2Y20
             // 
             this.X2Y20.Location = new System.Drawing.Point(2439, 133);
-            this.X2Y20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X2Y20.Margin = new System.Windows.Forms.Padding(2);
             this.X2Y20.Name = "X2Y20";
             this.X2Y20.Size = new System.Drawing.Size(159, 121);
             this.X2Y20.TabIndex = 84;
@@ -1980,7 +1981,7 @@
             // X2Y19
             // 
             this.X2Y19.Location = new System.Drawing.Point(2309, 133);
-            this.X2Y19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X2Y19.Margin = new System.Windows.Forms.Padding(2);
             this.X2Y19.Name = "X2Y19";
             this.X2Y19.Size = new System.Drawing.Size(123, 121);
             this.X2Y19.TabIndex = 85;
@@ -1989,7 +1990,7 @@
             // X2Y18
             // 
             this.X2Y18.Location = new System.Drawing.Point(2182, 133);
-            this.X2Y18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X2Y18.Margin = new System.Windows.Forms.Padding(2);
             this.X2Y18.Name = "X2Y18";
             this.X2Y18.Size = new System.Drawing.Size(119, 121);
             this.X2Y18.TabIndex = 86;
@@ -1998,7 +1999,7 @@
             // X2Y17
             // 
             this.X2Y17.Location = new System.Drawing.Point(2054, 133);
-            this.X2Y17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X2Y17.Margin = new System.Windows.Forms.Padding(2);
             this.X2Y17.Name = "X2Y17";
             this.X2Y17.Size = new System.Drawing.Size(115, 121);
             this.X2Y17.TabIndex = 87;
@@ -2007,7 +2008,7 @@
             // X2Y16
             // 
             this.X2Y16.Location = new System.Drawing.Point(1926, 133);
-            this.X2Y16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X2Y16.Margin = new System.Windows.Forms.Padding(2);
             this.X2Y16.Name = "X2Y16";
             this.X2Y16.Size = new System.Drawing.Size(121, 121);
             this.X2Y16.TabIndex = 88;
@@ -2016,7 +2017,7 @@
             // X2Y15
             // 
             this.X2Y15.Location = new System.Drawing.Point(1804, 133);
-            this.X2Y15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X2Y15.Margin = new System.Windows.Forms.Padding(2);
             this.X2Y15.Name = "X2Y15";
             this.X2Y15.Size = new System.Drawing.Size(115, 121);
             this.X2Y15.TabIndex = 89;
@@ -2025,7 +2026,7 @@
             // X3Y20
             // 
             this.X3Y20.Location = new System.Drawing.Point(2439, 261);
-            this.X3Y20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X3Y20.Margin = new System.Windows.Forms.Padding(2);
             this.X3Y20.Name = "X3Y20";
             this.X3Y20.Size = new System.Drawing.Size(159, 121);
             this.X3Y20.TabIndex = 91;
@@ -2034,7 +2035,7 @@
             // X3Y19
             // 
             this.X3Y19.Location = new System.Drawing.Point(2309, 261);
-            this.X3Y19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X3Y19.Margin = new System.Windows.Forms.Padding(2);
             this.X3Y19.Name = "X3Y19";
             this.X3Y19.Size = new System.Drawing.Size(123, 121);
             this.X3Y19.TabIndex = 92;
@@ -2043,7 +2044,7 @@
             // X3Y18
             // 
             this.X3Y18.Location = new System.Drawing.Point(2182, 261);
-            this.X3Y18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X3Y18.Margin = new System.Windows.Forms.Padding(2);
             this.X3Y18.Name = "X3Y18";
             this.X3Y18.Size = new System.Drawing.Size(120, 121);
             this.X3Y18.TabIndex = 93;
@@ -2052,7 +2053,7 @@
             // X3Y17
             // 
             this.X3Y17.Location = new System.Drawing.Point(2054, 261);
-            this.X3Y17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X3Y17.Margin = new System.Windows.Forms.Padding(2);
             this.X3Y17.Name = "X3Y17";
             this.X3Y17.Size = new System.Drawing.Size(121, 121);
             this.X3Y17.TabIndex = 94;
@@ -2061,7 +2062,7 @@
             // X3Y16
             // 
             this.X3Y16.Location = new System.Drawing.Point(1926, 261);
-            this.X3Y16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X3Y16.Margin = new System.Windows.Forms.Padding(2);
             this.X3Y16.Name = "X3Y16";
             this.X3Y16.Size = new System.Drawing.Size(121, 121);
             this.X3Y16.TabIndex = 95;
@@ -2070,7 +2071,7 @@
             // X3Y15
             // 
             this.X3Y15.Location = new System.Drawing.Point(1804, 261);
-            this.X3Y15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X3Y15.Margin = new System.Windows.Forms.Padding(2);
             this.X3Y15.Name = "X3Y15";
             this.X3Y15.Size = new System.Drawing.Size(115, 121);
             this.X3Y15.TabIndex = 96;
@@ -2079,7 +2080,7 @@
             // X3Y14
             // 
             this.X3Y14.Location = new System.Drawing.Point(1669, 261);
-            this.X3Y14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X3Y14.Margin = new System.Windows.Forms.Padding(2);
             this.X3Y14.Name = "X3Y14";
             this.X3Y14.Size = new System.Drawing.Size(128, 121);
             this.X3Y14.TabIndex = 97;
@@ -2088,7 +2089,7 @@
             // X4Y14
             // 
             this.X4Y14.Location = new System.Drawing.Point(1669, 389);
-            this.X4Y14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X4Y14.Margin = new System.Windows.Forms.Padding(2);
             this.X4Y14.Name = "X4Y14";
             this.X4Y14.Size = new System.Drawing.Size(128, 121);
             this.X4Y14.TabIndex = 98;
@@ -2097,7 +2098,7 @@
             // X4Y15
             // 
             this.X4Y15.Location = new System.Drawing.Point(1804, 389);
-            this.X4Y15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X4Y15.Margin = new System.Windows.Forms.Padding(2);
             this.X4Y15.Name = "X4Y15";
             this.X4Y15.Size = new System.Drawing.Size(115, 121);
             this.X4Y15.TabIndex = 99;
@@ -2106,7 +2107,7 @@
             // X4Y16
             // 
             this.X4Y16.Location = new System.Drawing.Point(1926, 389);
-            this.X4Y16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X4Y16.Margin = new System.Windows.Forms.Padding(2);
             this.X4Y16.Name = "X4Y16";
             this.X4Y16.Size = new System.Drawing.Size(121, 121);
             this.X4Y16.TabIndex = 100;
@@ -2115,7 +2116,7 @@
             // X4Y17
             // 
             this.X4Y17.Location = new System.Drawing.Point(2054, 389);
-            this.X4Y17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X4Y17.Margin = new System.Windows.Forms.Padding(2);
             this.X4Y17.Name = "X4Y17";
             this.X4Y17.Size = new System.Drawing.Size(121, 121);
             this.X4Y17.TabIndex = 101;
@@ -2124,7 +2125,7 @@
             // X4Y18
             // 
             this.X4Y18.Location = new System.Drawing.Point(2182, 389);
-            this.X4Y18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X4Y18.Margin = new System.Windows.Forms.Padding(2);
             this.X4Y18.Name = "X4Y18";
             this.X4Y18.Size = new System.Drawing.Size(120, 121);
             this.X4Y18.TabIndex = 102;
@@ -2133,7 +2134,7 @@
             // X4Y19
             // 
             this.X4Y19.Location = new System.Drawing.Point(2309, 389);
-            this.X4Y19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X4Y19.Margin = new System.Windows.Forms.Padding(2);
             this.X4Y19.Name = "X4Y19";
             this.X4Y19.Size = new System.Drawing.Size(123, 121);
             this.X4Y19.TabIndex = 103;
@@ -2142,7 +2143,7 @@
             // X4Y20
             // 
             this.X4Y20.Location = new System.Drawing.Point(2439, 389);
-            this.X4Y20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X4Y20.Margin = new System.Windows.Forms.Padding(2);
             this.X4Y20.Name = "X4Y20";
             this.X4Y20.Size = new System.Drawing.Size(159, 121);
             this.X4Y20.TabIndex = 104;
@@ -2151,7 +2152,7 @@
             // X3Y13
             // 
             this.X3Y13.Location = new System.Drawing.Point(1541, 261);
-            this.X3Y13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X3Y13.Margin = new System.Windows.Forms.Padding(2);
             this.X3Y13.Name = "X3Y13";
             this.X3Y13.Size = new System.Drawing.Size(121, 121);
             this.X3Y13.TabIndex = 106;
@@ -2160,7 +2161,7 @@
             // X4Y13
             // 
             this.X4Y13.Location = new System.Drawing.Point(1541, 389);
-            this.X4Y13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X4Y13.Margin = new System.Windows.Forms.Padding(2);
             this.X4Y13.Name = "X4Y13";
             this.X4Y13.Size = new System.Drawing.Size(121, 121);
             this.X4Y13.TabIndex = 107;
@@ -2169,7 +2170,7 @@
             // X2Y12
             // 
             this.X2Y12.Location = new System.Drawing.Point(1413, 133);
-            this.X2Y12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X2Y12.Margin = new System.Windows.Forms.Padding(2);
             this.X2Y12.Name = "X2Y12";
             this.X2Y12.Size = new System.Drawing.Size(121, 121);
             this.X2Y12.TabIndex = 108;
@@ -2178,7 +2179,7 @@
             // X3Y12
             // 
             this.X3Y12.Location = new System.Drawing.Point(1413, 261);
-            this.X3Y12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X3Y12.Margin = new System.Windows.Forms.Padding(2);
             this.X3Y12.Name = "X3Y12";
             this.X3Y12.Size = new System.Drawing.Size(121, 121);
             this.X3Y12.TabIndex = 109;
@@ -2187,7 +2188,7 @@
             // X4Y12
             // 
             this.X4Y12.Location = new System.Drawing.Point(1413, 389);
-            this.X4Y12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X4Y12.Margin = new System.Windows.Forms.Padding(2);
             this.X4Y12.Name = "X4Y12";
             this.X4Y12.Size = new System.Drawing.Size(121, 121);
             this.X4Y12.TabIndex = 110;
@@ -2196,7 +2197,7 @@
             // X2Y11
             // 
             this.X2Y11.Location = new System.Drawing.Point(1285, 133);
-            this.X2Y11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X2Y11.Margin = new System.Windows.Forms.Padding(2);
             this.X2Y11.Name = "X2Y11";
             this.X2Y11.Size = new System.Drawing.Size(121, 121);
             this.X2Y11.TabIndex = 111;
@@ -2205,7 +2206,7 @@
             // X3Y11
             // 
             this.X3Y11.Location = new System.Drawing.Point(1285, 261);
-            this.X3Y11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X3Y11.Margin = new System.Windows.Forms.Padding(2);
             this.X3Y11.Name = "X3Y11";
             this.X3Y11.Size = new System.Drawing.Size(121, 121);
             this.X3Y11.TabIndex = 112;
@@ -2214,7 +2215,7 @@
             // X4Y11
             // 
             this.X4Y11.Location = new System.Drawing.Point(1285, 389);
-            this.X4Y11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X4Y11.Margin = new System.Windows.Forms.Padding(2);
             this.X4Y11.Name = "X4Y11";
             this.X4Y11.Size = new System.Drawing.Size(121, 121);
             this.X4Y11.TabIndex = 113;
@@ -2223,7 +2224,7 @@
             // X2Y10
             // 
             this.X2Y10.Location = new System.Drawing.Point(1157, 133);
-            this.X2Y10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X2Y10.Margin = new System.Windows.Forms.Padding(2);
             this.X2Y10.Name = "X2Y10";
             this.X2Y10.Size = new System.Drawing.Size(121, 121);
             this.X2Y10.TabIndex = 114;
@@ -2232,7 +2233,7 @@
             // X3Y10
             // 
             this.X3Y10.Location = new System.Drawing.Point(1157, 261);
-            this.X3Y10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X3Y10.Margin = new System.Windows.Forms.Padding(2);
             this.X3Y10.Name = "X3Y10";
             this.X3Y10.Size = new System.Drawing.Size(121, 121);
             this.X3Y10.TabIndex = 115;
@@ -2241,7 +2242,7 @@
             // X4Y10
             // 
             this.X4Y10.Location = new System.Drawing.Point(1157, 389);
-            this.X4Y10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X4Y10.Margin = new System.Windows.Forms.Padding(2);
             this.X4Y10.Name = "X4Y10";
             this.X4Y10.Size = new System.Drawing.Size(121, 121);
             this.X4Y10.TabIndex = 116;
@@ -2250,7 +2251,7 @@
             // X5Y10
             // 
             this.X5Y10.Location = new System.Drawing.Point(1157, 517);
-            this.X5Y10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X5Y10.Margin = new System.Windows.Forms.Padding(2);
             this.X5Y10.Name = "X5Y10";
             this.X5Y10.Size = new System.Drawing.Size(121, 121);
             this.X5Y10.TabIndex = 117;
@@ -2259,7 +2260,7 @@
             // X7Y10
             // 
             this.X7Y10.Location = new System.Drawing.Point(1157, 773);
-            this.X7Y10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X7Y10.Margin = new System.Windows.Forms.Padding(2);
             this.X7Y10.Name = "X7Y10";
             this.X7Y10.Size = new System.Drawing.Size(121, 110);
             this.X7Y10.TabIndex = 119;
@@ -2268,7 +2269,7 @@
             // X5Y11
             // 
             this.X5Y11.Location = new System.Drawing.Point(1285, 517);
-            this.X5Y11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X5Y11.Margin = new System.Windows.Forms.Padding(2);
             this.X5Y11.Name = "X5Y11";
             this.X5Y11.Size = new System.Drawing.Size(121, 121);
             this.X5Y11.TabIndex = 120;
@@ -2277,7 +2278,7 @@
             // X5Y12
             // 
             this.X5Y12.Location = new System.Drawing.Point(1413, 517);
-            this.X5Y12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X5Y12.Margin = new System.Windows.Forms.Padding(2);
             this.X5Y12.Name = "X5Y12";
             this.X5Y12.Size = new System.Drawing.Size(121, 121);
             this.X5Y12.TabIndex = 121;
@@ -2286,7 +2287,7 @@
             // X5Y13
             // 
             this.X5Y13.Location = new System.Drawing.Point(1541, 517);
-            this.X5Y13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X5Y13.Margin = new System.Windows.Forms.Padding(2);
             this.X5Y13.Name = "X5Y13";
             this.X5Y13.Size = new System.Drawing.Size(121, 121);
             this.X5Y13.TabIndex = 122;
@@ -2295,7 +2296,7 @@
             // X5Y14
             // 
             this.X5Y14.Location = new System.Drawing.Point(1669, 517);
-            this.X5Y14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X5Y14.Margin = new System.Windows.Forms.Padding(2);
             this.X5Y14.Name = "X5Y14";
             this.X5Y14.Size = new System.Drawing.Size(128, 121);
             this.X5Y14.TabIndex = 123;
@@ -2304,7 +2305,7 @@
             // X5Y15
             // 
             this.X5Y15.Location = new System.Drawing.Point(1804, 517);
-            this.X5Y15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X5Y15.Margin = new System.Windows.Forms.Padding(2);
             this.X5Y15.Name = "X5Y15";
             this.X5Y15.Size = new System.Drawing.Size(115, 121);
             this.X5Y15.TabIndex = 124;
@@ -2313,7 +2314,7 @@
             // X5Y16
             // 
             this.X5Y16.Location = new System.Drawing.Point(1926, 517);
-            this.X5Y16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X5Y16.Margin = new System.Windows.Forms.Padding(2);
             this.X5Y16.Name = "X5Y16";
             this.X5Y16.Size = new System.Drawing.Size(121, 121);
             this.X5Y16.TabIndex = 125;
@@ -2322,7 +2323,7 @@
             // X5Y17
             // 
             this.X5Y17.Location = new System.Drawing.Point(2054, 517);
-            this.X5Y17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X5Y17.Margin = new System.Windows.Forms.Padding(2);
             this.X5Y17.Name = "X5Y17";
             this.X5Y17.Size = new System.Drawing.Size(121, 121);
             this.X5Y17.TabIndex = 126;
@@ -2331,7 +2332,7 @@
             // X6Y11
             // 
             this.X6Y11.Location = new System.Drawing.Point(1285, 645);
-            this.X6Y11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X6Y11.Margin = new System.Windows.Forms.Padding(2);
             this.X6Y11.Name = "X6Y11";
             this.X6Y11.Size = new System.Drawing.Size(121, 121);
             this.X6Y11.TabIndex = 127;
@@ -2340,7 +2341,7 @@
             // X6Y13
             // 
             this.X6Y13.Location = new System.Drawing.Point(1541, 645);
-            this.X6Y13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X6Y13.Margin = new System.Windows.Forms.Padding(2);
             this.X6Y13.Name = "X6Y13";
             this.X6Y13.Size = new System.Drawing.Size(121, 121);
             this.X6Y13.TabIndex = 129;
@@ -2349,7 +2350,7 @@
             // X6Y14
             // 
             this.X6Y14.Location = new System.Drawing.Point(1669, 645);
-            this.X6Y14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X6Y14.Margin = new System.Windows.Forms.Padding(2);
             this.X6Y14.Name = "X6Y14";
             this.X6Y14.Size = new System.Drawing.Size(128, 121);
             this.X6Y14.TabIndex = 130;
@@ -2358,7 +2359,7 @@
             // X6Y15
             // 
             this.X6Y15.Location = new System.Drawing.Point(1804, 645);
-            this.X6Y15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X6Y15.Margin = new System.Windows.Forms.Padding(2);
             this.X6Y15.Name = "X6Y15";
             this.X6Y15.Size = new System.Drawing.Size(115, 121);
             this.X6Y15.TabIndex = 131;
@@ -2367,7 +2368,7 @@
             // X6Y16
             // 
             this.X6Y16.Location = new System.Drawing.Point(1926, 645);
-            this.X6Y16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X6Y16.Margin = new System.Windows.Forms.Padding(2);
             this.X6Y16.Name = "X6Y16";
             this.X6Y16.Size = new System.Drawing.Size(121, 121);
             this.X6Y16.TabIndex = 132;
@@ -2376,7 +2377,7 @@
             // X6Y17
             // 
             this.X6Y17.Location = new System.Drawing.Point(2054, 645);
-            this.X6Y17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X6Y17.Margin = new System.Windows.Forms.Padding(2);
             this.X6Y17.Name = "X6Y17";
             this.X6Y17.Size = new System.Drawing.Size(121, 121);
             this.X6Y17.TabIndex = 133;
@@ -2385,7 +2386,7 @@
             // X7Y11
             // 
             this.X7Y11.Location = new System.Drawing.Point(1285, 773);
-            this.X7Y11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X7Y11.Margin = new System.Windows.Forms.Padding(2);
             this.X7Y11.Name = "X7Y11";
             this.X7Y11.Size = new System.Drawing.Size(121, 110);
             this.X7Y11.TabIndex = 134;
@@ -2394,7 +2395,7 @@
             // X7Y12
             // 
             this.X7Y12.Location = new System.Drawing.Point(1413, 773);
-            this.X7Y12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X7Y12.Margin = new System.Windows.Forms.Padding(2);
             this.X7Y12.Name = "X7Y12";
             this.X7Y12.Size = new System.Drawing.Size(115, 110);
             this.X7Y12.TabIndex = 135;
@@ -2403,7 +2404,7 @@
             // X7Y13
             // 
             this.X7Y13.Location = new System.Drawing.Point(1541, 773);
-            this.X7Y13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X7Y13.Margin = new System.Windows.Forms.Padding(2);
             this.X7Y13.Name = "X7Y13";
             this.X7Y13.Size = new System.Drawing.Size(121, 110);
             this.X7Y13.TabIndex = 136;
@@ -2412,7 +2413,7 @@
             // X7Y14
             // 
             this.X7Y14.Location = new System.Drawing.Point(1669, 773);
-            this.X7Y14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X7Y14.Margin = new System.Windows.Forms.Padding(2);
             this.X7Y14.Name = "X7Y14";
             this.X7Y14.Size = new System.Drawing.Size(128, 110);
             this.X7Y14.TabIndex = 137;
@@ -2421,7 +2422,7 @@
             // X7Y15
             // 
             this.X7Y15.Location = new System.Drawing.Point(1804, 773);
-            this.X7Y15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X7Y15.Margin = new System.Windows.Forms.Padding(2);
             this.X7Y15.Name = "X7Y15";
             this.X7Y15.Size = new System.Drawing.Size(115, 110);
             this.X7Y15.TabIndex = 138;
@@ -2430,7 +2431,7 @@
             // X7Y16
             // 
             this.X7Y16.Location = new System.Drawing.Point(1926, 773);
-            this.X7Y16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X7Y16.Margin = new System.Windows.Forms.Padding(2);
             this.X7Y16.Name = "X7Y16";
             this.X7Y16.Size = new System.Drawing.Size(121, 110);
             this.X7Y16.TabIndex = 139;
@@ -2439,7 +2440,7 @@
             // X7Y17
             // 
             this.X7Y17.Location = new System.Drawing.Point(2054, 773);
-            this.X7Y17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X7Y17.Margin = new System.Windows.Forms.Padding(2);
             this.X7Y17.Name = "X7Y17";
             this.X7Y17.Size = new System.Drawing.Size(121, 110);
             this.X7Y17.TabIndex = 140;
@@ -2448,7 +2449,7 @@
             // X5Y18
             // 
             this.X5Y18.Location = new System.Drawing.Point(2182, 517);
-            this.X5Y18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X5Y18.Margin = new System.Windows.Forms.Padding(2);
             this.X5Y18.Name = "X5Y18";
             this.X5Y18.Size = new System.Drawing.Size(114, 121);
             this.X5Y18.TabIndex = 141;
@@ -2457,7 +2458,7 @@
             // X5Y19
             // 
             this.X5Y19.Location = new System.Drawing.Point(2309, 517);
-            this.X5Y19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X5Y19.Margin = new System.Windows.Forms.Padding(2);
             this.X5Y19.Name = "X5Y19";
             this.X5Y19.Size = new System.Drawing.Size(123, 121);
             this.X5Y19.TabIndex = 142;
@@ -2466,7 +2467,7 @@
             // X5Y20
             // 
             this.X5Y20.Location = new System.Drawing.Point(2439, 517);
-            this.X5Y20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X5Y20.Margin = new System.Windows.Forms.Padding(2);
             this.X5Y20.Name = "X5Y20";
             this.X5Y20.Size = new System.Drawing.Size(159, 121);
             this.X5Y20.TabIndex = 143;
@@ -2475,7 +2476,7 @@
             // X6Y18
             // 
             this.X6Y18.Location = new System.Drawing.Point(2182, 645);
-            this.X6Y18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X6Y18.Margin = new System.Windows.Forms.Padding(2);
             this.X6Y18.Name = "X6Y18";
             this.X6Y18.Size = new System.Drawing.Size(120, 121);
             this.X6Y18.TabIndex = 144;
@@ -2484,7 +2485,7 @@
             // X6Y19
             // 
             this.X6Y19.Location = new System.Drawing.Point(2309, 645);
-            this.X6Y19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X6Y19.Margin = new System.Windows.Forms.Padding(2);
             this.X6Y19.Name = "X6Y19";
             this.X6Y19.Size = new System.Drawing.Size(123, 121);
             this.X6Y19.TabIndex = 145;
@@ -2493,7 +2494,7 @@
             // X6Y20
             // 
             this.X6Y20.Location = new System.Drawing.Point(2439, 645);
-            this.X6Y20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X6Y20.Margin = new System.Windows.Forms.Padding(2);
             this.X6Y20.Name = "X6Y20";
             this.X6Y20.Size = new System.Drawing.Size(159, 121);
             this.X6Y20.TabIndex = 146;
@@ -2502,7 +2503,7 @@
             // X7Y18
             // 
             this.X7Y18.Location = new System.Drawing.Point(2182, 773);
-            this.X7Y18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X7Y18.Margin = new System.Windows.Forms.Padding(2);
             this.X7Y18.Name = "X7Y18";
             this.X7Y18.Size = new System.Drawing.Size(120, 110);
             this.X7Y18.TabIndex = 147;
@@ -2511,7 +2512,7 @@
             // X7Y19
             // 
             this.X7Y19.Location = new System.Drawing.Point(2309, 773);
-            this.X7Y19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X7Y19.Margin = new System.Windows.Forms.Padding(2);
             this.X7Y19.Name = "X7Y19";
             this.X7Y19.Size = new System.Drawing.Size(123, 110);
             this.X7Y19.TabIndex = 148;
@@ -2520,7 +2521,7 @@
             // X7Y20
             // 
             this.X7Y20.Location = new System.Drawing.Point(2439, 773);
-            this.X7Y20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X7Y20.Margin = new System.Windows.Forms.Padding(2);
             this.X7Y20.Name = "X7Y20";
             this.X7Y20.Size = new System.Drawing.Size(159, 110);
             this.X7Y20.TabIndex = 149;
@@ -2529,7 +2530,7 @@
             // X8Y1
             // 
             this.X8Y1.Location = new System.Drawing.Point(5, 890);
-            this.X8Y1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X8Y1.Margin = new System.Windows.Forms.Padding(2);
             this.X8Y1.Name = "X8Y1";
             this.X8Y1.Size = new System.Drawing.Size(121, 132);
             this.X8Y1.TabIndex = 150;
@@ -2538,7 +2539,7 @@
             // X8Y2
             // 
             this.X8Y2.Location = new System.Drawing.Point(133, 890);
-            this.X8Y2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X8Y2.Margin = new System.Windows.Forms.Padding(2);
             this.X8Y2.Name = "X8Y2";
             this.X8Y2.Size = new System.Drawing.Size(121, 132);
             this.X8Y2.TabIndex = 151;
@@ -2547,7 +2548,7 @@
             // X8Y3
             // 
             this.X8Y3.Location = new System.Drawing.Point(261, 890);
-            this.X8Y3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X8Y3.Margin = new System.Windows.Forms.Padding(2);
             this.X8Y3.Name = "X8Y3";
             this.X8Y3.Size = new System.Drawing.Size(121, 132);
             this.X8Y3.TabIndex = 152;
@@ -2556,7 +2557,7 @@
             // X8Y4
             // 
             this.X8Y4.Location = new System.Drawing.Point(389, 890);
-            this.X8Y4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X8Y4.Margin = new System.Windows.Forms.Padding(2);
             this.X8Y4.Name = "X8Y4";
             this.X8Y4.Size = new System.Drawing.Size(121, 132);
             this.X8Y4.TabIndex = 153;
@@ -2565,7 +2566,7 @@
             // X8Y5
             // 
             this.X8Y5.Location = new System.Drawing.Point(517, 890);
-            this.X8Y5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X8Y5.Margin = new System.Windows.Forms.Padding(2);
             this.X8Y5.Name = "X8Y5";
             this.X8Y5.Size = new System.Drawing.Size(121, 132);
             this.X8Y5.TabIndex = 154;
@@ -2574,7 +2575,7 @@
             // X8Y6
             // 
             this.X8Y6.Location = new System.Drawing.Point(645, 890);
-            this.X8Y6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X8Y6.Margin = new System.Windows.Forms.Padding(2);
             this.X8Y6.Name = "X8Y6";
             this.X8Y6.Size = new System.Drawing.Size(121, 132);
             this.X8Y6.TabIndex = 155;
@@ -2583,7 +2584,7 @@
             // X8Y7
             // 
             this.X8Y7.Location = new System.Drawing.Point(773, 890);
-            this.X8Y7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X8Y7.Margin = new System.Windows.Forms.Padding(2);
             this.X8Y7.Name = "X8Y7";
             this.X8Y7.Size = new System.Drawing.Size(121, 132);
             this.X8Y7.TabIndex = 156;
@@ -2592,7 +2593,7 @@
             // X8Y8
             // 
             this.X8Y8.Location = new System.Drawing.Point(901, 890);
-            this.X8Y8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X8Y8.Margin = new System.Windows.Forms.Padding(2);
             this.X8Y8.Name = "X8Y8";
             this.X8Y8.Size = new System.Drawing.Size(121, 132);
             this.X8Y8.TabIndex = 157;
@@ -2601,7 +2602,7 @@
             // X8Y9
             // 
             this.X8Y9.Location = new System.Drawing.Point(1029, 890);
-            this.X8Y9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X8Y9.Margin = new System.Windows.Forms.Padding(2);
             this.X8Y9.Name = "X8Y9";
             this.X8Y9.Size = new System.Drawing.Size(121, 132);
             this.X8Y9.TabIndex = 158;
@@ -2610,7 +2611,7 @@
             // X9Y1
             // 
             this.X9Y1.Location = new System.Drawing.Point(5, 1029);
-            this.X9Y1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X9Y1.Margin = new System.Windows.Forms.Padding(2);
             this.X9Y1.Name = "X9Y1";
             this.X9Y1.Size = new System.Drawing.Size(121, 121);
             this.X9Y1.TabIndex = 159;
@@ -2619,7 +2620,7 @@
             // X9Y2
             // 
             this.X9Y2.Location = new System.Drawing.Point(133, 1029);
-            this.X9Y2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X9Y2.Margin = new System.Windows.Forms.Padding(2);
             this.X9Y2.Name = "X9Y2";
             this.X9Y2.Size = new System.Drawing.Size(121, 121);
             this.X9Y2.TabIndex = 160;
@@ -2628,7 +2629,7 @@
             // X9Y3
             // 
             this.X9Y3.Location = new System.Drawing.Point(261, 1029);
-            this.X9Y3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X9Y3.Margin = new System.Windows.Forms.Padding(2);
             this.X9Y3.Name = "X9Y3";
             this.X9Y3.Size = new System.Drawing.Size(121, 121);
             this.X9Y3.TabIndex = 161;
@@ -2637,7 +2638,7 @@
             // X9Y4
             // 
             this.X9Y4.Location = new System.Drawing.Point(389, 1029);
-            this.X9Y4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X9Y4.Margin = new System.Windows.Forms.Padding(2);
             this.X9Y4.Name = "X9Y4";
             this.X9Y4.Size = new System.Drawing.Size(121, 121);
             this.X9Y4.TabIndex = 162;
@@ -2646,7 +2647,7 @@
             // X9Y5
             // 
             this.X9Y5.Location = new System.Drawing.Point(517, 1029);
-            this.X9Y5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X9Y5.Margin = new System.Windows.Forms.Padding(2);
             this.X9Y5.Name = "X9Y5";
             this.X9Y5.Size = new System.Drawing.Size(121, 121);
             this.X9Y5.TabIndex = 163;
@@ -2655,7 +2656,7 @@
             // X9Y6
             // 
             this.X9Y6.Location = new System.Drawing.Point(645, 1029);
-            this.X9Y6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X9Y6.Margin = new System.Windows.Forms.Padding(2);
             this.X9Y6.Name = "X9Y6";
             this.X9Y6.Size = new System.Drawing.Size(121, 121);
             this.X9Y6.TabIndex = 164;
@@ -2664,7 +2665,7 @@
             // X9Y7
             // 
             this.X9Y7.Location = new System.Drawing.Point(773, 1029);
-            this.X9Y7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X9Y7.Margin = new System.Windows.Forms.Padding(2);
             this.X9Y7.Name = "X9Y7";
             this.X9Y7.Size = new System.Drawing.Size(121, 121);
             this.X9Y7.TabIndex = 165;
@@ -2673,7 +2674,7 @@
             // X9Y8
             // 
             this.X9Y8.Location = new System.Drawing.Point(901, 1029);
-            this.X9Y8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X9Y8.Margin = new System.Windows.Forms.Padding(2);
             this.X9Y8.Name = "X9Y8";
             this.X9Y8.Size = new System.Drawing.Size(121, 121);
             this.X9Y8.TabIndex = 166;
@@ -2682,7 +2683,7 @@
             // X9Y9
             // 
             this.X9Y9.Location = new System.Drawing.Point(1029, 1029);
-            this.X9Y9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X9Y9.Margin = new System.Windows.Forms.Padding(2);
             this.X9Y9.Name = "X9Y9";
             this.X9Y9.Size = new System.Drawing.Size(121, 121);
             this.X9Y9.TabIndex = 167;
@@ -2691,7 +2692,7 @@
             // X10Y1
             // 
             this.X10Y1.Location = new System.Drawing.Point(5, 1157);
-            this.X10Y1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X10Y1.Margin = new System.Windows.Forms.Padding(2);
             this.X10Y1.Name = "X10Y1";
             this.X10Y1.Size = new System.Drawing.Size(121, 121);
             this.X10Y1.TabIndex = 168;
@@ -2700,7 +2701,7 @@
             // X10Y2
             // 
             this.X10Y2.Location = new System.Drawing.Point(133, 1157);
-            this.X10Y2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X10Y2.Margin = new System.Windows.Forms.Padding(2);
             this.X10Y2.Name = "X10Y2";
             this.X10Y2.Size = new System.Drawing.Size(121, 121);
             this.X10Y2.TabIndex = 169;
@@ -2709,7 +2710,7 @@
             // X10Y3
             // 
             this.X10Y3.Location = new System.Drawing.Point(261, 1157);
-            this.X10Y3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X10Y3.Margin = new System.Windows.Forms.Padding(2);
             this.X10Y3.Name = "X10Y3";
             this.X10Y3.Size = new System.Drawing.Size(121, 121);
             this.X10Y3.TabIndex = 170;
@@ -2718,7 +2719,7 @@
             // X10Y4
             // 
             this.X10Y4.Location = new System.Drawing.Point(389, 1157);
-            this.X10Y4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X10Y4.Margin = new System.Windows.Forms.Padding(2);
             this.X10Y4.Name = "X10Y4";
             this.X10Y4.Size = new System.Drawing.Size(121, 121);
             this.X10Y4.TabIndex = 171;
@@ -2727,7 +2728,7 @@
             // X10Y6
             // 
             this.X10Y6.Location = new System.Drawing.Point(645, 1157);
-            this.X10Y6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X10Y6.Margin = new System.Windows.Forms.Padding(2);
             this.X10Y6.Name = "X10Y6";
             this.X10Y6.Size = new System.Drawing.Size(121, 121);
             this.X10Y6.TabIndex = 173;
@@ -2736,7 +2737,7 @@
             // X10Y7
             // 
             this.X10Y7.Location = new System.Drawing.Point(773, 1157);
-            this.X10Y7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X10Y7.Margin = new System.Windows.Forms.Padding(2);
             this.X10Y7.Name = "X10Y7";
             this.X10Y7.Size = new System.Drawing.Size(121, 121);
             this.X10Y7.TabIndex = 174;
@@ -2745,7 +2746,7 @@
             // X10Y8
             // 
             this.X10Y8.Location = new System.Drawing.Point(901, 1157);
-            this.X10Y8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X10Y8.Margin = new System.Windows.Forms.Padding(2);
             this.X10Y8.Name = "X10Y8";
             this.X10Y8.Size = new System.Drawing.Size(121, 121);
             this.X10Y8.TabIndex = 175;
@@ -2754,7 +2755,7 @@
             // X10Y9
             // 
             this.X10Y9.Location = new System.Drawing.Point(1029, 1157);
-            this.X10Y9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X10Y9.Margin = new System.Windows.Forms.Padding(2);
             this.X10Y9.Name = "X10Y9";
             this.X10Y9.Size = new System.Drawing.Size(121, 121);
             this.X10Y9.TabIndex = 176;
@@ -2763,7 +2764,7 @@
             // X11Y1
             // 
             this.X11Y1.Location = new System.Drawing.Point(5, 1285);
-            this.X11Y1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X11Y1.Margin = new System.Windows.Forms.Padding(2);
             this.X11Y1.Name = "X11Y1";
             this.X11Y1.Size = new System.Drawing.Size(121, 121);
             this.X11Y1.TabIndex = 177;
@@ -2772,7 +2773,7 @@
             // X11Y2
             // 
             this.X11Y2.Location = new System.Drawing.Point(133, 1285);
-            this.X11Y2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X11Y2.Margin = new System.Windows.Forms.Padding(2);
             this.X11Y2.Name = "X11Y2";
             this.X11Y2.Size = new System.Drawing.Size(121, 121);
             this.X11Y2.TabIndex = 178;
@@ -2781,7 +2782,7 @@
             // X11Y3
             // 
             this.X11Y3.Location = new System.Drawing.Point(261, 1285);
-            this.X11Y3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X11Y3.Margin = new System.Windows.Forms.Padding(2);
             this.X11Y3.Name = "X11Y3";
             this.X11Y3.Size = new System.Drawing.Size(121, 121);
             this.X11Y3.TabIndex = 179;
@@ -2790,7 +2791,7 @@
             // X11Y4
             // 
             this.X11Y4.Location = new System.Drawing.Point(389, 1285);
-            this.X11Y4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X11Y4.Margin = new System.Windows.Forms.Padding(2);
             this.X11Y4.Name = "X11Y4";
             this.X11Y4.Size = new System.Drawing.Size(121, 121);
             this.X11Y4.TabIndex = 180;
@@ -2799,7 +2800,7 @@
             // X11Y5
             // 
             this.X11Y5.Location = new System.Drawing.Point(517, 1285);
-            this.X11Y5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X11Y5.Margin = new System.Windows.Forms.Padding(2);
             this.X11Y5.Name = "X11Y5";
             this.X11Y5.Size = new System.Drawing.Size(121, 121);
             this.X11Y5.TabIndex = 181;
@@ -2808,7 +2809,7 @@
             // X11Y6
             // 
             this.X11Y6.Location = new System.Drawing.Point(645, 1285);
-            this.X11Y6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X11Y6.Margin = new System.Windows.Forms.Padding(2);
             this.X11Y6.Name = "X11Y6";
             this.X11Y6.Size = new System.Drawing.Size(121, 121);
             this.X11Y6.TabIndex = 182;
@@ -2817,7 +2818,7 @@
             // X11Y7
             // 
             this.X11Y7.Location = new System.Drawing.Point(773, 1285);
-            this.X11Y7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X11Y7.Margin = new System.Windows.Forms.Padding(2);
             this.X11Y7.Name = "X11Y7";
             this.X11Y7.Size = new System.Drawing.Size(121, 121);
             this.X11Y7.TabIndex = 183;
@@ -2826,7 +2827,7 @@
             // X11Y8
             // 
             this.X11Y8.Location = new System.Drawing.Point(901, 1285);
-            this.X11Y8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X11Y8.Margin = new System.Windows.Forms.Padding(2);
             this.X11Y8.Name = "X11Y8";
             this.X11Y8.Size = new System.Drawing.Size(121, 121);
             this.X11Y8.TabIndex = 184;
@@ -2835,7 +2836,7 @@
             // X11Y9
             // 
             this.X11Y9.Location = new System.Drawing.Point(1029, 1285);
-            this.X11Y9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X11Y9.Margin = new System.Windows.Forms.Padding(2);
             this.X11Y9.Name = "X11Y9";
             this.X11Y9.Size = new System.Drawing.Size(121, 121);
             this.X11Y9.TabIndex = 185;
@@ -2844,7 +2845,7 @@
             // X8Y10
             // 
             this.X8Y10.Location = new System.Drawing.Point(1157, 890);
-            this.X8Y10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X8Y10.Margin = new System.Windows.Forms.Padding(2);
             this.X8Y10.Name = "X8Y10";
             this.X8Y10.Size = new System.Drawing.Size(121, 132);
             this.X8Y10.TabIndex = 186;
@@ -2853,7 +2854,7 @@
             // X8Y11
             // 
             this.X8Y11.Location = new System.Drawing.Point(1285, 890);
-            this.X8Y11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X8Y11.Margin = new System.Windows.Forms.Padding(2);
             this.X8Y11.Name = "X8Y11";
             this.X8Y11.Size = new System.Drawing.Size(121, 132);
             this.X8Y11.TabIndex = 187;
@@ -2862,7 +2863,7 @@
             // X8Y12
             // 
             this.X8Y12.Location = new System.Drawing.Point(1413, 890);
-            this.X8Y12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X8Y12.Margin = new System.Windows.Forms.Padding(2);
             this.X8Y12.Name = "X8Y12";
             this.X8Y12.Size = new System.Drawing.Size(121, 132);
             this.X8Y12.TabIndex = 188;
@@ -2871,7 +2872,7 @@
             // X8Y13
             // 
             this.X8Y13.Location = new System.Drawing.Point(1541, 890);
-            this.X8Y13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X8Y13.Margin = new System.Windows.Forms.Padding(2);
             this.X8Y13.Name = "X8Y13";
             this.X8Y13.Size = new System.Drawing.Size(121, 132);
             this.X8Y13.TabIndex = 189;
@@ -2880,7 +2881,7 @@
             // X8Y14
             // 
             this.X8Y14.Location = new System.Drawing.Point(1669, 890);
-            this.X8Y14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X8Y14.Margin = new System.Windows.Forms.Padding(2);
             this.X8Y14.Name = "X8Y14";
             this.X8Y14.Size = new System.Drawing.Size(128, 132);
             this.X8Y14.TabIndex = 190;
@@ -2889,7 +2890,7 @@
             // X8Y15
             // 
             this.X8Y15.Location = new System.Drawing.Point(1804, 890);
-            this.X8Y15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X8Y15.Margin = new System.Windows.Forms.Padding(2);
             this.X8Y15.Name = "X8Y15";
             this.X8Y15.Size = new System.Drawing.Size(115, 132);
             this.X8Y15.TabIndex = 191;
@@ -2898,7 +2899,7 @@
             // X8Y16
             // 
             this.X8Y16.Location = new System.Drawing.Point(1926, 890);
-            this.X8Y16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X8Y16.Margin = new System.Windows.Forms.Padding(2);
             this.X8Y16.Name = "X8Y16";
             this.X8Y16.Size = new System.Drawing.Size(121, 132);
             this.X8Y16.TabIndex = 192;
@@ -2907,7 +2908,7 @@
             // X8Y17
             // 
             this.X8Y17.Location = new System.Drawing.Point(2054, 890);
-            this.X8Y17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X8Y17.Margin = new System.Windows.Forms.Padding(2);
             this.X8Y17.Name = "X8Y17";
             this.X8Y17.Size = new System.Drawing.Size(121, 132);
             this.X8Y17.TabIndex = 193;
@@ -2916,7 +2917,7 @@
             // X9Y10
             // 
             this.X9Y10.Location = new System.Drawing.Point(1157, 1029);
-            this.X9Y10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X9Y10.Margin = new System.Windows.Forms.Padding(2);
             this.X9Y10.Name = "X9Y10";
             this.X9Y10.Size = new System.Drawing.Size(121, 121);
             this.X9Y10.TabIndex = 194;
@@ -2925,7 +2926,7 @@
             // X9Y11
             // 
             this.X9Y11.Location = new System.Drawing.Point(1285, 1029);
-            this.X9Y11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X9Y11.Margin = new System.Windows.Forms.Padding(2);
             this.X9Y11.Name = "X9Y11";
             this.X9Y11.Size = new System.Drawing.Size(121, 121);
             this.X9Y11.TabIndex = 195;
@@ -2934,7 +2935,7 @@
             // X9Y12
             // 
             this.X9Y12.Location = new System.Drawing.Point(1413, 1029);
-            this.X9Y12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X9Y12.Margin = new System.Windows.Forms.Padding(2);
             this.X9Y12.Name = "X9Y12";
             this.X9Y12.Size = new System.Drawing.Size(121, 121);
             this.X9Y12.TabIndex = 196;
@@ -2943,7 +2944,7 @@
             // X9Y13
             // 
             this.X9Y13.Location = new System.Drawing.Point(1541, 1029);
-            this.X9Y13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X9Y13.Margin = new System.Windows.Forms.Padding(2);
             this.X9Y13.Name = "X9Y13";
             this.X9Y13.Size = new System.Drawing.Size(121, 121);
             this.X9Y13.TabIndex = 197;
@@ -2952,7 +2953,7 @@
             // X9Y14
             // 
             this.X9Y14.Location = new System.Drawing.Point(1669, 1029);
-            this.X9Y14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X9Y14.Margin = new System.Windows.Forms.Padding(2);
             this.X9Y14.Name = "X9Y14";
             this.X9Y14.Size = new System.Drawing.Size(128, 120);
             this.X9Y14.TabIndex = 198;
@@ -2961,7 +2962,7 @@
             // X9Y15
             // 
             this.X9Y15.Location = new System.Drawing.Point(1804, 1029);
-            this.X9Y15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X9Y15.Margin = new System.Windows.Forms.Padding(2);
             this.X9Y15.Name = "X9Y15";
             this.X9Y15.Size = new System.Drawing.Size(115, 121);
             this.X9Y15.TabIndex = 199;
@@ -2970,7 +2971,7 @@
             // X9Y16
             // 
             this.X9Y16.Location = new System.Drawing.Point(1926, 1029);
-            this.X9Y16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X9Y16.Margin = new System.Windows.Forms.Padding(2);
             this.X9Y16.Name = "X9Y16";
             this.X9Y16.Size = new System.Drawing.Size(121, 121);
             this.X9Y16.TabIndex = 200;
@@ -2979,7 +2980,7 @@
             // X9Y17
             // 
             this.X9Y17.Location = new System.Drawing.Point(2054, 1029);
-            this.X9Y17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X9Y17.Margin = new System.Windows.Forms.Padding(2);
             this.X9Y17.Name = "X9Y17";
             this.X9Y17.Size = new System.Drawing.Size(121, 121);
             this.X9Y17.TabIndex = 201;
@@ -2988,7 +2989,7 @@
             // X10Y10
             // 
             this.X10Y10.Location = new System.Drawing.Point(1157, 1157);
-            this.X10Y10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X10Y10.Margin = new System.Windows.Forms.Padding(2);
             this.X10Y10.Name = "X10Y10";
             this.X10Y10.Size = new System.Drawing.Size(121, 121);
             this.X10Y10.TabIndex = 202;
@@ -2997,7 +2998,7 @@
             // X10Y11
             // 
             this.X10Y11.Location = new System.Drawing.Point(1285, 1157);
-            this.X10Y11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X10Y11.Margin = new System.Windows.Forms.Padding(2);
             this.X10Y11.Name = "X10Y11";
             this.X10Y11.Size = new System.Drawing.Size(121, 121);
             this.X10Y11.TabIndex = 203;
@@ -3006,7 +3007,7 @@
             // X10Y12
             // 
             this.X10Y12.Location = new System.Drawing.Point(1413, 1157);
-            this.X10Y12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X10Y12.Margin = new System.Windows.Forms.Padding(2);
             this.X10Y12.Name = "X10Y12";
             this.X10Y12.Size = new System.Drawing.Size(121, 121);
             this.X10Y12.TabIndex = 204;
@@ -3015,7 +3016,7 @@
             // X10Y13
             // 
             this.X10Y13.Location = new System.Drawing.Point(1541, 1157);
-            this.X10Y13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X10Y13.Margin = new System.Windows.Forms.Padding(2);
             this.X10Y13.Name = "X10Y13";
             this.X10Y13.Size = new System.Drawing.Size(121, 121);
             this.X10Y13.TabIndex = 205;
@@ -3024,7 +3025,7 @@
             // X10Y14
             // 
             this.X10Y14.Location = new System.Drawing.Point(1669, 1157);
-            this.X10Y14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X10Y14.Margin = new System.Windows.Forms.Padding(2);
             this.X10Y14.Name = "X10Y14";
             this.X10Y14.Size = new System.Drawing.Size(128, 121);
             this.X10Y14.TabIndex = 206;
@@ -3033,7 +3034,7 @@
             // X10Y15
             // 
             this.X10Y15.Location = new System.Drawing.Point(1804, 1157);
-            this.X10Y15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X10Y15.Margin = new System.Windows.Forms.Padding(2);
             this.X10Y15.Name = "X10Y15";
             this.X10Y15.Size = new System.Drawing.Size(115, 121);
             this.X10Y15.TabIndex = 207;
@@ -3042,7 +3043,7 @@
             // X10Y16
             // 
             this.X10Y16.Location = new System.Drawing.Point(1926, 1157);
-            this.X10Y16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X10Y16.Margin = new System.Windows.Forms.Padding(2);
             this.X10Y16.Name = "X10Y16";
             this.X10Y16.Size = new System.Drawing.Size(121, 121);
             this.X10Y16.TabIndex = 208;
@@ -3051,7 +3052,7 @@
             // X10Y17
             // 
             this.X10Y17.Location = new System.Drawing.Point(2054, 1157);
-            this.X10Y17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X10Y17.Margin = new System.Windows.Forms.Padding(2);
             this.X10Y17.Name = "X10Y17";
             this.X10Y17.Size = new System.Drawing.Size(121, 121);
             this.X10Y17.TabIndex = 209;
@@ -3060,7 +3061,7 @@
             // X11Y10
             // 
             this.X11Y10.Location = new System.Drawing.Point(1157, 1285);
-            this.X11Y10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X11Y10.Margin = new System.Windows.Forms.Padding(2);
             this.X11Y10.Name = "X11Y10";
             this.X11Y10.Size = new System.Drawing.Size(121, 121);
             this.X11Y10.TabIndex = 210;
@@ -3069,7 +3070,7 @@
             // X11Y11
             // 
             this.X11Y11.Location = new System.Drawing.Point(1285, 1285);
-            this.X11Y11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X11Y11.Margin = new System.Windows.Forms.Padding(2);
             this.X11Y11.Name = "X11Y11";
             this.X11Y11.Size = new System.Drawing.Size(121, 121);
             this.X11Y11.TabIndex = 211;
@@ -3078,7 +3079,7 @@
             // X11Y12
             // 
             this.X11Y12.Location = new System.Drawing.Point(1413, 1285);
-            this.X11Y12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X11Y12.Margin = new System.Windows.Forms.Padding(2);
             this.X11Y12.Name = "X11Y12";
             this.X11Y12.Size = new System.Drawing.Size(121, 121);
             this.X11Y12.TabIndex = 212;
@@ -3087,7 +3088,7 @@
             // X11Y13
             // 
             this.X11Y13.Location = new System.Drawing.Point(1541, 1285);
-            this.X11Y13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X11Y13.Margin = new System.Windows.Forms.Padding(2);
             this.X11Y13.Name = "X11Y13";
             this.X11Y13.Size = new System.Drawing.Size(121, 121);
             this.X11Y13.TabIndex = 213;
@@ -3096,7 +3097,7 @@
             // X11Y14
             // 
             this.X11Y14.Location = new System.Drawing.Point(1669, 1285);
-            this.X11Y14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X11Y14.Margin = new System.Windows.Forms.Padding(2);
             this.X11Y14.Name = "X11Y14";
             this.X11Y14.Size = new System.Drawing.Size(128, 121);
             this.X11Y14.TabIndex = 214;
@@ -3105,7 +3106,7 @@
             // X11Y15
             // 
             this.X11Y15.Location = new System.Drawing.Point(1804, 1285);
-            this.X11Y15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X11Y15.Margin = new System.Windows.Forms.Padding(2);
             this.X11Y15.Name = "X11Y15";
             this.X11Y15.Size = new System.Drawing.Size(115, 121);
             this.X11Y15.TabIndex = 215;
@@ -3114,7 +3115,7 @@
             // X11Y16
             // 
             this.X11Y16.Location = new System.Drawing.Point(1926, 1285);
-            this.X11Y16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X11Y16.Margin = new System.Windows.Forms.Padding(2);
             this.X11Y16.Name = "X11Y16";
             this.X11Y16.Size = new System.Drawing.Size(121, 121);
             this.X11Y16.TabIndex = 216;
@@ -3123,7 +3124,7 @@
             // X11Y17
             // 
             this.X11Y17.Location = new System.Drawing.Point(2054, 1285);
-            this.X11Y17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X11Y17.Margin = new System.Windows.Forms.Padding(2);
             this.X11Y17.Name = "X11Y17";
             this.X11Y17.Size = new System.Drawing.Size(121, 121);
             this.X11Y17.TabIndex = 217;
@@ -3132,7 +3133,7 @@
             // X8Y18
             // 
             this.X8Y18.Location = new System.Drawing.Point(2182, 890);
-            this.X8Y18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X8Y18.Margin = new System.Windows.Forms.Padding(2);
             this.X8Y18.Name = "X8Y18";
             this.X8Y18.Size = new System.Drawing.Size(120, 132);
             this.X8Y18.TabIndex = 218;
@@ -3141,7 +3142,7 @@
             // X8Y19
             // 
             this.X8Y19.Location = new System.Drawing.Point(2309, 890);
-            this.X8Y19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X8Y19.Margin = new System.Windows.Forms.Padding(2);
             this.X8Y19.Name = "X8Y19";
             this.X8Y19.Size = new System.Drawing.Size(123, 132);
             this.X8Y19.TabIndex = 219;
@@ -3150,7 +3151,7 @@
             // X8Y20
             // 
             this.X8Y20.Location = new System.Drawing.Point(2439, 890);
-            this.X8Y20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X8Y20.Margin = new System.Windows.Forms.Padding(2);
             this.X8Y20.Name = "X8Y20";
             this.X8Y20.Size = new System.Drawing.Size(159, 132);
             this.X8Y20.TabIndex = 220;
@@ -3159,7 +3160,7 @@
             // X9Y18
             // 
             this.X9Y18.Location = new System.Drawing.Point(2182, 1029);
-            this.X9Y18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X9Y18.Margin = new System.Windows.Forms.Padding(2);
             this.X9Y18.Name = "X9Y18";
             this.X9Y18.Size = new System.Drawing.Size(120, 121);
             this.X9Y18.TabIndex = 221;
@@ -3168,7 +3169,7 @@
             // X9Y19
             // 
             this.X9Y19.Location = new System.Drawing.Point(2309, 1029);
-            this.X9Y19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X9Y19.Margin = new System.Windows.Forms.Padding(2);
             this.X9Y19.Name = "X9Y19";
             this.X9Y19.Size = new System.Drawing.Size(123, 121);
             this.X9Y19.TabIndex = 222;
@@ -3177,7 +3178,7 @@
             // X9Y20
             // 
             this.X9Y20.Location = new System.Drawing.Point(2439, 1029);
-            this.X9Y20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X9Y20.Margin = new System.Windows.Forms.Padding(2);
             this.X9Y20.Name = "X9Y20";
             this.X9Y20.Size = new System.Drawing.Size(159, 121);
             this.X9Y20.TabIndex = 223;
@@ -3186,7 +3187,7 @@
             // X10Y18
             // 
             this.X10Y18.Location = new System.Drawing.Point(2182, 1157);
-            this.X10Y18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X10Y18.Margin = new System.Windows.Forms.Padding(2);
             this.X10Y18.Name = "X10Y18";
             this.X10Y18.Size = new System.Drawing.Size(120, 121);
             this.X10Y18.TabIndex = 224;
@@ -3195,7 +3196,7 @@
             // X10Y19
             // 
             this.X10Y19.Location = new System.Drawing.Point(2309, 1157);
-            this.X10Y19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X10Y19.Margin = new System.Windows.Forms.Padding(2);
             this.X10Y19.Name = "X10Y19";
             this.X10Y19.Size = new System.Drawing.Size(123, 121);
             this.X10Y19.TabIndex = 225;
@@ -3204,7 +3205,7 @@
             // X11Y18
             // 
             this.X11Y18.Location = new System.Drawing.Point(2182, 1285);
-            this.X11Y18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X11Y18.Margin = new System.Windows.Forms.Padding(2);
             this.X11Y18.Name = "X11Y18";
             this.X11Y18.Size = new System.Drawing.Size(120, 121);
             this.X11Y18.TabIndex = 226;
@@ -3213,7 +3214,7 @@
             // X11Y19
             // 
             this.X11Y19.Location = new System.Drawing.Point(2309, 1285);
-            this.X11Y19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X11Y19.Margin = new System.Windows.Forms.Padding(2);
             this.X11Y19.Name = "X11Y19";
             this.X11Y19.Size = new System.Drawing.Size(123, 121);
             this.X11Y19.TabIndex = 227;
@@ -3222,7 +3223,7 @@
             // X11Y20
             // 
             this.X11Y20.Location = new System.Drawing.Point(2439, 1285);
-            this.X11Y20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X11Y20.Margin = new System.Windows.Forms.Padding(2);
             this.X11Y20.Name = "X11Y20";
             this.X11Y20.Size = new System.Drawing.Size(159, 121);
             this.X11Y20.TabIndex = 228;
@@ -3231,7 +3232,7 @@
             // X10Y20
             // 
             this.X10Y20.Location = new System.Drawing.Point(2439, 1157);
-            this.X10Y20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X10Y20.Margin = new System.Windows.Forms.Padding(2);
             this.X10Y20.Name = "X10Y20";
             this.X10Y20.Size = new System.Drawing.Size(159, 121);
             this.X10Y20.TabIndex = 229;
@@ -3240,7 +3241,7 @@
             // X12Y1
             // 
             this.X12Y1.Location = new System.Drawing.Point(5, 1413);
-            this.X12Y1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X12Y1.Margin = new System.Windows.Forms.Padding(2);
             this.X12Y1.Name = "X12Y1";
             this.X12Y1.Size = new System.Drawing.Size(121, 121);
             this.X12Y1.TabIndex = 230;
@@ -3249,7 +3250,7 @@
             // X12Y2
             // 
             this.X12Y2.Location = new System.Drawing.Point(133, 1413);
-            this.X12Y2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X12Y2.Margin = new System.Windows.Forms.Padding(2);
             this.X12Y2.Name = "X12Y2";
             this.X12Y2.Size = new System.Drawing.Size(121, 121);
             this.X12Y2.TabIndex = 231;
@@ -3258,7 +3259,7 @@
             // X12Y3
             // 
             this.X12Y3.Location = new System.Drawing.Point(261, 1413);
-            this.X12Y3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X12Y3.Margin = new System.Windows.Forms.Padding(2);
             this.X12Y3.Name = "X12Y3";
             this.X12Y3.Size = new System.Drawing.Size(121, 121);
             this.X12Y3.TabIndex = 232;
@@ -3267,7 +3268,7 @@
             // X12Y4
             // 
             this.X12Y4.Location = new System.Drawing.Point(389, 1413);
-            this.X12Y4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X12Y4.Margin = new System.Windows.Forms.Padding(2);
             this.X12Y4.Name = "X12Y4";
             this.X12Y4.Size = new System.Drawing.Size(121, 121);
             this.X12Y4.TabIndex = 233;
@@ -3276,7 +3277,7 @@
             // X12Y5
             // 
             this.X12Y5.Location = new System.Drawing.Point(517, 1413);
-            this.X12Y5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X12Y5.Margin = new System.Windows.Forms.Padding(2);
             this.X12Y5.Name = "X12Y5";
             this.X12Y5.Size = new System.Drawing.Size(121, 121);
             this.X12Y5.TabIndex = 234;
@@ -3285,7 +3286,7 @@
             // X12Y6
             // 
             this.X12Y6.Location = new System.Drawing.Point(645, 1413);
-            this.X12Y6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X12Y6.Margin = new System.Windows.Forms.Padding(2);
             this.X12Y6.Name = "X12Y6";
             this.X12Y6.Size = new System.Drawing.Size(121, 121);
             this.X12Y6.TabIndex = 235;
@@ -3294,7 +3295,7 @@
             // X12Y7
             // 
             this.X12Y7.Location = new System.Drawing.Point(773, 1413);
-            this.X12Y7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X12Y7.Margin = new System.Windows.Forms.Padding(2);
             this.X12Y7.Name = "X12Y7";
             this.X12Y7.Size = new System.Drawing.Size(121, 121);
             this.X12Y7.TabIndex = 236;
@@ -3303,7 +3304,7 @@
             // X12Y8
             // 
             this.X12Y8.Location = new System.Drawing.Point(901, 1413);
-            this.X12Y8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X12Y8.Margin = new System.Windows.Forms.Padding(2);
             this.X12Y8.Name = "X12Y8";
             this.X12Y8.Size = new System.Drawing.Size(121, 121);
             this.X12Y8.TabIndex = 237;
@@ -3312,7 +3313,7 @@
             // X12Y9
             // 
             this.X12Y9.Location = new System.Drawing.Point(1029, 1413);
-            this.X12Y9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X12Y9.Margin = new System.Windows.Forms.Padding(2);
             this.X12Y9.Name = "X12Y9";
             this.X12Y9.Size = new System.Drawing.Size(121, 121);
             this.X12Y9.TabIndex = 238;
@@ -3321,7 +3322,7 @@
             // X13Y1
             // 
             this.X13Y1.Location = new System.Drawing.Point(5, 1541);
-            this.X13Y1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X13Y1.Margin = new System.Windows.Forms.Padding(2);
             this.X13Y1.Name = "X13Y1";
             this.X13Y1.Size = new System.Drawing.Size(121, 121);
             this.X13Y1.TabIndex = 239;
@@ -3330,7 +3331,7 @@
             // X13Y2
             // 
             this.X13Y2.Location = new System.Drawing.Point(133, 1541);
-            this.X13Y2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X13Y2.Margin = new System.Windows.Forms.Padding(2);
             this.X13Y2.Name = "X13Y2";
             this.X13Y2.Size = new System.Drawing.Size(121, 121);
             this.X13Y2.TabIndex = 240;
@@ -3339,7 +3340,7 @@
             // X13Y3
             // 
             this.X13Y3.Location = new System.Drawing.Point(261, 1541);
-            this.X13Y3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X13Y3.Margin = new System.Windows.Forms.Padding(2);
             this.X13Y3.Name = "X13Y3";
             this.X13Y3.Size = new System.Drawing.Size(121, 121);
             this.X13Y3.TabIndex = 241;
@@ -3348,7 +3349,7 @@
             // X13Y4
             // 
             this.X13Y4.Location = new System.Drawing.Point(389, 1541);
-            this.X13Y4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X13Y4.Margin = new System.Windows.Forms.Padding(2);
             this.X13Y4.Name = "X13Y4";
             this.X13Y4.Size = new System.Drawing.Size(121, 121);
             this.X13Y4.TabIndex = 242;
@@ -3357,7 +3358,7 @@
             // X13Y5
             // 
             this.X13Y5.Location = new System.Drawing.Point(517, 1541);
-            this.X13Y5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X13Y5.Margin = new System.Windows.Forms.Padding(2);
             this.X13Y5.Name = "X13Y5";
             this.X13Y5.Size = new System.Drawing.Size(121, 121);
             this.X13Y5.TabIndex = 243;
@@ -3366,7 +3367,7 @@
             // X13Y6
             // 
             this.X13Y6.Location = new System.Drawing.Point(645, 1541);
-            this.X13Y6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X13Y6.Margin = new System.Windows.Forms.Padding(2);
             this.X13Y6.Name = "X13Y6";
             this.X13Y6.Size = new System.Drawing.Size(121, 121);
             this.X13Y6.TabIndex = 244;
@@ -3375,7 +3376,7 @@
             // X13Y7
             // 
             this.X13Y7.Location = new System.Drawing.Point(773, 1541);
-            this.X13Y7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X13Y7.Margin = new System.Windows.Forms.Padding(2);
             this.X13Y7.Name = "X13Y7";
             this.X13Y7.Size = new System.Drawing.Size(121, 121);
             this.X13Y7.TabIndex = 245;
@@ -3384,7 +3385,7 @@
             // X13Y8
             // 
             this.X13Y8.Location = new System.Drawing.Point(901, 1541);
-            this.X13Y8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X13Y8.Margin = new System.Windows.Forms.Padding(2);
             this.X13Y8.Name = "X13Y8";
             this.X13Y8.Size = new System.Drawing.Size(121, 121);
             this.X13Y8.TabIndex = 246;
@@ -3393,7 +3394,7 @@
             // X13Y9
             // 
             this.X13Y9.Location = new System.Drawing.Point(1029, 1541);
-            this.X13Y9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X13Y9.Margin = new System.Windows.Forms.Padding(2);
             this.X13Y9.Name = "X13Y9";
             this.X13Y9.Size = new System.Drawing.Size(121, 121);
             this.X13Y9.TabIndex = 247;
@@ -3402,7 +3403,7 @@
             // X14Y1
             // 
             this.X14Y1.Location = new System.Drawing.Point(5, 1669);
-            this.X14Y1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X14Y1.Margin = new System.Windows.Forms.Padding(2);
             this.X14Y1.Name = "X14Y1";
             this.X14Y1.Size = new System.Drawing.Size(121, 121);
             this.X14Y1.TabIndex = 248;
@@ -3411,7 +3412,7 @@
             // X14Y2
             // 
             this.X14Y2.Location = new System.Drawing.Point(133, 1669);
-            this.X14Y2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X14Y2.Margin = new System.Windows.Forms.Padding(2);
             this.X14Y2.Name = "X14Y2";
             this.X14Y2.Size = new System.Drawing.Size(121, 121);
             this.X14Y2.TabIndex = 249;
@@ -3420,7 +3421,7 @@
             // X14Y3
             // 
             this.X14Y3.Location = new System.Drawing.Point(261, 1669);
-            this.X14Y3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X14Y3.Margin = new System.Windows.Forms.Padding(2);
             this.X14Y3.Name = "X14Y3";
             this.X14Y3.Size = new System.Drawing.Size(121, 121);
             this.X14Y3.TabIndex = 250;
@@ -3429,7 +3430,7 @@
             // X14Y4
             // 
             this.X14Y4.Location = new System.Drawing.Point(389, 1669);
-            this.X14Y4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X14Y4.Margin = new System.Windows.Forms.Padding(2);
             this.X14Y4.Name = "X14Y4";
             this.X14Y4.Size = new System.Drawing.Size(121, 121);
             this.X14Y4.TabIndex = 251;
@@ -3438,7 +3439,7 @@
             // X14Y5
             // 
             this.X14Y5.Location = new System.Drawing.Point(517, 1669);
-            this.X14Y5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X14Y5.Margin = new System.Windows.Forms.Padding(2);
             this.X14Y5.Name = "X14Y5";
             this.X14Y5.Size = new System.Drawing.Size(121, 121);
             this.X14Y5.TabIndex = 252;
@@ -3447,7 +3448,7 @@
             // X14Y6
             // 
             this.X14Y6.Location = new System.Drawing.Point(645, 1669);
-            this.X14Y6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X14Y6.Margin = new System.Windows.Forms.Padding(2);
             this.X14Y6.Name = "X14Y6";
             this.X14Y6.Size = new System.Drawing.Size(121, 121);
             this.X14Y6.TabIndex = 253;
@@ -3456,7 +3457,7 @@
             // X14Y7
             // 
             this.X14Y7.Location = new System.Drawing.Point(773, 1669);
-            this.X14Y7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X14Y7.Margin = new System.Windows.Forms.Padding(2);
             this.X14Y7.Name = "X14Y7";
             this.X14Y7.Size = new System.Drawing.Size(121, 121);
             this.X14Y7.TabIndex = 254;
@@ -3465,7 +3466,7 @@
             // X14Y8
             // 
             this.X14Y8.Location = new System.Drawing.Point(901, 1669);
-            this.X14Y8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X14Y8.Margin = new System.Windows.Forms.Padding(2);
             this.X14Y8.Name = "X14Y8";
             this.X14Y8.Size = new System.Drawing.Size(121, 121);
             this.X14Y8.TabIndex = 255;
@@ -3474,7 +3475,7 @@
             // X14Y9
             // 
             this.X14Y9.Location = new System.Drawing.Point(1029, 1669);
-            this.X14Y9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X14Y9.Margin = new System.Windows.Forms.Padding(2);
             this.X14Y9.Name = "X14Y9";
             this.X14Y9.Size = new System.Drawing.Size(121, 121);
             this.X14Y9.TabIndex = 256;
@@ -3483,7 +3484,7 @@
             // X15Y1
             // 
             this.X15Y1.Location = new System.Drawing.Point(5, 1797);
-            this.X15Y1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X15Y1.Margin = new System.Windows.Forms.Padding(2);
             this.X15Y1.Name = "X15Y1";
             this.X15Y1.Size = new System.Drawing.Size(121, 121);
             this.X15Y1.TabIndex = 257;
@@ -3492,7 +3493,7 @@
             // X15Y2
             // 
             this.X15Y2.Location = new System.Drawing.Point(133, 1797);
-            this.X15Y2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X15Y2.Margin = new System.Windows.Forms.Padding(2);
             this.X15Y2.Name = "X15Y2";
             this.X15Y2.Size = new System.Drawing.Size(121, 121);
             this.X15Y2.TabIndex = 258;
@@ -3501,7 +3502,7 @@
             // X15Y3
             // 
             this.X15Y3.Location = new System.Drawing.Point(261, 1797);
-            this.X15Y3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X15Y3.Margin = new System.Windows.Forms.Padding(2);
             this.X15Y3.Name = "X15Y3";
             this.X15Y3.Size = new System.Drawing.Size(121, 121);
             this.X15Y3.TabIndex = 259;
@@ -3510,7 +3511,7 @@
             // X15Y4
             // 
             this.X15Y4.Location = new System.Drawing.Point(389, 1797);
-            this.X15Y4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X15Y4.Margin = new System.Windows.Forms.Padding(2);
             this.X15Y4.Name = "X15Y4";
             this.X15Y4.Size = new System.Drawing.Size(121, 121);
             this.X15Y4.TabIndex = 260;
@@ -3519,7 +3520,7 @@
             // X15Y5
             // 
             this.X15Y5.Location = new System.Drawing.Point(517, 1797);
-            this.X15Y5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X15Y5.Margin = new System.Windows.Forms.Padding(2);
             this.X15Y5.Name = "X15Y5";
             this.X15Y5.Size = new System.Drawing.Size(121, 121);
             this.X15Y5.TabIndex = 261;
@@ -3528,7 +3529,7 @@
             // X15Y6
             // 
             this.X15Y6.Location = new System.Drawing.Point(645, 1797);
-            this.X15Y6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X15Y6.Margin = new System.Windows.Forms.Padding(2);
             this.X15Y6.Name = "X15Y6";
             this.X15Y6.Size = new System.Drawing.Size(121, 121);
             this.X15Y6.TabIndex = 262;
@@ -3537,7 +3538,7 @@
             // X15Y7
             // 
             this.X15Y7.Location = new System.Drawing.Point(773, 1797);
-            this.X15Y7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X15Y7.Margin = new System.Windows.Forms.Padding(2);
             this.X15Y7.Name = "X15Y7";
             this.X15Y7.Size = new System.Drawing.Size(121, 121);
             this.X15Y7.TabIndex = 263;
@@ -3546,7 +3547,7 @@
             // X15Y8
             // 
             this.X15Y8.Location = new System.Drawing.Point(901, 1797);
-            this.X15Y8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X15Y8.Margin = new System.Windows.Forms.Padding(2);
             this.X15Y8.Name = "X15Y8";
             this.X15Y8.Size = new System.Drawing.Size(121, 121);
             this.X15Y8.TabIndex = 264;
@@ -3555,7 +3556,7 @@
             // X15Y9
             // 
             this.X15Y9.Location = new System.Drawing.Point(1029, 1797);
-            this.X15Y9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X15Y9.Margin = new System.Windows.Forms.Padding(2);
             this.X15Y9.Name = "X15Y9";
             this.X15Y9.Size = new System.Drawing.Size(121, 121);
             this.X15Y9.TabIndex = 265;
@@ -3564,7 +3565,7 @@
             // X12Y10
             // 
             this.X12Y10.Location = new System.Drawing.Point(1157, 1413);
-            this.X12Y10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X12Y10.Margin = new System.Windows.Forms.Padding(2);
             this.X12Y10.Name = "X12Y10";
             this.X12Y10.Size = new System.Drawing.Size(121, 121);
             this.X12Y10.TabIndex = 266;
@@ -3573,7 +3574,7 @@
             // X12Y11
             // 
             this.X12Y11.Location = new System.Drawing.Point(1285, 1413);
-            this.X12Y11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X12Y11.Margin = new System.Windows.Forms.Padding(2);
             this.X12Y11.Name = "X12Y11";
             this.X12Y11.Size = new System.Drawing.Size(121, 121);
             this.X12Y11.TabIndex = 267;
@@ -3582,7 +3583,7 @@
             // X12Y12
             // 
             this.X12Y12.Location = new System.Drawing.Point(1413, 1413);
-            this.X12Y12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X12Y12.Margin = new System.Windows.Forms.Padding(2);
             this.X12Y12.Name = "X12Y12";
             this.X12Y12.Size = new System.Drawing.Size(121, 121);
             this.X12Y12.TabIndex = 268;
@@ -3591,7 +3592,7 @@
             // X12Y13
             // 
             this.X12Y13.Location = new System.Drawing.Point(1541, 1413);
-            this.X12Y13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X12Y13.Margin = new System.Windows.Forms.Padding(2);
             this.X12Y13.Name = "X12Y13";
             this.X12Y13.Size = new System.Drawing.Size(121, 121);
             this.X12Y13.TabIndex = 269;
@@ -3600,7 +3601,7 @@
             // X12Y14
             // 
             this.X12Y14.Location = new System.Drawing.Point(1669, 1413);
-            this.X12Y14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X12Y14.Margin = new System.Windows.Forms.Padding(2);
             this.X12Y14.Name = "X12Y14";
             this.X12Y14.Size = new System.Drawing.Size(128, 121);
             this.X12Y14.TabIndex = 270;
@@ -3609,7 +3610,7 @@
             // X12Y15
             // 
             this.X12Y15.Location = new System.Drawing.Point(1804, 1413);
-            this.X12Y15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X12Y15.Margin = new System.Windows.Forms.Padding(2);
             this.X12Y15.Name = "X12Y15";
             this.X12Y15.Size = new System.Drawing.Size(115, 121);
             this.X12Y15.TabIndex = 271;
@@ -3618,7 +3619,7 @@
             // X12Y16
             // 
             this.X12Y16.Location = new System.Drawing.Point(1926, 1413);
-            this.X12Y16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X12Y16.Margin = new System.Windows.Forms.Padding(2);
             this.X12Y16.Name = "X12Y16";
             this.X12Y16.Size = new System.Drawing.Size(121, 121);
             this.X12Y16.TabIndex = 272;
@@ -3627,7 +3628,7 @@
             // X13Y10
             // 
             this.X13Y10.Location = new System.Drawing.Point(1157, 1541);
-            this.X13Y10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X13Y10.Margin = new System.Windows.Forms.Padding(2);
             this.X13Y10.Name = "X13Y10";
             this.X13Y10.Size = new System.Drawing.Size(121, 121);
             this.X13Y10.TabIndex = 273;
@@ -3636,7 +3637,7 @@
             // X13Y11
             // 
             this.X13Y11.Location = new System.Drawing.Point(1285, 1541);
-            this.X13Y11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X13Y11.Margin = new System.Windows.Forms.Padding(2);
             this.X13Y11.Name = "X13Y11";
             this.X13Y11.Size = new System.Drawing.Size(121, 121);
             this.X13Y11.TabIndex = 274;
@@ -3645,7 +3646,7 @@
             // X13Y12
             // 
             this.X13Y12.Location = new System.Drawing.Point(1413, 1541);
-            this.X13Y12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X13Y12.Margin = new System.Windows.Forms.Padding(2);
             this.X13Y12.Name = "X13Y12";
             this.X13Y12.Size = new System.Drawing.Size(121, 121);
             this.X13Y12.TabIndex = 275;
@@ -3654,7 +3655,7 @@
             // X13Y13
             // 
             this.X13Y13.Location = new System.Drawing.Point(1541, 1541);
-            this.X13Y13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X13Y13.Margin = new System.Windows.Forms.Padding(2);
             this.X13Y13.Name = "X13Y13";
             this.X13Y13.Size = new System.Drawing.Size(121, 121);
             this.X13Y13.TabIndex = 276;
@@ -3663,7 +3664,7 @@
             // X13Y14
             // 
             this.X13Y14.Location = new System.Drawing.Point(1669, 1541);
-            this.X13Y14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X13Y14.Margin = new System.Windows.Forms.Padding(2);
             this.X13Y14.Name = "X13Y14";
             this.X13Y14.Size = new System.Drawing.Size(128, 121);
             this.X13Y14.TabIndex = 277;
@@ -3672,7 +3673,7 @@
             // X13Y15
             // 
             this.X13Y15.Location = new System.Drawing.Point(1804, 1541);
-            this.X13Y15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X13Y15.Margin = new System.Windows.Forms.Padding(2);
             this.X13Y15.Name = "X13Y15";
             this.X13Y15.Size = new System.Drawing.Size(115, 121);
             this.X13Y15.TabIndex = 278;
@@ -3681,7 +3682,7 @@
             // X13Y16
             // 
             this.X13Y16.Location = new System.Drawing.Point(1926, 1541);
-            this.X13Y16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X13Y16.Margin = new System.Windows.Forms.Padding(2);
             this.X13Y16.Name = "X13Y16";
             this.X13Y16.Size = new System.Drawing.Size(121, 121);
             this.X13Y16.TabIndex = 279;
@@ -3690,7 +3691,7 @@
             // X14Y10
             // 
             this.X14Y10.Location = new System.Drawing.Point(1157, 1669);
-            this.X14Y10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X14Y10.Margin = new System.Windows.Forms.Padding(2);
             this.X14Y10.Name = "X14Y10";
             this.X14Y10.Size = new System.Drawing.Size(121, 121);
             this.X14Y10.TabIndex = 280;
@@ -3699,7 +3700,7 @@
             // X14Y11
             // 
             this.X14Y11.Location = new System.Drawing.Point(1285, 1669);
-            this.X14Y11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X14Y11.Margin = new System.Windows.Forms.Padding(2);
             this.X14Y11.Name = "X14Y11";
             this.X14Y11.Size = new System.Drawing.Size(121, 121);
             this.X14Y11.TabIndex = 281;
@@ -3708,7 +3709,7 @@
             // X14Y12
             // 
             this.X14Y12.Location = new System.Drawing.Point(1413, 1669);
-            this.X14Y12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X14Y12.Margin = new System.Windows.Forms.Padding(2);
             this.X14Y12.Name = "X14Y12";
             this.X14Y12.Size = new System.Drawing.Size(121, 121);
             this.X14Y12.TabIndex = 282;
@@ -3717,7 +3718,7 @@
             // X14Y13
             // 
             this.X14Y13.Location = new System.Drawing.Point(1541, 1669);
-            this.X14Y13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X14Y13.Margin = new System.Windows.Forms.Padding(2);
             this.X14Y13.Name = "X14Y13";
             this.X14Y13.Size = new System.Drawing.Size(121, 121);
             this.X14Y13.TabIndex = 283;
@@ -3726,7 +3727,7 @@
             // X14Y14
             // 
             this.X14Y14.Location = new System.Drawing.Point(1669, 1669);
-            this.X14Y14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X14Y14.Margin = new System.Windows.Forms.Padding(2);
             this.X14Y14.Name = "X14Y14";
             this.X14Y14.Size = new System.Drawing.Size(128, 121);
             this.X14Y14.TabIndex = 284;
@@ -3735,7 +3736,7 @@
             // X14Y15
             // 
             this.X14Y15.Location = new System.Drawing.Point(1804, 1669);
-            this.X14Y15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X14Y15.Margin = new System.Windows.Forms.Padding(2);
             this.X14Y15.Name = "X14Y15";
             this.X14Y15.Size = new System.Drawing.Size(115, 121);
             this.X14Y15.TabIndex = 285;
@@ -3744,7 +3745,7 @@
             // X14Y16
             // 
             this.X14Y16.Location = new System.Drawing.Point(1926, 1669);
-            this.X14Y16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X14Y16.Margin = new System.Windows.Forms.Padding(2);
             this.X14Y16.Name = "X14Y16";
             this.X14Y16.Size = new System.Drawing.Size(121, 121);
             this.X14Y16.TabIndex = 286;
@@ -3753,7 +3754,7 @@
             // X15Y10
             // 
             this.X15Y10.Location = new System.Drawing.Point(1157, 1797);
-            this.X15Y10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X15Y10.Margin = new System.Windows.Forms.Padding(2);
             this.X15Y10.Name = "X15Y10";
             this.X15Y10.Size = new System.Drawing.Size(121, 121);
             this.X15Y10.TabIndex = 287;
@@ -3762,7 +3763,7 @@
             // X15Y11
             // 
             this.X15Y11.Location = new System.Drawing.Point(1285, 1797);
-            this.X15Y11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X15Y11.Margin = new System.Windows.Forms.Padding(2);
             this.X15Y11.Name = "X15Y11";
             this.X15Y11.Size = new System.Drawing.Size(121, 121);
             this.X15Y11.TabIndex = 288;
@@ -3771,7 +3772,7 @@
             // X15Y12
             // 
             this.X15Y12.Location = new System.Drawing.Point(1413, 1797);
-            this.X15Y12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X15Y12.Margin = new System.Windows.Forms.Padding(2);
             this.X15Y12.Name = "X15Y12";
             this.X15Y12.Size = new System.Drawing.Size(115, 121);
             this.X15Y12.TabIndex = 289;
@@ -3780,7 +3781,7 @@
             // X15Y13
             // 
             this.X15Y13.Location = new System.Drawing.Point(1541, 1797);
-            this.X15Y13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X15Y13.Margin = new System.Windows.Forms.Padding(2);
             this.X15Y13.Name = "X15Y13";
             this.X15Y13.Size = new System.Drawing.Size(121, 121);
             this.X15Y13.TabIndex = 290;
@@ -3789,7 +3790,7 @@
             // X15Y14
             // 
             this.X15Y14.Location = new System.Drawing.Point(1669, 1797);
-            this.X15Y14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X15Y14.Margin = new System.Windows.Forms.Padding(2);
             this.X15Y14.Name = "X15Y14";
             this.X15Y14.Size = new System.Drawing.Size(121, 121);
             this.X15Y14.TabIndex = 291;
@@ -3798,7 +3799,7 @@
             // X15Y15
             // 
             this.X15Y15.Location = new System.Drawing.Point(1804, 1797);
-            this.X15Y15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X15Y15.Margin = new System.Windows.Forms.Padding(2);
             this.X15Y15.Name = "X15Y15";
             this.X15Y15.Size = new System.Drawing.Size(115, 121);
             this.X15Y15.TabIndex = 292;
@@ -3807,7 +3808,7 @@
             // X15Y16
             // 
             this.X15Y16.Location = new System.Drawing.Point(1926, 1797);
-            this.X15Y16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X15Y16.Margin = new System.Windows.Forms.Padding(2);
             this.X15Y16.Name = "X15Y16";
             this.X15Y16.Size = new System.Drawing.Size(121, 121);
             this.X15Y16.TabIndex = 293;
@@ -3816,7 +3817,7 @@
             // X12Y17
             // 
             this.X12Y17.Location = new System.Drawing.Point(2054, 1413);
-            this.X12Y17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X12Y17.Margin = new System.Windows.Forms.Padding(2);
             this.X12Y17.Name = "X12Y17";
             this.X12Y17.Size = new System.Drawing.Size(121, 121);
             this.X12Y17.TabIndex = 294;
@@ -3825,7 +3826,7 @@
             // X12Y18
             // 
             this.X12Y18.Location = new System.Drawing.Point(2182, 1413);
-            this.X12Y18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X12Y18.Margin = new System.Windows.Forms.Padding(2);
             this.X12Y18.Name = "X12Y18";
             this.X12Y18.Size = new System.Drawing.Size(120, 121);
             this.X12Y18.TabIndex = 295;
@@ -3834,7 +3835,7 @@
             // X13Y17
             // 
             this.X13Y17.Location = new System.Drawing.Point(2054, 1541);
-            this.X13Y17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X13Y17.Margin = new System.Windows.Forms.Padding(2);
             this.X13Y17.Name = "X13Y17";
             this.X13Y17.Size = new System.Drawing.Size(121, 121);
             this.X13Y17.TabIndex = 296;
@@ -3843,7 +3844,7 @@
             // X13Y18
             // 
             this.X13Y18.Location = new System.Drawing.Point(2182, 1541);
-            this.X13Y18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X13Y18.Margin = new System.Windows.Forms.Padding(2);
             this.X13Y18.Name = "X13Y18";
             this.X13Y18.Size = new System.Drawing.Size(120, 121);
             this.X13Y18.TabIndex = 297;
@@ -3852,7 +3853,7 @@
             // X14Y17
             // 
             this.X14Y17.Location = new System.Drawing.Point(2054, 1669);
-            this.X14Y17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X14Y17.Margin = new System.Windows.Forms.Padding(2);
             this.X14Y17.Name = "X14Y17";
             this.X14Y17.Size = new System.Drawing.Size(118, 121);
             this.X14Y17.TabIndex = 298;
@@ -3861,7 +3862,7 @@
             // X14Y18
             // 
             this.X14Y18.Location = new System.Drawing.Point(2182, 1669);
-            this.X14Y18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X14Y18.Margin = new System.Windows.Forms.Padding(2);
             this.X14Y18.Name = "X14Y18";
             this.X14Y18.Size = new System.Drawing.Size(120, 121);
             this.X14Y18.TabIndex = 299;
@@ -3870,7 +3871,7 @@
             // X15Y17
             // 
             this.X15Y17.Location = new System.Drawing.Point(2054, 1797);
-            this.X15Y17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X15Y17.Margin = new System.Windows.Forms.Padding(2);
             this.X15Y17.Name = "X15Y17";
             this.X15Y17.Size = new System.Drawing.Size(119, 115);
             this.X15Y17.TabIndex = 300;
@@ -3879,7 +3880,7 @@
             // X15Y18
             // 
             this.X15Y18.Location = new System.Drawing.Point(2182, 1797);
-            this.X15Y18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X15Y18.Margin = new System.Windows.Forms.Padding(2);
             this.X15Y18.Name = "X15Y18";
             this.X15Y18.Size = new System.Drawing.Size(120, 121);
             this.X15Y18.TabIndex = 301;
@@ -3888,7 +3889,7 @@
             // X15Y19
             // 
             this.X15Y19.Location = new System.Drawing.Point(2309, 1797);
-            this.X15Y19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X15Y19.Margin = new System.Windows.Forms.Padding(2);
             this.X15Y19.Name = "X15Y19";
             this.X15Y19.Size = new System.Drawing.Size(123, 121);
             this.X15Y19.TabIndex = 302;
@@ -3897,7 +3898,7 @@
             // X14Y19
             // 
             this.X14Y19.Location = new System.Drawing.Point(2309, 1669);
-            this.X14Y19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X14Y19.Margin = new System.Windows.Forms.Padding(2);
             this.X14Y19.Name = "X14Y19";
             this.X14Y19.Size = new System.Drawing.Size(123, 121);
             this.X14Y19.TabIndex = 303;
@@ -3906,7 +3907,7 @@
             // X13Y19
             // 
             this.X13Y19.Location = new System.Drawing.Point(2309, 1541);
-            this.X13Y19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X13Y19.Margin = new System.Windows.Forms.Padding(2);
             this.X13Y19.Name = "X13Y19";
             this.X13Y19.Size = new System.Drawing.Size(123, 121);
             this.X13Y19.TabIndex = 304;
@@ -3915,7 +3916,7 @@
             // X12Y19
             // 
             this.X12Y19.Location = new System.Drawing.Point(2309, 1413);
-            this.X12Y19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X12Y19.Margin = new System.Windows.Forms.Padding(2);
             this.X12Y19.Name = "X12Y19";
             this.X12Y19.Size = new System.Drawing.Size(123, 121);
             this.X12Y19.TabIndex = 305;
@@ -3924,7 +3925,7 @@
             // X12Y20
             // 
             this.X12Y20.Location = new System.Drawing.Point(2439, 1413);
-            this.X12Y20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X12Y20.Margin = new System.Windows.Forms.Padding(2);
             this.X12Y20.Name = "X12Y20";
             this.X12Y20.Size = new System.Drawing.Size(153, 115);
             this.X12Y20.TabIndex = 306;
@@ -3933,7 +3934,7 @@
             // X13Y20
             // 
             this.X13Y20.Location = new System.Drawing.Point(2439, 1541);
-            this.X13Y20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X13Y20.Margin = new System.Windows.Forms.Padding(2);
             this.X13Y20.Name = "X13Y20";
             this.X13Y20.Size = new System.Drawing.Size(159, 121);
             this.X13Y20.TabIndex = 307;
@@ -3942,7 +3943,7 @@
             // X14Y20
             // 
             this.X14Y20.Location = new System.Drawing.Point(2439, 1669);
-            this.X14Y20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X14Y20.Margin = new System.Windows.Forms.Padding(2);
             this.X14Y20.Name = "X14Y20";
             this.X14Y20.Size = new System.Drawing.Size(159, 121);
             this.X14Y20.TabIndex = 308;
@@ -3951,7 +3952,7 @@
             // X15Y20
             // 
             this.X15Y20.Location = new System.Drawing.Point(2439, 1797);
-            this.X15Y20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X15Y20.Margin = new System.Windows.Forms.Padding(2);
             this.X15Y20.Name = "X15Y20";
             this.X15Y20.Size = new System.Drawing.Size(159, 121);
             this.X15Y20.TabIndex = 309;
@@ -3960,7 +3961,7 @@
             // X16Y1
             // 
             this.X16Y1.Location = new System.Drawing.Point(5, 1925);
-            this.X16Y1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X16Y1.Margin = new System.Windows.Forms.Padding(2);
             this.X16Y1.Name = "X16Y1";
             this.X16Y1.Size = new System.Drawing.Size(121, 121);
             this.X16Y1.TabIndex = 310;
@@ -3969,7 +3970,7 @@
             // X16Y2
             // 
             this.X16Y2.Location = new System.Drawing.Point(133, 1925);
-            this.X16Y2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X16Y2.Margin = new System.Windows.Forms.Padding(2);
             this.X16Y2.Name = "X16Y2";
             this.X16Y2.Size = new System.Drawing.Size(121, 121);
             this.X16Y2.TabIndex = 311;
@@ -3978,7 +3979,7 @@
             // X16Y3
             // 
             this.X16Y3.Location = new System.Drawing.Point(261, 1925);
-            this.X16Y3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X16Y3.Margin = new System.Windows.Forms.Padding(2);
             this.X16Y3.Name = "X16Y3";
             this.X16Y3.Size = new System.Drawing.Size(121, 121);
             this.X16Y3.TabIndex = 312;
@@ -3987,7 +3988,7 @@
             // X16Y4
             // 
             this.X16Y4.Location = new System.Drawing.Point(389, 1925);
-            this.X16Y4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X16Y4.Margin = new System.Windows.Forms.Padding(2);
             this.X16Y4.Name = "X16Y4";
             this.X16Y4.Size = new System.Drawing.Size(121, 121);
             this.X16Y4.TabIndex = 313;
@@ -3996,7 +3997,7 @@
             // X16Y5
             // 
             this.X16Y5.Location = new System.Drawing.Point(517, 1925);
-            this.X16Y5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X16Y5.Margin = new System.Windows.Forms.Padding(2);
             this.X16Y5.Name = "X16Y5";
             this.X16Y5.Size = new System.Drawing.Size(121, 121);
             this.X16Y5.TabIndex = 314;
@@ -4005,7 +4006,7 @@
             // X16Y6
             // 
             this.X16Y6.Location = new System.Drawing.Point(645, 1925);
-            this.X16Y6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X16Y6.Margin = new System.Windows.Forms.Padding(2);
             this.X16Y6.Name = "X16Y6";
             this.X16Y6.Size = new System.Drawing.Size(121, 121);
             this.X16Y6.TabIndex = 315;
@@ -4014,7 +4015,7 @@
             // X16Y7
             // 
             this.X16Y7.Location = new System.Drawing.Point(773, 1925);
-            this.X16Y7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X16Y7.Margin = new System.Windows.Forms.Padding(2);
             this.X16Y7.Name = "X16Y7";
             this.X16Y7.Size = new System.Drawing.Size(121, 121);
             this.X16Y7.TabIndex = 316;
@@ -4023,7 +4024,7 @@
             // X16Y8
             // 
             this.X16Y8.Location = new System.Drawing.Point(901, 1925);
-            this.X16Y8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X16Y8.Margin = new System.Windows.Forms.Padding(2);
             this.X16Y8.Name = "X16Y8";
             this.X16Y8.Size = new System.Drawing.Size(121, 121);
             this.X16Y8.TabIndex = 317;
@@ -4032,7 +4033,7 @@
             // X16Y9
             // 
             this.X16Y9.Location = new System.Drawing.Point(1029, 1925);
-            this.X16Y9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X16Y9.Margin = new System.Windows.Forms.Padding(2);
             this.X16Y9.Name = "X16Y9";
             this.X16Y9.Size = new System.Drawing.Size(121, 121);
             this.X16Y9.TabIndex = 318;
@@ -4041,7 +4042,7 @@
             // X17Y1
             // 
             this.X17Y1.Location = new System.Drawing.Point(5, 2053);
-            this.X17Y1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X17Y1.Margin = new System.Windows.Forms.Padding(2);
             this.X17Y1.Name = "X17Y1";
             this.X17Y1.Size = new System.Drawing.Size(121, 115);
             this.X17Y1.TabIndex = 319;
@@ -4050,7 +4051,7 @@
             // X17Y2
             // 
             this.X17Y2.Location = new System.Drawing.Point(133, 2053);
-            this.X17Y2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X17Y2.Margin = new System.Windows.Forms.Padding(2);
             this.X17Y2.Name = "X17Y2";
             this.X17Y2.Size = new System.Drawing.Size(121, 121);
             this.X17Y2.TabIndex = 320;
@@ -4059,7 +4060,7 @@
             // X17Y3
             // 
             this.X17Y3.Location = new System.Drawing.Point(261, 2053);
-            this.X17Y3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X17Y3.Margin = new System.Windows.Forms.Padding(2);
             this.X17Y3.Name = "X17Y3";
             this.X17Y3.Size = new System.Drawing.Size(121, 121);
             this.X17Y3.TabIndex = 321;
@@ -4068,7 +4069,7 @@
             // X17Y4
             // 
             this.X17Y4.Location = new System.Drawing.Point(389, 2053);
-            this.X17Y4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X17Y4.Margin = new System.Windows.Forms.Padding(2);
             this.X17Y4.Name = "X17Y4";
             this.X17Y4.Size = new System.Drawing.Size(121, 121);
             this.X17Y4.TabIndex = 322;
@@ -4077,7 +4078,7 @@
             // X17Y5
             // 
             this.X17Y5.Location = new System.Drawing.Point(517, 2053);
-            this.X17Y5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X17Y5.Margin = new System.Windows.Forms.Padding(2);
             this.X17Y5.Name = "X17Y5";
             this.X17Y5.Size = new System.Drawing.Size(121, 121);
             this.X17Y5.TabIndex = 323;
@@ -4086,7 +4087,7 @@
             // X17Y6
             // 
             this.X17Y6.Location = new System.Drawing.Point(645, 2053);
-            this.X17Y6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X17Y6.Margin = new System.Windows.Forms.Padding(2);
             this.X17Y6.Name = "X17Y6";
             this.X17Y6.Size = new System.Drawing.Size(121, 121);
             this.X17Y6.TabIndex = 324;
@@ -4095,7 +4096,7 @@
             // X17Y7
             // 
             this.X17Y7.Location = new System.Drawing.Point(773, 2053);
-            this.X17Y7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X17Y7.Margin = new System.Windows.Forms.Padding(2);
             this.X17Y7.Name = "X17Y7";
             this.X17Y7.Size = new System.Drawing.Size(121, 121);
             this.X17Y7.TabIndex = 325;
@@ -4104,7 +4105,7 @@
             // X17Y8
             // 
             this.X17Y8.Location = new System.Drawing.Point(901, 2053);
-            this.X17Y8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X17Y8.Margin = new System.Windows.Forms.Padding(2);
             this.X17Y8.Name = "X17Y8";
             this.X17Y8.Size = new System.Drawing.Size(121, 121);
             this.X17Y8.TabIndex = 326;
@@ -4113,7 +4114,7 @@
             // X17Y9
             // 
             this.X17Y9.Location = new System.Drawing.Point(1029, 2053);
-            this.X17Y9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X17Y9.Margin = new System.Windows.Forms.Padding(2);
             this.X17Y9.Name = "X17Y9";
             this.X17Y9.Size = new System.Drawing.Size(121, 121);
             this.X17Y9.TabIndex = 327;
@@ -4122,7 +4123,7 @@
             // X18Y1
             // 
             this.X18Y1.Location = new System.Drawing.Point(5, 2181);
-            this.X18Y1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X18Y1.Margin = new System.Windows.Forms.Padding(2);
             this.X18Y1.Name = "X18Y1";
             this.X18Y1.Size = new System.Drawing.Size(121, 121);
             this.X18Y1.TabIndex = 328;
@@ -4131,7 +4132,7 @@
             // X18Y3
             // 
             this.X18Y3.Location = new System.Drawing.Point(261, 2181);
-            this.X18Y3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X18Y3.Margin = new System.Windows.Forms.Padding(2);
             this.X18Y3.Name = "X18Y3";
             this.X18Y3.Size = new System.Drawing.Size(121, 121);
             this.X18Y3.TabIndex = 330;
@@ -4140,7 +4141,7 @@
             // X18Y4
             // 
             this.X18Y4.Location = new System.Drawing.Point(389, 2181);
-            this.X18Y4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X18Y4.Margin = new System.Windows.Forms.Padding(2);
             this.X18Y4.Name = "X18Y4";
             this.X18Y4.Size = new System.Drawing.Size(121, 121);
             this.X18Y4.TabIndex = 331;
@@ -4149,7 +4150,7 @@
             // X18Y5
             // 
             this.X18Y5.Location = new System.Drawing.Point(517, 2181);
-            this.X18Y5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X18Y5.Margin = new System.Windows.Forms.Padding(2);
             this.X18Y5.Name = "X18Y5";
             this.X18Y5.Size = new System.Drawing.Size(121, 120);
             this.X18Y5.TabIndex = 332;
@@ -4158,7 +4159,7 @@
             // X18Y6
             // 
             this.X18Y6.Location = new System.Drawing.Point(645, 2181);
-            this.X18Y6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X18Y6.Margin = new System.Windows.Forms.Padding(2);
             this.X18Y6.Name = "X18Y6";
             this.X18Y6.Size = new System.Drawing.Size(121, 121);
             this.X18Y6.TabIndex = 333;
@@ -4167,7 +4168,7 @@
             // X18Y7
             // 
             this.X18Y7.Location = new System.Drawing.Point(773, 2181);
-            this.X18Y7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X18Y7.Margin = new System.Windows.Forms.Padding(2);
             this.X18Y7.Name = "X18Y7";
             this.X18Y7.Size = new System.Drawing.Size(121, 121);
             this.X18Y7.TabIndex = 334;
@@ -4176,7 +4177,7 @@
             // X18Y8
             // 
             this.X18Y8.Location = new System.Drawing.Point(901, 2181);
-            this.X18Y8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X18Y8.Margin = new System.Windows.Forms.Padding(2);
             this.X18Y8.Name = "X18Y8";
             this.X18Y8.Size = new System.Drawing.Size(121, 121);
             this.X18Y8.TabIndex = 335;
@@ -4185,7 +4186,7 @@
             // X18Y9
             // 
             this.X18Y9.Location = new System.Drawing.Point(1029, 2181);
-            this.X18Y9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X18Y9.Margin = new System.Windows.Forms.Padding(2);
             this.X18Y9.Name = "X18Y9";
             this.X18Y9.Size = new System.Drawing.Size(121, 121);
             this.X18Y9.TabIndex = 336;
@@ -4194,7 +4195,7 @@
             // X19Y1
             // 
             this.X19Y1.Location = new System.Drawing.Point(5, 2309);
-            this.X19Y1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X19Y1.Margin = new System.Windows.Forms.Padding(2);
             this.X19Y1.Name = "X19Y1";
             this.X19Y1.Size = new System.Drawing.Size(121, 121);
             this.X19Y1.TabIndex = 337;
@@ -4203,7 +4204,7 @@
             // X19Y2
             // 
             this.X19Y2.Location = new System.Drawing.Point(133, 2309);
-            this.X19Y2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X19Y2.Margin = new System.Windows.Forms.Padding(2);
             this.X19Y2.Name = "X19Y2";
             this.X19Y2.Size = new System.Drawing.Size(121, 121);
             this.X19Y2.TabIndex = 338;
@@ -4212,7 +4213,7 @@
             // X19Y3
             // 
             this.X19Y3.Location = new System.Drawing.Point(261, 2309);
-            this.X19Y3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X19Y3.Margin = new System.Windows.Forms.Padding(2);
             this.X19Y3.Name = "X19Y3";
             this.X19Y3.Size = new System.Drawing.Size(121, 121);
             this.X19Y3.TabIndex = 339;
@@ -4221,7 +4222,7 @@
             // X19Y4
             // 
             this.X19Y4.Location = new System.Drawing.Point(389, 2309);
-            this.X19Y4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X19Y4.Margin = new System.Windows.Forms.Padding(2);
             this.X19Y4.Name = "X19Y4";
             this.X19Y4.Size = new System.Drawing.Size(121, 121);
             this.X19Y4.TabIndex = 340;
@@ -4230,7 +4231,7 @@
             // X19Y5
             // 
             this.X19Y5.Location = new System.Drawing.Point(517, 2309);
-            this.X19Y5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X19Y5.Margin = new System.Windows.Forms.Padding(2);
             this.X19Y5.Name = "X19Y5";
             this.X19Y5.Size = new System.Drawing.Size(121, 121);
             this.X19Y5.TabIndex = 341;
@@ -4239,7 +4240,7 @@
             // X19Y6
             // 
             this.X19Y6.Location = new System.Drawing.Point(645, 2309);
-            this.X19Y6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X19Y6.Margin = new System.Windows.Forms.Padding(2);
             this.X19Y6.Name = "X19Y6";
             this.X19Y6.Size = new System.Drawing.Size(121, 121);
             this.X19Y6.TabIndex = 342;
@@ -4248,7 +4249,7 @@
             // X19Y7
             // 
             this.X19Y7.Location = new System.Drawing.Point(773, 2309);
-            this.X19Y7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X19Y7.Margin = new System.Windows.Forms.Padding(2);
             this.X19Y7.Name = "X19Y7";
             this.X19Y7.Size = new System.Drawing.Size(121, 121);
             this.X19Y7.TabIndex = 343;
@@ -4257,7 +4258,7 @@
             // X19Y8
             // 
             this.X19Y8.Location = new System.Drawing.Point(901, 2309);
-            this.X19Y8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X19Y8.Margin = new System.Windows.Forms.Padding(2);
             this.X19Y8.Name = "X19Y8";
             this.X19Y8.Size = new System.Drawing.Size(121, 121);
             this.X19Y8.TabIndex = 344;
@@ -4266,7 +4267,7 @@
             // X19Y9
             // 
             this.X19Y9.Location = new System.Drawing.Point(1029, 2309);
-            this.X19Y9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X19Y9.Margin = new System.Windows.Forms.Padding(2);
             this.X19Y9.Name = "X19Y9";
             this.X19Y9.Size = new System.Drawing.Size(121, 121);
             this.X19Y9.TabIndex = 345;
@@ -4275,7 +4276,7 @@
             // X20Y1
             // 
             this.X20Y1.Location = new System.Drawing.Point(5, 2437);
-            this.X20Y1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X20Y1.Margin = new System.Windows.Forms.Padding(2);
             this.X20Y1.Name = "X20Y1";
             this.X20Y1.Size = new System.Drawing.Size(121, 121);
             this.X20Y1.TabIndex = 346;
@@ -4284,7 +4285,7 @@
             // X20Y2
             // 
             this.X20Y2.Location = new System.Drawing.Point(133, 2437);
-            this.X20Y2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X20Y2.Margin = new System.Windows.Forms.Padding(2);
             this.X20Y2.Name = "X20Y2";
             this.X20Y2.Size = new System.Drawing.Size(121, 121);
             this.X20Y2.TabIndex = 347;
@@ -4293,7 +4294,7 @@
             // X20Y3
             // 
             this.X20Y3.Location = new System.Drawing.Point(261, 2437);
-            this.X20Y3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X20Y3.Margin = new System.Windows.Forms.Padding(2);
             this.X20Y3.Name = "X20Y3";
             this.X20Y3.Size = new System.Drawing.Size(121, 121);
             this.X20Y3.TabIndex = 348;
@@ -4302,7 +4303,7 @@
             // X20Y4
             // 
             this.X20Y4.Location = new System.Drawing.Point(389, 2437);
-            this.X20Y4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X20Y4.Margin = new System.Windows.Forms.Padding(2);
             this.X20Y4.Name = "X20Y4";
             this.X20Y4.Size = new System.Drawing.Size(121, 121);
             this.X20Y4.TabIndex = 349;
@@ -4311,7 +4312,7 @@
             // X20Y5
             // 
             this.X20Y5.Location = new System.Drawing.Point(517, 2437);
-            this.X20Y5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X20Y5.Margin = new System.Windows.Forms.Padding(2);
             this.X20Y5.Name = "X20Y5";
             this.X20Y5.Size = new System.Drawing.Size(121, 121);
             this.X20Y5.TabIndex = 350;
@@ -4320,7 +4321,7 @@
             // X20Y6
             // 
             this.X20Y6.Location = new System.Drawing.Point(645, 2437);
-            this.X20Y6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X20Y6.Margin = new System.Windows.Forms.Padding(2);
             this.X20Y6.Name = "X20Y6";
             this.X20Y6.Size = new System.Drawing.Size(121, 121);
             this.X20Y6.TabIndex = 351;
@@ -4329,7 +4330,7 @@
             // X20Y7
             // 
             this.X20Y7.Location = new System.Drawing.Point(773, 2437);
-            this.X20Y7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X20Y7.Margin = new System.Windows.Forms.Padding(2);
             this.X20Y7.Name = "X20Y7";
             this.X20Y7.Size = new System.Drawing.Size(121, 121);
             this.X20Y7.TabIndex = 352;
@@ -4338,7 +4339,7 @@
             // X20Y8
             // 
             this.X20Y8.Location = new System.Drawing.Point(901, 2437);
-            this.X20Y8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X20Y8.Margin = new System.Windows.Forms.Padding(2);
             this.X20Y8.Name = "X20Y8";
             this.X20Y8.Size = new System.Drawing.Size(121, 121);
             this.X20Y8.TabIndex = 353;
@@ -4347,7 +4348,7 @@
             // X20Y9
             // 
             this.X20Y9.Location = new System.Drawing.Point(1029, 2437);
-            this.X20Y9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X20Y9.Margin = new System.Windows.Forms.Padding(2);
             this.X20Y9.Name = "X20Y9";
             this.X20Y9.Size = new System.Drawing.Size(121, 121);
             this.X20Y9.TabIndex = 354;
@@ -4356,7 +4357,7 @@
             // X16Y10
             // 
             this.X16Y10.Location = new System.Drawing.Point(1157, 1925);
-            this.X16Y10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X16Y10.Margin = new System.Windows.Forms.Padding(2);
             this.X16Y10.Name = "X16Y10";
             this.X16Y10.Size = new System.Drawing.Size(121, 121);
             this.X16Y10.TabIndex = 355;
@@ -4365,7 +4366,7 @@
             // X16Y11
             // 
             this.X16Y11.Location = new System.Drawing.Point(1285, 1925);
-            this.X16Y11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X16Y11.Margin = new System.Windows.Forms.Padding(2);
             this.X16Y11.Name = "X16Y11";
             this.X16Y11.Size = new System.Drawing.Size(121, 121);
             this.X16Y11.TabIndex = 356;
@@ -4374,7 +4375,7 @@
             // X16Y12
             // 
             this.X16Y12.Location = new System.Drawing.Point(1413, 1925);
-            this.X16Y12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X16Y12.Margin = new System.Windows.Forms.Padding(2);
             this.X16Y12.Name = "X16Y12";
             this.X16Y12.Size = new System.Drawing.Size(115, 119);
             this.X16Y12.TabIndex = 357;
@@ -4383,7 +4384,7 @@
             // X16Y13
             // 
             this.X16Y13.Location = new System.Drawing.Point(1541, 1925);
-            this.X16Y13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X16Y13.Margin = new System.Windows.Forms.Padding(2);
             this.X16Y13.Name = "X16Y13";
             this.X16Y13.Size = new System.Drawing.Size(121, 121);
             this.X16Y13.TabIndex = 358;
@@ -4392,7 +4393,7 @@
             // X16Y14
             // 
             this.X16Y14.Location = new System.Drawing.Point(1669, 1925);
-            this.X16Y14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X16Y14.Margin = new System.Windows.Forms.Padding(2);
             this.X16Y14.Name = "X16Y14";
             this.X16Y14.Size = new System.Drawing.Size(128, 121);
             this.X16Y14.TabIndex = 359;
@@ -4401,7 +4402,7 @@
             // X16Y15
             // 
             this.X16Y15.Location = new System.Drawing.Point(1804, 1925);
-            this.X16Y15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X16Y15.Margin = new System.Windows.Forms.Padding(2);
             this.X16Y15.Name = "X16Y15";
             this.X16Y15.Size = new System.Drawing.Size(115, 121);
             this.X16Y15.TabIndex = 360;
@@ -4410,7 +4411,7 @@
             // X17Y10
             // 
             this.X17Y10.Location = new System.Drawing.Point(1157, 2053);
-            this.X17Y10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X17Y10.Margin = new System.Windows.Forms.Padding(2);
             this.X17Y10.Name = "X17Y10";
             this.X17Y10.Size = new System.Drawing.Size(121, 121);
             this.X17Y10.TabIndex = 362;
@@ -4419,7 +4420,7 @@
             // X17Y11
             // 
             this.X17Y11.Location = new System.Drawing.Point(1285, 2053);
-            this.X17Y11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X17Y11.Margin = new System.Windows.Forms.Padding(2);
             this.X17Y11.Name = "X17Y11";
             this.X17Y11.Size = new System.Drawing.Size(121, 121);
             this.X17Y11.TabIndex = 363;
@@ -4428,7 +4429,7 @@
             // X17Y12
             // 
             this.X17Y12.Location = new System.Drawing.Point(1413, 2053);
-            this.X17Y12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X17Y12.Margin = new System.Windows.Forms.Padding(2);
             this.X17Y12.Name = "X17Y12";
             this.X17Y12.Size = new System.Drawing.Size(121, 121);
             this.X17Y12.TabIndex = 364;
@@ -4437,7 +4438,7 @@
             // X17Y13
             // 
             this.X17Y13.Location = new System.Drawing.Point(1541, 2053);
-            this.X17Y13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X17Y13.Margin = new System.Windows.Forms.Padding(2);
             this.X17Y13.Name = "X17Y13";
             this.X17Y13.Size = new System.Drawing.Size(121, 121);
             this.X17Y13.TabIndex = 365;
@@ -4446,7 +4447,7 @@
             // X17Y14
             // 
             this.X17Y14.Location = new System.Drawing.Point(1669, 2053);
-            this.X17Y14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X17Y14.Margin = new System.Windows.Forms.Padding(2);
             this.X17Y14.Name = "X17Y14";
             this.X17Y14.Size = new System.Drawing.Size(128, 121);
             this.X17Y14.TabIndex = 366;
@@ -4455,7 +4456,7 @@
             // X17Y15
             // 
             this.X17Y15.Location = new System.Drawing.Point(1804, 2053);
-            this.X17Y15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X17Y15.Margin = new System.Windows.Forms.Padding(2);
             this.X17Y15.Name = "X17Y15";
             this.X17Y15.Size = new System.Drawing.Size(115, 121);
             this.X17Y15.TabIndex = 367;
@@ -4464,7 +4465,7 @@
             // X17Y16
             // 
             this.X17Y16.Location = new System.Drawing.Point(1926, 2053);
-            this.X17Y16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X17Y16.Margin = new System.Windows.Forms.Padding(2);
             this.X17Y16.Name = "X17Y16";
             this.X17Y16.Size = new System.Drawing.Size(121, 121);
             this.X17Y16.TabIndex = 368;
@@ -4473,7 +4474,7 @@
             // X18Y10
             // 
             this.X18Y10.Location = new System.Drawing.Point(1157, 2181);
-            this.X18Y10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X18Y10.Margin = new System.Windows.Forms.Padding(2);
             this.X18Y10.Name = "X18Y10";
             this.X18Y10.Size = new System.Drawing.Size(121, 121);
             this.X18Y10.TabIndex = 369;
@@ -4482,7 +4483,7 @@
             // X18Y11
             // 
             this.X18Y11.Location = new System.Drawing.Point(1285, 2181);
-            this.X18Y11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X18Y11.Margin = new System.Windows.Forms.Padding(2);
             this.X18Y11.Name = "X18Y11";
             this.X18Y11.Size = new System.Drawing.Size(121, 121);
             this.X18Y11.TabIndex = 370;
@@ -4491,7 +4492,7 @@
             // X18Y12
             // 
             this.X18Y12.Location = new System.Drawing.Point(1413, 2181);
-            this.X18Y12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X18Y12.Margin = new System.Windows.Forms.Padding(2);
             this.X18Y12.Name = "X18Y12";
             this.X18Y12.Size = new System.Drawing.Size(121, 121);
             this.X18Y12.TabIndex = 371;
@@ -4500,7 +4501,7 @@
             // X18Y13
             // 
             this.X18Y13.Location = new System.Drawing.Point(1541, 2181);
-            this.X18Y13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X18Y13.Margin = new System.Windows.Forms.Padding(2);
             this.X18Y13.Name = "X18Y13";
             this.X18Y13.Size = new System.Drawing.Size(121, 121);
             this.X18Y13.TabIndex = 372;
@@ -4509,7 +4510,7 @@
             // X18Y14
             // 
             this.X18Y14.Location = new System.Drawing.Point(1669, 2181);
-            this.X18Y14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X18Y14.Margin = new System.Windows.Forms.Padding(2);
             this.X18Y14.Name = "X18Y14";
             this.X18Y14.Size = new System.Drawing.Size(128, 120);
             this.X18Y14.TabIndex = 373;
@@ -4518,7 +4519,7 @@
             // X18Y15
             // 
             this.X18Y15.Location = new System.Drawing.Point(1804, 2181);
-            this.X18Y15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X18Y15.Margin = new System.Windows.Forms.Padding(2);
             this.X18Y15.Name = "X18Y15";
             this.X18Y15.Size = new System.Drawing.Size(115, 121);
             this.X18Y15.TabIndex = 374;
@@ -4527,7 +4528,7 @@
             // X18Y16
             // 
             this.X18Y16.Location = new System.Drawing.Point(1926, 2181);
-            this.X18Y16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X18Y16.Margin = new System.Windows.Forms.Padding(2);
             this.X18Y16.Name = "X18Y16";
             this.X18Y16.Size = new System.Drawing.Size(121, 121);
             this.X18Y16.TabIndex = 375;
@@ -4536,7 +4537,7 @@
             // X19Y10
             // 
             this.X19Y10.Location = new System.Drawing.Point(1157, 2309);
-            this.X19Y10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X19Y10.Margin = new System.Windows.Forms.Padding(2);
             this.X19Y10.Name = "X19Y10";
             this.X19Y10.Size = new System.Drawing.Size(121, 121);
             this.X19Y10.TabIndex = 376;
@@ -4545,7 +4546,7 @@
             // X19Y11
             // 
             this.X19Y11.Location = new System.Drawing.Point(1285, 2309);
-            this.X19Y11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X19Y11.Margin = new System.Windows.Forms.Padding(2);
             this.X19Y11.Name = "X19Y11";
             this.X19Y11.Size = new System.Drawing.Size(121, 121);
             this.X19Y11.TabIndex = 377;
@@ -4554,7 +4555,7 @@
             // X19Y12
             // 
             this.X19Y12.Location = new System.Drawing.Point(1413, 2309);
-            this.X19Y12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X19Y12.Margin = new System.Windows.Forms.Padding(2);
             this.X19Y12.Name = "X19Y12";
             this.X19Y12.Size = new System.Drawing.Size(121, 121);
             this.X19Y12.TabIndex = 378;
@@ -4563,7 +4564,7 @@
             // X19Y13
             // 
             this.X19Y13.Location = new System.Drawing.Point(1541, 2309);
-            this.X19Y13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X19Y13.Margin = new System.Windows.Forms.Padding(2);
             this.X19Y13.Name = "X19Y13";
             this.X19Y13.Size = new System.Drawing.Size(121, 121);
             this.X19Y13.TabIndex = 379;
@@ -4572,7 +4573,7 @@
             // X19Y14
             // 
             this.X19Y14.Location = new System.Drawing.Point(1669, 2309);
-            this.X19Y14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X19Y14.Margin = new System.Windows.Forms.Padding(2);
             this.X19Y14.Name = "X19Y14";
             this.X19Y14.Size = new System.Drawing.Size(128, 121);
             this.X19Y14.TabIndex = 380;
@@ -4581,7 +4582,7 @@
             // X19Y15
             // 
             this.X19Y15.Location = new System.Drawing.Point(1804, 2309);
-            this.X19Y15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X19Y15.Margin = new System.Windows.Forms.Padding(2);
             this.X19Y15.Name = "X19Y15";
             this.X19Y15.Size = new System.Drawing.Size(115, 121);
             this.X19Y15.TabIndex = 381;
@@ -4590,7 +4591,7 @@
             // X19Y16
             // 
             this.X19Y16.Location = new System.Drawing.Point(1926, 2309);
-            this.X19Y16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X19Y16.Margin = new System.Windows.Forms.Padding(2);
             this.X19Y16.Name = "X19Y16";
             this.X19Y16.Size = new System.Drawing.Size(121, 121);
             this.X19Y16.TabIndex = 382;
@@ -4599,7 +4600,7 @@
             // X20Y10
             // 
             this.X20Y10.Location = new System.Drawing.Point(1157, 2437);
-            this.X20Y10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X20Y10.Margin = new System.Windows.Forms.Padding(2);
             this.X20Y10.Name = "X20Y10";
             this.X20Y10.Size = new System.Drawing.Size(121, 121);
             this.X20Y10.TabIndex = 383;
@@ -4608,7 +4609,7 @@
             // X20Y11
             // 
             this.X20Y11.Location = new System.Drawing.Point(1285, 2437);
-            this.X20Y11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X20Y11.Margin = new System.Windows.Forms.Padding(2);
             this.X20Y11.Name = "X20Y11";
             this.X20Y11.Size = new System.Drawing.Size(121, 121);
             this.X20Y11.TabIndex = 384;
@@ -4617,7 +4618,7 @@
             // X20Y12
             // 
             this.X20Y12.Location = new System.Drawing.Point(1413, 2437);
-            this.X20Y12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X20Y12.Margin = new System.Windows.Forms.Padding(2);
             this.X20Y12.Name = "X20Y12";
             this.X20Y12.Size = new System.Drawing.Size(121, 121);
             this.X20Y12.TabIndex = 385;
@@ -4626,7 +4627,7 @@
             // X20Y13
             // 
             this.X20Y13.Location = new System.Drawing.Point(1541, 2437);
-            this.X20Y13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X20Y13.Margin = new System.Windows.Forms.Padding(2);
             this.X20Y13.Name = "X20Y13";
             this.X20Y13.Size = new System.Drawing.Size(121, 121);
             this.X20Y13.TabIndex = 386;
@@ -4635,7 +4636,7 @@
             // X20Y14
             // 
             this.X20Y14.Location = new System.Drawing.Point(1669, 2437);
-            this.X20Y14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X20Y14.Margin = new System.Windows.Forms.Padding(2);
             this.X20Y14.Name = "X20Y14";
             this.X20Y14.Size = new System.Drawing.Size(128, 121);
             this.X20Y14.TabIndex = 387;
@@ -4644,7 +4645,7 @@
             // X20Y15
             // 
             this.X20Y15.Location = new System.Drawing.Point(1804, 2437);
-            this.X20Y15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X20Y15.Margin = new System.Windows.Forms.Padding(2);
             this.X20Y15.Name = "X20Y15";
             this.X20Y15.Size = new System.Drawing.Size(115, 121);
             this.X20Y15.TabIndex = 388;
@@ -4653,7 +4654,7 @@
             // X20Y16
             // 
             this.X20Y16.Location = new System.Drawing.Point(1926, 2437);
-            this.X20Y16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X20Y16.Margin = new System.Windows.Forms.Padding(2);
             this.X20Y16.Name = "X20Y16";
             this.X20Y16.Size = new System.Drawing.Size(121, 121);
             this.X20Y16.TabIndex = 389;
@@ -4662,7 +4663,7 @@
             // X16Y17
             // 
             this.X16Y17.Location = new System.Drawing.Point(2054, 1925);
-            this.X16Y17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X16Y17.Margin = new System.Windows.Forms.Padding(2);
             this.X16Y17.Name = "X16Y17";
             this.X16Y17.Size = new System.Drawing.Size(121, 121);
             this.X16Y17.TabIndex = 390;
@@ -4671,7 +4672,7 @@
             // X16Y18
             // 
             this.X16Y18.Location = new System.Drawing.Point(2182, 1925);
-            this.X16Y18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X16Y18.Margin = new System.Windows.Forms.Padding(2);
             this.X16Y18.Name = "X16Y18";
             this.X16Y18.Size = new System.Drawing.Size(120, 121);
             this.X16Y18.TabIndex = 391;
@@ -4680,7 +4681,7 @@
             // X16Y19
             // 
             this.X16Y19.Location = new System.Drawing.Point(2309, 1925);
-            this.X16Y19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X16Y19.Margin = new System.Windows.Forms.Padding(2);
             this.X16Y19.Name = "X16Y19";
             this.X16Y19.Size = new System.Drawing.Size(123, 121);
             this.X16Y19.TabIndex = 392;
@@ -4689,7 +4690,7 @@
             // X16Y20
             // 
             this.X16Y20.Location = new System.Drawing.Point(2439, 1925);
-            this.X16Y20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X16Y20.Margin = new System.Windows.Forms.Padding(2);
             this.X16Y20.Name = "X16Y20";
             this.X16Y20.Size = new System.Drawing.Size(159, 121);
             this.X16Y20.TabIndex = 393;
@@ -4698,7 +4699,7 @@
             // X17Y17
             // 
             this.X17Y17.Location = new System.Drawing.Point(2054, 2053);
-            this.X17Y17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X17Y17.Margin = new System.Windows.Forms.Padding(2);
             this.X17Y17.Name = "X17Y17";
             this.X17Y17.Size = new System.Drawing.Size(121, 121);
             this.X17Y17.TabIndex = 394;
@@ -4707,7 +4708,7 @@
             // X17Y18
             // 
             this.X17Y18.Location = new System.Drawing.Point(2182, 2053);
-            this.X17Y18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X17Y18.Margin = new System.Windows.Forms.Padding(2);
             this.X17Y18.Name = "X17Y18";
             this.X17Y18.Size = new System.Drawing.Size(120, 121);
             this.X17Y18.TabIndex = 395;
@@ -4716,7 +4717,7 @@
             // X17Y19
             // 
             this.X17Y19.Location = new System.Drawing.Point(2309, 2053);
-            this.X17Y19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X17Y19.Margin = new System.Windows.Forms.Padding(2);
             this.X17Y19.Name = "X17Y19";
             this.X17Y19.Size = new System.Drawing.Size(123, 121);
             this.X17Y19.TabIndex = 396;
@@ -4725,7 +4726,7 @@
             // X18Y17
             // 
             this.X18Y17.Location = new System.Drawing.Point(2054, 2181);
-            this.X18Y17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X18Y17.Margin = new System.Windows.Forms.Padding(2);
             this.X18Y17.Name = "X18Y17";
             this.X18Y17.Size = new System.Drawing.Size(121, 121);
             this.X18Y17.TabIndex = 397;
@@ -4734,7 +4735,7 @@
             // X17Y20
             // 
             this.X17Y20.Location = new System.Drawing.Point(2439, 2053);
-            this.X17Y20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X17Y20.Margin = new System.Windows.Forms.Padding(2);
             this.X17Y20.Name = "X17Y20";
             this.X17Y20.Size = new System.Drawing.Size(159, 121);
             this.X17Y20.TabIndex = 398;
@@ -4743,7 +4744,7 @@
             // X18Y18
             // 
             this.X18Y18.Location = new System.Drawing.Point(2182, 2181);
-            this.X18Y18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X18Y18.Margin = new System.Windows.Forms.Padding(2);
             this.X18Y18.Name = "X18Y18";
             this.X18Y18.Size = new System.Drawing.Size(120, 121);
             this.X18Y18.TabIndex = 399;
@@ -4752,7 +4753,7 @@
             // X18Y19
             // 
             this.X18Y19.Location = new System.Drawing.Point(2309, 2181);
-            this.X18Y19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X18Y19.Margin = new System.Windows.Forms.Padding(2);
             this.X18Y19.Name = "X18Y19";
             this.X18Y19.Size = new System.Drawing.Size(123, 121);
             this.X18Y19.TabIndex = 400;
@@ -4761,7 +4762,7 @@
             // X18Y20
             // 
             this.X18Y20.Location = new System.Drawing.Point(2439, 2181);
-            this.X18Y20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X18Y20.Margin = new System.Windows.Forms.Padding(2);
             this.X18Y20.Name = "X18Y20";
             this.X18Y20.Size = new System.Drawing.Size(159, 121);
             this.X18Y20.TabIndex = 401;
@@ -4770,7 +4771,7 @@
             // X19Y17
             // 
             this.X19Y17.Location = new System.Drawing.Point(2054, 2309);
-            this.X19Y17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X19Y17.Margin = new System.Windows.Forms.Padding(2);
             this.X19Y17.Name = "X19Y17";
             this.X19Y17.Size = new System.Drawing.Size(121, 121);
             this.X19Y17.TabIndex = 402;
@@ -4779,7 +4780,7 @@
             // X19Y18
             // 
             this.X19Y18.Location = new System.Drawing.Point(2182, 2309);
-            this.X19Y18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X19Y18.Margin = new System.Windows.Forms.Padding(2);
             this.X19Y18.Name = "X19Y18";
             this.X19Y18.Size = new System.Drawing.Size(120, 121);
             this.X19Y18.TabIndex = 403;
@@ -4788,7 +4789,7 @@
             // X19Y19
             // 
             this.X19Y19.Location = new System.Drawing.Point(2309, 2309);
-            this.X19Y19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X19Y19.Margin = new System.Windows.Forms.Padding(2);
             this.X19Y19.Name = "X19Y19";
             this.X19Y19.Size = new System.Drawing.Size(123, 121);
             this.X19Y19.TabIndex = 404;
@@ -4797,7 +4798,7 @@
             // X19Y20
             // 
             this.X19Y20.Location = new System.Drawing.Point(2439, 2309);
-            this.X19Y20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X19Y20.Margin = new System.Windows.Forms.Padding(2);
             this.X19Y20.Name = "X19Y20";
             this.X19Y20.Size = new System.Drawing.Size(159, 121);
             this.X19Y20.TabIndex = 405;
@@ -4806,7 +4807,7 @@
             // X20Y17
             // 
             this.X20Y17.Location = new System.Drawing.Point(2054, 2437);
-            this.X20Y17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X20Y17.Margin = new System.Windows.Forms.Padding(2);
             this.X20Y17.Name = "X20Y17";
             this.X20Y17.Size = new System.Drawing.Size(121, 121);
             this.X20Y17.TabIndex = 406;
@@ -4815,7 +4816,7 @@
             // X20Y18
             // 
             this.X20Y18.Location = new System.Drawing.Point(2182, 2437);
-            this.X20Y18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X20Y18.Margin = new System.Windows.Forms.Padding(2);
             this.X20Y18.Name = "X20Y18";
             this.X20Y18.Size = new System.Drawing.Size(120, 121);
             this.X20Y18.TabIndex = 407;
@@ -4824,7 +4825,7 @@
             // X20Y19
             // 
             this.X20Y19.Location = new System.Drawing.Point(2309, 2437);
-            this.X20Y19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X20Y19.Margin = new System.Windows.Forms.Padding(2);
             this.X20Y19.Name = "X20Y19";
             this.X20Y19.Size = new System.Drawing.Size(123, 121);
             this.X20Y19.TabIndex = 408;
@@ -4833,7 +4834,7 @@
             // X20Y20
             // 
             this.X20Y20.Location = new System.Drawing.Point(2439, 2437);
-            this.X20Y20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X20Y20.Margin = new System.Windows.Forms.Padding(2);
             this.X20Y20.Name = "X20Y20";
             this.X20Y20.Size = new System.Drawing.Size(159, 121);
             this.X20Y20.TabIndex = 409;
@@ -4842,7 +4843,7 @@
             // X2Y14
             // 
             this.X2Y14.Location = new System.Drawing.Point(1541, 133);
-            this.X2Y14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X2Y14.Margin = new System.Windows.Forms.Padding(2);
             this.X2Y14.Name = "X2Y14";
             this.X2Y14.Size = new System.Drawing.Size(121, 121);
             this.X2Y14.TabIndex = 90;
@@ -4851,7 +4852,7 @@
             // X2Y13
             // 
             this.X2Y13.Location = new System.Drawing.Point(1669, 133);
-            this.X2Y13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X2Y13.Margin = new System.Windows.Forms.Padding(2);
             this.X2Y13.Name = "X2Y13";
             this.X2Y13.Size = new System.Drawing.Size(128, 121);
             this.X2Y13.TabIndex = 105;
@@ -4860,7 +4861,7 @@
             // X6Y10
             // 
             this.X6Y10.Location = new System.Drawing.Point(1029, 517);
-            this.X6Y10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X6Y10.Margin = new System.Windows.Forms.Padding(2);
             this.X6Y10.Name = "X6Y10";
             this.X6Y10.Size = new System.Drawing.Size(121, 121);
             this.X6Y10.TabIndex = 118;
@@ -4869,7 +4870,7 @@
             // X5Y9
             // 
             this.X5Y9.Location = new System.Drawing.Point(1157, 645);
-            this.X5Y9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X5Y9.Margin = new System.Windows.Forms.Padding(2);
             this.X5Y9.Name = "X5Y9";
             this.X5Y9.Size = new System.Drawing.Size(121, 121);
             this.X5Y9.TabIndex = 54;
@@ -4878,7 +4879,7 @@
             // X6Y12
             // 
             this.X6Y12.Location = new System.Drawing.Point(1413, 645);
-            this.X6Y12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X6Y12.Margin = new System.Windows.Forms.Padding(2);
             this.X6Y12.Name = "X6Y12";
             this.X6Y12.Size = new System.Drawing.Size(121, 121);
             this.X6Y12.TabIndex = 128;
@@ -4887,7 +4888,7 @@
             // X10Y5
             // 
             this.X10Y5.Location = new System.Drawing.Point(517, 1157);
-            this.X10Y5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X10Y5.Margin = new System.Windows.Forms.Padding(2);
             this.X10Y5.Name = "X10Y5";
             this.X10Y5.Size = new System.Drawing.Size(121, 121);
             this.X10Y5.TabIndex = 172;
@@ -4896,7 +4897,7 @@
             // X18Y2
             // 
             this.X18Y2.Location = new System.Drawing.Point(133, 2181);
-            this.X18Y2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X18Y2.Margin = new System.Windows.Forms.Padding(2);
             this.X18Y2.Name = "X18Y2";
             this.X18Y2.Size = new System.Drawing.Size(121, 121);
             this.X18Y2.TabIndex = 329;
@@ -4905,7 +4906,7 @@
             // X16Y16
             // 
             this.X16Y16.Location = new System.Drawing.Point(1926, 1925);
-            this.X16Y16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.X16Y16.Margin = new System.Windows.Forms.Padding(2);
             this.X16Y16.Name = "X16Y16";
             this.X16Y16.Size = new System.Drawing.Size(121, 121);
             this.X16Y16.TabIndex = 361;
@@ -4914,6 +4915,7 @@
             // nav
             // 
             this.nav.BackColor = System.Drawing.Color.Snow;
+            this.nav.Controls.Add(this.lbl);
             this.nav.Controls.Add(this.button2);
             this.nav.Controls.Add(this.changeplaceBtn);
             this.nav.Controls.Add(this.Demolish);
@@ -4933,7 +4935,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(15, 112);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(59, 25);
             this.button2.TabIndex = 9;
@@ -5027,7 +5029,7 @@
             this.homeIconBtn.Image = global::assignment1.Properties.Resources.homeIcon1;
             this.homeIconBtn.InitialImage = global::assignment1.Properties.Resources.homeIcon1;
             this.homeIconBtn.Location = new System.Drawing.Point(19, 42);
-            this.homeIconBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.homeIconBtn.Margin = new System.Windows.Forms.Padding(2);
             this.homeIconBtn.Name = "homeIconBtn";
             this.homeIconBtn.Size = new System.Drawing.Size(49, 54);
             this.homeIconBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -5041,6 +5043,14 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // lbl
+            // 
+            this.lbl.AutoSize = true;
+            this.lbl.Location = new System.Drawing.Point(24, 544);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(0, 16);
+            this.lbl.TabIndex = 10;
+            // 
             // arcadeMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -5049,7 +5059,7 @@
             this.ClientSize = new System.Drawing.Size(1283, 675);
             this.Controls.Add(this.nav);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "arcadeMode";
             this.Text = "arcadeMode";
             this.Load += new System.EventHandler(this.arcadeMode_Load);
@@ -5877,5 +5887,6 @@
         private System.Windows.Forms.Button changeplaceBtn;
         private System.Windows.Forms.Button Demolish;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lbl;
     }
 }

@@ -33,7 +33,7 @@ namespace assignment1
                 SharedData.Column = y.ToString();
                 SharedData.TempRow = SharedData.Row;
                 SharedData.TempColumn = SharedData.Column;
-             
+                SharedData.Direction = Top.Text;
                 this.Close();
               
                 
@@ -57,7 +57,7 @@ namespace assignment1
                 SharedData.x = x; SharedData.y = y;
                 SharedData.Row = x.ToString();
                 SharedData.Column = y.ToString();
-                
+                SharedData.Direction=Bot.Text;
                 
                 this.Close();
              
@@ -83,7 +83,7 @@ namespace assignment1
                 SharedData.x = x; SharedData.y = y;
                 SharedData.Row = x.ToString();
                 SharedData.Column = y.ToString();
-                
+                SharedData.Direction = left.Text;
                 
                 this.Close();
                
@@ -113,7 +113,7 @@ namespace assignment1
                 SharedData.x = x; SharedData.y = y;
                 SharedData.Row = x.ToString();
                 SharedData.Column = y.ToString();
-                
+                SharedData.Direction=right.Text;
              
                 this.Close();
              

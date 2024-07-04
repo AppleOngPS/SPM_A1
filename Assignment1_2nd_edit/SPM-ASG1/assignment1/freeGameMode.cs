@@ -15,7 +15,7 @@ namespace assignment1
     public partial class freeGameMode : Form
     {
         int i = 1;
-        int coins = 16;
+        
         int point =0;
         bool flag = false;
         bool dflag=false;
@@ -69,11 +69,22 @@ namespace assignment1
 
         private void start_Click(object sender, EventArgs e)
         {
-            // Set the flag to true when the End Turn button is clicked
-            flag = true;
-
-            FQ0 fq0 = new FQ0();
-            fq0.Show();
+            if (!dflag)
+            {
+                // Set the flag to true when the End Turn button is clicked
+                flag = true;
+                dflag=true;
+                // Example action: increment x and update label2
+                i++;
+                lblTurn.Text = "Turn " + i;
+                SharedData.turn = i;
+                FQ0 fq0 = new FQ0();
+                fq0.Show();
+            }
+            else
+            {
+                MessageBox.Show("Please End your turn.", "Turn Start", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
            
         }
 
@@ -100,7 +111,8 @@ namespace assignment1
                         // Dispose of the current image to free up resources
                         pictureBox.Image.Dispose();
                         pictureBox.Image = null; // Clear the reference to the disposed image
-                        coins -= 1;
+                        
+                        
                     }
                     else
                     {
@@ -113,6 +125,7 @@ namespace assignment1
 
 
                     }
+                
                 }
                 else
                 {
@@ -120,6 +133,7 @@ namespace assignment1
                     MessageBox.Show($"PictureBox with ID {id} not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 }
+                
             }
         }
 
@@ -148,15 +162,12 @@ namespace assignment1
         private void EndTurn_Click(object sender, EventArgs e)
         {
             lblPoint.Text = "Point " + point;
-            dflag = true;
+            dflag = false;
 
             // Perform some action if the flag is true
             if (flag == true)
             {
-                // Example action: increment x and update label2
-                i++;
-                lblTurn.Text = "Turn " + i;
-                SharedData.turn = i;
+               
                 // Reset the flag if needed
                 flag = false;
             }
@@ -213,9 +224,9 @@ namespace assignment1
                     {
                         if (topPic.Tag == "residential" || rightPic.Tag == "residential" || leftPic.Tag == "residential" || bottomPic.Tag == "residential")
                         {
-                            coins += 1;
+                            
                             point += 1;
-                            lblCoins.Text = "Coin " + coins;
+                            
                             lblPoint.Text = "Point " + point;
 
                         }
@@ -227,37 +238,37 @@ namespace assignment1
                         }
                         else if (topPic.Tag == "residential" && rightPic.Tag == "residential" && leftPic.Tag == "residential" && bottomPic.Tag == "residential")
                         {
-                            coins += 1;
+                            
                             point += 1;
-                            lblCoins.Text = "Coin " + coins;
+                            
                             lblPoint.Text = "Point " + point;
                         }
                         else if (topPic.Tag == "residential" && bottomPic.Tag == "residential")
                         {
-                            coins += 1;
+                           
                             point += 1;
-                            lblCoins.Text = "Coin " + coins;
+                            
                             lblPoint.Text = "Point " + point;
                         }
                         else if (rightPic.Tag == "residential" && leftPic.Tag == "residential")
                         {
-                            coins += 1;
+                           
                             point += 1;
-                            lblCoins.Text = "Coin " + coins;
+                            
                             lblPoint.Text = "Point " + point;
                         }
                         else if (topPic.Tag == "residential" && rightPic.Tag == "residential" && leftPic.Tag == "residential")
                         {
-                            coins += 1;
+                            
                             point += 1;
-                            lblCoins.Text = "Coin " + coins;
+                           
                             lblPoint.Text = "Point " + point;
                         }
                         else if (rightPic.Tag == "residential" && leftPic.Tag == "residential" && bottomPic.Tag == "residential")
                         {
-                            coins += 1;
+                            
                             point += 1;
-                            lblCoins.Text = "Coin " + coins;
+                            
                             lblPoint.Text = "Point " + point;
                         }
 
@@ -274,9 +285,9 @@ namespace assignment1
                         }
                         else if (topPic.Tag == "residential" || rightPic.Tag == "residential" || leftPic.Tag == "residential" || bottomPic.Tag == "residential")
                         {
-                            coins += 1;
+                            
                             point += 1;
-                            lblCoins.Text = "Coin " + coins;
+                           
                             lblPoint.Text = "Point " + point;
 
                         }
@@ -293,9 +304,9 @@ namespace assignment1
                         else if (topPic.Tag == "industry" || rightPic.Tag == "industry" || leftPic.Tag == "industry" || bottomPic.Tag == "industry" ||
                                  topPic.Tag == "commercial" || rightPic.Tag == "commercial" || leftPic.Tag == "commercial" || bottomPic.Tag == "commercial")
                         {
-                            coins += 1;
+                          
                             point += 1;
-                            lblCoins.Text = "Coin " + coins;
+                         
                             lblPoint.Text = "Point " + point;
 
                         }
@@ -335,7 +346,7 @@ namespace assignment1
                     }
                 }
                 SharedData.TFlag2 = CheckPictureBoxesInSection(tableLayoutPanel1, 0, 0, 4, 4);
-                SharedData.TFlag3 = CheckPictureBoxesInSection(tableLayoutPanel1, 5,5 , 9, 9);
+                SharedData.TFlag3 = CheckPictureBoxesInSection(tableLayoutPanel1, 5,5 , 14, 14);
 
                 this.Refresh();
             }
