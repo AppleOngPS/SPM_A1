@@ -61,7 +61,7 @@ namespace assignment1
 
         private void button1_Click_3(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

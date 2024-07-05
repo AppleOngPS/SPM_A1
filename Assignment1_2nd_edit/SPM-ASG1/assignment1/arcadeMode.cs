@@ -130,10 +130,7 @@ namespace assignment1
                     }
                     else
                     {
-                        MessageBox.Show("This PictureBox already has an image.",
-                                                              "Warning",
-                                                              MessageBoxButtons.OK,
-                                                              MessageBoxIcon.Warning);
+                       
                         SharedData.Row = SharedData.TempRow;
                         SharedData.Column = SharedData.TempColumn;
                         SearchForEmptyPictureBox();
@@ -280,7 +277,7 @@ namespace assignment1
                         }
                         else if (topPic.Tag == "residential" || rightPic.Tag == "residential" || leftPic.Tag == "residential" || bottomPic.Tag == "residential")
                         {
-                            point += 1;
+                            point += 2;
                             lblPoint.Text = "Point " + point;
 
                         }
@@ -290,7 +287,7 @@ namespace assignment1
                     {
                         if (rightPic.Tag == "Road" || leftPic.Tag == "Road")
                         {
-                            point += 2;
+                            point += 1;
                             lblPoint.Text = "Point " + point;
 
                         }
@@ -566,16 +563,16 @@ namespace assignment1
         }*/
         private void SearchForEmptyPictureBox()
         {
-            SharedData.Row = SharedData.TempRow;
-            SharedData.Column = SharedData.TempColumn;
+            //SharedData.Row = SharedData.TempRow;
+            //SharedData.Column = SharedData.TempColumn;
 
             for (int i = 0; i < 400; i++)
             {
                 int ix = Convert.ToInt32(SharedData.Row);
                 int iy = Convert.ToInt32(SharedData.Column);
 
-                string itop = "X" + (ix + i) + "Y" + iy;
-                string ibottom = "X" + (ix - i) + "Y" + iy;
+                string itop = "X" + (ix - i) + "Y" + iy;
+                string ibottom = "X" + (ix + i) + "Y" + iy;
                 string iright = "X" + ix + "Y" + (iy + i);
                 string ileft = "X" + ix + "Y" + (iy - i);
 
@@ -601,6 +598,13 @@ namespace assignment1
                 {
                     targetPic = irightPic;
                 }
+                else
+                {
+                    MessageBox.Show("This PictureBox already has an image.",
+                                                             "Warning",
+                                                             MessageBoxButtons.OK,
+                                                             MessageBoxIcon.Warning);
+                }
 
                 if (targetPic != null)
                 {
@@ -615,7 +619,8 @@ namespace assignment1
         private bool IsPictureBoxEmpty(PictureBox pictureBox)
         {
             // Implement this method to determine if the PictureBox is empty
-            return true; // Placeholder
+            
+            return pictureBox.Image == null; ; // Placeholder
         }
         private void SetBuildingImage(PictureBox pictureBox)
         {
