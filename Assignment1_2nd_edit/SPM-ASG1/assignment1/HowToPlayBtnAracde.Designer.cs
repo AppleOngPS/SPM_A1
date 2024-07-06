@@ -49,7 +49,7 @@
             this.ClientSize = new System.Drawing.Size(1261, 869);
             this.Controls.Add(this.label1);
             this.Name = "HowToPlayBtnAracde";
-            this.Text = "How To Play for Aracde";
+            this.Text = "How To Play ";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -504,5 +504,18 @@ namespace assignment1
         {
 
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            HowToPlayBtnAracde howToPlay = new HowToPlayBtnAracde();
+            howToPlay.Show();
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            menu menu = new menu();
+            menu.Show();
+            this.Close();
+        }
     }
 }
