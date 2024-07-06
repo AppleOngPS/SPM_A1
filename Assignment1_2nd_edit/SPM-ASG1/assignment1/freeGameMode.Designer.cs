@@ -1583,8 +1583,6 @@
             this.tableLayoutPanel1.Controls.Add(this.X2Y17, 17, 2);
             this.tableLayoutPanel1.Controls.Add(this.X2Y18, 18, 2);
             this.tableLayoutPanel1.Controls.Add(this.X2Y19, 19, 2);
-            this.tableLayoutPanel1.Controls.Add(this.X2Y20, 20, 2);
-            this.tableLayoutPanel1.Controls.Add(this.X2Y21, 21, 2);
             this.tableLayoutPanel1.Controls.Add(this.X2Y22, 22, 2);
             this.tableLayoutPanel1.Controls.Add(this.X2Y23, 23, 2);
             this.tableLayoutPanel1.Controls.Add(this.X3Y16, 16, 3);
@@ -1615,7 +1613,6 @@
             this.tableLayoutPanel1.Controls.Add(this.X2Y25, 25, 2);
             this.tableLayoutPanel1.Controls.Add(this.X3Y24, 24, 3);
             this.tableLayoutPanel1.Controls.Add(this.X3Y25, 25, 3);
-            this.tableLayoutPanel1.Controls.Add(this.X4Y24, 24, 4);
             this.tableLayoutPanel1.Controls.Add(this.X4Y25, 25, 4);
             this.tableLayoutPanel1.Controls.Add(this.X5Y24, 24, 5);
             this.tableLayoutPanel1.Controls.Add(this.X5Y25, 25, 5);
@@ -1631,8 +1628,6 @@
             this.tableLayoutPanel1.Controls.Add(this.X7Y16, 16, 7);
             this.tableLayoutPanel1.Controls.Add(this.X7Y17, 17, 7);
             this.tableLayoutPanel1.Controls.Add(this.X7Y18, 18, 7);
-            this.tableLayoutPanel1.Controls.Add(this.X7Y19, 19, 7);
-            this.tableLayoutPanel1.Controls.Add(this.X7Y20, 20, 7);
             this.tableLayoutPanel1.Controls.Add(this.X7Y21, 21, 7);
             this.tableLayoutPanel1.Controls.Add(this.X7Y22, 22, 7);
             this.tableLayoutPanel1.Controls.Add(this.X8Y16, 16, 8);
@@ -1746,14 +1741,12 @@
             this.tableLayoutPanel1.Controls.Add(this.X16Y13, 13, 16);
             this.tableLayoutPanel1.Controls.Add(this.X16Y14, 14, 16);
             this.tableLayoutPanel1.Controls.Add(this.X16Y15, 15, 16);
-            this.tableLayoutPanel1.Controls.Add(this.X17Y1, 1, 17);
             this.tableLayoutPanel1.Controls.Add(this.X17Y2, 2, 17);
             this.tableLayoutPanel1.Controls.Add(this.X17Y3, 3, 17);
             this.tableLayoutPanel1.Controls.Add(this.X17Y4, 4, 17);
             this.tableLayoutPanel1.Controls.Add(this.X17Y5, 5, 17);
             this.tableLayoutPanel1.Controls.Add(this.X17Y6, 6, 17);
             this.tableLayoutPanel1.Controls.Add(this.X17Y7, 7, 17);
-            this.tableLayoutPanel1.Controls.Add(this.X17Y8, 8, 17);
             this.tableLayoutPanel1.Controls.Add(this.X17Y9, 9, 17);
             this.tableLayoutPanel1.Controls.Add(this.X17Y10, 10, 17);
             this.tableLayoutPanel1.Controls.Add(this.X17Y11, 11, 17);
@@ -1864,7 +1857,6 @@
             this.tableLayoutPanel1.Controls.Add(this.X22Y7, 7, 22);
             this.tableLayoutPanel1.Controls.Add(this.X22Y8, 8, 22);
             this.tableLayoutPanel1.Controls.Add(this.X22Y9, 9, 22);
-            this.tableLayoutPanel1.Controls.Add(this.X23Y1, 1, 23);
             this.tableLayoutPanel1.Controls.Add(this.X23Y2, 2, 23);
             this.tableLayoutPanel1.Controls.Add(this.X23Y3, 3, 23);
             this.tableLayoutPanel1.Controls.Add(this.X23Y4, 4, 23);
@@ -1877,7 +1869,6 @@
             this.tableLayoutPanel1.Controls.Add(this.X24Y3, 3, 24);
             this.tableLayoutPanel1.Controls.Add(this.X24Y4, 4, 24);
             this.tableLayoutPanel1.Controls.Add(this.X24Y5, 5, 24);
-            this.tableLayoutPanel1.Controls.Add(this.X24Y6, 6, 24);
             this.tableLayoutPanel1.Controls.Add(this.X24Y7, 7, 24);
             this.tableLayoutPanel1.Controls.Add(this.X24Y8, 8, 24);
             this.tableLayoutPanel1.Controls.Add(this.X23Y9, 9, 23);
@@ -1971,6 +1962,15 @@
             this.tableLayoutPanel1.Controls.Add(this.X23Y25, 25, 23);
             this.tableLayoutPanel1.Controls.Add(this.X24Y25, 25, 24);
             this.tableLayoutPanel1.Controls.Add(this.X25Y25, 25, 25);
+            this.tableLayoutPanel1.Controls.Add(this.X2Y21, 21, 2);
+            this.tableLayoutPanel1.Controls.Add(this.X2Y20, 20, 2);
+            this.tableLayoutPanel1.Controls.Add(this.X4Y24, 24, 4);
+            this.tableLayoutPanel1.Controls.Add(this.X7Y20, 20, 7);
+            this.tableLayoutPanel1.Controls.Add(this.X7Y19, 19, 7);
+            this.tableLayoutPanel1.Controls.Add(this.X17Y8, 8, 17);
+            this.tableLayoutPanel1.Controls.Add(this.X17Y1, 1, 17);
+            this.tableLayoutPanel1.Controls.Add(this.X24Y6, 6, 24);
+            this.tableLayoutPanel1.Controls.Add(this.X23Y1, 1, 23);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 5);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -3878,7 +3878,7 @@
             // 
             this.X2Y16.Location = new System.Drawing.Point(2384, 242);
             this.X2Y16.Name = "X2Y16";
-            this.X2Y16.Size = new System.Drawing.Size(100, 50);
+            this.X2Y16.Size = new System.Drawing.Size(144, 144);
             this.X2Y16.TabIndex = 236;
             this.X2Y16.TabStop = false;
             // 
@@ -3886,7 +3886,7 @@
             // 
             this.X2Y17.Location = new System.Drawing.Point(2537, 242);
             this.X2Y17.Name = "X2Y17";
-            this.X2Y17.Size = new System.Drawing.Size(48, 42);
+            this.X2Y17.Size = new System.Drawing.Size(144, 144);
             this.X2Y17.TabIndex = 237;
             this.X2Y17.TabStop = false;
             // 
@@ -3894,7 +3894,7 @@
             // 
             this.X2Y18.Location = new System.Drawing.Point(2690, 242);
             this.X2Y18.Name = "X2Y18";
-            this.X2Y18.Size = new System.Drawing.Size(77, 54);
+            this.X2Y18.Size = new System.Drawing.Size(144, 144);
             this.X2Y18.TabIndex = 238;
             this.X2Y18.TabStop = false;
             // 
@@ -3902,7 +3902,7 @@
             // 
             this.X2Y19.Location = new System.Drawing.Point(2843, 242);
             this.X2Y19.Name = "X2Y19";
-            this.X2Y19.Size = new System.Drawing.Size(100, 50);
+            this.X2Y19.Size = new System.Drawing.Size(144, 144);
             this.X2Y19.TabIndex = 239;
             this.X2Y19.TabStop = false;
             // 
@@ -3910,7 +3910,7 @@
             // 
             this.X2Y20.Location = new System.Drawing.Point(2996, 242);
             this.X2Y20.Name = "X2Y20";
-            this.X2Y20.Size = new System.Drawing.Size(100, 50);
+            this.X2Y20.Size = new System.Drawing.Size(144, 144);
             this.X2Y20.TabIndex = 240;
             this.X2Y20.TabStop = false;
             // 
@@ -3918,7 +3918,7 @@
             // 
             this.X2Y21.Location = new System.Drawing.Point(3149, 242);
             this.X2Y21.Name = "X2Y21";
-            this.X2Y21.Size = new System.Drawing.Size(100, 50);
+            this.X2Y21.Size = new System.Drawing.Size(144, 144);
             this.X2Y21.TabIndex = 241;
             this.X2Y21.TabStop = false;
             // 
@@ -3926,7 +3926,7 @@
             // 
             this.X2Y22.Location = new System.Drawing.Point(3302, 242);
             this.X2Y22.Name = "X2Y22";
-            this.X2Y22.Size = new System.Drawing.Size(100, 50);
+            this.X2Y22.Size = new System.Drawing.Size(144, 144);
             this.X2Y22.TabIndex = 242;
             this.X2Y22.TabStop = false;
             // 
@@ -3934,7 +3934,7 @@
             // 
             this.X2Y23.Location = new System.Drawing.Point(3455, 242);
             this.X2Y23.Name = "X2Y23";
-            this.X2Y23.Size = new System.Drawing.Size(48, 63);
+            this.X2Y23.Size = new System.Drawing.Size(144, 144);
             this.X2Y23.TabIndex = 243;
             this.X2Y23.TabStop = false;
             // 
@@ -3942,7 +3942,7 @@
             // 
             this.X3Y16.Location = new System.Drawing.Point(2384, 395);
             this.X3Y16.Name = "X3Y16";
-            this.X3Y16.Size = new System.Drawing.Size(100, 50);
+            this.X3Y16.Size = new System.Drawing.Size(144, 144);
             this.X3Y16.TabIndex = 244;
             this.X3Y16.TabStop = false;
             // 
@@ -3950,7 +3950,7 @@
             // 
             this.X3Y17.Location = new System.Drawing.Point(2537, 395);
             this.X3Y17.Name = "X3Y17";
-            this.X3Y17.Size = new System.Drawing.Size(85, 58);
+            this.X3Y17.Size = new System.Drawing.Size(144, 144);
             this.X3Y17.TabIndex = 245;
             this.X3Y17.TabStop = false;
             // 
@@ -3958,7 +3958,7 @@
             // 
             this.X3Y18.Location = new System.Drawing.Point(2690, 395);
             this.X3Y18.Name = "X3Y18";
-            this.X3Y18.Size = new System.Drawing.Size(88, 73);
+            this.X3Y18.Size = new System.Drawing.Size(144, 144);
             this.X3Y18.TabIndex = 246;
             this.X3Y18.TabStop = false;
             // 
@@ -3966,7 +3966,7 @@
             // 
             this.X3Y19.Location = new System.Drawing.Point(2843, 395);
             this.X3Y19.Name = "X3Y19";
-            this.X3Y19.Size = new System.Drawing.Size(74, 55);
+            this.X3Y19.Size = new System.Drawing.Size(144, 144);
             this.X3Y19.TabIndex = 247;
             this.X3Y19.TabStop = false;
             // 
@@ -3974,7 +3974,7 @@
             // 
             this.X3Y20.Location = new System.Drawing.Point(2996, 395);
             this.X3Y20.Name = "X3Y20";
-            this.X3Y20.Size = new System.Drawing.Size(100, 50);
+            this.X3Y20.Size = new System.Drawing.Size(144, 144);
             this.X3Y20.TabIndex = 248;
             this.X3Y20.TabStop = false;
             // 
@@ -3982,7 +3982,7 @@
             // 
             this.X3Y21.Location = new System.Drawing.Point(3149, 395);
             this.X3Y21.Name = "X3Y21";
-            this.X3Y21.Size = new System.Drawing.Size(100, 50);
+            this.X3Y21.Size = new System.Drawing.Size(144, 144);
             this.X3Y21.TabIndex = 249;
             this.X3Y21.TabStop = false;
             // 
@@ -3990,7 +3990,7 @@
             // 
             this.X3Y22.Location = new System.Drawing.Point(3302, 395);
             this.X3Y22.Name = "X3Y22";
-            this.X3Y22.Size = new System.Drawing.Size(100, 50);
+            this.X3Y22.Size = new System.Drawing.Size(144, 144);
             this.X3Y22.TabIndex = 250;
             this.X3Y22.TabStop = false;
             // 
@@ -3998,7 +3998,7 @@
             // 
             this.X3Y23.Location = new System.Drawing.Point(3455, 395);
             this.X3Y23.Name = "X3Y23";
-            this.X3Y23.Size = new System.Drawing.Size(100, 50);
+            this.X3Y23.Size = new System.Drawing.Size(144, 144);
             this.X3Y23.TabIndex = 251;
             this.X3Y23.TabStop = false;
             // 
@@ -4006,7 +4006,7 @@
             // 
             this.X4Y16.Location = new System.Drawing.Point(2384, 548);
             this.X4Y16.Name = "X4Y16";
-            this.X4Y16.Size = new System.Drawing.Size(100, 50);
+            this.X4Y16.Size = new System.Drawing.Size(144, 144);
             this.X4Y16.TabIndex = 252;
             this.X4Y16.TabStop = false;
             // 
@@ -4014,7 +4014,7 @@
             // 
             this.X4Y17.Location = new System.Drawing.Point(2537, 548);
             this.X4Y17.Name = "X4Y17";
-            this.X4Y17.Size = new System.Drawing.Size(100, 50);
+            this.X4Y17.Size = new System.Drawing.Size(144, 144);
             this.X4Y17.TabIndex = 253;
             this.X4Y17.TabStop = false;
             // 
@@ -4022,7 +4022,7 @@
             // 
             this.X4Y18.Location = new System.Drawing.Point(2690, 548);
             this.X4Y18.Name = "X4Y18";
-            this.X4Y18.Size = new System.Drawing.Size(100, 50);
+            this.X4Y18.Size = new System.Drawing.Size(144, 144);
             this.X4Y18.TabIndex = 254;
             this.X4Y18.TabStop = false;
             // 
@@ -4030,7 +4030,7 @@
             // 
             this.X4Y19.Location = new System.Drawing.Point(2843, 548);
             this.X4Y19.Name = "X4Y19";
-            this.X4Y19.Size = new System.Drawing.Size(100, 50);
+            this.X4Y19.Size = new System.Drawing.Size(144, 144);
             this.X4Y19.TabIndex = 255;
             this.X4Y19.TabStop = false;
             // 
@@ -4038,7 +4038,7 @@
             // 
             this.X4Y20.Location = new System.Drawing.Point(2996, 548);
             this.X4Y20.Name = "X4Y20";
-            this.X4Y20.Size = new System.Drawing.Size(100, 50);
+            this.X4Y20.Size = new System.Drawing.Size(144, 144);
             this.X4Y20.TabIndex = 256;
             this.X4Y20.TabStop = false;
             // 
@@ -4046,7 +4046,7 @@
             // 
             this.X4Y21.Location = new System.Drawing.Point(3149, 548);
             this.X4Y21.Name = "X4Y21";
-            this.X4Y21.Size = new System.Drawing.Size(69, 55);
+            this.X4Y21.Size = new System.Drawing.Size(144, 144);
             this.X4Y21.TabIndex = 257;
             this.X4Y21.TabStop = false;
             // 
@@ -4054,7 +4054,7 @@
             // 
             this.X4Y22.Location = new System.Drawing.Point(3302, 548);
             this.X4Y22.Name = "X4Y22";
-            this.X4Y22.Size = new System.Drawing.Size(100, 50);
+            this.X4Y22.Size = new System.Drawing.Size(144, 144);
             this.X4Y22.TabIndex = 258;
             this.X4Y22.TabStop = false;
             // 
@@ -4062,7 +4062,7 @@
             // 
             this.X4Y23.Location = new System.Drawing.Point(3455, 548);
             this.X4Y23.Name = "X4Y23";
-            this.X4Y23.Size = new System.Drawing.Size(100, 50);
+            this.X4Y23.Size = new System.Drawing.Size(144, 144);
             this.X4Y23.TabIndex = 259;
             this.X4Y23.TabStop = false;
             // 
@@ -4070,7 +4070,7 @@
             // 
             this.X5Y16.Location = new System.Drawing.Point(2384, 701);
             this.X5Y16.Name = "X5Y16";
-            this.X5Y16.Size = new System.Drawing.Size(100, 144);
+            this.X5Y16.Size = new System.Drawing.Size(144, 144);
             this.X5Y16.TabIndex = 260;
             this.X5Y16.TabStop = false;
             // 
@@ -4078,7 +4078,7 @@
             // 
             this.X5Y18.Location = new System.Drawing.Point(2690, 701);
             this.X5Y18.Name = "X5Y18";
-            this.X5Y18.Size = new System.Drawing.Size(100, 144);
+            this.X5Y18.Size = new System.Drawing.Size(144, 144);
             this.X5Y18.TabIndex = 262;
             this.X5Y18.TabStop = false;
             // 
@@ -4086,7 +4086,7 @@
             // 
             this.X5Y19.Location = new System.Drawing.Point(2843, 701);
             this.X5Y19.Name = "X5Y19";
-            this.X5Y19.Size = new System.Drawing.Size(60, 144);
+            this.X5Y19.Size = new System.Drawing.Size(144, 144);
             this.X5Y19.TabIndex = 263;
             this.X5Y19.TabStop = false;
             // 
@@ -4094,7 +4094,7 @@
             // 
             this.X5Y20.Location = new System.Drawing.Point(2996, 701);
             this.X5Y20.Name = "X5Y20";
-            this.X5Y20.Size = new System.Drawing.Size(51, 144);
+            this.X5Y20.Size = new System.Drawing.Size(144, 144);
             this.X5Y20.TabIndex = 264;
             this.X5Y20.TabStop = false;
             // 
@@ -4102,7 +4102,7 @@
             // 
             this.X5Y22.Location = new System.Drawing.Point(3302, 701);
             this.X5Y22.Name = "X5Y22";
-            this.X5Y22.Size = new System.Drawing.Size(100, 50);
+            this.X5Y22.Size = new System.Drawing.Size(144, 144);
             this.X5Y22.TabIndex = 266;
             this.X5Y22.TabStop = false;
             // 
@@ -4110,7 +4110,7 @@
             // 
             this.X5Y23.Location = new System.Drawing.Point(3455, 701);
             this.X5Y23.Name = "X5Y23";
-            this.X5Y23.Size = new System.Drawing.Size(100, 82);
+            this.X5Y23.Size = new System.Drawing.Size(144, 144);
             this.X5Y23.TabIndex = 267;
             this.X5Y23.TabStop = false;
             // 
@@ -4118,7 +4118,7 @@
             // 
             this.X1Y24.Location = new System.Drawing.Point(3608, 89);
             this.X1Y24.Name = "X1Y24";
-            this.X1Y24.Size = new System.Drawing.Size(68, 78);
+            this.X1Y24.Size = new System.Drawing.Size(136, 144);
             this.X1Y24.TabIndex = 268;
             this.X1Y24.TabStop = false;
             // 
@@ -4126,7 +4126,7 @@
             // 
             this.X1Y25.Location = new System.Drawing.Point(3761, 89);
             this.X1Y25.Name = "X1Y25";
-            this.X1Y25.Size = new System.Drawing.Size(100, 50);
+            this.X1Y25.Size = new System.Drawing.Size(147, 144);
             this.X1Y25.TabIndex = 269;
             this.X1Y25.TabStop = false;
             // 
@@ -4134,7 +4134,7 @@
             // 
             this.X2Y24.Location = new System.Drawing.Point(3608, 242);
             this.X2Y24.Name = "X2Y24";
-            this.X2Y24.Size = new System.Drawing.Size(52, 55);
+            this.X2Y24.Size = new System.Drawing.Size(144, 144);
             this.X2Y24.TabIndex = 270;
             this.X2Y24.TabStop = false;
             // 
@@ -4142,7 +4142,7 @@
             // 
             this.X2Y25.Location = new System.Drawing.Point(3761, 242);
             this.X2Y25.Name = "X2Y25";
-            this.X2Y25.Size = new System.Drawing.Size(100, 50);
+            this.X2Y25.Size = new System.Drawing.Size(147, 144);
             this.X2Y25.TabIndex = 271;
             this.X2Y25.TabStop = false;
             // 
@@ -4150,7 +4150,7 @@
             // 
             this.X3Y24.Location = new System.Drawing.Point(3608, 395);
             this.X3Y24.Name = "X3Y24";
-            this.X3Y24.Size = new System.Drawing.Size(100, 50);
+            this.X3Y24.Size = new System.Drawing.Size(144, 144);
             this.X3Y24.TabIndex = 272;
             this.X3Y24.TabStop = false;
             // 
@@ -4158,7 +4158,7 @@
             // 
             this.X3Y25.Location = new System.Drawing.Point(3761, 395);
             this.X3Y25.Name = "X3Y25";
-            this.X3Y25.Size = new System.Drawing.Size(100, 50);
+            this.X3Y25.Size = new System.Drawing.Size(147, 144);
             this.X3Y25.TabIndex = 273;
             this.X3Y25.TabStop = false;
             // 
@@ -4166,7 +4166,7 @@
             // 
             this.X4Y24.Location = new System.Drawing.Point(3608, 548);
             this.X4Y24.Name = "X4Y24";
-            this.X4Y24.Size = new System.Drawing.Size(100, 50);
+            this.X4Y24.Size = new System.Drawing.Size(144, 144);
             this.X4Y24.TabIndex = 274;
             this.X4Y24.TabStop = false;
             // 
@@ -4174,7 +4174,7 @@
             // 
             this.X4Y25.Location = new System.Drawing.Point(3761, 548);
             this.X4Y25.Name = "X4Y25";
-            this.X4Y25.Size = new System.Drawing.Size(100, 50);
+            this.X4Y25.Size = new System.Drawing.Size(147, 144);
             this.X4Y25.TabIndex = 275;
             this.X4Y25.TabStop = false;
             // 
@@ -4182,7 +4182,7 @@
             // 
             this.X5Y24.Location = new System.Drawing.Point(3608, 701);
             this.X5Y24.Name = "X5Y24";
-            this.X5Y24.Size = new System.Drawing.Size(100, 50);
+            this.X5Y24.Size = new System.Drawing.Size(144, 144);
             this.X5Y24.TabIndex = 276;
             this.X5Y24.TabStop = false;
             // 
@@ -4190,7 +4190,7 @@
             // 
             this.X5Y25.Location = new System.Drawing.Point(3761, 701);
             this.X5Y25.Name = "X5Y25";
-            this.X5Y25.Size = new System.Drawing.Size(100, 50);
+            this.X5Y25.Size = new System.Drawing.Size(147, 144);
             this.X5Y25.TabIndex = 277;
             this.X5Y25.TabStop = false;
             // 
@@ -4198,7 +4198,7 @@
             // 
             this.X5Y17.Location = new System.Drawing.Point(2537, 701);
             this.X5Y17.Name = "X5Y17";
-            this.X5Y17.Size = new System.Drawing.Size(100, 144);
+            this.X5Y17.Size = new System.Drawing.Size(144, 144);
             this.X5Y17.TabIndex = 261;
             this.X5Y17.TabStop = false;
             // 
@@ -4206,7 +4206,7 @@
             // 
             this.X5Y21.Location = new System.Drawing.Point(3149, 701);
             this.X5Y21.Name = "X5Y21";
-            this.X5Y21.Size = new System.Drawing.Size(100, 144);
+            this.X5Y21.Size = new System.Drawing.Size(144, 144);
             this.X5Y21.TabIndex = 265;
             this.X5Y21.TabStop = false;
             // 
@@ -4214,7 +4214,7 @@
             // 
             this.X6Y16.Location = new System.Drawing.Point(2384, 854);
             this.X6Y16.Name = "X6Y16";
-            this.X6Y16.Size = new System.Drawing.Size(100, 50);
+            this.X6Y16.Size = new System.Drawing.Size(144, 144);
             this.X6Y16.TabIndex = 278;
             this.X6Y16.TabStop = false;
             // 
@@ -4222,7 +4222,7 @@
             // 
             this.X6Y17.Location = new System.Drawing.Point(2537, 854);
             this.X6Y17.Name = "X6Y17";
-            this.X6Y17.Size = new System.Drawing.Size(100, 50);
+            this.X6Y17.Size = new System.Drawing.Size(144, 144);
             this.X6Y17.TabIndex = 279;
             this.X6Y17.TabStop = false;
             // 
@@ -4230,7 +4230,7 @@
             // 
             this.X6Y18.Location = new System.Drawing.Point(2690, 854);
             this.X6Y18.Name = "X6Y18";
-            this.X6Y18.Size = new System.Drawing.Size(100, 50);
+            this.X6Y18.Size = new System.Drawing.Size(144, 144);
             this.X6Y18.TabIndex = 280;
             this.X6Y18.TabStop = false;
             // 
@@ -4238,7 +4238,7 @@
             // 
             this.X6Y19.Location = new System.Drawing.Point(2843, 854);
             this.X6Y19.Name = "X6Y19";
-            this.X6Y19.Size = new System.Drawing.Size(100, 50);
+            this.X6Y19.Size = new System.Drawing.Size(144, 144);
             this.X6Y19.TabIndex = 281;
             this.X6Y19.TabStop = false;
             // 
@@ -4246,7 +4246,7 @@
             // 
             this.X6Y20.Location = new System.Drawing.Point(2996, 854);
             this.X6Y20.Name = "X6Y20";
-            this.X6Y20.Size = new System.Drawing.Size(100, 50);
+            this.X6Y20.Size = new System.Drawing.Size(144, 144);
             this.X6Y20.TabIndex = 282;
             this.X6Y20.TabStop = false;
             // 
@@ -4254,7 +4254,7 @@
             // 
             this.X6Y21.Location = new System.Drawing.Point(3149, 854);
             this.X6Y21.Name = "X6Y21";
-            this.X6Y21.Size = new System.Drawing.Size(100, 50);
+            this.X6Y21.Size = new System.Drawing.Size(144, 144);
             this.X6Y21.TabIndex = 283;
             this.X6Y21.TabStop = false;
             // 
@@ -4270,7 +4270,7 @@
             // 
             this.X7Y16.Location = new System.Drawing.Point(2384, 1007);
             this.X7Y16.Name = "X7Y16";
-            this.X7Y16.Size = new System.Drawing.Size(100, 50);
+            this.X7Y16.Size = new System.Drawing.Size(144, 144);
             this.X7Y16.TabIndex = 285;
             this.X7Y16.TabStop = false;
             // 
@@ -4278,7 +4278,7 @@
             // 
             this.X7Y17.Location = new System.Drawing.Point(2537, 1007);
             this.X7Y17.Name = "X7Y17";
-            this.X7Y17.Size = new System.Drawing.Size(100, 50);
+            this.X7Y17.Size = new System.Drawing.Size(144, 144);
             this.X7Y17.TabIndex = 286;
             this.X7Y17.TabStop = false;
             // 
@@ -4286,7 +4286,7 @@
             // 
             this.X7Y18.Location = new System.Drawing.Point(2690, 1007);
             this.X7Y18.Name = "X7Y18";
-            this.X7Y18.Size = new System.Drawing.Size(100, 50);
+            this.X7Y18.Size = new System.Drawing.Size(144, 144);
             this.X7Y18.TabIndex = 287;
             this.X7Y18.TabStop = false;
             // 
@@ -4294,7 +4294,7 @@
             // 
             this.X7Y19.Location = new System.Drawing.Point(2843, 1007);
             this.X7Y19.Name = "X7Y19";
-            this.X7Y19.Size = new System.Drawing.Size(100, 50);
+            this.X7Y19.Size = new System.Drawing.Size(134, 144);
             this.X7Y19.TabIndex = 288;
             this.X7Y19.TabStop = false;
             // 
@@ -4302,7 +4302,7 @@
             // 
             this.X7Y20.Location = new System.Drawing.Point(2996, 1007);
             this.X7Y20.Name = "X7Y20";
-            this.X7Y20.Size = new System.Drawing.Size(100, 50);
+            this.X7Y20.Size = new System.Drawing.Size(144, 144);
             this.X7Y20.TabIndex = 289;
             this.X7Y20.TabStop = false;
             // 
@@ -4310,7 +4310,7 @@
             // 
             this.X7Y21.Location = new System.Drawing.Point(3149, 1007);
             this.X7Y21.Name = "X7Y21";
-            this.X7Y21.Size = new System.Drawing.Size(100, 50);
+            this.X7Y21.Size = new System.Drawing.Size(144, 144);
             this.X7Y21.TabIndex = 290;
             this.X7Y21.TabStop = false;
             // 
@@ -4318,7 +4318,7 @@
             // 
             this.X7Y22.Location = new System.Drawing.Point(3302, 1007);
             this.X7Y22.Name = "X7Y22";
-            this.X7Y22.Size = new System.Drawing.Size(100, 50);
+            this.X7Y22.Size = new System.Drawing.Size(144, 144);
             this.X7Y22.TabIndex = 291;
             this.X7Y22.TabStop = false;
             // 
@@ -4326,7 +4326,7 @@
             // 
             this.X8Y16.Location = new System.Drawing.Point(2384, 1160);
             this.X8Y16.Name = "X8Y16";
-            this.X8Y16.Size = new System.Drawing.Size(51, 50);
+            this.X8Y16.Size = new System.Drawing.Size(144, 144);
             this.X8Y16.TabIndex = 292;
             this.X8Y16.TabStop = false;
             // 
@@ -4334,7 +4334,7 @@
             // 
             this.X8Y17.Location = new System.Drawing.Point(2537, 1160);
             this.X8Y17.Name = "X8Y17";
-            this.X8Y17.Size = new System.Drawing.Size(100, 50);
+            this.X8Y17.Size = new System.Drawing.Size(144, 144);
             this.X8Y17.TabIndex = 293;
             this.X8Y17.TabStop = false;
             // 
@@ -4342,7 +4342,7 @@
             // 
             this.X8Y18.Location = new System.Drawing.Point(2690, 1160);
             this.X8Y18.Name = "X8Y18";
-            this.X8Y18.Size = new System.Drawing.Size(100, 50);
+            this.X8Y18.Size = new System.Drawing.Size(144, 144);
             this.X8Y18.TabIndex = 294;
             this.X8Y18.TabStop = false;
             // 
@@ -4350,7 +4350,7 @@
             // 
             this.X8Y19.Location = new System.Drawing.Point(2843, 1160);
             this.X8Y19.Name = "X8Y19";
-            this.X8Y19.Size = new System.Drawing.Size(102, 65);
+            this.X8Y19.Size = new System.Drawing.Size(144, 144);
             this.X8Y19.TabIndex = 295;
             this.X8Y19.TabStop = false;
             // 
@@ -4358,7 +4358,7 @@
             // 
             this.X8Y20.Location = new System.Drawing.Point(2996, 1160);
             this.X8Y20.Name = "X8Y20";
-            this.X8Y20.Size = new System.Drawing.Size(100, 50);
+            this.X8Y20.Size = new System.Drawing.Size(144, 144);
             this.X8Y20.TabIndex = 296;
             this.X8Y20.TabStop = false;
             // 
@@ -4366,7 +4366,7 @@
             // 
             this.X8Y21.Location = new System.Drawing.Point(3149, 1160);
             this.X8Y21.Name = "X8Y21";
-            this.X8Y21.Size = new System.Drawing.Size(100, 50);
+            this.X8Y21.Size = new System.Drawing.Size(144, 144);
             this.X8Y21.TabIndex = 297;
             this.X8Y21.TabStop = false;
             // 
@@ -4374,7 +4374,7 @@
             // 
             this.X8Y22.Location = new System.Drawing.Point(3302, 1160);
             this.X8Y22.Name = "X8Y22";
-            this.X8Y22.Size = new System.Drawing.Size(100, 50);
+            this.X8Y22.Size = new System.Drawing.Size(144, 144);
             this.X8Y22.TabIndex = 298;
             this.X8Y22.TabStop = false;
             // 
@@ -4382,7 +4382,7 @@
             // 
             this.X9Y16.Location = new System.Drawing.Point(2384, 1313);
             this.X9Y16.Name = "X9Y16";
-            this.X9Y16.Size = new System.Drawing.Size(100, 50);
+            this.X9Y16.Size = new System.Drawing.Size(144, 144);
             this.X9Y16.TabIndex = 299;
             this.X9Y16.TabStop = false;
             // 
@@ -4390,7 +4390,7 @@
             // 
             this.X9Y17.Location = new System.Drawing.Point(2537, 1313);
             this.X9Y17.Name = "X9Y17";
-            this.X9Y17.Size = new System.Drawing.Size(70, 58);
+            this.X9Y17.Size = new System.Drawing.Size(144, 144);
             this.X9Y17.TabIndex = 300;
             this.X9Y17.TabStop = false;
             // 
@@ -4398,7 +4398,7 @@
             // 
             this.X9Y18.Location = new System.Drawing.Point(2690, 1313);
             this.X9Y18.Name = "X9Y18";
-            this.X9Y18.Size = new System.Drawing.Size(100, 50);
+            this.X9Y18.Size = new System.Drawing.Size(144, 144);
             this.X9Y18.TabIndex = 301;
             this.X9Y18.TabStop = false;
             // 
@@ -4406,7 +4406,7 @@
             // 
             this.X9Y19.Location = new System.Drawing.Point(2843, 1313);
             this.X9Y19.Name = "X9Y19";
-            this.X9Y19.Size = new System.Drawing.Size(100, 50);
+            this.X9Y19.Size = new System.Drawing.Size(144, 144);
             this.X9Y19.TabIndex = 302;
             this.X9Y19.TabStop = false;
             // 
@@ -4414,7 +4414,7 @@
             // 
             this.X9Y20.Location = new System.Drawing.Point(2996, 1313);
             this.X9Y20.Name = "X9Y20";
-            this.X9Y20.Size = new System.Drawing.Size(67, 50);
+            this.X9Y20.Size = new System.Drawing.Size(144, 144);
             this.X9Y20.TabIndex = 303;
             this.X9Y20.TabStop = false;
             // 
@@ -4422,7 +4422,7 @@
             // 
             this.X9Y21.Location = new System.Drawing.Point(3149, 1313);
             this.X9Y21.Name = "X9Y21";
-            this.X9Y21.Size = new System.Drawing.Size(100, 50);
+            this.X9Y21.Size = new System.Drawing.Size(144, 144);
             this.X9Y21.TabIndex = 304;
             this.X9Y21.TabStop = false;
             // 
@@ -4430,7 +4430,7 @@
             // 
             this.X9Y22.Location = new System.Drawing.Point(3302, 1313);
             this.X9Y22.Name = "X9Y22";
-            this.X9Y22.Size = new System.Drawing.Size(100, 50);
+            this.X9Y22.Size = new System.Drawing.Size(144, 144);
             this.X9Y22.TabIndex = 305;
             this.X9Y22.TabStop = false;
             // 
@@ -4438,7 +4438,7 @@
             // 
             this.X6Y23.Location = new System.Drawing.Point(3455, 854);
             this.X6Y23.Name = "X6Y23";
-            this.X6Y23.Size = new System.Drawing.Size(100, 50);
+            this.X6Y23.Size = new System.Drawing.Size(144, 144);
             this.X6Y23.TabIndex = 306;
             this.X6Y23.TabStop = false;
             // 
@@ -4446,7 +4446,7 @@
             // 
             this.X6Y24.Location = new System.Drawing.Point(3608, 854);
             this.X6Y24.Name = "X6Y24";
-            this.X6Y24.Size = new System.Drawing.Size(100, 50);
+            this.X6Y24.Size = new System.Drawing.Size(144, 144);
             this.X6Y24.TabIndex = 307;
             this.X6Y24.TabStop = false;
             // 
@@ -4454,7 +4454,7 @@
             // 
             this.X6Y25.Location = new System.Drawing.Point(3761, 854);
             this.X6Y25.Name = "X6Y25";
-            this.X6Y25.Size = new System.Drawing.Size(100, 50);
+            this.X6Y25.Size = new System.Drawing.Size(147, 144);
             this.X6Y25.TabIndex = 308;
             this.X6Y25.TabStop = false;
             // 
@@ -4462,7 +4462,7 @@
             // 
             this.X7Y23.Location = new System.Drawing.Point(3455, 1007);
             this.X7Y23.Name = "X7Y23";
-            this.X7Y23.Size = new System.Drawing.Size(87, 58);
+            this.X7Y23.Size = new System.Drawing.Size(144, 144);
             this.X7Y23.TabIndex = 309;
             this.X7Y23.TabStop = false;
             // 
@@ -4470,7 +4470,7 @@
             // 
             this.X7Y24.Location = new System.Drawing.Point(3608, 1007);
             this.X7Y24.Name = "X7Y24";
-            this.X7Y24.Size = new System.Drawing.Size(100, 50);
+            this.X7Y24.Size = new System.Drawing.Size(144, 144);
             this.X7Y24.TabIndex = 310;
             this.X7Y24.TabStop = false;
             // 
@@ -4478,7 +4478,7 @@
             // 
             this.X7Y25.Location = new System.Drawing.Point(3761, 1007);
             this.X7Y25.Name = "X7Y25";
-            this.X7Y25.Size = new System.Drawing.Size(100, 50);
+            this.X7Y25.Size = new System.Drawing.Size(147, 144);
             this.X7Y25.TabIndex = 311;
             this.X7Y25.TabStop = false;
             // 
@@ -4486,7 +4486,7 @@
             // 
             this.X8Y23.Location = new System.Drawing.Point(3455, 1160);
             this.X8Y23.Name = "X8Y23";
-            this.X8Y23.Size = new System.Drawing.Size(100, 50);
+            this.X8Y23.Size = new System.Drawing.Size(144, 144);
             this.X8Y23.TabIndex = 312;
             this.X8Y23.TabStop = false;
             // 
@@ -4494,7 +4494,7 @@
             // 
             this.X8Y24.Location = new System.Drawing.Point(3608, 1160);
             this.X8Y24.Name = "X8Y24";
-            this.X8Y24.Size = new System.Drawing.Size(100, 50);
+            this.X8Y24.Size = new System.Drawing.Size(144, 144);
             this.X8Y24.TabIndex = 313;
             this.X8Y24.TabStop = false;
             // 
@@ -4502,7 +4502,7 @@
             // 
             this.X8Y25.Location = new System.Drawing.Point(3761, 1160);
             this.X8Y25.Name = "X8Y25";
-            this.X8Y25.Size = new System.Drawing.Size(86, 94);
+            this.X8Y25.Size = new System.Drawing.Size(147, 144);
             this.X8Y25.TabIndex = 314;
             this.X8Y25.TabStop = false;
             // 
@@ -4510,7 +4510,7 @@
             // 
             this.X9Y23.Location = new System.Drawing.Point(3455, 1313);
             this.X9Y23.Name = "X9Y23";
-            this.X9Y23.Size = new System.Drawing.Size(100, 50);
+            this.X9Y23.Size = new System.Drawing.Size(144, 144);
             this.X9Y23.TabIndex = 315;
             this.X9Y23.TabStop = false;
             // 
@@ -4518,7 +4518,7 @@
             // 
             this.X9Y24.Location = new System.Drawing.Point(3608, 1313);
             this.X9Y24.Name = "X9Y24";
-            this.X9Y24.Size = new System.Drawing.Size(100, 50);
+            this.X9Y24.Size = new System.Drawing.Size(144, 144);
             this.X9Y24.TabIndex = 316;
             this.X9Y24.TabStop = false;
             // 
@@ -4526,7 +4526,7 @@
             // 
             this.X9Y25.Location = new System.Drawing.Point(3761, 1313);
             this.X9Y25.Name = "X9Y25";
-            this.X9Y25.Size = new System.Drawing.Size(68, 80);
+            this.X9Y25.Size = new System.Drawing.Size(147, 144);
             this.X9Y25.TabIndex = 317;
             this.X9Y25.TabStop = false;
             // 
@@ -4534,7 +4534,7 @@
             // 
             this.X10Y16.Location = new System.Drawing.Point(2384, 1466);
             this.X10Y16.Name = "X10Y16";
-            this.X10Y16.Size = new System.Drawing.Size(100, 50);
+            this.X10Y16.Size = new System.Drawing.Size(144, 144);
             this.X10Y16.TabIndex = 318;
             this.X10Y16.TabStop = false;
             // 
@@ -4542,7 +4542,7 @@
             // 
             this.X10Y17.Location = new System.Drawing.Point(2537, 1466);
             this.X10Y17.Name = "X10Y17";
-            this.X10Y17.Size = new System.Drawing.Size(100, 50);
+            this.X10Y17.Size = new System.Drawing.Size(144, 144);
             this.X10Y17.TabIndex = 319;
             this.X10Y17.TabStop = false;
             // 
@@ -4550,7 +4550,7 @@
             // 
             this.X10Y18.Location = new System.Drawing.Point(2690, 1466);
             this.X10Y18.Name = "X10Y18";
-            this.X10Y18.Size = new System.Drawing.Size(100, 50);
+            this.X10Y18.Size = new System.Drawing.Size(144, 144);
             this.X10Y18.TabIndex = 320;
             this.X10Y18.TabStop = false;
             // 
@@ -4558,7 +4558,7 @@
             // 
             this.X10Y19.Location = new System.Drawing.Point(2843, 1466);
             this.X10Y19.Name = "X10Y19";
-            this.X10Y19.Size = new System.Drawing.Size(100, 50);
+            this.X10Y19.Size = new System.Drawing.Size(144, 144);
             this.X10Y19.TabIndex = 321;
             this.X10Y19.TabStop = false;
             // 
@@ -4566,7 +4566,7 @@
             // 
             this.X10Y20.Location = new System.Drawing.Point(2996, 1466);
             this.X10Y20.Name = "X10Y20";
-            this.X10Y20.Size = new System.Drawing.Size(100, 50);
+            this.X10Y20.Size = new System.Drawing.Size(144, 144);
             this.X10Y20.TabIndex = 322;
             this.X10Y20.TabStop = false;
             // 
@@ -4574,7 +4574,7 @@
             // 
             this.X10Y21.Location = new System.Drawing.Point(3149, 1466);
             this.X10Y21.Name = "X10Y21";
-            this.X10Y21.Size = new System.Drawing.Size(68, 59);
+            this.X10Y21.Size = new System.Drawing.Size(144, 144);
             this.X10Y21.TabIndex = 323;
             this.X10Y21.TabStop = false;
             // 
@@ -4582,7 +4582,7 @@
             // 
             this.X10Y22.Location = new System.Drawing.Point(3302, 1466);
             this.X10Y22.Name = "X10Y22";
-            this.X10Y22.Size = new System.Drawing.Size(134, 108);
+            this.X10Y22.Size = new System.Drawing.Size(144, 144);
             this.X10Y22.TabIndex = 324;
             this.X10Y22.TabStop = false;
             // 
@@ -4590,7 +4590,7 @@
             // 
             this.X11Y16.Location = new System.Drawing.Point(2384, 1619);
             this.X11Y16.Name = "X11Y16";
-            this.X11Y16.Size = new System.Drawing.Size(100, 50);
+            this.X11Y16.Size = new System.Drawing.Size(144, 144);
             this.X11Y16.TabIndex = 325;
             this.X11Y16.TabStop = false;
             // 
@@ -4598,7 +4598,7 @@
             // 
             this.X11Y17.Location = new System.Drawing.Point(2537, 1619);
             this.X11Y17.Name = "X11Y17";
-            this.X11Y17.Size = new System.Drawing.Size(100, 50);
+            this.X11Y17.Size = new System.Drawing.Size(144, 144);
             this.X11Y17.TabIndex = 326;
             this.X11Y17.TabStop = false;
             // 
@@ -4606,7 +4606,7 @@
             // 
             this.X11Y18.Location = new System.Drawing.Point(2690, 1619);
             this.X11Y18.Name = "X11Y18";
-            this.X11Y18.Size = new System.Drawing.Size(100, 50);
+            this.X11Y18.Size = new System.Drawing.Size(144, 144);
             this.X11Y18.TabIndex = 327;
             this.X11Y18.TabStop = false;
             // 
@@ -4614,7 +4614,7 @@
             // 
             this.X11Y19.Location = new System.Drawing.Point(2843, 1619);
             this.X11Y19.Name = "X11Y19";
-            this.X11Y19.Size = new System.Drawing.Size(100, 50);
+            this.X11Y19.Size = new System.Drawing.Size(144, 144);
             this.X11Y19.TabIndex = 328;
             this.X11Y19.TabStop = false;
             // 
@@ -4622,7 +4622,7 @@
             // 
             this.X11Y20.Location = new System.Drawing.Point(2996, 1619);
             this.X11Y20.Name = "X11Y20";
-            this.X11Y20.Size = new System.Drawing.Size(100, 50);
+            this.X11Y20.Size = new System.Drawing.Size(144, 144);
             this.X11Y20.TabIndex = 329;
             this.X11Y20.TabStop = false;
             // 
@@ -4630,7 +4630,7 @@
             // 
             this.X11Y21.Location = new System.Drawing.Point(3149, 1619);
             this.X11Y21.Name = "X11Y21";
-            this.X11Y21.Size = new System.Drawing.Size(100, 50);
+            this.X11Y21.Size = new System.Drawing.Size(144, 144);
             this.X11Y21.TabIndex = 330;
             this.X11Y21.TabStop = false;
             // 
@@ -4638,7 +4638,7 @@
             // 
             this.X11Y22.Location = new System.Drawing.Point(3302, 1619);
             this.X11Y22.Name = "X11Y22";
-            this.X11Y22.Size = new System.Drawing.Size(100, 50);
+            this.X11Y22.Size = new System.Drawing.Size(144, 144);
             this.X11Y22.TabIndex = 331;
             this.X11Y22.TabStop = false;
             // 
@@ -4646,7 +4646,7 @@
             // 
             this.X12Y16.Location = new System.Drawing.Point(2384, 1772);
             this.X12Y16.Name = "X12Y16";
-            this.X12Y16.Size = new System.Drawing.Size(81, 94);
+            this.X12Y16.Size = new System.Drawing.Size(144, 144);
             this.X12Y16.TabIndex = 332;
             this.X12Y16.TabStop = false;
             // 
@@ -4654,7 +4654,7 @@
             // 
             this.X12Y17.Location = new System.Drawing.Point(2537, 1772);
             this.X12Y17.Name = "X12Y17";
-            this.X12Y17.Size = new System.Drawing.Size(100, 50);
+            this.X12Y17.Size = new System.Drawing.Size(144, 144);
             this.X12Y17.TabIndex = 333;
             this.X12Y17.TabStop = false;
             // 
@@ -4662,7 +4662,7 @@
             // 
             this.X12Y18.Location = new System.Drawing.Point(2690, 1772);
             this.X12Y18.Name = "X12Y18";
-            this.X12Y18.Size = new System.Drawing.Size(84, 89);
+            this.X12Y18.Size = new System.Drawing.Size(144, 144);
             this.X12Y18.TabIndex = 334;
             this.X12Y18.TabStop = false;
             // 
@@ -4670,7 +4670,7 @@
             // 
             this.X12Y19.Location = new System.Drawing.Point(2843, 1772);
             this.X12Y19.Name = "X12Y19";
-            this.X12Y19.Size = new System.Drawing.Size(100, 50);
+            this.X12Y19.Size = new System.Drawing.Size(144, 144);
             this.X12Y19.TabIndex = 335;
             this.X12Y19.TabStop = false;
             // 
@@ -4678,7 +4678,7 @@
             // 
             this.X12Y20.Location = new System.Drawing.Point(2996, 1772);
             this.X12Y20.Name = "X12Y20";
-            this.X12Y20.Size = new System.Drawing.Size(100, 50);
+            this.X12Y20.Size = new System.Drawing.Size(144, 144);
             this.X12Y20.TabIndex = 336;
             this.X12Y20.TabStop = false;
             // 
@@ -4686,7 +4686,7 @@
             // 
             this.X12Y21.Location = new System.Drawing.Point(3149, 1772);
             this.X12Y21.Name = "X12Y21";
-            this.X12Y21.Size = new System.Drawing.Size(100, 71);
+            this.X12Y21.Size = new System.Drawing.Size(144, 144);
             this.X12Y21.TabIndex = 337;
             this.X12Y21.TabStop = false;
             // 
@@ -4694,7 +4694,7 @@
             // 
             this.X12Y22.Location = new System.Drawing.Point(3302, 1772);
             this.X12Y22.Name = "X12Y22";
-            this.X12Y22.Size = new System.Drawing.Size(100, 50);
+            this.X12Y22.Size = new System.Drawing.Size(144, 144);
             this.X12Y22.TabIndex = 338;
             this.X12Y22.TabStop = false;
             // 
@@ -4702,7 +4702,7 @@
             // 
             this.X13Y16.Location = new System.Drawing.Point(2384, 1925);
             this.X13Y16.Name = "X13Y16";
-            this.X13Y16.Size = new System.Drawing.Size(100, 50);
+            this.X13Y16.Size = new System.Drawing.Size(144, 144);
             this.X13Y16.TabIndex = 339;
             this.X13Y16.TabStop = false;
             // 
@@ -4710,7 +4710,7 @@
             // 
             this.X13Y17.Location = new System.Drawing.Point(2537, 1925);
             this.X13Y17.Name = "X13Y17";
-            this.X13Y17.Size = new System.Drawing.Size(100, 50);
+            this.X13Y17.Size = new System.Drawing.Size(144, 144);
             this.X13Y17.TabIndex = 340;
             this.X13Y17.TabStop = false;
             // 
@@ -4718,7 +4718,7 @@
             // 
             this.X13Y18.Location = new System.Drawing.Point(2690, 1925);
             this.X13Y18.Name = "X13Y18";
-            this.X13Y18.Size = new System.Drawing.Size(66, 71);
+            this.X13Y18.Size = new System.Drawing.Size(144, 144);
             this.X13Y18.TabIndex = 341;
             this.X13Y18.TabStop = false;
             // 
@@ -4726,7 +4726,7 @@
             // 
             this.X13Y19.Location = new System.Drawing.Point(2843, 1925);
             this.X13Y19.Name = "X13Y19";
-            this.X13Y19.Size = new System.Drawing.Size(100, 50);
+            this.X13Y19.Size = new System.Drawing.Size(144, 144);
             this.X13Y19.TabIndex = 342;
             this.X13Y19.TabStop = false;
             // 
@@ -4734,7 +4734,7 @@
             // 
             this.X13Y20.Location = new System.Drawing.Point(2996, 1925);
             this.X13Y20.Name = "X13Y20";
-            this.X13Y20.Size = new System.Drawing.Size(100, 50);
+            this.X13Y20.Size = new System.Drawing.Size(144, 144);
             this.X13Y20.TabIndex = 343;
             this.X13Y20.TabStop = false;
             // 
@@ -4742,7 +4742,7 @@
             // 
             this.X13Y21.Location = new System.Drawing.Point(3149, 1925);
             this.X13Y21.Name = "X13Y21";
-            this.X13Y21.Size = new System.Drawing.Size(100, 50);
+            this.X13Y21.Size = new System.Drawing.Size(144, 144);
             this.X13Y21.TabIndex = 344;
             this.X13Y21.TabStop = false;
             // 
@@ -4750,7 +4750,7 @@
             // 
             this.X13Y22.Location = new System.Drawing.Point(3302, 1925);
             this.X13Y22.Name = "X13Y22";
-            this.X13Y22.Size = new System.Drawing.Size(120, 120);
+            this.X13Y22.Size = new System.Drawing.Size(144, 144);
             this.X13Y22.TabIndex = 345;
             this.X13Y22.TabStop = false;
             // 
@@ -4758,7 +4758,7 @@
             // 
             this.X10Y23.Location = new System.Drawing.Point(3455, 1466);
             this.X10Y23.Name = "X10Y23";
-            this.X10Y23.Size = new System.Drawing.Size(100, 50);
+            this.X10Y23.Size = new System.Drawing.Size(144, 144);
             this.X10Y23.TabIndex = 346;
             this.X10Y23.TabStop = false;
             // 
@@ -4766,7 +4766,7 @@
             // 
             this.X10Y24.Location = new System.Drawing.Point(3608, 1466);
             this.X10Y24.Name = "X10Y24";
-            this.X10Y24.Size = new System.Drawing.Size(100, 50);
+            this.X10Y24.Size = new System.Drawing.Size(144, 144);
             this.X10Y24.TabIndex = 347;
             this.X10Y24.TabStop = false;
             // 
@@ -4774,7 +4774,7 @@
             // 
             this.X10Y25.Location = new System.Drawing.Point(3761, 1466);
             this.X10Y25.Name = "X10Y25";
-            this.X10Y25.Size = new System.Drawing.Size(122, 74);
+            this.X10Y25.Size = new System.Drawing.Size(147, 144);
             this.X10Y25.TabIndex = 348;
             this.X10Y25.TabStop = false;
             // 
@@ -4782,7 +4782,7 @@
             // 
             this.X11Y23.Location = new System.Drawing.Point(3455, 1619);
             this.X11Y23.Name = "X11Y23";
-            this.X11Y23.Size = new System.Drawing.Size(100, 50);
+            this.X11Y23.Size = new System.Drawing.Size(144, 144);
             this.X11Y23.TabIndex = 349;
             this.X11Y23.TabStop = false;
             // 
@@ -4790,7 +4790,7 @@
             // 
             this.X11Y24.Location = new System.Drawing.Point(3608, 1619);
             this.X11Y24.Name = "X11Y24";
-            this.X11Y24.Size = new System.Drawing.Size(100, 50);
+            this.X11Y24.Size = new System.Drawing.Size(144, 144);
             this.X11Y24.TabIndex = 350;
             this.X11Y24.TabStop = false;
             // 
@@ -4798,7 +4798,7 @@
             // 
             this.X11Y25.Location = new System.Drawing.Point(3761, 1619);
             this.X11Y25.Name = "X11Y25";
-            this.X11Y25.Size = new System.Drawing.Size(100, 50);
+            this.X11Y25.Size = new System.Drawing.Size(147, 144);
             this.X11Y25.TabIndex = 351;
             this.X11Y25.TabStop = false;
             // 
@@ -4806,7 +4806,7 @@
             // 
             this.X12Y23.Location = new System.Drawing.Point(3455, 1772);
             this.X12Y23.Name = "X12Y23";
-            this.X12Y23.Size = new System.Drawing.Size(100, 50);
+            this.X12Y23.Size = new System.Drawing.Size(144, 144);
             this.X12Y23.TabIndex = 352;
             this.X12Y23.TabStop = false;
             // 
@@ -4822,7 +4822,7 @@
             // 
             this.X12Y25.Location = new System.Drawing.Point(3761, 1772);
             this.X12Y25.Name = "X12Y25";
-            this.X12Y25.Size = new System.Drawing.Size(100, 50);
+            this.X12Y25.Size = new System.Drawing.Size(147, 144);
             this.X12Y25.TabIndex = 354;
             this.X12Y25.TabStop = false;
             // 
@@ -4830,7 +4830,7 @@
             // 
             this.X13Y23.Location = new System.Drawing.Point(3455, 1925);
             this.X13Y23.Name = "X13Y23";
-            this.X13Y23.Size = new System.Drawing.Size(100, 50);
+            this.X13Y23.Size = new System.Drawing.Size(144, 144);
             this.X13Y23.TabIndex = 355;
             this.X13Y23.TabStop = false;
             // 
@@ -4838,7 +4838,7 @@
             // 
             this.X13Y24.Location = new System.Drawing.Point(3608, 1925);
             this.X13Y24.Name = "X13Y24";
-            this.X13Y24.Size = new System.Drawing.Size(100, 50);
+            this.X13Y24.Size = new System.Drawing.Size(144, 144);
             this.X13Y24.TabIndex = 356;
             this.X13Y24.TabStop = false;
             // 
@@ -4846,7 +4846,7 @@
             // 
             this.X13Y25.Location = new System.Drawing.Point(3761, 1925);
             this.X13Y25.Name = "X13Y25";
-            this.X13Y25.Size = new System.Drawing.Size(100, 50);
+            this.X13Y25.Size = new System.Drawing.Size(147, 144);
             this.X13Y25.TabIndex = 357;
             this.X13Y25.TabStop = false;
             // 
@@ -4854,7 +4854,7 @@
             // 
             this.X14Y25.Location = new System.Drawing.Point(3761, 2078);
             this.X14Y25.Name = "X14Y25";
-            this.X14Y25.Size = new System.Drawing.Size(100, 50);
+            this.X14Y25.Size = new System.Drawing.Size(147, 144);
             this.X14Y25.TabIndex = 358;
             this.X14Y25.TabStop = false;
             // 
@@ -4862,7 +4862,7 @@
             // 
             this.X14Y24.Location = new System.Drawing.Point(3608, 2078);
             this.X14Y24.Name = "X14Y24";
-            this.X14Y24.Size = new System.Drawing.Size(100, 50);
+            this.X14Y24.Size = new System.Drawing.Size(144, 144);
             this.X14Y24.TabIndex = 359;
             this.X14Y24.TabStop = false;
             // 
@@ -4878,7 +4878,7 @@
             // 
             this.X14Y22.Location = new System.Drawing.Point(3302, 2078);
             this.X14Y22.Name = "X14Y22";
-            this.X14Y22.Size = new System.Drawing.Size(100, 74);
+            this.X14Y22.Size = new System.Drawing.Size(144, 144);
             this.X14Y22.TabIndex = 361;
             this.X14Y22.TabStop = false;
             // 
@@ -4886,7 +4886,7 @@
             // 
             this.X14Y21.Location = new System.Drawing.Point(3149, 2078);
             this.X14Y21.Name = "X14Y21";
-            this.X14Y21.Size = new System.Drawing.Size(100, 50);
+            this.X14Y21.Size = new System.Drawing.Size(144, 144);
             this.X14Y21.TabIndex = 362;
             this.X14Y21.TabStop = false;
             // 
@@ -4894,7 +4894,7 @@
             // 
             this.X14Y20.Location = new System.Drawing.Point(2996, 2078);
             this.X14Y20.Name = "X14Y20";
-            this.X14Y20.Size = new System.Drawing.Size(100, 50);
+            this.X14Y20.Size = new System.Drawing.Size(144, 144);
             this.X14Y20.TabIndex = 363;
             this.X14Y20.TabStop = false;
             // 
@@ -4902,7 +4902,7 @@
             // 
             this.X14Y19.Location = new System.Drawing.Point(2843, 2078);
             this.X14Y19.Name = "X14Y19";
-            this.X14Y19.Size = new System.Drawing.Size(100, 50);
+            this.X14Y19.Size = new System.Drawing.Size(144, 144);
             this.X14Y19.TabIndex = 364;
             this.X14Y19.TabStop = false;
             // 
@@ -4910,7 +4910,7 @@
             // 
             this.X14Y18.Location = new System.Drawing.Point(2690, 2078);
             this.X14Y18.Name = "X14Y18";
-            this.X14Y18.Size = new System.Drawing.Size(100, 50);
+            this.X14Y18.Size = new System.Drawing.Size(144, 144);
             this.X14Y18.TabIndex = 365;
             this.X14Y18.TabStop = false;
             // 
@@ -4918,7 +4918,7 @@
             // 
             this.X14Y17.Location = new System.Drawing.Point(2537, 2078);
             this.X14Y17.Name = "X14Y17";
-            this.X14Y17.Size = new System.Drawing.Size(100, 50);
+            this.X14Y17.Size = new System.Drawing.Size(144, 144);
             this.X14Y17.TabIndex = 366;
             this.X14Y17.TabStop = false;
             // 
@@ -4926,7 +4926,7 @@
             // 
             this.X15Y17.Location = new System.Drawing.Point(2537, 2231);
             this.X15Y17.Name = "X15Y17";
-            this.X15Y17.Size = new System.Drawing.Size(100, 50);
+            this.X15Y17.Size = new System.Drawing.Size(144, 144);
             this.X15Y17.TabIndex = 367;
             this.X15Y17.TabStop = false;
             // 
@@ -4934,7 +4934,7 @@
             // 
             this.X15Y18.Location = new System.Drawing.Point(2690, 2231);
             this.X15Y18.Name = "X15Y18";
-            this.X15Y18.Size = new System.Drawing.Size(100, 50);
+            this.X15Y18.Size = new System.Drawing.Size(144, 144);
             this.X15Y18.TabIndex = 368;
             this.X15Y18.TabStop = false;
             // 
@@ -4942,7 +4942,7 @@
             // 
             this.X15Y19.Location = new System.Drawing.Point(2843, 2231);
             this.X15Y19.Name = "X15Y19";
-            this.X15Y19.Size = new System.Drawing.Size(100, 50);
+            this.X15Y19.Size = new System.Drawing.Size(144, 144);
             this.X15Y19.TabIndex = 369;
             this.X15Y19.TabStop = false;
             // 
@@ -4950,7 +4950,7 @@
             // 
             this.X15Y20.Location = new System.Drawing.Point(2996, 2231);
             this.X15Y20.Name = "X15Y20";
-            this.X15Y20.Size = new System.Drawing.Size(100, 50);
+            this.X15Y20.Size = new System.Drawing.Size(144, 144);
             this.X15Y20.TabIndex = 370;
             this.X15Y20.TabStop = false;
             // 
@@ -4958,7 +4958,7 @@
             // 
             this.X15Y21.Location = new System.Drawing.Point(3149, 2231);
             this.X15Y21.Name = "X15Y21";
-            this.X15Y21.Size = new System.Drawing.Size(100, 50);
+            this.X15Y21.Size = new System.Drawing.Size(144, 144);
             this.X15Y21.TabIndex = 371;
             this.X15Y21.TabStop = false;
             // 
@@ -4966,7 +4966,7 @@
             // 
             this.X15Y22.Location = new System.Drawing.Point(3302, 2231);
             this.X15Y22.Name = "X15Y22";
-            this.X15Y22.Size = new System.Drawing.Size(100, 50);
+            this.X15Y22.Size = new System.Drawing.Size(144, 144);
             this.X15Y22.TabIndex = 372;
             this.X15Y22.TabStop = false;
             // 
@@ -4974,7 +4974,7 @@
             // 
             this.X15Y23.Location = new System.Drawing.Point(3455, 2231);
             this.X15Y23.Name = "X15Y23";
-            this.X15Y23.Size = new System.Drawing.Size(53, 57);
+            this.X15Y23.Size = new System.Drawing.Size(144, 144);
             this.X15Y23.TabIndex = 373;
             this.X15Y23.TabStop = false;
             // 
@@ -4982,7 +4982,7 @@
             // 
             this.X15Y24.Location = new System.Drawing.Point(3608, 2231);
             this.X15Y24.Name = "X15Y24";
-            this.X15Y24.Size = new System.Drawing.Size(100, 50);
+            this.X15Y24.Size = new System.Drawing.Size(144, 144);
             this.X15Y24.TabIndex = 374;
             this.X15Y24.TabStop = false;
             // 
@@ -4990,7 +4990,7 @@
             // 
             this.X15Y25.Location = new System.Drawing.Point(3761, 2231);
             this.X15Y25.Name = "X15Y25";
-            this.X15Y25.Size = new System.Drawing.Size(100, 50);
+            this.X15Y25.Size = new System.Drawing.Size(147, 144);
             this.X15Y25.TabIndex = 375;
             this.X15Y25.TabStop = false;
             // 
@@ -4998,7 +4998,7 @@
             // 
             this.X16Y25.Location = new System.Drawing.Point(3761, 2384);
             this.X16Y25.Name = "X16Y25";
-            this.X16Y25.Size = new System.Drawing.Size(100, 50);
+            this.X16Y25.Size = new System.Drawing.Size(147, 144);
             this.X16Y25.TabIndex = 376;
             this.X16Y25.TabStop = false;
             // 
@@ -5006,7 +5006,7 @@
             // 
             this.X16Y24.Location = new System.Drawing.Point(3608, 2384);
             this.X16Y24.Name = "X16Y24";
-            this.X16Y24.Size = new System.Drawing.Size(100, 50);
+            this.X16Y24.Size = new System.Drawing.Size(144, 144);
             this.X16Y24.TabIndex = 377;
             this.X16Y24.TabStop = false;
             // 
@@ -5022,7 +5022,7 @@
             // 
             this.X16Y22.Location = new System.Drawing.Point(3302, 2384);
             this.X16Y22.Name = "X16Y22";
-            this.X16Y22.Size = new System.Drawing.Size(100, 50);
+            this.X16Y22.Size = new System.Drawing.Size(144, 144);
             this.X16Y22.TabIndex = 379;
             this.X16Y22.TabStop = false;
             // 
@@ -5030,7 +5030,7 @@
             // 
             this.X16Y21.Location = new System.Drawing.Point(3149, 2384);
             this.X16Y21.Name = "X16Y21";
-            this.X16Y21.Size = new System.Drawing.Size(100, 50);
+            this.X16Y21.Size = new System.Drawing.Size(144, 144);
             this.X16Y21.TabIndex = 380;
             this.X16Y21.TabStop = false;
             // 
@@ -5038,7 +5038,7 @@
             // 
             this.X16Y20.Location = new System.Drawing.Point(2996, 2384);
             this.X16Y20.Name = "X16Y20";
-            this.X16Y20.Size = new System.Drawing.Size(100, 50);
+            this.X16Y20.Size = new System.Drawing.Size(144, 144);
             this.X16Y20.TabIndex = 381;
             this.X16Y20.TabStop = false;
             // 
@@ -5054,7 +5054,7 @@
             // 
             this.X16Y18.Location = new System.Drawing.Point(2690, 2384);
             this.X16Y18.Name = "X16Y18";
-            this.X16Y18.Size = new System.Drawing.Size(100, 50);
+            this.X16Y18.Size = new System.Drawing.Size(144, 144);
             this.X16Y18.TabIndex = 383;
             this.X16Y18.TabStop = false;
             // 
@@ -5062,7 +5062,7 @@
             // 
             this.X16Y17.Location = new System.Drawing.Point(2537, 2384);
             this.X16Y17.Name = "X16Y17";
-            this.X16Y17.Size = new System.Drawing.Size(100, 50);
+            this.X16Y17.Size = new System.Drawing.Size(144, 144);
             this.X16Y17.TabIndex = 384;
             this.X16Y17.TabStop = false;
             // 
@@ -5070,7 +5070,7 @@
             // 
             this.X14Y16.Location = new System.Drawing.Point(2384, 2078);
             this.X14Y16.Name = "X14Y16";
-            this.X14Y16.Size = new System.Drawing.Size(100, 50);
+            this.X14Y16.Size = new System.Drawing.Size(144, 144);
             this.X14Y16.TabIndex = 385;
             this.X14Y16.TabStop = false;
             // 
@@ -5078,7 +5078,7 @@
             // 
             this.X15Y16.Location = new System.Drawing.Point(2384, 2231);
             this.X15Y16.Name = "X15Y16";
-            this.X15Y16.Size = new System.Drawing.Size(100, 50);
+            this.X15Y16.Size = new System.Drawing.Size(144, 144);
             this.X15Y16.TabIndex = 386;
             this.X15Y16.TabStop = false;
             // 
@@ -5086,7 +5086,7 @@
             // 
             this.X16Y16.Location = new System.Drawing.Point(2384, 2384);
             this.X16Y16.Name = "X16Y16";
-            this.X16Y16.Size = new System.Drawing.Size(100, 50);
+            this.X16Y16.Size = new System.Drawing.Size(144, 144);
             this.X16Y16.TabIndex = 387;
             this.X16Y16.TabStop = false;
             // 
@@ -5219,7 +5219,7 @@
             // 
             this.X16Y1.Location = new System.Drawing.Point(89, 2384);
             this.X16Y1.Name = "X16Y1";
-            this.X16Y1.Size = new System.Drawing.Size(100, 50);
+            this.X16Y1.Size = new System.Drawing.Size(144, 144);
             this.X16Y1.TabIndex = 388;
             this.X16Y1.TabStop = false;
             // 
@@ -5227,7 +5227,7 @@
             // 
             this.X16Y2.Location = new System.Drawing.Point(242, 2384);
             this.X16Y2.Name = "X16Y2";
-            this.X16Y2.Size = new System.Drawing.Size(100, 50);
+            this.X16Y2.Size = new System.Drawing.Size(144, 144);
             this.X16Y2.TabIndex = 389;
             this.X16Y2.TabStop = false;
             // 
@@ -5235,7 +5235,7 @@
             // 
             this.X16Y3.Location = new System.Drawing.Point(395, 2384);
             this.X16Y3.Name = "X16Y3";
-            this.X16Y3.Size = new System.Drawing.Size(100, 50);
+            this.X16Y3.Size = new System.Drawing.Size(144, 144);
             this.X16Y3.TabIndex = 390;
             this.X16Y3.TabStop = false;
             // 
@@ -5243,7 +5243,7 @@
             // 
             this.X16Y4.Location = new System.Drawing.Point(548, 2384);
             this.X16Y4.Name = "X16Y4";
-            this.X16Y4.Size = new System.Drawing.Size(114, 84);
+            this.X16Y4.Size = new System.Drawing.Size(144, 144);
             this.X16Y4.TabIndex = 391;
             this.X16Y4.TabStop = false;
             // 
@@ -5251,7 +5251,7 @@
             // 
             this.X16Y5.Location = new System.Drawing.Point(701, 2384);
             this.X16Y5.Name = "X16Y5";
-            this.X16Y5.Size = new System.Drawing.Size(100, 50);
+            this.X16Y5.Size = new System.Drawing.Size(144, 144);
             this.X16Y5.TabIndex = 392;
             this.X16Y5.TabStop = false;
             // 
@@ -5259,7 +5259,7 @@
             // 
             this.X16Y6.Location = new System.Drawing.Point(854, 2384);
             this.X16Y6.Name = "X16Y6";
-            this.X16Y6.Size = new System.Drawing.Size(100, 50);
+            this.X16Y6.Size = new System.Drawing.Size(144, 144);
             this.X16Y6.TabIndex = 393;
             this.X16Y6.TabStop = false;
             // 
@@ -5267,7 +5267,7 @@
             // 
             this.X16Y7.Location = new System.Drawing.Point(1007, 2384);
             this.X16Y7.Name = "X16Y7";
-            this.X16Y7.Size = new System.Drawing.Size(100, 50);
+            this.X16Y7.Size = new System.Drawing.Size(144, 144);
             this.X16Y7.TabIndex = 394;
             this.X16Y7.TabStop = false;
             // 
@@ -5275,7 +5275,7 @@
             // 
             this.X16Y8.Location = new System.Drawing.Point(1160, 2384);
             this.X16Y8.Name = "X16Y8";
-            this.X16Y8.Size = new System.Drawing.Size(100, 50);
+            this.X16Y8.Size = new System.Drawing.Size(144, 144);
             this.X16Y8.TabIndex = 395;
             this.X16Y8.TabStop = false;
             // 
@@ -5283,7 +5283,7 @@
             // 
             this.X16Y9.Location = new System.Drawing.Point(1313, 2384);
             this.X16Y9.Name = "X16Y9";
-            this.X16Y9.Size = new System.Drawing.Size(100, 50);
+            this.X16Y9.Size = new System.Drawing.Size(144, 144);
             this.X16Y9.TabIndex = 396;
             this.X16Y9.TabStop = false;
             // 
@@ -5291,7 +5291,7 @@
             // 
             this.X16Y10.Location = new System.Drawing.Point(1466, 2384);
             this.X16Y10.Name = "X16Y10";
-            this.X16Y10.Size = new System.Drawing.Size(100, 50);
+            this.X16Y10.Size = new System.Drawing.Size(144, 144);
             this.X16Y10.TabIndex = 397;
             this.X16Y10.TabStop = false;
             // 
@@ -5299,7 +5299,7 @@
             // 
             this.X16Y11.Location = new System.Drawing.Point(1619, 2384);
             this.X16Y11.Name = "X16Y11";
-            this.X16Y11.Size = new System.Drawing.Size(100, 50);
+            this.X16Y11.Size = new System.Drawing.Size(144, 144);
             this.X16Y11.TabIndex = 398;
             this.X16Y11.TabStop = false;
             // 
@@ -5307,7 +5307,7 @@
             // 
             this.X16Y12.Location = new System.Drawing.Point(1772, 2384);
             this.X16Y12.Name = "X16Y12";
-            this.X16Y12.Size = new System.Drawing.Size(100, 50);
+            this.X16Y12.Size = new System.Drawing.Size(144, 144);
             this.X16Y12.TabIndex = 399;
             this.X16Y12.TabStop = false;
             // 
@@ -5315,7 +5315,7 @@
             // 
             this.X16Y13.Location = new System.Drawing.Point(1925, 2384);
             this.X16Y13.Name = "X16Y13";
-            this.X16Y13.Size = new System.Drawing.Size(100, 50);
+            this.X16Y13.Size = new System.Drawing.Size(144, 144);
             this.X16Y13.TabIndex = 400;
             this.X16Y13.TabStop = false;
             // 
@@ -5323,7 +5323,7 @@
             // 
             this.X16Y14.Location = new System.Drawing.Point(2078, 2384);
             this.X16Y14.Name = "X16Y14";
-            this.X16Y14.Size = new System.Drawing.Size(100, 50);
+            this.X16Y14.Size = new System.Drawing.Size(144, 144);
             this.X16Y14.TabIndex = 401;
             this.X16Y14.TabStop = false;
             // 
@@ -5331,7 +5331,7 @@
             // 
             this.X16Y15.Location = new System.Drawing.Point(2231, 2384);
             this.X16Y15.Name = "X16Y15";
-            this.X16Y15.Size = new System.Drawing.Size(100, 50);
+            this.X16Y15.Size = new System.Drawing.Size(144, 144);
             this.X16Y15.TabIndex = 402;
             this.X16Y15.TabStop = false;
             // 
@@ -5339,7 +5339,7 @@
             // 
             this.X17Y1.Location = new System.Drawing.Point(89, 2537);
             this.X17Y1.Name = "X17Y1";
-            this.X17Y1.Size = new System.Drawing.Size(100, 50);
+            this.X17Y1.Size = new System.Drawing.Size(144, 144);
             this.X17Y1.TabIndex = 403;
             this.X17Y1.TabStop = false;
             // 
@@ -5347,7 +5347,7 @@
             // 
             this.X17Y2.Location = new System.Drawing.Point(242, 2537);
             this.X17Y2.Name = "X17Y2";
-            this.X17Y2.Size = new System.Drawing.Size(100, 50);
+            this.X17Y2.Size = new System.Drawing.Size(144, 144);
             this.X17Y2.TabIndex = 404;
             this.X17Y2.TabStop = false;
             // 
@@ -5355,7 +5355,7 @@
             // 
             this.X17Y3.Location = new System.Drawing.Point(395, 2537);
             this.X17Y3.Name = "X17Y3";
-            this.X17Y3.Size = new System.Drawing.Size(100, 50);
+            this.X17Y3.Size = new System.Drawing.Size(144, 144);
             this.X17Y3.TabIndex = 405;
             this.X17Y3.TabStop = false;
             // 
@@ -5363,7 +5363,7 @@
             // 
             this.X17Y4.Location = new System.Drawing.Point(548, 2537);
             this.X17Y4.Name = "X17Y4";
-            this.X17Y4.Size = new System.Drawing.Size(100, 50);
+            this.X17Y4.Size = new System.Drawing.Size(144, 144);
             this.X17Y4.TabIndex = 406;
             this.X17Y4.TabStop = false;
             // 
@@ -5371,7 +5371,7 @@
             // 
             this.X17Y5.Location = new System.Drawing.Point(701, 2537);
             this.X17Y5.Name = "X17Y5";
-            this.X17Y5.Size = new System.Drawing.Size(100, 50);
+            this.X17Y5.Size = new System.Drawing.Size(144, 144);
             this.X17Y5.TabIndex = 407;
             this.X17Y5.TabStop = false;
             // 
@@ -5379,7 +5379,7 @@
             // 
             this.X17Y6.Location = new System.Drawing.Point(854, 2537);
             this.X17Y6.Name = "X17Y6";
-            this.X17Y6.Size = new System.Drawing.Size(100, 50);
+            this.X17Y6.Size = new System.Drawing.Size(144, 144);
             this.X17Y6.TabIndex = 408;
             this.X17Y6.TabStop = false;
             // 
@@ -5387,7 +5387,7 @@
             // 
             this.X17Y7.Location = new System.Drawing.Point(1007, 2537);
             this.X17Y7.Name = "X17Y7";
-            this.X17Y7.Size = new System.Drawing.Size(100, 50);
+            this.X17Y7.Size = new System.Drawing.Size(144, 144);
             this.X17Y7.TabIndex = 409;
             this.X17Y7.TabStop = false;
             // 
@@ -5395,7 +5395,7 @@
             // 
             this.X17Y8.Location = new System.Drawing.Point(1160, 2537);
             this.X17Y8.Name = "X17Y8";
-            this.X17Y8.Size = new System.Drawing.Size(100, 50);
+            this.X17Y8.Size = new System.Drawing.Size(144, 144);
             this.X17Y8.TabIndex = 410;
             this.X17Y8.TabStop = false;
             // 
@@ -5403,7 +5403,7 @@
             // 
             this.X17Y9.Location = new System.Drawing.Point(1313, 2537);
             this.X17Y9.Name = "X17Y9";
-            this.X17Y9.Size = new System.Drawing.Size(100, 50);
+            this.X17Y9.Size = new System.Drawing.Size(144, 144);
             this.X17Y9.TabIndex = 411;
             this.X17Y9.TabStop = false;
             // 
@@ -5411,7 +5411,7 @@
             // 
             this.X17Y10.Location = new System.Drawing.Point(1466, 2537);
             this.X17Y10.Name = "X17Y10";
-            this.X17Y10.Size = new System.Drawing.Size(100, 144);
+            this.X17Y10.Size = new System.Drawing.Size(144, 144);
             this.X17Y10.TabIndex = 412;
             this.X17Y10.TabStop = false;
             // 
@@ -5419,7 +5419,7 @@
             // 
             this.X17Y11.Location = new System.Drawing.Point(1619, 2537);
             this.X17Y11.Name = "X17Y11";
-            this.X17Y11.Size = new System.Drawing.Size(100, 50);
+            this.X17Y11.Size = new System.Drawing.Size(144, 144);
             this.X17Y11.TabIndex = 413;
             this.X17Y11.TabStop = false;
             // 
@@ -5427,7 +5427,7 @@
             // 
             this.X17Y12.Location = new System.Drawing.Point(1772, 2537);
             this.X17Y12.Name = "X17Y12";
-            this.X17Y12.Size = new System.Drawing.Size(100, 50);
+            this.X17Y12.Size = new System.Drawing.Size(144, 144);
             this.X17Y12.TabIndex = 414;
             this.X17Y12.TabStop = false;
             // 
@@ -5435,7 +5435,7 @@
             // 
             this.X17Y13.Location = new System.Drawing.Point(1925, 2537);
             this.X17Y13.Name = "X17Y13";
-            this.X17Y13.Size = new System.Drawing.Size(100, 50);
+            this.X17Y13.Size = new System.Drawing.Size(144, 144);
             this.X17Y13.TabIndex = 415;
             this.X17Y13.TabStop = false;
             // 
@@ -5443,7 +5443,7 @@
             // 
             this.X17Y14.Location = new System.Drawing.Point(2078, 2537);
             this.X17Y14.Name = "X17Y14";
-            this.X17Y14.Size = new System.Drawing.Size(100, 50);
+            this.X17Y14.Size = new System.Drawing.Size(144, 144);
             this.X17Y14.TabIndex = 416;
             this.X17Y14.TabStop = false;
             // 
@@ -5451,7 +5451,7 @@
             // 
             this.X17Y15.Location = new System.Drawing.Point(2231, 2537);
             this.X17Y15.Name = "X17Y15";
-            this.X17Y15.Size = new System.Drawing.Size(100, 50);
+            this.X17Y15.Size = new System.Drawing.Size(144, 144);
             this.X17Y15.TabIndex = 417;
             this.X17Y15.TabStop = false;
             // 
@@ -5459,7 +5459,7 @@
             // 
             this.X17Y16.Location = new System.Drawing.Point(2384, 2537);
             this.X17Y16.Name = "X17Y16";
-            this.X17Y16.Size = new System.Drawing.Size(43, 42);
+            this.X17Y16.Size = new System.Drawing.Size(144, 144);
             this.X17Y16.TabIndex = 418;
             this.X17Y16.TabStop = false;
             // 
@@ -5467,7 +5467,7 @@
             // 
             this.X17Y17.Location = new System.Drawing.Point(2537, 2537);
             this.X17Y17.Name = "X17Y17";
-            this.X17Y17.Size = new System.Drawing.Size(100, 50);
+            this.X17Y17.Size = new System.Drawing.Size(144, 144);
             this.X17Y17.TabIndex = 419;
             this.X17Y17.TabStop = false;
             // 
@@ -5475,7 +5475,7 @@
             // 
             this.X17Y18.Location = new System.Drawing.Point(2690, 2537);
             this.X17Y18.Name = "X17Y18";
-            this.X17Y18.Size = new System.Drawing.Size(100, 50);
+            this.X17Y18.Size = new System.Drawing.Size(144, 144);
             this.X17Y18.TabIndex = 420;
             this.X17Y18.TabStop = false;
             // 
@@ -5483,7 +5483,7 @@
             // 
             this.X17Y19.Location = new System.Drawing.Point(2843, 2537);
             this.X17Y19.Name = "X17Y19";
-            this.X17Y19.Size = new System.Drawing.Size(100, 144);
+            this.X17Y19.Size = new System.Drawing.Size(144, 144);
             this.X17Y19.TabIndex = 421;
             this.X17Y19.TabStop = false;
             // 
@@ -5491,7 +5491,7 @@
             // 
             this.X17Y20.Location = new System.Drawing.Point(2996, 2537);
             this.X17Y20.Name = "X17Y20";
-            this.X17Y20.Size = new System.Drawing.Size(100, 50);
+            this.X17Y20.Size = new System.Drawing.Size(144, 144);
             this.X17Y20.TabIndex = 422;
             this.X17Y20.TabStop = false;
             // 
@@ -5499,7 +5499,7 @@
             // 
             this.X17Y21.Location = new System.Drawing.Point(3149, 2537);
             this.X17Y21.Name = "X17Y21";
-            this.X17Y21.Size = new System.Drawing.Size(100, 50);
+            this.X17Y21.Size = new System.Drawing.Size(144, 144);
             this.X17Y21.TabIndex = 423;
             this.X17Y21.TabStop = false;
             // 
@@ -5507,7 +5507,7 @@
             // 
             this.X17Y22.Location = new System.Drawing.Point(3302, 2537);
             this.X17Y22.Name = "X17Y22";
-            this.X17Y22.Size = new System.Drawing.Size(100, 50);
+            this.X17Y22.Size = new System.Drawing.Size(144, 144);
             this.X17Y22.TabIndex = 424;
             this.X17Y22.TabStop = false;
             // 
@@ -5515,7 +5515,7 @@
             // 
             this.X17Y23.Location = new System.Drawing.Point(3455, 2537);
             this.X17Y23.Name = "X17Y23";
-            this.X17Y23.Size = new System.Drawing.Size(100, 50);
+            this.X17Y23.Size = new System.Drawing.Size(144, 144);
             this.X17Y23.TabIndex = 425;
             this.X17Y23.TabStop = false;
             // 
@@ -5523,7 +5523,7 @@
             // 
             this.X17Y24.Location = new System.Drawing.Point(3608, 2537);
             this.X17Y24.Name = "X17Y24";
-            this.X17Y24.Size = new System.Drawing.Size(100, 50);
+            this.X17Y24.Size = new System.Drawing.Size(144, 144);
             this.X17Y24.TabIndex = 426;
             this.X17Y24.TabStop = false;
             // 
@@ -5531,7 +5531,7 @@
             // 
             this.X17Y25.Location = new System.Drawing.Point(3761, 2537);
             this.X17Y25.Name = "X17Y25";
-            this.X17Y25.Size = new System.Drawing.Size(100, 50);
+            this.X17Y25.Size = new System.Drawing.Size(147, 144);
             this.X17Y25.TabIndex = 427;
             this.X17Y25.TabStop = false;
             // 
@@ -5539,7 +5539,7 @@
             // 
             this.X18Y1.Location = new System.Drawing.Point(89, 2690);
             this.X18Y1.Name = "X18Y1";
-            this.X18Y1.Size = new System.Drawing.Size(100, 50);
+            this.X18Y1.Size = new System.Drawing.Size(144, 144);
             this.X18Y1.TabIndex = 428;
             this.X18Y1.TabStop = false;
             // 
@@ -5547,7 +5547,7 @@
             // 
             this.X19Y1.Location = new System.Drawing.Point(89, 2843);
             this.X19Y1.Name = "X19Y1";
-            this.X19Y1.Size = new System.Drawing.Size(100, 50);
+            this.X19Y1.Size = new System.Drawing.Size(144, 144);
             this.X19Y1.TabIndex = 429;
             this.X19Y1.TabStop = false;
             // 
@@ -5555,7 +5555,7 @@
             // 
             this.X20Y1.Location = new System.Drawing.Point(89, 2996);
             this.X20Y1.Name = "X20Y1";
-            this.X20Y1.Size = new System.Drawing.Size(100, 50);
+            this.X20Y1.Size = new System.Drawing.Size(144, 144);
             this.X20Y1.TabIndex = 430;
             this.X20Y1.TabStop = false;
             // 
@@ -5563,7 +5563,7 @@
             // 
             this.X18Y2.Location = new System.Drawing.Point(242, 2690);
             this.X18Y2.Name = "X18Y2";
-            this.X18Y2.Size = new System.Drawing.Size(100, 50);
+            this.X18Y2.Size = new System.Drawing.Size(144, 144);
             this.X18Y2.TabIndex = 431;
             this.X18Y2.TabStop = false;
             // 
@@ -5571,7 +5571,7 @@
             // 
             this.X19Y2.Location = new System.Drawing.Point(242, 2843);
             this.X19Y2.Name = "X19Y2";
-            this.X19Y2.Size = new System.Drawing.Size(100, 50);
+            this.X19Y2.Size = new System.Drawing.Size(144, 144);
             this.X19Y2.TabIndex = 432;
             this.X19Y2.TabStop = false;
             // 
@@ -5579,7 +5579,7 @@
             // 
             this.X20Y2.Location = new System.Drawing.Point(242, 2996);
             this.X20Y2.Name = "X20Y2";
-            this.X20Y2.Size = new System.Drawing.Size(100, 50);
+            this.X20Y2.Size = new System.Drawing.Size(144, 144);
             this.X20Y2.TabIndex = 433;
             this.X20Y2.TabStop = false;
             // 
@@ -5587,7 +5587,7 @@
             // 
             this.X18Y3.Location = new System.Drawing.Point(395, 2690);
             this.X18Y3.Name = "X18Y3";
-            this.X18Y3.Size = new System.Drawing.Size(100, 50);
+            this.X18Y3.Size = new System.Drawing.Size(144, 144);
             this.X18Y3.TabIndex = 434;
             this.X18Y3.TabStop = false;
             // 
@@ -5595,7 +5595,7 @@
             // 
             this.X19Y3.Location = new System.Drawing.Point(395, 2843);
             this.X19Y3.Name = "X19Y3";
-            this.X19Y3.Size = new System.Drawing.Size(100, 50);
+            this.X19Y3.Size = new System.Drawing.Size(144, 144);
             this.X19Y3.TabIndex = 435;
             this.X19Y3.TabStop = false;
             // 
@@ -5603,7 +5603,7 @@
             // 
             this.X20Y3.Location = new System.Drawing.Point(395, 2996);
             this.X20Y3.Name = "X20Y3";
-            this.X20Y3.Size = new System.Drawing.Size(100, 50);
+            this.X20Y3.Size = new System.Drawing.Size(144, 144);
             this.X20Y3.TabIndex = 436;
             this.X20Y3.TabStop = false;
             // 
@@ -5611,7 +5611,7 @@
             // 
             this.X18Y4.Location = new System.Drawing.Point(548, 2690);
             this.X18Y4.Name = "X18Y4";
-            this.X18Y4.Size = new System.Drawing.Size(100, 50);
+            this.X18Y4.Size = new System.Drawing.Size(144, 144);
             this.X18Y4.TabIndex = 437;
             this.X18Y4.TabStop = false;
             // 
@@ -5619,7 +5619,7 @@
             // 
             this.X19Y4.Location = new System.Drawing.Point(548, 2843);
             this.X19Y4.Name = "X19Y4";
-            this.X19Y4.Size = new System.Drawing.Size(100, 50);
+            this.X19Y4.Size = new System.Drawing.Size(144, 144);
             this.X19Y4.TabIndex = 438;
             this.X19Y4.TabStop = false;
             // 
@@ -5627,7 +5627,7 @@
             // 
             this.X20Y4.Location = new System.Drawing.Point(548, 2996);
             this.X20Y4.Name = "X20Y4";
-            this.X20Y4.Size = new System.Drawing.Size(100, 50);
+            this.X20Y4.Size = new System.Drawing.Size(144, 144);
             this.X20Y4.TabIndex = 439;
             this.X20Y4.TabStop = false;
             // 
@@ -5635,7 +5635,7 @@
             // 
             this.X18Y5.Location = new System.Drawing.Point(701, 2690);
             this.X18Y5.Name = "X18Y5";
-            this.X18Y5.Size = new System.Drawing.Size(100, 50);
+            this.X18Y5.Size = new System.Drawing.Size(144, 144);
             this.X18Y5.TabIndex = 440;
             this.X18Y5.TabStop = false;
             // 
@@ -5643,7 +5643,7 @@
             // 
             this.X19Y5.Location = new System.Drawing.Point(701, 2843);
             this.X19Y5.Name = "X19Y5";
-            this.X19Y5.Size = new System.Drawing.Size(100, 50);
+            this.X19Y5.Size = new System.Drawing.Size(144, 144);
             this.X19Y5.TabIndex = 441;
             this.X19Y5.TabStop = false;
             // 
@@ -5651,7 +5651,7 @@
             // 
             this.X18Y6.Location = new System.Drawing.Point(854, 2690);
             this.X18Y6.Name = "X18Y6";
-            this.X18Y6.Size = new System.Drawing.Size(100, 50);
+            this.X18Y6.Size = new System.Drawing.Size(144, 144);
             this.X18Y6.TabIndex = 442;
             this.X18Y6.TabStop = false;
             // 
@@ -5659,7 +5659,7 @@
             // 
             this.X19Y6.Location = new System.Drawing.Point(854, 2843);
             this.X19Y6.Name = "X19Y6";
-            this.X19Y6.Size = new System.Drawing.Size(63, 50);
+            this.X19Y6.Size = new System.Drawing.Size(144, 144);
             this.X19Y6.TabIndex = 443;
             this.X19Y6.TabStop = false;
             // 
@@ -5667,7 +5667,7 @@
             // 
             this.X20Y5.Location = new System.Drawing.Point(701, 2996);
             this.X20Y5.Name = "X20Y5";
-            this.X20Y5.Size = new System.Drawing.Size(100, 50);
+            this.X20Y5.Size = new System.Drawing.Size(144, 144);
             this.X20Y5.TabIndex = 444;
             this.X20Y5.TabStop = false;
             // 
@@ -5675,7 +5675,7 @@
             // 
             this.X20Y6.Location = new System.Drawing.Point(854, 2996);
             this.X20Y6.Name = "X20Y6";
-            this.X20Y6.Size = new System.Drawing.Size(63, 36);
+            this.X20Y6.Size = new System.Drawing.Size(144, 144);
             this.X20Y6.TabIndex = 445;
             this.X20Y6.TabStop = false;
             // 
@@ -5683,7 +5683,7 @@
             // 
             this.X18Y7.Location = new System.Drawing.Point(1007, 2690);
             this.X18Y7.Name = "X18Y7";
-            this.X18Y7.Size = new System.Drawing.Size(100, 50);
+            this.X18Y7.Size = new System.Drawing.Size(144, 144);
             this.X18Y7.TabIndex = 446;
             this.X18Y7.TabStop = false;
             // 
@@ -5691,7 +5691,7 @@
             // 
             this.X18Y8.Location = new System.Drawing.Point(1160, 2690);
             this.X18Y8.Name = "X18Y8";
-            this.X18Y8.Size = new System.Drawing.Size(100, 50);
+            this.X18Y8.Size = new System.Drawing.Size(144, 144);
             this.X18Y8.TabIndex = 447;
             this.X18Y8.TabStop = false;
             // 
@@ -5699,7 +5699,7 @@
             // 
             this.X19Y7.Location = new System.Drawing.Point(1007, 2843);
             this.X19Y7.Name = "X19Y7";
-            this.X19Y7.Size = new System.Drawing.Size(55, 64);
+            this.X19Y7.Size = new System.Drawing.Size(144, 144);
             this.X19Y7.TabIndex = 448;
             this.X19Y7.TabStop = false;
             // 
@@ -5707,7 +5707,7 @@
             // 
             this.X19Y8.Location = new System.Drawing.Point(1160, 2843);
             this.X19Y8.Name = "X19Y8";
-            this.X19Y8.Size = new System.Drawing.Size(100, 50);
+            this.X19Y8.Size = new System.Drawing.Size(144, 144);
             this.X19Y8.TabIndex = 449;
             this.X19Y8.TabStop = false;
             // 
@@ -5715,7 +5715,7 @@
             // 
             this.X20Y7.Location = new System.Drawing.Point(1007, 2996);
             this.X20Y7.Name = "X20Y7";
-            this.X20Y7.Size = new System.Drawing.Size(100, 50);
+            this.X20Y7.Size = new System.Drawing.Size(144, 144);
             this.X20Y7.TabIndex = 450;
             this.X20Y7.TabStop = false;
             // 
@@ -5723,7 +5723,7 @@
             // 
             this.X20Y8.Location = new System.Drawing.Point(1160, 2996);
             this.X20Y8.Name = "X20Y8";
-            this.X20Y8.Size = new System.Drawing.Size(100, 50);
+            this.X20Y8.Size = new System.Drawing.Size(144, 144);
             this.X20Y8.TabIndex = 451;
             this.X20Y8.TabStop = false;
             // 
@@ -5731,7 +5731,7 @@
             // 
             this.X18Y9.Location = new System.Drawing.Point(1313, 2690);
             this.X18Y9.Name = "X18Y9";
-            this.X18Y9.Size = new System.Drawing.Size(100, 50);
+            this.X18Y9.Size = new System.Drawing.Size(144, 144);
             this.X18Y9.TabIndex = 452;
             this.X18Y9.TabStop = false;
             // 
@@ -5739,7 +5739,7 @@
             // 
             this.X19Y9.Location = new System.Drawing.Point(1313, 2843);
             this.X19Y9.Name = "X19Y9";
-            this.X19Y9.Size = new System.Drawing.Size(93, 76);
+            this.X19Y9.Size = new System.Drawing.Size(144, 144);
             this.X19Y9.TabIndex = 453;
             this.X19Y9.TabStop = false;
             // 
@@ -5747,7 +5747,7 @@
             // 
             this.X20Y9.Location = new System.Drawing.Point(1313, 2996);
             this.X20Y9.Name = "X20Y9";
-            this.X20Y9.Size = new System.Drawing.Size(100, 50);
+            this.X20Y9.Size = new System.Drawing.Size(144, 144);
             this.X20Y9.TabIndex = 454;
             this.X20Y9.TabStop = false;
             // 
@@ -5755,7 +5755,7 @@
             // 
             this.X18Y10.Location = new System.Drawing.Point(1466, 2690);
             this.X18Y10.Name = "X18Y10";
-            this.X18Y10.Size = new System.Drawing.Size(100, 50);
+            this.X18Y10.Size = new System.Drawing.Size(144, 144);
             this.X18Y10.TabIndex = 455;
             this.X18Y10.TabStop = false;
             // 
@@ -5763,7 +5763,7 @@
             // 
             this.X19Y10.Location = new System.Drawing.Point(1466, 2843);
             this.X19Y10.Name = "X19Y10";
-            this.X19Y10.Size = new System.Drawing.Size(100, 50);
+            this.X19Y10.Size = new System.Drawing.Size(144, 144);
             this.X19Y10.TabIndex = 456;
             this.X19Y10.TabStop = false;
             // 
@@ -5771,7 +5771,7 @@
             // 
             this.X20Y10.Location = new System.Drawing.Point(1466, 2996);
             this.X20Y10.Name = "X20Y10";
-            this.X20Y10.Size = new System.Drawing.Size(100, 50);
+            this.X20Y10.Size = new System.Drawing.Size(144, 144);
             this.X20Y10.TabIndex = 457;
             this.X20Y10.TabStop = false;
             // 
@@ -5779,7 +5779,7 @@
             // 
             this.X18Y11.Location = new System.Drawing.Point(1619, 2690);
             this.X18Y11.Name = "X18Y11";
-            this.X18Y11.Size = new System.Drawing.Size(100, 50);
+            this.X18Y11.Size = new System.Drawing.Size(144, 144);
             this.X18Y11.TabIndex = 458;
             this.X18Y11.TabStop = false;
             // 
@@ -5787,7 +5787,7 @@
             // 
             this.X19Y11.Location = new System.Drawing.Point(1619, 2843);
             this.X19Y11.Name = "X19Y11";
-            this.X19Y11.Size = new System.Drawing.Size(100, 50);
+            this.X19Y11.Size = new System.Drawing.Size(144, 144);
             this.X19Y11.TabIndex = 459;
             this.X19Y11.TabStop = false;
             // 
@@ -5795,7 +5795,7 @@
             // 
             this.X20Y11.Location = new System.Drawing.Point(1619, 2996);
             this.X20Y11.Name = "X20Y11";
-            this.X20Y11.Size = new System.Drawing.Size(59, 41);
+            this.X20Y11.Size = new System.Drawing.Size(144, 144);
             this.X20Y11.TabIndex = 460;
             this.X20Y11.TabStop = false;
             // 
@@ -5803,7 +5803,7 @@
             // 
             this.X18Y12.Location = new System.Drawing.Point(1772, 2690);
             this.X18Y12.Name = "X18Y12";
-            this.X18Y12.Size = new System.Drawing.Size(100, 50);
+            this.X18Y12.Size = new System.Drawing.Size(144, 144);
             this.X18Y12.TabIndex = 461;
             this.X18Y12.TabStop = false;
             // 
@@ -5811,7 +5811,7 @@
             // 
             this.X19Y12.Location = new System.Drawing.Point(1772, 2843);
             this.X19Y12.Name = "X19Y12";
-            this.X19Y12.Size = new System.Drawing.Size(100, 50);
+            this.X19Y12.Size = new System.Drawing.Size(144, 144);
             this.X19Y12.TabIndex = 462;
             this.X19Y12.TabStop = false;
             // 
@@ -5819,7 +5819,7 @@
             // 
             this.X20Y12.Location = new System.Drawing.Point(1772, 2996);
             this.X20Y12.Name = "X20Y12";
-            this.X20Y12.Size = new System.Drawing.Size(100, 50);
+            this.X20Y12.Size = new System.Drawing.Size(144, 144);
             this.X20Y12.TabIndex = 463;
             this.X20Y12.TabStop = false;
             // 
@@ -5827,7 +5827,7 @@
             // 
             this.X18Y13.Location = new System.Drawing.Point(1925, 2690);
             this.X18Y13.Name = "X18Y13";
-            this.X18Y13.Size = new System.Drawing.Size(100, 50);
+            this.X18Y13.Size = new System.Drawing.Size(144, 144);
             this.X18Y13.TabIndex = 464;
             this.X18Y13.TabStop = false;
             // 
@@ -5835,7 +5835,7 @@
             // 
             this.X19Y13.Location = new System.Drawing.Point(1925, 2843);
             this.X19Y13.Name = "X19Y13";
-            this.X19Y13.Size = new System.Drawing.Size(100, 50);
+            this.X19Y13.Size = new System.Drawing.Size(144, 144);
             this.X19Y13.TabIndex = 465;
             this.X19Y13.TabStop = false;
             // 
@@ -5843,7 +5843,7 @@
             // 
             this.X20Y13.Location = new System.Drawing.Point(1925, 2996);
             this.X20Y13.Name = "X20Y13";
-            this.X20Y13.Size = new System.Drawing.Size(100, 50);
+            this.X20Y13.Size = new System.Drawing.Size(144, 144);
             this.X20Y13.TabIndex = 466;
             this.X20Y13.TabStop = false;
             // 
@@ -5851,7 +5851,7 @@
             // 
             this.X18Y14.Location = new System.Drawing.Point(2078, 2690);
             this.X18Y14.Name = "X18Y14";
-            this.X18Y14.Size = new System.Drawing.Size(100, 50);
+            this.X18Y14.Size = new System.Drawing.Size(144, 144);
             this.X18Y14.TabIndex = 467;
             this.X18Y14.TabStop = false;
             // 
@@ -5859,7 +5859,7 @@
             // 
             this.X19Y14.Location = new System.Drawing.Point(2078, 2843);
             this.X19Y14.Name = "X19Y14";
-            this.X19Y14.Size = new System.Drawing.Size(100, 50);
+            this.X19Y14.Size = new System.Drawing.Size(144, 144);
             this.X19Y14.TabIndex = 468;
             this.X19Y14.TabStop = false;
             // 
@@ -5867,7 +5867,7 @@
             // 
             this.X20Y14.Location = new System.Drawing.Point(2078, 2996);
             this.X20Y14.Name = "X20Y14";
-            this.X20Y14.Size = new System.Drawing.Size(100, 50);
+            this.X20Y14.Size = new System.Drawing.Size(144, 144);
             this.X20Y14.TabIndex = 469;
             this.X20Y14.TabStop = false;
             // 
@@ -5875,7 +5875,7 @@
             // 
             this.X18Y15.Location = new System.Drawing.Point(2231, 2690);
             this.X18Y15.Name = "X18Y15";
-            this.X18Y15.Size = new System.Drawing.Size(100, 50);
+            this.X18Y15.Size = new System.Drawing.Size(144, 144);
             this.X18Y15.TabIndex = 470;
             this.X18Y15.TabStop = false;
             // 
@@ -5883,7 +5883,7 @@
             // 
             this.X19Y15.Location = new System.Drawing.Point(2231, 2843);
             this.X19Y15.Name = "X19Y15";
-            this.X19Y15.Size = new System.Drawing.Size(100, 50);
+            this.X19Y15.Size = new System.Drawing.Size(144, 144);
             this.X19Y15.TabIndex = 471;
             this.X19Y15.TabStop = false;
             // 
@@ -5891,7 +5891,7 @@
             // 
             this.X20Y15.Location = new System.Drawing.Point(2231, 2996);
             this.X20Y15.Name = "X20Y15";
-            this.X20Y15.Size = new System.Drawing.Size(100, 50);
+            this.X20Y15.Size = new System.Drawing.Size(144, 144);
             this.X20Y15.TabIndex = 472;
             this.X20Y15.TabStop = false;
             // 
@@ -5899,7 +5899,7 @@
             // 
             this.X18Y16.Location = new System.Drawing.Point(2384, 2690);
             this.X18Y16.Name = "X18Y16";
-            this.X18Y16.Size = new System.Drawing.Size(100, 50);
+            this.X18Y16.Size = new System.Drawing.Size(144, 144);
             this.X18Y16.TabIndex = 473;
             this.X18Y16.TabStop = false;
             // 
@@ -5907,7 +5907,7 @@
             // 
             this.X19Y16.Location = new System.Drawing.Point(2384, 2843);
             this.X19Y16.Name = "X19Y16";
-            this.X19Y16.Size = new System.Drawing.Size(100, 50);
+            this.X19Y16.Size = new System.Drawing.Size(144, 144);
             this.X19Y16.TabIndex = 474;
             this.X19Y16.TabStop = false;
             // 
@@ -5915,7 +5915,7 @@
             // 
             this.X20Y16.Location = new System.Drawing.Point(2384, 2996);
             this.X20Y16.Name = "X20Y16";
-            this.X20Y16.Size = new System.Drawing.Size(100, 50);
+            this.X20Y16.Size = new System.Drawing.Size(144, 144);
             this.X20Y16.TabIndex = 475;
             this.X20Y16.TabStop = false;
             // 
@@ -5923,7 +5923,7 @@
             // 
             this.X18Y17.Location = new System.Drawing.Point(2537, 2690);
             this.X18Y17.Name = "X18Y17";
-            this.X18Y17.Size = new System.Drawing.Size(100, 50);
+            this.X18Y17.Size = new System.Drawing.Size(144, 144);
             this.X18Y17.TabIndex = 476;
             this.X18Y17.TabStop = false;
             // 
@@ -5931,7 +5931,7 @@
             // 
             this.X19Y17.Location = new System.Drawing.Point(2537, 2843);
             this.X19Y17.Name = "X19Y17";
-            this.X19Y17.Size = new System.Drawing.Size(100, 50);
+            this.X19Y17.Size = new System.Drawing.Size(144, 144);
             this.X19Y17.TabIndex = 477;
             this.X19Y17.TabStop = false;
             // 
@@ -5939,7 +5939,7 @@
             // 
             this.X20Y17.Location = new System.Drawing.Point(2537, 2996);
             this.X20Y17.Name = "X20Y17";
-            this.X20Y17.Size = new System.Drawing.Size(104, 73);
+            this.X20Y17.Size = new System.Drawing.Size(144, 144);
             this.X20Y17.TabIndex = 478;
             this.X20Y17.TabStop = false;
             // 
@@ -5947,7 +5947,7 @@
             // 
             this.X18Y18.Location = new System.Drawing.Point(2690, 2690);
             this.X18Y18.Name = "X18Y18";
-            this.X18Y18.Size = new System.Drawing.Size(52, 39);
+            this.X18Y18.Size = new System.Drawing.Size(144, 144);
             this.X18Y18.TabIndex = 479;
             this.X18Y18.TabStop = false;
             // 
@@ -5955,7 +5955,7 @@
             // 
             this.X18Y19.Location = new System.Drawing.Point(2843, 2690);
             this.X18Y19.Name = "X18Y19";
-            this.X18Y19.Size = new System.Drawing.Size(60, 68);
+            this.X18Y19.Size = new System.Drawing.Size(144, 144);
             this.X18Y19.TabIndex = 480;
             this.X18Y19.TabStop = false;
             // 
@@ -5963,7 +5963,7 @@
             // 
             this.X19Y18.Location = new System.Drawing.Point(2690, 2843);
             this.X19Y18.Name = "X19Y18";
-            this.X19Y18.Size = new System.Drawing.Size(100, 50);
+            this.X19Y18.Size = new System.Drawing.Size(144, 144);
             this.X19Y18.TabIndex = 481;
             this.X19Y18.TabStop = false;
             // 
@@ -5971,7 +5971,7 @@
             // 
             this.X19Y19.Location = new System.Drawing.Point(2843, 2843);
             this.X19Y19.Name = "X19Y19";
-            this.X19Y19.Size = new System.Drawing.Size(100, 50);
+            this.X19Y19.Size = new System.Drawing.Size(144, 144);
             this.X19Y19.TabIndex = 482;
             this.X19Y19.TabStop = false;
             // 
@@ -5979,7 +5979,7 @@
             // 
             this.X20Y18.Location = new System.Drawing.Point(2690, 2996);
             this.X20Y18.Name = "X20Y18";
-            this.X20Y18.Size = new System.Drawing.Size(100, 50);
+            this.X20Y18.Size = new System.Drawing.Size(144, 144);
             this.X20Y18.TabIndex = 483;
             this.X20Y18.TabStop = false;
             // 
@@ -5987,7 +5987,7 @@
             // 
             this.X20Y19.Location = new System.Drawing.Point(2843, 2996);
             this.X20Y19.Name = "X20Y19";
-            this.X20Y19.Size = new System.Drawing.Size(100, 50);
+            this.X20Y19.Size = new System.Drawing.Size(144, 144);
             this.X20Y19.TabIndex = 484;
             this.X20Y19.TabStop = false;
             // 
@@ -5995,7 +5995,7 @@
             // 
             this.X18Y20.Location = new System.Drawing.Point(2996, 2690);
             this.X18Y20.Name = "X18Y20";
-            this.X18Y20.Size = new System.Drawing.Size(100, 50);
+            this.X18Y20.Size = new System.Drawing.Size(144, 144);
             this.X18Y20.TabIndex = 485;
             this.X18Y20.TabStop = false;
             // 
@@ -6003,7 +6003,7 @@
             // 
             this.X19Y20.Location = new System.Drawing.Point(2996, 2843);
             this.X19Y20.Name = "X19Y20";
-            this.X19Y20.Size = new System.Drawing.Size(100, 50);
+            this.X19Y20.Size = new System.Drawing.Size(144, 144);
             this.X19Y20.TabIndex = 486;
             this.X19Y20.TabStop = false;
             // 
@@ -6011,7 +6011,7 @@
             // 
             this.X20Y20.Location = new System.Drawing.Point(2996, 2996);
             this.X20Y20.Name = "X20Y20";
-            this.X20Y20.Size = new System.Drawing.Size(100, 50);
+            this.X20Y20.Size = new System.Drawing.Size(144, 144);
             this.X20Y20.TabIndex = 487;
             this.X20Y20.TabStop = false;
             // 
@@ -6019,7 +6019,7 @@
             // 
             this.X18Y21.Location = new System.Drawing.Point(3149, 2690);
             this.X18Y21.Name = "X18Y21";
-            this.X18Y21.Size = new System.Drawing.Size(100, 50);
+            this.X18Y21.Size = new System.Drawing.Size(144, 144);
             this.X18Y21.TabIndex = 488;
             this.X18Y21.TabStop = false;
             // 
@@ -6027,7 +6027,7 @@
             // 
             this.X19Y21.Location = new System.Drawing.Point(3149, 2843);
             this.X19Y21.Name = "X19Y21";
-            this.X19Y21.Size = new System.Drawing.Size(100, 50);
+            this.X19Y21.Size = new System.Drawing.Size(144, 144);
             this.X19Y21.TabIndex = 489;
             this.X19Y21.TabStop = false;
             // 
@@ -6035,7 +6035,7 @@
             // 
             this.X20Y21.Location = new System.Drawing.Point(3149, 2996);
             this.X20Y21.Name = "X20Y21";
-            this.X20Y21.Size = new System.Drawing.Size(100, 50);
+            this.X20Y21.Size = new System.Drawing.Size(144, 144);
             this.X20Y21.TabIndex = 490;
             this.X20Y21.TabStop = false;
             // 
@@ -6043,7 +6043,7 @@
             // 
             this.X18Y22.Location = new System.Drawing.Point(3302, 2690);
             this.X18Y22.Name = "X18Y22";
-            this.X18Y22.Size = new System.Drawing.Size(100, 50);
+            this.X18Y22.Size = new System.Drawing.Size(144, 144);
             this.X18Y22.TabIndex = 491;
             this.X18Y22.TabStop = false;
             // 
@@ -6051,7 +6051,7 @@
             // 
             this.X19Y22.Location = new System.Drawing.Point(3302, 2843);
             this.X19Y22.Name = "X19Y22";
-            this.X19Y22.Size = new System.Drawing.Size(100, 50);
+            this.X19Y22.Size = new System.Drawing.Size(144, 144);
             this.X19Y22.TabIndex = 492;
             this.X19Y22.TabStop = false;
             // 
@@ -6059,7 +6059,7 @@
             // 
             this.X20Y22.Location = new System.Drawing.Point(3302, 2996);
             this.X20Y22.Name = "X20Y22";
-            this.X20Y22.Size = new System.Drawing.Size(100, 50);
+            this.X20Y22.Size = new System.Drawing.Size(144, 144);
             this.X20Y22.TabIndex = 493;
             this.X20Y22.TabStop = false;
             // 
@@ -6067,7 +6067,7 @@
             // 
             this.X18Y23.Location = new System.Drawing.Point(3455, 2690);
             this.X18Y23.Name = "X18Y23";
-            this.X18Y23.Size = new System.Drawing.Size(100, 50);
+            this.X18Y23.Size = new System.Drawing.Size(144, 144);
             this.X18Y23.TabIndex = 494;
             this.X18Y23.TabStop = false;
             // 
@@ -6075,7 +6075,7 @@
             // 
             this.X19Y23.Location = new System.Drawing.Point(3455, 2843);
             this.X19Y23.Name = "X19Y23";
-            this.X19Y23.Size = new System.Drawing.Size(100, 50);
+            this.X19Y23.Size = new System.Drawing.Size(144, 144);
             this.X19Y23.TabIndex = 495;
             this.X19Y23.TabStop = false;
             // 
@@ -6083,7 +6083,7 @@
             // 
             this.X20Y23.Location = new System.Drawing.Point(3455, 2996);
             this.X20Y23.Name = "X20Y23";
-            this.X20Y23.Size = new System.Drawing.Size(100, 50);
+            this.X20Y23.Size = new System.Drawing.Size(144, 144);
             this.X20Y23.TabIndex = 496;
             this.X20Y23.TabStop = false;
             // 
@@ -6091,7 +6091,7 @@
             // 
             this.X18Y24.Location = new System.Drawing.Point(3608, 2690);
             this.X18Y24.Name = "X18Y24";
-            this.X18Y24.Size = new System.Drawing.Size(100, 50);
+            this.X18Y24.Size = new System.Drawing.Size(144, 144);
             this.X18Y24.TabIndex = 497;
             this.X18Y24.TabStop = false;
             // 
@@ -6099,7 +6099,7 @@
             // 
             this.X18Y25.Location = new System.Drawing.Point(3761, 2690);
             this.X18Y25.Name = "X18Y25";
-            this.X18Y25.Size = new System.Drawing.Size(100, 50);
+            this.X18Y25.Size = new System.Drawing.Size(147, 144);
             this.X18Y25.TabIndex = 498;
             this.X18Y25.TabStop = false;
             // 
@@ -6107,7 +6107,7 @@
             // 
             this.X19Y24.Location = new System.Drawing.Point(3608, 2843);
             this.X19Y24.Name = "X19Y24";
-            this.X19Y24.Size = new System.Drawing.Size(66, 50);
+            this.X19Y24.Size = new System.Drawing.Size(144, 144);
             this.X19Y24.TabIndex = 499;
             this.X19Y24.TabStop = false;
             // 
@@ -6115,7 +6115,7 @@
             // 
             this.X19Y25.Location = new System.Drawing.Point(3761, 2843);
             this.X19Y25.Name = "X19Y25";
-            this.X19Y25.Size = new System.Drawing.Size(100, 50);
+            this.X19Y25.Size = new System.Drawing.Size(147, 144);
             this.X19Y25.TabIndex = 500;
             this.X19Y25.TabStop = false;
             // 
@@ -6123,7 +6123,7 @@
             // 
             this.X20Y24.Location = new System.Drawing.Point(3608, 2996);
             this.X20Y24.Name = "X20Y24";
-            this.X20Y24.Size = new System.Drawing.Size(100, 50);
+            this.X20Y24.Size = new System.Drawing.Size(144, 144);
             this.X20Y24.TabIndex = 501;
             this.X20Y24.TabStop = false;
             // 
@@ -6131,7 +6131,7 @@
             // 
             this.X20Y25.Location = new System.Drawing.Point(3761, 2996);
             this.X20Y25.Name = "X20Y25";
-            this.X20Y25.Size = new System.Drawing.Size(100, 50);
+            this.X20Y25.Size = new System.Drawing.Size(147, 144);
             this.X20Y25.TabIndex = 502;
             this.X20Y25.TabStop = false;
             // 
@@ -6139,7 +6139,7 @@
             // 
             this.X21Y1.Location = new System.Drawing.Point(89, 3149);
             this.X21Y1.Name = "X21Y1";
-            this.X21Y1.Size = new System.Drawing.Size(100, 50);
+            this.X21Y1.Size = new System.Drawing.Size(144, 144);
             this.X21Y1.TabIndex = 503;
             this.X21Y1.TabStop = false;
             // 
@@ -6147,7 +6147,7 @@
             // 
             this.X21Y2.Location = new System.Drawing.Point(242, 3149);
             this.X21Y2.Name = "X21Y2";
-            this.X21Y2.Size = new System.Drawing.Size(100, 50);
+            this.X21Y2.Size = new System.Drawing.Size(144, 144);
             this.X21Y2.TabIndex = 504;
             this.X21Y2.TabStop = false;
             // 
@@ -6155,7 +6155,7 @@
             // 
             this.X21Y3.Location = new System.Drawing.Point(395, 3149);
             this.X21Y3.Name = "X21Y3";
-            this.X21Y3.Size = new System.Drawing.Size(100, 50);
+            this.X21Y3.Size = new System.Drawing.Size(144, 144);
             this.X21Y3.TabIndex = 505;
             this.X21Y3.TabStop = false;
             // 
@@ -6163,7 +6163,7 @@
             // 
             this.X21Y4.Location = new System.Drawing.Point(548, 3149);
             this.X21Y4.Name = "X21Y4";
-            this.X21Y4.Size = new System.Drawing.Size(100, 50);
+            this.X21Y4.Size = new System.Drawing.Size(144, 144);
             this.X21Y4.TabIndex = 506;
             this.X21Y4.TabStop = false;
             // 
@@ -6171,7 +6171,7 @@
             // 
             this.X21Y5.Location = new System.Drawing.Point(701, 3149);
             this.X21Y5.Name = "X21Y5";
-            this.X21Y5.Size = new System.Drawing.Size(100, 50);
+            this.X21Y5.Size = new System.Drawing.Size(144, 144);
             this.X21Y5.TabIndex = 507;
             this.X21Y5.TabStop = false;
             // 
@@ -6179,7 +6179,7 @@
             // 
             this.X21Y6.Location = new System.Drawing.Point(854, 3149);
             this.X21Y6.Name = "X21Y6";
-            this.X21Y6.Size = new System.Drawing.Size(100, 50);
+            this.X21Y6.Size = new System.Drawing.Size(144, 144);
             this.X21Y6.TabIndex = 508;
             this.X21Y6.TabStop = false;
             // 
@@ -6187,7 +6187,7 @@
             // 
             this.X21Y7.Location = new System.Drawing.Point(1007, 3149);
             this.X21Y7.Name = "X21Y7";
-            this.X21Y7.Size = new System.Drawing.Size(100, 50);
+            this.X21Y7.Size = new System.Drawing.Size(144, 144);
             this.X21Y7.TabIndex = 509;
             this.X21Y7.TabStop = false;
             // 
@@ -6195,7 +6195,7 @@
             // 
             this.X21Y8.Location = new System.Drawing.Point(1160, 3149);
             this.X21Y8.Name = "X21Y8";
-            this.X21Y8.Size = new System.Drawing.Size(100, 50);
+            this.X21Y8.Size = new System.Drawing.Size(144, 144);
             this.X21Y8.TabIndex = 510;
             this.X21Y8.TabStop = false;
             // 
@@ -6203,7 +6203,7 @@
             // 
             this.X21Y9.Location = new System.Drawing.Point(1313, 3149);
             this.X21Y9.Name = "X21Y9";
-            this.X21Y9.Size = new System.Drawing.Size(100, 50);
+            this.X21Y9.Size = new System.Drawing.Size(144, 144);
             this.X21Y9.TabIndex = 511;
             this.X21Y9.TabStop = false;
             // 
@@ -6211,7 +6211,7 @@
             // 
             this.X22Y1.Location = new System.Drawing.Point(89, 3302);
             this.X22Y1.Name = "X22Y1";
-            this.X22Y1.Size = new System.Drawing.Size(100, 50);
+            this.X22Y1.Size = new System.Drawing.Size(144, 144);
             this.X22Y1.TabIndex = 512;
             this.X22Y1.TabStop = false;
             // 
@@ -6219,7 +6219,7 @@
             // 
             this.X22Y2.Location = new System.Drawing.Point(242, 3302);
             this.X22Y2.Name = "X22Y2";
-            this.X22Y2.Size = new System.Drawing.Size(100, 50);
+            this.X22Y2.Size = new System.Drawing.Size(144, 144);
             this.X22Y2.TabIndex = 513;
             this.X22Y2.TabStop = false;
             // 
@@ -6227,7 +6227,7 @@
             // 
             this.X22Y3.Location = new System.Drawing.Point(395, 3302);
             this.X22Y3.Name = "X22Y3";
-            this.X22Y3.Size = new System.Drawing.Size(100, 50);
+            this.X22Y3.Size = new System.Drawing.Size(144, 144);
             this.X22Y3.TabIndex = 514;
             this.X22Y3.TabStop = false;
             // 
@@ -6235,7 +6235,7 @@
             // 
             this.X22Y4.Location = new System.Drawing.Point(548, 3302);
             this.X22Y4.Name = "X22Y4";
-            this.X22Y4.Size = new System.Drawing.Size(100, 50);
+            this.X22Y4.Size = new System.Drawing.Size(144, 144);
             this.X22Y4.TabIndex = 515;
             this.X22Y4.TabStop = false;
             // 
@@ -6243,7 +6243,7 @@
             // 
             this.X22Y5.Location = new System.Drawing.Point(701, 3302);
             this.X22Y5.Name = "X22Y5";
-            this.X22Y5.Size = new System.Drawing.Size(100, 50);
+            this.X22Y5.Size = new System.Drawing.Size(144, 144);
             this.X22Y5.TabIndex = 516;
             this.X22Y5.TabStop = false;
             // 
@@ -6251,7 +6251,7 @@
             // 
             this.X22Y6.Location = new System.Drawing.Point(854, 3302);
             this.X22Y6.Name = "X22Y6";
-            this.X22Y6.Size = new System.Drawing.Size(39, 37);
+            this.X22Y6.Size = new System.Drawing.Size(144, 144);
             this.X22Y6.TabIndex = 517;
             this.X22Y6.TabStop = false;
             // 
@@ -6259,7 +6259,7 @@
             // 
             this.X22Y7.Location = new System.Drawing.Point(1007, 3302);
             this.X22Y7.Name = "X22Y7";
-            this.X22Y7.Size = new System.Drawing.Size(100, 50);
+            this.X22Y7.Size = new System.Drawing.Size(144, 144);
             this.X22Y7.TabIndex = 518;
             this.X22Y7.TabStop = false;
             // 
@@ -6267,7 +6267,7 @@
             // 
             this.X22Y8.Location = new System.Drawing.Point(1160, 3302);
             this.X22Y8.Name = "X22Y8";
-            this.X22Y8.Size = new System.Drawing.Size(100, 50);
+            this.X22Y8.Size = new System.Drawing.Size(144, 144);
             this.X22Y8.TabIndex = 519;
             this.X22Y8.TabStop = false;
             // 
@@ -6275,7 +6275,7 @@
             // 
             this.X22Y9.Location = new System.Drawing.Point(1313, 3302);
             this.X22Y9.Name = "X22Y9";
-            this.X22Y9.Size = new System.Drawing.Size(129, 74);
+            this.X22Y9.Size = new System.Drawing.Size(144, 144);
             this.X22Y9.TabIndex = 520;
             this.X22Y9.TabStop = false;
             // 
@@ -6283,7 +6283,7 @@
             // 
             this.X23Y1.Location = new System.Drawing.Point(89, 3455);
             this.X23Y1.Name = "X23Y1";
-            this.X23Y1.Size = new System.Drawing.Size(100, 50);
+            this.X23Y1.Size = new System.Drawing.Size(144, 144);
             this.X23Y1.TabIndex = 521;
             this.X23Y1.TabStop = false;
             // 
@@ -6291,7 +6291,7 @@
             // 
             this.X23Y2.Location = new System.Drawing.Point(242, 3455);
             this.X23Y2.Name = "X23Y2";
-            this.X23Y2.Size = new System.Drawing.Size(100, 50);
+            this.X23Y2.Size = new System.Drawing.Size(144, 144);
             this.X23Y2.TabIndex = 522;
             this.X23Y2.TabStop = false;
             // 
@@ -6299,7 +6299,7 @@
             // 
             this.X23Y3.Location = new System.Drawing.Point(395, 3455);
             this.X23Y3.Name = "X23Y3";
-            this.X23Y3.Size = new System.Drawing.Size(100, 50);
+            this.X23Y3.Size = new System.Drawing.Size(144, 144);
             this.X23Y3.TabIndex = 523;
             this.X23Y3.TabStop = false;
             // 
@@ -6307,7 +6307,7 @@
             // 
             this.X23Y4.Location = new System.Drawing.Point(548, 3455);
             this.X23Y4.Name = "X23Y4";
-            this.X23Y4.Size = new System.Drawing.Size(100, 50);
+            this.X23Y4.Size = new System.Drawing.Size(144, 144);
             this.X23Y4.TabIndex = 524;
             this.X23Y4.TabStop = false;
             // 
@@ -6315,7 +6315,7 @@
             // 
             this.X23Y5.Location = new System.Drawing.Point(701, 3455);
             this.X23Y5.Name = "X23Y5";
-            this.X23Y5.Size = new System.Drawing.Size(100, 50);
+            this.X23Y5.Size = new System.Drawing.Size(144, 144);
             this.X23Y5.TabIndex = 525;
             this.X23Y5.TabStop = false;
             // 
@@ -6323,7 +6323,7 @@
             // 
             this.X23Y6.Location = new System.Drawing.Point(854, 3455);
             this.X23Y6.Name = "X23Y6";
-            this.X23Y6.Size = new System.Drawing.Size(100, 50);
+            this.X23Y6.Size = new System.Drawing.Size(144, 144);
             this.X23Y6.TabIndex = 526;
             this.X23Y6.TabStop = false;
             // 
@@ -6331,7 +6331,7 @@
             // 
             this.X23Y7.Location = new System.Drawing.Point(1007, 3455);
             this.X23Y7.Name = "X23Y7";
-            this.X23Y7.Size = new System.Drawing.Size(100, 50);
+            this.X23Y7.Size = new System.Drawing.Size(144, 144);
             this.X23Y7.TabIndex = 527;
             this.X23Y7.TabStop = false;
             // 
@@ -6339,7 +6339,7 @@
             // 
             this.X23Y8.Location = new System.Drawing.Point(1160, 3455);
             this.X23Y8.Name = "X23Y8";
-            this.X23Y8.Size = new System.Drawing.Size(100, 50);
+            this.X23Y8.Size = new System.Drawing.Size(144, 144);
             this.X23Y8.TabIndex = 528;
             this.X23Y8.TabStop = false;
             // 
@@ -6347,7 +6347,7 @@
             // 
             this.X24Y1.Location = new System.Drawing.Point(89, 3608);
             this.X24Y1.Name = "X24Y1";
-            this.X24Y1.Size = new System.Drawing.Size(100, 50);
+            this.X24Y1.Size = new System.Drawing.Size(144, 144);
             this.X24Y1.TabIndex = 529;
             this.X24Y1.TabStop = false;
             // 
@@ -6355,7 +6355,7 @@
             // 
             this.X24Y2.Location = new System.Drawing.Point(242, 3608);
             this.X24Y2.Name = "X24Y2";
-            this.X24Y2.Size = new System.Drawing.Size(100, 50);
+            this.X24Y2.Size = new System.Drawing.Size(144, 144);
             this.X24Y2.TabIndex = 530;
             this.X24Y2.TabStop = false;
             // 
@@ -6363,7 +6363,7 @@
             // 
             this.X24Y3.Location = new System.Drawing.Point(395, 3608);
             this.X24Y3.Name = "X24Y3";
-            this.X24Y3.Size = new System.Drawing.Size(100, 50);
+            this.X24Y3.Size = new System.Drawing.Size(144, 144);
             this.X24Y3.TabIndex = 531;
             this.X24Y3.TabStop = false;
             // 
@@ -6371,7 +6371,7 @@
             // 
             this.X24Y4.Location = new System.Drawing.Point(548, 3608);
             this.X24Y4.Name = "X24Y4";
-            this.X24Y4.Size = new System.Drawing.Size(100, 50);
+            this.X24Y4.Size = new System.Drawing.Size(144, 144);
             this.X24Y4.TabIndex = 532;
             this.X24Y4.TabStop = false;
             // 
@@ -6379,7 +6379,7 @@
             // 
             this.X24Y5.Location = new System.Drawing.Point(701, 3608);
             this.X24Y5.Name = "X24Y5";
-            this.X24Y5.Size = new System.Drawing.Size(100, 50);
+            this.X24Y5.Size = new System.Drawing.Size(144, 144);
             this.X24Y5.TabIndex = 533;
             this.X24Y5.TabStop = false;
             // 
@@ -6387,7 +6387,7 @@
             // 
             this.X24Y6.Location = new System.Drawing.Point(854, 3608);
             this.X24Y6.Name = "X24Y6";
-            this.X24Y6.Size = new System.Drawing.Size(100, 50);
+            this.X24Y6.Size = new System.Drawing.Size(144, 144);
             this.X24Y6.TabIndex = 534;
             this.X24Y6.TabStop = false;
             // 
@@ -6395,7 +6395,7 @@
             // 
             this.X24Y7.Location = new System.Drawing.Point(1007, 3608);
             this.X24Y7.Name = "X24Y7";
-            this.X24Y7.Size = new System.Drawing.Size(100, 50);
+            this.X24Y7.Size = new System.Drawing.Size(144, 144);
             this.X24Y7.TabIndex = 535;
             this.X24Y7.TabStop = false;
             // 
@@ -6403,7 +6403,7 @@
             // 
             this.X24Y8.Location = new System.Drawing.Point(1160, 3608);
             this.X24Y8.Name = "X24Y8";
-            this.X24Y8.Size = new System.Drawing.Size(100, 50);
+            this.X24Y8.Size = new System.Drawing.Size(144, 144);
             this.X24Y8.TabIndex = 536;
             this.X24Y8.TabStop = false;
             // 
@@ -6411,7 +6411,7 @@
             // 
             this.X23Y9.Location = new System.Drawing.Point(1313, 3455);
             this.X23Y9.Name = "X23Y9";
-            this.X23Y9.Size = new System.Drawing.Size(100, 50);
+            this.X23Y9.Size = new System.Drawing.Size(144, 144);
             this.X23Y9.TabIndex = 537;
             this.X23Y9.TabStop = false;
             // 
@@ -6419,7 +6419,7 @@
             // 
             this.X24Y9.Location = new System.Drawing.Point(1313, 3608);
             this.X24Y9.Name = "X24Y9";
-            this.X24Y9.Size = new System.Drawing.Size(100, 50);
+            this.X24Y9.Size = new System.Drawing.Size(144, 144);
             this.X24Y9.TabIndex = 538;
             this.X24Y9.TabStop = false;
             // 
@@ -6427,7 +6427,7 @@
             // 
             this.X25Y1.Location = new System.Drawing.Point(89, 3761);
             this.X25Y1.Name = "X25Y1";
-            this.X25Y1.Size = new System.Drawing.Size(100, 50);
+            this.X25Y1.Size = new System.Drawing.Size(144, 144);
             this.X25Y1.TabIndex = 539;
             this.X25Y1.TabStop = false;
             // 
@@ -6435,7 +6435,7 @@
             // 
             this.X25Y2.Location = new System.Drawing.Point(242, 3761);
             this.X25Y2.Name = "X25Y2";
-            this.X25Y2.Size = new System.Drawing.Size(100, 50);
+            this.X25Y2.Size = new System.Drawing.Size(144, 144);
             this.X25Y2.TabIndex = 540;
             this.X25Y2.TabStop = false;
             // 
@@ -6443,7 +6443,7 @@
             // 
             this.X25Y3.Location = new System.Drawing.Point(395, 3761);
             this.X25Y3.Name = "X25Y3";
-            this.X25Y3.Size = new System.Drawing.Size(100, 50);
+            this.X25Y3.Size = new System.Drawing.Size(144, 144);
             this.X25Y3.TabIndex = 541;
             this.X25Y3.TabStop = false;
             // 
@@ -6451,7 +6451,7 @@
             // 
             this.X25Y4.Location = new System.Drawing.Point(548, 3761);
             this.X25Y4.Name = "X25Y4";
-            this.X25Y4.Size = new System.Drawing.Size(100, 50);
+            this.X25Y4.Size = new System.Drawing.Size(144, 144);
             this.X25Y4.TabIndex = 542;
             this.X25Y4.TabStop = false;
             // 
@@ -6459,7 +6459,7 @@
             // 
             this.X25Y5.Location = new System.Drawing.Point(701, 3761);
             this.X25Y5.Name = "X25Y5";
-            this.X25Y5.Size = new System.Drawing.Size(100, 50);
+            this.X25Y5.Size = new System.Drawing.Size(144, 144);
             this.X25Y5.TabIndex = 543;
             this.X25Y5.TabStop = false;
             // 
@@ -6467,7 +6467,7 @@
             // 
             this.X25Y6.Location = new System.Drawing.Point(854, 3761);
             this.X25Y6.Name = "X25Y6";
-            this.X25Y6.Size = new System.Drawing.Size(100, 50);
+            this.X25Y6.Size = new System.Drawing.Size(144, 144);
             this.X25Y6.TabIndex = 544;
             this.X25Y6.TabStop = false;
             // 
@@ -6475,7 +6475,7 @@
             // 
             this.X25Y7.Location = new System.Drawing.Point(1007, 3761);
             this.X25Y7.Name = "X25Y7";
-            this.X25Y7.Size = new System.Drawing.Size(100, 50);
+            this.X25Y7.Size = new System.Drawing.Size(144, 144);
             this.X25Y7.TabIndex = 545;
             this.X25Y7.TabStop = false;
             // 
@@ -6483,7 +6483,7 @@
             // 
             this.X25Y8.Location = new System.Drawing.Point(1160, 3761);
             this.X25Y8.Name = "X25Y8";
-            this.X25Y8.Size = new System.Drawing.Size(100, 50);
+            this.X25Y8.Size = new System.Drawing.Size(144, 144);
             this.X25Y8.TabIndex = 546;
             this.X25Y8.TabStop = false;
             // 
@@ -6491,7 +6491,7 @@
             // 
             this.X25Y9.Location = new System.Drawing.Point(1313, 3761);
             this.X25Y9.Name = "X25Y9";
-            this.X25Y9.Size = new System.Drawing.Size(100, 50);
+            this.X25Y9.Size = new System.Drawing.Size(144, 144);
             this.X25Y9.TabIndex = 547;
             this.X25Y9.TabStop = false;
             // 
@@ -6499,7 +6499,7 @@
             // 
             this.X21Y10.Location = new System.Drawing.Point(1466, 3149);
             this.X21Y10.Name = "X21Y10";
-            this.X21Y10.Size = new System.Drawing.Size(109, 96);
+            this.X21Y10.Size = new System.Drawing.Size(144, 144);
             this.X21Y10.TabIndex = 548;
             this.X21Y10.TabStop = false;
             // 
@@ -6507,7 +6507,7 @@
             // 
             this.X22Y10.Location = new System.Drawing.Point(1466, 3302);
             this.X22Y10.Name = "X22Y10";
-            this.X22Y10.Size = new System.Drawing.Size(100, 50);
+            this.X22Y10.Size = new System.Drawing.Size(144, 144);
             this.X22Y10.TabIndex = 549;
             this.X22Y10.TabStop = false;
             // 
@@ -6515,7 +6515,7 @@
             // 
             this.X23Y10.Location = new System.Drawing.Point(1466, 3455);
             this.X23Y10.Name = "X23Y10";
-            this.X23Y10.Size = new System.Drawing.Size(100, 50);
+            this.X23Y10.Size = new System.Drawing.Size(144, 144);
             this.X23Y10.TabIndex = 550;
             this.X23Y10.TabStop = false;
             // 
@@ -6523,7 +6523,7 @@
             // 
             this.X24Y10.Location = new System.Drawing.Point(1466, 3608);
             this.X24Y10.Name = "X24Y10";
-            this.X24Y10.Size = new System.Drawing.Size(100, 50);
+            this.X24Y10.Size = new System.Drawing.Size(144, 144);
             this.X24Y10.TabIndex = 551;
             this.X24Y10.TabStop = false;
             // 
@@ -6531,7 +6531,7 @@
             // 
             this.X25Y10.Location = new System.Drawing.Point(1466, 3761);
             this.X25Y10.Name = "X25Y10";
-            this.X25Y10.Size = new System.Drawing.Size(100, 50);
+            this.X25Y10.Size = new System.Drawing.Size(144, 144);
             this.X25Y10.TabIndex = 552;
             this.X25Y10.TabStop = false;
             // 
@@ -6539,7 +6539,7 @@
             // 
             this.X21Y11.Location = new System.Drawing.Point(1619, 3149);
             this.X21Y11.Name = "X21Y11";
-            this.X21Y11.Size = new System.Drawing.Size(100, 50);
+            this.X21Y11.Size = new System.Drawing.Size(144, 144);
             this.X21Y11.TabIndex = 553;
             this.X21Y11.TabStop = false;
             // 
@@ -6547,7 +6547,7 @@
             // 
             this.X22Y11.Location = new System.Drawing.Point(1619, 3302);
             this.X22Y11.Name = "X22Y11";
-            this.X22Y11.Size = new System.Drawing.Size(100, 50);
+            this.X22Y11.Size = new System.Drawing.Size(144, 144);
             this.X22Y11.TabIndex = 554;
             this.X22Y11.TabStop = false;
             // 
@@ -6555,7 +6555,7 @@
             // 
             this.X23Y11.Location = new System.Drawing.Point(1619, 3455);
             this.X23Y11.Name = "X23Y11";
-            this.X23Y11.Size = new System.Drawing.Size(100, 50);
+            this.X23Y11.Size = new System.Drawing.Size(144, 144);
             this.X23Y11.TabIndex = 555;
             this.X23Y11.TabStop = false;
             // 
@@ -6563,7 +6563,7 @@
             // 
             this.X24Y11.Location = new System.Drawing.Point(1619, 3608);
             this.X24Y11.Name = "X24Y11";
-            this.X24Y11.Size = new System.Drawing.Size(100, 50);
+            this.X24Y11.Size = new System.Drawing.Size(144, 144);
             this.X24Y11.TabIndex = 556;
             this.X24Y11.TabStop = false;
             // 
@@ -6571,7 +6571,7 @@
             // 
             this.X25Y11.Location = new System.Drawing.Point(1619, 3761);
             this.X25Y11.Name = "X25Y11";
-            this.X25Y11.Size = new System.Drawing.Size(100, 50);
+            this.X25Y11.Size = new System.Drawing.Size(144, 144);
             this.X25Y11.TabIndex = 557;
             this.X25Y11.TabStop = false;
             // 
@@ -6579,7 +6579,7 @@
             // 
             this.X21Y12.Location = new System.Drawing.Point(1772, 3149);
             this.X21Y12.Name = "X21Y12";
-            this.X21Y12.Size = new System.Drawing.Size(100, 50);
+            this.X21Y12.Size = new System.Drawing.Size(144, 144);
             this.X21Y12.TabIndex = 558;
             this.X21Y12.TabStop = false;
             // 
@@ -6587,7 +6587,7 @@
             // 
             this.X22Y12.Location = new System.Drawing.Point(1772, 3302);
             this.X22Y12.Name = "X22Y12";
-            this.X22Y12.Size = new System.Drawing.Size(100, 50);
+            this.X22Y12.Size = new System.Drawing.Size(144, 144);
             this.X22Y12.TabIndex = 559;
             this.X22Y12.TabStop = false;
             // 
@@ -6595,7 +6595,7 @@
             // 
             this.X23Y12.Location = new System.Drawing.Point(1772, 3455);
             this.X23Y12.Name = "X23Y12";
-            this.X23Y12.Size = new System.Drawing.Size(100, 50);
+            this.X23Y12.Size = new System.Drawing.Size(144, 144);
             this.X23Y12.TabIndex = 560;
             this.X23Y12.TabStop = false;
             // 
@@ -6603,7 +6603,7 @@
             // 
             this.X24Y12.Location = new System.Drawing.Point(1772, 3608);
             this.X24Y12.Name = "X24Y12";
-            this.X24Y12.Size = new System.Drawing.Size(100, 50);
+            this.X24Y12.Size = new System.Drawing.Size(144, 144);
             this.X24Y12.TabIndex = 561;
             this.X24Y12.TabStop = false;
             // 
@@ -6611,7 +6611,7 @@
             // 
             this.X25Y12.Location = new System.Drawing.Point(1772, 3761);
             this.X25Y12.Name = "X25Y12";
-            this.X25Y12.Size = new System.Drawing.Size(100, 50);
+            this.X25Y12.Size = new System.Drawing.Size(144, 144);
             this.X25Y12.TabIndex = 562;
             this.X25Y12.TabStop = false;
             // 
@@ -6619,7 +6619,7 @@
             // 
             this.X21Y13.Location = new System.Drawing.Point(1925, 3149);
             this.X21Y13.Name = "X21Y13";
-            this.X21Y13.Size = new System.Drawing.Size(100, 50);
+            this.X21Y13.Size = new System.Drawing.Size(144, 144);
             this.X21Y13.TabIndex = 563;
             this.X21Y13.TabStop = false;
             // 
@@ -6627,7 +6627,7 @@
             // 
             this.X22Y13.Location = new System.Drawing.Point(1925, 3302);
             this.X22Y13.Name = "X22Y13";
-            this.X22Y13.Size = new System.Drawing.Size(100, 50);
+            this.X22Y13.Size = new System.Drawing.Size(144, 144);
             this.X22Y13.TabIndex = 564;
             this.X22Y13.TabStop = false;
             // 
@@ -6635,7 +6635,7 @@
             // 
             this.X23Y13.Location = new System.Drawing.Point(1925, 3455);
             this.X23Y13.Name = "X23Y13";
-            this.X23Y13.Size = new System.Drawing.Size(100, 50);
+            this.X23Y13.Size = new System.Drawing.Size(144, 144);
             this.X23Y13.TabIndex = 565;
             this.X23Y13.TabStop = false;
             // 
@@ -6643,7 +6643,7 @@
             // 
             this.X24Y13.Location = new System.Drawing.Point(1925, 3608);
             this.X24Y13.Name = "X24Y13";
-            this.X24Y13.Size = new System.Drawing.Size(100, 50);
+            this.X24Y13.Size = new System.Drawing.Size(144, 144);
             this.X24Y13.TabIndex = 566;
             this.X24Y13.TabStop = false;
             // 
@@ -6651,7 +6651,7 @@
             // 
             this.X25Y13.Location = new System.Drawing.Point(1925, 3761);
             this.X25Y13.Name = "X25Y13";
-            this.X25Y13.Size = new System.Drawing.Size(100, 50);
+            this.X25Y13.Size = new System.Drawing.Size(144, 144);
             this.X25Y13.TabIndex = 567;
             this.X25Y13.TabStop = false;
             // 
@@ -6659,7 +6659,7 @@
             // 
             this.X21Y14.Location = new System.Drawing.Point(2078, 3149);
             this.X21Y14.Name = "X21Y14";
-            this.X21Y14.Size = new System.Drawing.Size(100, 50);
+            this.X21Y14.Size = new System.Drawing.Size(144, 144);
             this.X21Y14.TabIndex = 568;
             this.X21Y14.TabStop = false;
             // 
@@ -6667,7 +6667,7 @@
             // 
             this.X22Y14.Location = new System.Drawing.Point(2078, 3302);
             this.X22Y14.Name = "X22Y14";
-            this.X22Y14.Size = new System.Drawing.Size(100, 50);
+            this.X22Y14.Size = new System.Drawing.Size(144, 144);
             this.X22Y14.TabIndex = 569;
             this.X22Y14.TabStop = false;
             // 
@@ -6675,7 +6675,7 @@
             // 
             this.X23Y14.Location = new System.Drawing.Point(2078, 3455);
             this.X23Y14.Name = "X23Y14";
-            this.X23Y14.Size = new System.Drawing.Size(100, 50);
+            this.X23Y14.Size = new System.Drawing.Size(144, 144);
             this.X23Y14.TabIndex = 570;
             this.X23Y14.TabStop = false;
             // 
@@ -6683,7 +6683,7 @@
             // 
             this.X24Y14.Location = new System.Drawing.Point(2078, 3608);
             this.X24Y14.Name = "X24Y14";
-            this.X24Y14.Size = new System.Drawing.Size(100, 50);
+            this.X24Y14.Size = new System.Drawing.Size(144, 144);
             this.X24Y14.TabIndex = 571;
             this.X24Y14.TabStop = false;
             // 
@@ -6691,7 +6691,7 @@
             // 
             this.X25Y14.Location = new System.Drawing.Point(2078, 3761);
             this.X25Y14.Name = "X25Y14";
-            this.X25Y14.Size = new System.Drawing.Size(100, 50);
+            this.X25Y14.Size = new System.Drawing.Size(144, 144);
             this.X25Y14.TabIndex = 572;
             this.X25Y14.TabStop = false;
             // 
@@ -6699,7 +6699,7 @@
             // 
             this.X21Y15.Location = new System.Drawing.Point(2231, 3149);
             this.X21Y15.Name = "X21Y15";
-            this.X21Y15.Size = new System.Drawing.Size(100, 50);
+            this.X21Y15.Size = new System.Drawing.Size(144, 144);
             this.X21Y15.TabIndex = 573;
             this.X21Y15.TabStop = false;
             // 
@@ -6707,7 +6707,7 @@
             // 
             this.X22Y15.Location = new System.Drawing.Point(2231, 3302);
             this.X22Y15.Name = "X22Y15";
-            this.X22Y15.Size = new System.Drawing.Size(100, 50);
+            this.X22Y15.Size = new System.Drawing.Size(144, 144);
             this.X22Y15.TabIndex = 574;
             this.X22Y15.TabStop = false;
             // 
@@ -6715,7 +6715,7 @@
             // 
             this.X23Y15.Location = new System.Drawing.Point(2231, 3455);
             this.X23Y15.Name = "X23Y15";
-            this.X23Y15.Size = new System.Drawing.Size(100, 50);
+            this.X23Y15.Size = new System.Drawing.Size(144, 144);
             this.X23Y15.TabIndex = 575;
             this.X23Y15.TabStop = false;
             // 
@@ -6723,7 +6723,7 @@
             // 
             this.X24Y15.Location = new System.Drawing.Point(2231, 3608);
             this.X24Y15.Name = "X24Y15";
-            this.X24Y15.Size = new System.Drawing.Size(100, 50);
+            this.X24Y15.Size = new System.Drawing.Size(144, 144);
             this.X24Y15.TabIndex = 576;
             this.X24Y15.TabStop = false;
             // 
@@ -6731,7 +6731,7 @@
             // 
             this.X25Y15.Location = new System.Drawing.Point(2231, 3761);
             this.X25Y15.Name = "X25Y15";
-            this.X25Y15.Size = new System.Drawing.Size(100, 50);
+            this.X25Y15.Size = new System.Drawing.Size(144, 144);
             this.X25Y15.TabIndex = 577;
             this.X25Y15.TabStop = false;
             // 
@@ -6739,7 +6739,7 @@
             // 
             this.X21Y16.Location = new System.Drawing.Point(2384, 3149);
             this.X21Y16.Name = "X21Y16";
-            this.X21Y16.Size = new System.Drawing.Size(100, 50);
+            this.X21Y16.Size = new System.Drawing.Size(144, 144);
             this.X21Y16.TabIndex = 578;
             this.X21Y16.TabStop = false;
             // 
@@ -6747,7 +6747,7 @@
             // 
             this.X22Y16.Location = new System.Drawing.Point(2384, 3302);
             this.X22Y16.Name = "X22Y16";
-            this.X22Y16.Size = new System.Drawing.Size(100, 50);
+            this.X22Y16.Size = new System.Drawing.Size(144, 144);
             this.X22Y16.TabIndex = 579;
             this.X22Y16.TabStop = false;
             // 
@@ -6755,7 +6755,7 @@
             // 
             this.X23Y16.Location = new System.Drawing.Point(2384, 3455);
             this.X23Y16.Name = "X23Y16";
-            this.X23Y16.Size = new System.Drawing.Size(100, 50);
+            this.X23Y16.Size = new System.Drawing.Size(144, 144);
             this.X23Y16.TabIndex = 580;
             this.X23Y16.TabStop = false;
             // 
@@ -6763,7 +6763,7 @@
             // 
             this.X24Y16.Location = new System.Drawing.Point(2384, 3608);
             this.X24Y16.Name = "X24Y16";
-            this.X24Y16.Size = new System.Drawing.Size(100, 50);
+            this.X24Y16.Size = new System.Drawing.Size(144, 144);
             this.X24Y16.TabIndex = 581;
             this.X24Y16.TabStop = false;
             // 
@@ -6771,7 +6771,7 @@
             // 
             this.X25Y16.Location = new System.Drawing.Point(2384, 3761);
             this.X25Y16.Name = "X25Y16";
-            this.X25Y16.Size = new System.Drawing.Size(100, 50);
+            this.X25Y16.Size = new System.Drawing.Size(144, 144);
             this.X25Y16.TabIndex = 582;
             this.X25Y16.TabStop = false;
             // 
@@ -6779,7 +6779,7 @@
             // 
             this.X21Y17.Location = new System.Drawing.Point(2537, 3149);
             this.X21Y17.Name = "X21Y17";
-            this.X21Y17.Size = new System.Drawing.Size(100, 50);
+            this.X21Y17.Size = new System.Drawing.Size(144, 144);
             this.X21Y17.TabIndex = 583;
             this.X21Y17.TabStop = false;
             // 
@@ -6787,7 +6787,7 @@
             // 
             this.X22Y17.Location = new System.Drawing.Point(2537, 3302);
             this.X22Y17.Name = "X22Y17";
-            this.X22Y17.Size = new System.Drawing.Size(124, 80);
+            this.X22Y17.Size = new System.Drawing.Size(144, 144);
             this.X22Y17.TabIndex = 584;
             this.X22Y17.TabStop = false;
             // 
@@ -6795,7 +6795,7 @@
             // 
             this.X23Y17.Location = new System.Drawing.Point(2537, 3455);
             this.X23Y17.Name = "X23Y17";
-            this.X23Y17.Size = new System.Drawing.Size(100, 50);
+            this.X23Y17.Size = new System.Drawing.Size(144, 144);
             this.X23Y17.TabIndex = 585;
             this.X23Y17.TabStop = false;
             // 
@@ -6803,7 +6803,7 @@
             // 
             this.X24Y17.Location = new System.Drawing.Point(2537, 3608);
             this.X24Y17.Name = "X24Y17";
-            this.X24Y17.Size = new System.Drawing.Size(100, 50);
+            this.X24Y17.Size = new System.Drawing.Size(144, 144);
             this.X24Y17.TabIndex = 586;
             this.X24Y17.TabStop = false;
             // 
@@ -6811,7 +6811,7 @@
             // 
             this.X25Y17.Location = new System.Drawing.Point(2537, 3761);
             this.X25Y17.Name = "X25Y17";
-            this.X25Y17.Size = new System.Drawing.Size(100, 50);
+            this.X25Y17.Size = new System.Drawing.Size(144, 144);
             this.X25Y17.TabIndex = 587;
             this.X25Y17.TabStop = false;
             // 
@@ -6819,7 +6819,7 @@
             // 
             this.X21Y18.Location = new System.Drawing.Point(2690, 3149);
             this.X21Y18.Name = "X21Y18";
-            this.X21Y18.Size = new System.Drawing.Size(122, 113);
+            this.X21Y18.Size = new System.Drawing.Size(144, 144);
             this.X21Y18.TabIndex = 588;
             this.X21Y18.TabStop = false;
             // 
@@ -6827,7 +6827,7 @@
             // 
             this.X22Y18.Location = new System.Drawing.Point(2690, 3302);
             this.X22Y18.Name = "X22Y18";
-            this.X22Y18.Size = new System.Drawing.Size(100, 50);
+            this.X22Y18.Size = new System.Drawing.Size(144, 144);
             this.X22Y18.TabIndex = 589;
             this.X22Y18.TabStop = false;
             // 
@@ -6835,7 +6835,7 @@
             // 
             this.X23Y18.Location = new System.Drawing.Point(2690, 3455);
             this.X23Y18.Name = "X23Y18";
-            this.X23Y18.Size = new System.Drawing.Size(100, 50);
+            this.X23Y18.Size = new System.Drawing.Size(144, 144);
             this.X23Y18.TabIndex = 590;
             this.X23Y18.TabStop = false;
             // 
@@ -6843,7 +6843,7 @@
             // 
             this.X24Y18.Location = new System.Drawing.Point(2690, 3608);
             this.X24Y18.Name = "X24Y18";
-            this.X24Y18.Size = new System.Drawing.Size(100, 50);
+            this.X24Y18.Size = new System.Drawing.Size(144, 144);
             this.X24Y18.TabIndex = 591;
             this.X24Y18.TabStop = false;
             // 
@@ -6851,7 +6851,7 @@
             // 
             this.X25Y18.Location = new System.Drawing.Point(2690, 3761);
             this.X25Y18.Name = "X25Y18";
-            this.X25Y18.Size = new System.Drawing.Size(100, 50);
+            this.X25Y18.Size = new System.Drawing.Size(144, 144);
             this.X25Y18.TabIndex = 592;
             this.X25Y18.TabStop = false;
             // 
@@ -6859,7 +6859,7 @@
             // 
             this.X21Y19.Location = new System.Drawing.Point(2843, 3149);
             this.X21Y19.Name = "X21Y19";
-            this.X21Y19.Size = new System.Drawing.Size(100, 50);
+            this.X21Y19.Size = new System.Drawing.Size(144, 144);
             this.X21Y19.TabIndex = 593;
             this.X21Y19.TabStop = false;
             // 
@@ -6867,7 +6867,7 @@
             // 
             this.X22Y19.Location = new System.Drawing.Point(2843, 3302);
             this.X22Y19.Name = "X22Y19";
-            this.X22Y19.Size = new System.Drawing.Size(100, 50);
+            this.X22Y19.Size = new System.Drawing.Size(144, 144);
             this.X22Y19.TabIndex = 594;
             this.X22Y19.TabStop = false;
             // 
@@ -6875,7 +6875,7 @@
             // 
             this.X23Y19.Location = new System.Drawing.Point(2843, 3455);
             this.X23Y19.Name = "X23Y19";
-            this.X23Y19.Size = new System.Drawing.Size(100, 50);
+            this.X23Y19.Size = new System.Drawing.Size(144, 144);
             this.X23Y19.TabIndex = 595;
             this.X23Y19.TabStop = false;
             // 
@@ -6883,7 +6883,7 @@
             // 
             this.X24Y19.Location = new System.Drawing.Point(2843, 3608);
             this.X24Y19.Name = "X24Y19";
-            this.X24Y19.Size = new System.Drawing.Size(100, 50);
+            this.X24Y19.Size = new System.Drawing.Size(144, 144);
             this.X24Y19.TabIndex = 596;
             this.X24Y19.TabStop = false;
             // 
@@ -6891,7 +6891,7 @@
             // 
             this.X25Y19.Location = new System.Drawing.Point(2843, 3761);
             this.X25Y19.Name = "X25Y19";
-            this.X25Y19.Size = new System.Drawing.Size(100, 50);
+            this.X25Y19.Size = new System.Drawing.Size(144, 144);
             this.X25Y19.TabIndex = 597;
             this.X25Y19.TabStop = false;
             // 
@@ -6899,7 +6899,7 @@
             // 
             this.X21Y20.Location = new System.Drawing.Point(2996, 3149);
             this.X21Y20.Name = "X21Y20";
-            this.X21Y20.Size = new System.Drawing.Size(100, 50);
+            this.X21Y20.Size = new System.Drawing.Size(144, 144);
             this.X21Y20.TabIndex = 598;
             this.X21Y20.TabStop = false;
             // 
@@ -6907,7 +6907,7 @@
             // 
             this.X22Y20.Location = new System.Drawing.Point(2996, 3302);
             this.X22Y20.Name = "X22Y20";
-            this.X22Y20.Size = new System.Drawing.Size(100, 50);
+            this.X22Y20.Size = new System.Drawing.Size(144, 144);
             this.X22Y20.TabIndex = 599;
             this.X22Y20.TabStop = false;
             // 
@@ -6915,7 +6915,7 @@
             // 
             this.X23Y20.Location = new System.Drawing.Point(2996, 3455);
             this.X23Y20.Name = "X23Y20";
-            this.X23Y20.Size = new System.Drawing.Size(100, 50);
+            this.X23Y20.Size = new System.Drawing.Size(144, 144);
             this.X23Y20.TabIndex = 600;
             this.X23Y20.TabStop = false;
             // 
@@ -6923,7 +6923,7 @@
             // 
             this.X24Y20.Location = new System.Drawing.Point(2996, 3608);
             this.X24Y20.Name = "X24Y20";
-            this.X24Y20.Size = new System.Drawing.Size(100, 50);
+            this.X24Y20.Size = new System.Drawing.Size(144, 144);
             this.X24Y20.TabIndex = 601;
             this.X24Y20.TabStop = false;
             // 
@@ -6931,7 +6931,7 @@
             // 
             this.X25Y20.Location = new System.Drawing.Point(2996, 3761);
             this.X25Y20.Name = "X25Y20";
-            this.X25Y20.Size = new System.Drawing.Size(100, 50);
+            this.X25Y20.Size = new System.Drawing.Size(144, 144);
             this.X25Y20.TabIndex = 602;
             this.X25Y20.TabStop = false;
             // 
@@ -6939,7 +6939,7 @@
             // 
             this.X21Y21.Location = new System.Drawing.Point(3149, 3149);
             this.X21Y21.Name = "X21Y21";
-            this.X21Y21.Size = new System.Drawing.Size(100, 50);
+            this.X21Y21.Size = new System.Drawing.Size(144, 144);
             this.X21Y21.TabIndex = 603;
             this.X21Y21.TabStop = false;
             // 
@@ -6947,7 +6947,7 @@
             // 
             this.X22Y21.Location = new System.Drawing.Point(3149, 3302);
             this.X22Y21.Name = "X22Y21";
-            this.X22Y21.Size = new System.Drawing.Size(100, 50);
+            this.X22Y21.Size = new System.Drawing.Size(144, 144);
             this.X22Y21.TabIndex = 604;
             this.X22Y21.TabStop = false;
             // 
@@ -6955,7 +6955,7 @@
             // 
             this.X23Y21.Location = new System.Drawing.Point(3149, 3455);
             this.X23Y21.Name = "X23Y21";
-            this.X23Y21.Size = new System.Drawing.Size(100, 50);
+            this.X23Y21.Size = new System.Drawing.Size(144, 144);
             this.X23Y21.TabIndex = 605;
             this.X23Y21.TabStop = false;
             // 
@@ -6963,7 +6963,7 @@
             // 
             this.X24Y21.Location = new System.Drawing.Point(3149, 3608);
             this.X24Y21.Name = "X24Y21";
-            this.X24Y21.Size = new System.Drawing.Size(100, 50);
+            this.X24Y21.Size = new System.Drawing.Size(144, 144);
             this.X24Y21.TabIndex = 606;
             this.X24Y21.TabStop = false;
             // 
@@ -6971,7 +6971,7 @@
             // 
             this.X25Y21.Location = new System.Drawing.Point(3149, 3761);
             this.X25Y21.Name = "X25Y21";
-            this.X25Y21.Size = new System.Drawing.Size(100, 50);
+            this.X25Y21.Size = new System.Drawing.Size(144, 144);
             this.X25Y21.TabIndex = 607;
             this.X25Y21.TabStop = false;
             // 
@@ -6979,7 +6979,7 @@
             // 
             this.X21Y22.Location = new System.Drawing.Point(3302, 3149);
             this.X21Y22.Name = "X21Y22";
-            this.X21Y22.Size = new System.Drawing.Size(100, 50);
+            this.X21Y22.Size = new System.Drawing.Size(144, 144);
             this.X21Y22.TabIndex = 608;
             this.X21Y22.TabStop = false;
             // 
@@ -6987,7 +6987,7 @@
             // 
             this.X22Y22.Location = new System.Drawing.Point(3302, 3302);
             this.X22Y22.Name = "X22Y22";
-            this.X22Y22.Size = new System.Drawing.Size(100, 50);
+            this.X22Y22.Size = new System.Drawing.Size(144, 144);
             this.X22Y22.TabIndex = 609;
             this.X22Y22.TabStop = false;
             // 
@@ -6995,7 +6995,7 @@
             // 
             this.X23Y22.Location = new System.Drawing.Point(3302, 3455);
             this.X23Y22.Name = "X23Y22";
-            this.X23Y22.Size = new System.Drawing.Size(100, 50);
+            this.X23Y22.Size = new System.Drawing.Size(144, 144);
             this.X23Y22.TabIndex = 610;
             this.X23Y22.TabStop = false;
             // 
@@ -7003,7 +7003,7 @@
             // 
             this.X24Y22.Location = new System.Drawing.Point(3302, 3608);
             this.X24Y22.Name = "X24Y22";
-            this.X24Y22.Size = new System.Drawing.Size(100, 50);
+            this.X24Y22.Size = new System.Drawing.Size(144, 144);
             this.X24Y22.TabIndex = 611;
             this.X24Y22.TabStop = false;
             // 
@@ -7011,7 +7011,7 @@
             // 
             this.X25Y22.Location = new System.Drawing.Point(3302, 3761);
             this.X25Y22.Name = "X25Y22";
-            this.X25Y22.Size = new System.Drawing.Size(96, 68);
+            this.X25Y22.Size = new System.Drawing.Size(144, 144);
             this.X25Y22.TabIndex = 612;
             this.X25Y22.TabStop = false;
             // 
@@ -7019,7 +7019,7 @@
             // 
             this.X21Y23.Location = new System.Drawing.Point(3455, 3149);
             this.X21Y23.Name = "X21Y23";
-            this.X21Y23.Size = new System.Drawing.Size(100, 50);
+            this.X21Y23.Size = new System.Drawing.Size(144, 144);
             this.X21Y23.TabIndex = 613;
             this.X21Y23.TabStop = false;
             // 
@@ -7027,7 +7027,7 @@
             // 
             this.X22Y23.Location = new System.Drawing.Point(3455, 3302);
             this.X22Y23.Name = "X22Y23";
-            this.X22Y23.Size = new System.Drawing.Size(100, 50);
+            this.X22Y23.Size = new System.Drawing.Size(144, 144);
             this.X22Y23.TabIndex = 614;
             this.X22Y23.TabStop = false;
             // 
@@ -7035,7 +7035,7 @@
             // 
             this.X23Y23.Location = new System.Drawing.Point(3455, 3455);
             this.X23Y23.Name = "X23Y23";
-            this.X23Y23.Size = new System.Drawing.Size(100, 50);
+            this.X23Y23.Size = new System.Drawing.Size(144, 144);
             this.X23Y23.TabIndex = 615;
             this.X23Y23.TabStop = false;
             // 
@@ -7043,7 +7043,7 @@
             // 
             this.X24Y23.Location = new System.Drawing.Point(3455, 3608);
             this.X24Y23.Name = "X24Y23";
-            this.X24Y23.Size = new System.Drawing.Size(100, 50);
+            this.X24Y23.Size = new System.Drawing.Size(144, 144);
             this.X24Y23.TabIndex = 616;
             this.X24Y23.TabStop = false;
             // 
@@ -7051,7 +7051,7 @@
             // 
             this.X25Y23.Location = new System.Drawing.Point(3455, 3761);
             this.X25Y23.Name = "X25Y23";
-            this.X25Y23.Size = new System.Drawing.Size(100, 50);
+            this.X25Y23.Size = new System.Drawing.Size(144, 144);
             this.X25Y23.TabIndex = 617;
             this.X25Y23.TabStop = false;
             // 
@@ -7059,7 +7059,7 @@
             // 
             this.X21Y24.Location = new System.Drawing.Point(3608, 3149);
             this.X21Y24.Name = "X21Y24";
-            this.X21Y24.Size = new System.Drawing.Size(100, 50);
+            this.X21Y24.Size = new System.Drawing.Size(144, 144);
             this.X21Y24.TabIndex = 618;
             this.X21Y24.TabStop = false;
             // 
@@ -7067,7 +7067,7 @@
             // 
             this.X22Y24.Location = new System.Drawing.Point(3608, 3302);
             this.X22Y24.Name = "X22Y24";
-            this.X22Y24.Size = new System.Drawing.Size(100, 50);
+            this.X22Y24.Size = new System.Drawing.Size(144, 144);
             this.X22Y24.TabIndex = 619;
             this.X22Y24.TabStop = false;
             // 
@@ -7075,7 +7075,7 @@
             // 
             this.X23Y24.Location = new System.Drawing.Point(3608, 3455);
             this.X23Y24.Name = "X23Y24";
-            this.X23Y24.Size = new System.Drawing.Size(100, 50);
+            this.X23Y24.Size = new System.Drawing.Size(144, 144);
             this.X23Y24.TabIndex = 620;
             this.X23Y24.TabStop = false;
             // 
@@ -7083,7 +7083,7 @@
             // 
             this.X24Y24.Location = new System.Drawing.Point(3608, 3608);
             this.X24Y24.Name = "X24Y24";
-            this.X24Y24.Size = new System.Drawing.Size(100, 50);
+            this.X24Y24.Size = new System.Drawing.Size(144, 144);
             this.X24Y24.TabIndex = 621;
             this.X24Y24.TabStop = false;
             // 
@@ -7091,7 +7091,7 @@
             // 
             this.X25Y24.Location = new System.Drawing.Point(3608, 3761);
             this.X25Y24.Name = "X25Y24";
-            this.X25Y24.Size = new System.Drawing.Size(100, 50);
+            this.X25Y24.Size = new System.Drawing.Size(144, 144);
             this.X25Y24.TabIndex = 622;
             this.X25Y24.TabStop = false;
             // 
@@ -7099,7 +7099,7 @@
             // 
             this.X21Y25.Location = new System.Drawing.Point(3761, 3149);
             this.X21Y25.Name = "X21Y25";
-            this.X21Y25.Size = new System.Drawing.Size(51, 37);
+            this.X21Y25.Size = new System.Drawing.Size(147, 144);
             this.X21Y25.TabIndex = 623;
             this.X21Y25.TabStop = false;
             // 
@@ -7107,7 +7107,7 @@
             // 
             this.X22Y25.Location = new System.Drawing.Point(3761, 3302);
             this.X22Y25.Name = "X22Y25";
-            this.X22Y25.Size = new System.Drawing.Size(100, 50);
+            this.X22Y25.Size = new System.Drawing.Size(147, 144);
             this.X22Y25.TabIndex = 624;
             this.X22Y25.TabStop = false;
             // 
@@ -7115,7 +7115,7 @@
             // 
             this.X23Y25.Location = new System.Drawing.Point(3761, 3455);
             this.X23Y25.Name = "X23Y25";
-            this.X23Y25.Size = new System.Drawing.Size(100, 50);
+            this.X23Y25.Size = new System.Drawing.Size(147, 144);
             this.X23Y25.TabIndex = 625;
             this.X23Y25.TabStop = false;
             // 
@@ -7123,7 +7123,7 @@
             // 
             this.X24Y25.Location = new System.Drawing.Point(3761, 3608);
             this.X24Y25.Name = "X24Y25";
-            this.X24Y25.Size = new System.Drawing.Size(100, 50);
+            this.X24Y25.Size = new System.Drawing.Size(147, 144);
             this.X24Y25.TabIndex = 626;
             this.X24Y25.TabStop = false;
             // 
@@ -7131,7 +7131,7 @@
             // 
             this.X25Y25.Location = new System.Drawing.Point(3761, 3761);
             this.X25Y25.Name = "X25Y25";
-            this.X25Y25.Size = new System.Drawing.Size(100, 50);
+            this.X25Y25.Size = new System.Drawing.Size(147, 144);
             this.X25Y25.TabIndex = 627;
             this.X25Y25.TabStop = false;
             // 
