@@ -485,6 +485,7 @@
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
+            this.HowToPlayBtn = new System.Windows.Forms.Button();
             X3Y2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(X3Y2)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -4602,6 +4603,7 @@
             // nav
             // 
             this.nav.BackColor = System.Drawing.Color.Snow;
+            this.nav.Controls.Add(this.HowToPlayBtn);
             this.nav.Controls.Add(this.lbl);
             this.nav.Controls.Add(this.button2);
             this.nav.Controls.Add(this.changeplaceBtn);
@@ -4614,10 +4616,10 @@
             this.nav.Controls.Add(this.button1);
             this.nav.Controls.Add(this.homeIconBtn);
             this.nav.Dock = System.Windows.Forms.DockStyle.Right;
-            this.nav.Location = new System.Drawing.Point(1664, 0);
+            this.nav.Location = new System.Drawing.Point(1601, 0);
             this.nav.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nav.Name = "nav";
-            this.nav.Size = new System.Drawing.Size(159, 1135);
+            this.nav.Size = new System.Drawing.Size(222, 1135);
             this.nav.TabIndex = 2;
             // 
             // lbl
@@ -4641,7 +4643,7 @@
             // 
             // changeplaceBtn
             // 
-            this.changeplaceBtn.Location = new System.Drawing.Point(9, 397);
+            this.changeplaceBtn.Location = new System.Drawing.Point(4, 481);
             this.changeplaceBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.changeplaceBtn.Name = "changeplaceBtn";
             this.changeplaceBtn.Size = new System.Drawing.Size(132, 67);
@@ -4652,7 +4654,7 @@
             // 
             // Demolish
             // 
-            this.Demolish.Location = new System.Drawing.Point(14, 298);
+            this.Demolish.Location = new System.Drawing.Point(9, 384);
             this.Demolish.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Demolish.Name = "Demolish";
             this.Demolish.Size = new System.Drawing.Size(128, 72);
@@ -4663,7 +4665,7 @@
             // 
             // Save
             // 
-            this.Save.Location = new System.Drawing.Point(9, 573);
+            this.Save.Location = new System.Drawing.Point(22, 655);
             this.Save.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(112, 36);
@@ -4675,7 +4677,7 @@
             // lblPoint
             // 
             this.lblPoint.AutoSize = true;
-            this.lblPoint.Location = new System.Drawing.Point(32, 775);
+            this.lblPoint.Location = new System.Drawing.Point(36, 850);
             this.lblPoint.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPoint.Name = "lblPoint";
             this.lblPoint.Size = new System.Drawing.Size(70, 25);
@@ -4685,7 +4687,7 @@
             // lblCoins
             // 
             this.lblCoins.AutoSize = true;
-            this.lblCoins.Location = new System.Drawing.Point(32, 702);
+            this.lblCoins.Location = new System.Drawing.Point(40, 787);
             this.lblCoins.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCoins.Name = "lblCoins";
             this.lblCoins.Size = new System.Drawing.Size(70, 25);
@@ -4696,7 +4698,7 @@
             // 
             this.lblTurn.AutoSize = true;
             this.lblTurn.BackColor = System.Drawing.Color.Snow;
-            this.lblTurn.Location = new System.Drawing.Point(18, 644);
+            this.lblTurn.Location = new System.Drawing.Point(36, 726);
             this.lblTurn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTurn.Name = "lblTurn";
             this.lblTurn.Size = new System.Drawing.Size(84, 25);
@@ -4705,7 +4707,7 @@
             // 
             // EndTurn
             // 
-            this.EndTurn.Location = new System.Drawing.Point(9, 503);
+            this.EndTurn.Location = new System.Drawing.Point(22, 589);
             this.EndTurn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.EndTurn.Name = "EndTurn";
             this.EndTurn.Size = new System.Drawing.Size(112, 36);
@@ -4716,7 +4718,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(9, 233);
+            this.button1.Location = new System.Drawing.Point(9, 314);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(112, 36);
@@ -5156,6 +5158,16 @@
             this.label41.Size = new System.Drawing.Size(53, 37);
             this.label41.TabIndex = 450;
             this.label41.Text = "20";
+            // 
+            // HowToPlayBtn
+            // 
+            this.HowToPlayBtn.Location = new System.Drawing.Point(9, 236);
+            this.HowToPlayBtn.Name = "HowToPlayBtn";
+            this.HowToPlayBtn.Size = new System.Drawing.Size(168, 51);
+            this.HowToPlayBtn.TabIndex = 11;
+            this.HowToPlayBtn.Text = "How To Play";
+            this.HowToPlayBtn.UseVisualStyleBackColor = true;
+            this.HowToPlayBtn.Click += new System.EventHandler(this.HowToPlayBtn_Click);
             // 
             // arcadeMode
             // 
@@ -6035,5 +6047,6 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Button HowToPlayBtn;
     }
 }

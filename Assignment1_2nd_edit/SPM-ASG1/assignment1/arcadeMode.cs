@@ -686,7 +686,7 @@ namespace assignment1
             
         }
 
-        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\NP.2\\SPM\\www\\Assignment1_2nd_edit\\SPM-ASG1\\assignment1\\Database1.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ongap\\OneDrive\\Desktop\\NP\\SPM\\ASSIGNMENT1_EDIT12\\Assignment1_2nd_edit\\SPM-ASG1\\assignment1\\Database1.mdf;Integrated Security=True");
         private void Save_Click(object sender, EventArgs e)
         {
             SharedData.coins = coins;
@@ -819,5 +819,22 @@ namespace assignment1
             gameInstructionForArcadeMode gameInstructionForArcadeMode = new gameInstructionForArcadeMode();
             gameInstructionForArcadeMode.Show();
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HowToPlayBtn_Click(object sender, EventArgs e)
+        {
+            HowToPlayBtnAracde howToPlay = new HowToPlayBtnAracde();
+            howToPlay.Show();
+        }
+            
     }
 }
