@@ -266,6 +266,56 @@
             this.start = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.X1Y16 = new System.Windows.Forms.PictureBox();
+            this.X1Y17 = new System.Windows.Forms.PictureBox();
+            this.X1Y18 = new System.Windows.Forms.PictureBox();
+            this.X1Y19 = new System.Windows.Forms.PictureBox();
+            this.X1Y20 = new System.Windows.Forms.PictureBox();
+            this.X1Y21 = new System.Windows.Forms.PictureBox();
+            this.X1Y22 = new System.Windows.Forms.PictureBox();
+            this.X1Y23 = new System.Windows.Forms.PictureBox();
+            this.X2Y16 = new System.Windows.Forms.PictureBox();
+            this.X2Y17 = new System.Windows.Forms.PictureBox();
+            this.X2Y18 = new System.Windows.Forms.PictureBox();
+            this.X2Y19 = new System.Windows.Forms.PictureBox();
+            this.X2Y20 = new System.Windows.Forms.PictureBox();
+            this.X2Y21 = new System.Windows.Forms.PictureBox();
+            this.X2Y22 = new System.Windows.Forms.PictureBox();
+            this.X2Y23 = new System.Windows.Forms.PictureBox();
+            this.X3Y16 = new System.Windows.Forms.PictureBox();
+            this.X3Y17 = new System.Windows.Forms.PictureBox();
+            this.X3Y18 = new System.Windows.Forms.PictureBox();
+            this.X3Y19 = new System.Windows.Forms.PictureBox();
+            this.X3Y20 = new System.Windows.Forms.PictureBox();
+            this.X3Y21 = new System.Windows.Forms.PictureBox();
+            this.X3Y22 = new System.Windows.Forms.PictureBox();
+            this.X3Y23 = new System.Windows.Forms.PictureBox();
+            this.X4Y16 = new System.Windows.Forms.PictureBox();
+            this.X4Y17 = new System.Windows.Forms.PictureBox();
+            this.X4Y18 = new System.Windows.Forms.PictureBox();
+            this.X4Y19 = new System.Windows.Forms.PictureBox();
+            this.X4Y20 = new System.Windows.Forms.PictureBox();
+            this.X4Y21 = new System.Windows.Forms.PictureBox();
+            this.X4Y22 = new System.Windows.Forms.PictureBox();
+            this.X4Y23 = new System.Windows.Forms.PictureBox();
+            this.X5Y16 = new System.Windows.Forms.PictureBox();
+            this.X5Y17 = new System.Windows.Forms.PictureBox();
+            this.X5Y18 = new System.Windows.Forms.PictureBox();
+            this.X5Y19 = new System.Windows.Forms.PictureBox();
+            this.X5Y20 = new System.Windows.Forms.PictureBox();
+            this.X5Y21 = new System.Windows.Forms.PictureBox();
+            this.X5Y22 = new System.Windows.Forms.PictureBox();
+            this.X5Y23 = new System.Windows.Forms.PictureBox();
+            this.X1Y24 = new System.Windows.Forms.PictureBox();
+            this.X1Y25 = new System.Windows.Forms.PictureBox();
+            this.X2Y24 = new System.Windows.Forms.PictureBox();
+            this.X2Y25 = new System.Windows.Forms.PictureBox();
+            this.X3Y24 = new System.Windows.Forms.PictureBox();
+            this.X3Y25 = new System.Windows.Forms.PictureBox();
+            this.X4Y24 = new System.Windows.Forms.PictureBox();
+            this.X4Y25 = new System.Windows.Forms.PictureBox();
+            this.X5Y24 = new System.Windows.Forms.PictureBox();
+            this.X5Y25 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y2)).BeginInit();
@@ -495,6 +545,56 @@
             ((System.ComponentModel.ISupportInitialize)(this.X1Y1)).BeginInit();
             this.nav.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X1Y16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X1Y17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X1Y18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X1Y19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X1Y20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X1Y21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X1Y22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X1Y23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X2Y16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X2Y17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X2Y18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X2Y19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X2Y20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X2Y21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X2Y22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X2Y23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X3Y16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X3Y17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X3Y18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X3Y19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X3Y20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X3Y21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X3Y22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X3Y23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X4Y16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X4Y17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X4Y18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X4Y19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X4Y20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X4Y21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X4Y22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X4Y23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X5Y16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X5Y17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X5Y18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X5Y19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X5Y20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X5Y21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X5Y22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X5Y23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X1Y24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X1Y25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X2Y24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X2Y25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X3Y24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X3Y25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X4Y24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X4Y25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X5Y24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X5Y25)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -765,6 +865,56 @@
             this.tableLayoutPanel1.Controls.Add(this.X14Y14, 15, 15);
             this.tableLayoutPanel1.Controls.Add(this.X15Y15, 14, 14);
             this.tableLayoutPanel1.Controls.Add(this.X1Y1, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.X1Y16, 16, 1);
+            this.tableLayoutPanel1.Controls.Add(this.X1Y17, 17, 1);
+            this.tableLayoutPanel1.Controls.Add(this.X1Y18, 18, 1);
+            this.tableLayoutPanel1.Controls.Add(this.X1Y19, 19, 1);
+            this.tableLayoutPanel1.Controls.Add(this.X1Y20, 20, 1);
+            this.tableLayoutPanel1.Controls.Add(this.X1Y21, 21, 1);
+            this.tableLayoutPanel1.Controls.Add(this.X1Y22, 22, 1);
+            this.tableLayoutPanel1.Controls.Add(this.X1Y23, 23, 1);
+            this.tableLayoutPanel1.Controls.Add(this.X2Y16, 16, 2);
+            this.tableLayoutPanel1.Controls.Add(this.X2Y17, 17, 2);
+            this.tableLayoutPanel1.Controls.Add(this.X2Y18, 18, 2);
+            this.tableLayoutPanel1.Controls.Add(this.X2Y19, 19, 2);
+            this.tableLayoutPanel1.Controls.Add(this.X2Y20, 20, 2);
+            this.tableLayoutPanel1.Controls.Add(this.X2Y21, 21, 2);
+            this.tableLayoutPanel1.Controls.Add(this.X2Y22, 22, 2);
+            this.tableLayoutPanel1.Controls.Add(this.X2Y23, 23, 2);
+            this.tableLayoutPanel1.Controls.Add(this.X3Y16, 16, 3);
+            this.tableLayoutPanel1.Controls.Add(this.X3Y17, 17, 3);
+            this.tableLayoutPanel1.Controls.Add(this.X3Y18, 18, 3);
+            this.tableLayoutPanel1.Controls.Add(this.X3Y19, 19, 3);
+            this.tableLayoutPanel1.Controls.Add(this.X3Y20, 20, 3);
+            this.tableLayoutPanel1.Controls.Add(this.X3Y21, 21, 3);
+            this.tableLayoutPanel1.Controls.Add(this.X3Y22, 22, 3);
+            this.tableLayoutPanel1.Controls.Add(this.X3Y23, 23, 3);
+            this.tableLayoutPanel1.Controls.Add(this.X4Y16, 16, 4);
+            this.tableLayoutPanel1.Controls.Add(this.X4Y17, 17, 4);
+            this.tableLayoutPanel1.Controls.Add(this.X4Y18, 18, 4);
+            this.tableLayoutPanel1.Controls.Add(this.X4Y19, 19, 4);
+            this.tableLayoutPanel1.Controls.Add(this.X4Y20, 20, 4);
+            this.tableLayoutPanel1.Controls.Add(this.X4Y21, 21, 4);
+            this.tableLayoutPanel1.Controls.Add(this.X4Y22, 22, 4);
+            this.tableLayoutPanel1.Controls.Add(this.X4Y23, 23, 4);
+            this.tableLayoutPanel1.Controls.Add(this.X5Y16, 16, 5);
+            this.tableLayoutPanel1.Controls.Add(this.X5Y18, 18, 5);
+            this.tableLayoutPanel1.Controls.Add(this.X5Y19, 19, 5);
+            this.tableLayoutPanel1.Controls.Add(this.X5Y20, 20, 5);
+            this.tableLayoutPanel1.Controls.Add(this.X5Y22, 22, 5);
+            this.tableLayoutPanel1.Controls.Add(this.X5Y23, 23, 5);
+            this.tableLayoutPanel1.Controls.Add(this.X1Y24, 24, 1);
+            this.tableLayoutPanel1.Controls.Add(this.X1Y25, 25, 1);
+            this.tableLayoutPanel1.Controls.Add(this.X2Y24, 24, 2);
+            this.tableLayoutPanel1.Controls.Add(this.X2Y25, 25, 2);
+            this.tableLayoutPanel1.Controls.Add(this.X3Y24, 24, 3);
+            this.tableLayoutPanel1.Controls.Add(this.X3Y25, 25, 3);
+            this.tableLayoutPanel1.Controls.Add(this.X4Y24, 24, 4);
+            this.tableLayoutPanel1.Controls.Add(this.X4Y25, 25, 4);
+            this.tableLayoutPanel1.Controls.Add(this.X5Y24, 24, 5);
+            this.tableLayoutPanel1.Controls.Add(this.X5Y25, 25, 5);
+            this.tableLayoutPanel1.Controls.Add(this.X5Y17, 17, 5);
+            this.tableLayoutPanel1.Controls.Add(this.X5Y21, 21, 5);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 5);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -2729,6 +2879,406 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // X1Y16
+            // 
+            this.X1Y16.Location = new System.Drawing.Point(2384, 89);
+            this.X1Y16.Name = "X1Y16";
+            this.X1Y16.Size = new System.Drawing.Size(144, 144);
+            this.X1Y16.TabIndex = 228;
+            this.X1Y16.TabStop = false;
+            // 
+            // X1Y17
+            // 
+            this.X1Y17.Location = new System.Drawing.Point(2537, 89);
+            this.X1Y17.Name = "X1Y17";
+            this.X1Y17.Size = new System.Drawing.Size(144, 144);
+            this.X1Y17.TabIndex = 229;
+            this.X1Y17.TabStop = false;
+            // 
+            // X1Y18
+            // 
+            this.X1Y18.Location = new System.Drawing.Point(2690, 89);
+            this.X1Y18.Name = "X1Y18";
+            this.X1Y18.Size = new System.Drawing.Size(144, 144);
+            this.X1Y18.TabIndex = 230;
+            this.X1Y18.TabStop = false;
+            // 
+            // X1Y19
+            // 
+            this.X1Y19.Location = new System.Drawing.Point(2843, 89);
+            this.X1Y19.Name = "X1Y19";
+            this.X1Y19.Size = new System.Drawing.Size(144, 144);
+            this.X1Y19.TabIndex = 231;
+            this.X1Y19.TabStop = false;
+            // 
+            // X1Y20
+            // 
+            this.X1Y20.Location = new System.Drawing.Point(2996, 89);
+            this.X1Y20.Name = "X1Y20";
+            this.X1Y20.Size = new System.Drawing.Size(144, 144);
+            this.X1Y20.TabIndex = 232;
+            this.X1Y20.TabStop = false;
+            // 
+            // X1Y21
+            // 
+            this.X1Y21.Location = new System.Drawing.Point(3149, 89);
+            this.X1Y21.Name = "X1Y21";
+            this.X1Y21.Size = new System.Drawing.Size(144, 144);
+            this.X1Y21.TabIndex = 233;
+            this.X1Y21.TabStop = false;
+            // 
+            // X1Y22
+            // 
+            this.X1Y22.Location = new System.Drawing.Point(3302, 89);
+            this.X1Y22.Name = "X1Y22";
+            this.X1Y22.Size = new System.Drawing.Size(144, 144);
+            this.X1Y22.TabIndex = 234;
+            this.X1Y22.TabStop = false;
+            // 
+            // X1Y23
+            // 
+            this.X1Y23.Location = new System.Drawing.Point(3455, 89);
+            this.X1Y23.Name = "X1Y23";
+            this.X1Y23.Size = new System.Drawing.Size(144, 144);
+            this.X1Y23.TabIndex = 235;
+            this.X1Y23.TabStop = false;
+            // 
+            // X2Y16
+            // 
+            this.X2Y16.Location = new System.Drawing.Point(2384, 242);
+            this.X2Y16.Name = "X2Y16";
+            this.X2Y16.Size = new System.Drawing.Size(100, 50);
+            this.X2Y16.TabIndex = 236;
+            this.X2Y16.TabStop = false;
+            // 
+            // X2Y17
+            // 
+            this.X2Y17.Location = new System.Drawing.Point(2537, 242);
+            this.X2Y17.Name = "X2Y17";
+            this.X2Y17.Size = new System.Drawing.Size(48, 42);
+            this.X2Y17.TabIndex = 237;
+            this.X2Y17.TabStop = false;
+            // 
+            // X2Y18
+            // 
+            this.X2Y18.Location = new System.Drawing.Point(2690, 242);
+            this.X2Y18.Name = "X2Y18";
+            this.X2Y18.Size = new System.Drawing.Size(77, 54);
+            this.X2Y18.TabIndex = 238;
+            this.X2Y18.TabStop = false;
+            // 
+            // X2Y19
+            // 
+            this.X2Y19.Location = new System.Drawing.Point(2843, 242);
+            this.X2Y19.Name = "X2Y19";
+            this.X2Y19.Size = new System.Drawing.Size(100, 50);
+            this.X2Y19.TabIndex = 239;
+            this.X2Y19.TabStop = false;
+            // 
+            // X2Y20
+            // 
+            this.X2Y20.Location = new System.Drawing.Point(2996, 242);
+            this.X2Y20.Name = "X2Y20";
+            this.X2Y20.Size = new System.Drawing.Size(100, 50);
+            this.X2Y20.TabIndex = 240;
+            this.X2Y20.TabStop = false;
+            // 
+            // X2Y21
+            // 
+            this.X2Y21.Location = new System.Drawing.Point(3149, 242);
+            this.X2Y21.Name = "X2Y21";
+            this.X2Y21.Size = new System.Drawing.Size(100, 50);
+            this.X2Y21.TabIndex = 241;
+            this.X2Y21.TabStop = false;
+            // 
+            // X2Y22
+            // 
+            this.X2Y22.Location = new System.Drawing.Point(3302, 242);
+            this.X2Y22.Name = "X2Y22";
+            this.X2Y22.Size = new System.Drawing.Size(100, 50);
+            this.X2Y22.TabIndex = 242;
+            this.X2Y22.TabStop = false;
+            // 
+            // X2Y23
+            // 
+            this.X2Y23.Location = new System.Drawing.Point(3455, 242);
+            this.X2Y23.Name = "X2Y23";
+            this.X2Y23.Size = new System.Drawing.Size(48, 63);
+            this.X2Y23.TabIndex = 243;
+            this.X2Y23.TabStop = false;
+            // 
+            // X3Y16
+            // 
+            this.X3Y16.Location = new System.Drawing.Point(2384, 395);
+            this.X3Y16.Name = "X3Y16";
+            this.X3Y16.Size = new System.Drawing.Size(100, 50);
+            this.X3Y16.TabIndex = 244;
+            this.X3Y16.TabStop = false;
+            // 
+            // X3Y17
+            // 
+            this.X3Y17.Location = new System.Drawing.Point(2537, 395);
+            this.X3Y17.Name = "X3Y17";
+            this.X3Y17.Size = new System.Drawing.Size(85, 58);
+            this.X3Y17.TabIndex = 245;
+            this.X3Y17.TabStop = false;
+            // 
+            // X3Y18
+            // 
+            this.X3Y18.Location = new System.Drawing.Point(2690, 395);
+            this.X3Y18.Name = "X3Y18";
+            this.X3Y18.Size = new System.Drawing.Size(88, 73);
+            this.X3Y18.TabIndex = 246;
+            this.X3Y18.TabStop = false;
+            // 
+            // X3Y19
+            // 
+            this.X3Y19.Location = new System.Drawing.Point(2843, 395);
+            this.X3Y19.Name = "X3Y19";
+            this.X3Y19.Size = new System.Drawing.Size(74, 55);
+            this.X3Y19.TabIndex = 247;
+            this.X3Y19.TabStop = false;
+            // 
+            // X3Y20
+            // 
+            this.X3Y20.Location = new System.Drawing.Point(2996, 395);
+            this.X3Y20.Name = "X3Y20";
+            this.X3Y20.Size = new System.Drawing.Size(100, 50);
+            this.X3Y20.TabIndex = 248;
+            this.X3Y20.TabStop = false;
+            // 
+            // X3Y21
+            // 
+            this.X3Y21.Location = new System.Drawing.Point(3149, 395);
+            this.X3Y21.Name = "X3Y21";
+            this.X3Y21.Size = new System.Drawing.Size(100, 50);
+            this.X3Y21.TabIndex = 249;
+            this.X3Y21.TabStop = false;
+            // 
+            // X3Y22
+            // 
+            this.X3Y22.Location = new System.Drawing.Point(3302, 395);
+            this.X3Y22.Name = "X3Y22";
+            this.X3Y22.Size = new System.Drawing.Size(100, 50);
+            this.X3Y22.TabIndex = 250;
+            this.X3Y22.TabStop = false;
+            // 
+            // X3Y23
+            // 
+            this.X3Y23.Location = new System.Drawing.Point(3455, 395);
+            this.X3Y23.Name = "X3Y23";
+            this.X3Y23.Size = new System.Drawing.Size(100, 50);
+            this.X3Y23.TabIndex = 251;
+            this.X3Y23.TabStop = false;
+            // 
+            // X4Y16
+            // 
+            this.X4Y16.Location = new System.Drawing.Point(2384, 548);
+            this.X4Y16.Name = "X4Y16";
+            this.X4Y16.Size = new System.Drawing.Size(100, 50);
+            this.X4Y16.TabIndex = 252;
+            this.X4Y16.TabStop = false;
+            // 
+            // X4Y17
+            // 
+            this.X4Y17.Location = new System.Drawing.Point(2537, 548);
+            this.X4Y17.Name = "X4Y17";
+            this.X4Y17.Size = new System.Drawing.Size(100, 50);
+            this.X4Y17.TabIndex = 253;
+            this.X4Y17.TabStop = false;
+            // 
+            // X4Y18
+            // 
+            this.X4Y18.Location = new System.Drawing.Point(2690, 548);
+            this.X4Y18.Name = "X4Y18";
+            this.X4Y18.Size = new System.Drawing.Size(100, 50);
+            this.X4Y18.TabIndex = 254;
+            this.X4Y18.TabStop = false;
+            // 
+            // X4Y19
+            // 
+            this.X4Y19.Location = new System.Drawing.Point(2843, 548);
+            this.X4Y19.Name = "X4Y19";
+            this.X4Y19.Size = new System.Drawing.Size(100, 50);
+            this.X4Y19.TabIndex = 255;
+            this.X4Y19.TabStop = false;
+            // 
+            // X4Y20
+            // 
+            this.X4Y20.Location = new System.Drawing.Point(2996, 548);
+            this.X4Y20.Name = "X4Y20";
+            this.X4Y20.Size = new System.Drawing.Size(100, 50);
+            this.X4Y20.TabIndex = 256;
+            this.X4Y20.TabStop = false;
+            // 
+            // X4Y21
+            // 
+            this.X4Y21.Location = new System.Drawing.Point(3149, 548);
+            this.X4Y21.Name = "X4Y21";
+            this.X4Y21.Size = new System.Drawing.Size(69, 55);
+            this.X4Y21.TabIndex = 257;
+            this.X4Y21.TabStop = false;
+            // 
+            // X4Y22
+            // 
+            this.X4Y22.Location = new System.Drawing.Point(3302, 548);
+            this.X4Y22.Name = "X4Y22";
+            this.X4Y22.Size = new System.Drawing.Size(100, 50);
+            this.X4Y22.TabIndex = 258;
+            this.X4Y22.TabStop = false;
+            // 
+            // X4Y23
+            // 
+            this.X4Y23.Location = new System.Drawing.Point(3455, 548);
+            this.X4Y23.Name = "X4Y23";
+            this.X4Y23.Size = new System.Drawing.Size(100, 50);
+            this.X4Y23.TabIndex = 259;
+            this.X4Y23.TabStop = false;
+            // 
+            // X5Y16
+            // 
+            this.X5Y16.Location = new System.Drawing.Point(2384, 701);
+            this.X5Y16.Name = "X5Y16";
+            this.X5Y16.Size = new System.Drawing.Size(100, 144);
+            this.X5Y16.TabIndex = 260;
+            this.X5Y16.TabStop = false;
+            // 
+            // X5Y17
+            // 
+            this.X5Y17.Location = new System.Drawing.Point(2537, 701);
+            this.X5Y17.Name = "X5Y17";
+            this.X5Y17.Size = new System.Drawing.Size(100, 144);
+            this.X5Y17.TabIndex = 261;
+            this.X5Y17.TabStop = false;
+            // 
+            // X5Y18
+            // 
+            this.X5Y18.Location = new System.Drawing.Point(2690, 701);
+            this.X5Y18.Name = "X5Y18";
+            this.X5Y18.Size = new System.Drawing.Size(100, 144);
+            this.X5Y18.TabIndex = 262;
+            this.X5Y18.TabStop = false;
+            // 
+            // X5Y19
+            // 
+            this.X5Y19.Location = new System.Drawing.Point(2843, 701);
+            this.X5Y19.Name = "X5Y19";
+            this.X5Y19.Size = new System.Drawing.Size(60, 144);
+            this.X5Y19.TabIndex = 263;
+            this.X5Y19.TabStop = false;
+            // 
+            // X5Y20
+            // 
+            this.X5Y20.Location = new System.Drawing.Point(2996, 701);
+            this.X5Y20.Name = "X5Y20";
+            this.X5Y20.Size = new System.Drawing.Size(51, 144);
+            this.X5Y20.TabIndex = 264;
+            this.X5Y20.TabStop = false;
+            // 
+            // X5Y21
+            // 
+            this.X5Y21.Location = new System.Drawing.Point(3149, 701);
+            this.X5Y21.Name = "X5Y21";
+            this.X5Y21.Size = new System.Drawing.Size(100, 144);
+            this.X5Y21.TabIndex = 265;
+            this.X5Y21.TabStop = false;
+            // 
+            // X5Y22
+            // 
+            this.X5Y22.Location = new System.Drawing.Point(3302, 701);
+            this.X5Y22.Name = "X5Y22";
+            this.X5Y22.Size = new System.Drawing.Size(100, 50);
+            this.X5Y22.TabIndex = 266;
+            this.X5Y22.TabStop = false;
+            // 
+            // X5Y23
+            // 
+            this.X5Y23.Location = new System.Drawing.Point(3455, 701);
+            this.X5Y23.Name = "X5Y23";
+            this.X5Y23.Size = new System.Drawing.Size(100, 82);
+            this.X5Y23.TabIndex = 267;
+            this.X5Y23.TabStop = false;
+            // 
+            // X1Y24
+            // 
+            this.X1Y24.Location = new System.Drawing.Point(3608, 89);
+            this.X1Y24.Name = "X1Y24";
+            this.X1Y24.Size = new System.Drawing.Size(68, 78);
+            this.X1Y24.TabIndex = 268;
+            this.X1Y24.TabStop = false;
+            // 
+            // X1Y25
+            // 
+            this.X1Y25.Location = new System.Drawing.Point(3761, 89);
+            this.X1Y25.Name = "X1Y25";
+            this.X1Y25.Size = new System.Drawing.Size(100, 50);
+            this.X1Y25.TabIndex = 269;
+            this.X1Y25.TabStop = false;
+            // 
+            // X2Y24
+            // 
+            this.X2Y24.Location = new System.Drawing.Point(3608, 242);
+            this.X2Y24.Name = "X2Y24";
+            this.X2Y24.Size = new System.Drawing.Size(52, 55);
+            this.X2Y24.TabIndex = 270;
+            this.X2Y24.TabStop = false;
+            // 
+            // X2Y25
+            // 
+            this.X2Y25.Location = new System.Drawing.Point(3761, 242);
+            this.X2Y25.Name = "X2Y25";
+            this.X2Y25.Size = new System.Drawing.Size(100, 50);
+            this.X2Y25.TabIndex = 271;
+            this.X2Y25.TabStop = false;
+            // 
+            // X3Y24
+            // 
+            this.X3Y24.Location = new System.Drawing.Point(3608, 395);
+            this.X3Y24.Name = "X3Y24";
+            this.X3Y24.Size = new System.Drawing.Size(100, 50);
+            this.X3Y24.TabIndex = 272;
+            this.X3Y24.TabStop = false;
+            // 
+            // X3Y25
+            // 
+            this.X3Y25.Location = new System.Drawing.Point(3761, 395);
+            this.X3Y25.Name = "X3Y25";
+            this.X3Y25.Size = new System.Drawing.Size(100, 50);
+            this.X3Y25.TabIndex = 273;
+            this.X3Y25.TabStop = false;
+            // 
+            // X4Y24
+            // 
+            this.X4Y24.Location = new System.Drawing.Point(3608, 548);
+            this.X4Y24.Name = "X4Y24";
+            this.X4Y24.Size = new System.Drawing.Size(100, 50);
+            this.X4Y24.TabIndex = 274;
+            this.X4Y24.TabStop = false;
+            // 
+            // X4Y25
+            // 
+            this.X4Y25.Location = new System.Drawing.Point(3761, 548);
+            this.X4Y25.Name = "X4Y25";
+            this.X4Y25.Size = new System.Drawing.Size(100, 50);
+            this.X4Y25.TabIndex = 275;
+            this.X4Y25.TabStop = false;
+            // 
+            // X5Y24
+            // 
+            this.X5Y24.Location = new System.Drawing.Point(3608, 701);
+            this.X5Y24.Name = "X5Y24";
+            this.X5Y24.Size = new System.Drawing.Size(100, 50);
+            this.X5Y24.TabIndex = 276;
+            this.X5Y24.TabStop = false;
+            // 
+            // X5Y25
+            // 
+            this.X5Y25.Location = new System.Drawing.Point(3761, 701);
+            this.X5Y25.Name = "X5Y25";
+            this.X5Y25.Size = new System.Drawing.Size(100, 50);
+            this.X5Y25.TabIndex = 277;
+            this.X5Y25.TabStop = false;
+            // 
             // freeGameMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -2970,6 +3520,56 @@
             this.nav.ResumeLayout(false);
             this.nav.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X1Y16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X1Y17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X1Y18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X1Y19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X1Y20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X1Y21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X1Y22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X1Y23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X2Y16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X2Y17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X2Y18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X2Y19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X2Y20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X2Y21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X2Y22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X2Y23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X3Y16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X3Y17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X3Y18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X3Y19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X3Y20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X3Y21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X3Y22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X3Y23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X4Y16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X4Y17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X4Y18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X4Y19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X4Y20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X4Y21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X4Y22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X4Y23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X5Y16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X5Y17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X5Y18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X5Y19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X5Y20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X5Y21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X5Y22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X5Y23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X1Y24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X1Y25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X2Y24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X2Y25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X3Y24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X3Y25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X4Y24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X4Y25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X5Y24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.X5Y25)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3215,5 +3815,55 @@
         private System.Windows.Forms.Label lblTurn;
         private System.Windows.Forms.Button EndTurn;
         private System.Windows.Forms.Button start;
+        private System.Windows.Forms.PictureBox X1Y16;
+        private System.Windows.Forms.PictureBox X1Y17;
+        private System.Windows.Forms.PictureBox X1Y18;
+        private System.Windows.Forms.PictureBox X1Y19;
+        private System.Windows.Forms.PictureBox X1Y20;
+        private System.Windows.Forms.PictureBox X1Y21;
+        private System.Windows.Forms.PictureBox X1Y22;
+        private System.Windows.Forms.PictureBox X1Y23;
+        private System.Windows.Forms.PictureBox X2Y16;
+        private System.Windows.Forms.PictureBox X2Y17;
+        private System.Windows.Forms.PictureBox X2Y18;
+        private System.Windows.Forms.PictureBox X2Y19;
+        private System.Windows.Forms.PictureBox X2Y20;
+        private System.Windows.Forms.PictureBox X2Y21;
+        private System.Windows.Forms.PictureBox X2Y22;
+        private System.Windows.Forms.PictureBox X2Y23;
+        private System.Windows.Forms.PictureBox X3Y16;
+        private System.Windows.Forms.PictureBox X3Y17;
+        private System.Windows.Forms.PictureBox X3Y18;
+        private System.Windows.Forms.PictureBox X3Y19;
+        private System.Windows.Forms.PictureBox X3Y20;
+        private System.Windows.Forms.PictureBox X3Y21;
+        private System.Windows.Forms.PictureBox X3Y22;
+        private System.Windows.Forms.PictureBox X3Y23;
+        private System.Windows.Forms.PictureBox X4Y16;
+        private System.Windows.Forms.PictureBox X4Y17;
+        private System.Windows.Forms.PictureBox X4Y18;
+        private System.Windows.Forms.PictureBox X4Y19;
+        private System.Windows.Forms.PictureBox X4Y20;
+        private System.Windows.Forms.PictureBox X4Y21;
+        private System.Windows.Forms.PictureBox X4Y22;
+        private System.Windows.Forms.PictureBox X4Y23;
+        private System.Windows.Forms.PictureBox X5Y16;
+        private System.Windows.Forms.PictureBox X5Y17;
+        private System.Windows.Forms.PictureBox X5Y18;
+        private System.Windows.Forms.PictureBox X5Y19;
+        private System.Windows.Forms.PictureBox X5Y20;
+        private System.Windows.Forms.PictureBox X5Y21;
+        private System.Windows.Forms.PictureBox X5Y22;
+        private System.Windows.Forms.PictureBox X5Y23;
+        private System.Windows.Forms.PictureBox X1Y24;
+        private System.Windows.Forms.PictureBox X1Y25;
+        private System.Windows.Forms.PictureBox X2Y24;
+        private System.Windows.Forms.PictureBox X2Y25;
+        private System.Windows.Forms.PictureBox X3Y24;
+        private System.Windows.Forms.PictureBox X3Y25;
+        private System.Windows.Forms.PictureBox X4Y24;
+        private System.Windows.Forms.PictureBox X4Y25;
+        private System.Windows.Forms.PictureBox X5Y24;
+        private System.Windows.Forms.PictureBox X5Y25;
     }
 }
