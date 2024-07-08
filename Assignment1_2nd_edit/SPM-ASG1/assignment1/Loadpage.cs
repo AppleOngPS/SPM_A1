@@ -21,5 +21,12 @@ namespace assignment1
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            menu menu = new menu(); 
+            menu.Show();
+            this.Close();
+        }
     }
 }
