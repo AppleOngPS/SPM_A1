@@ -152,3 +152,4 @@ C:\NP.2\SPM\www\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.
 C:\NP.2\SPM\www\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.FQ2.resources
 C:\NP.2\SPM\www\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.FQ3.resources
 C:\NP.2\SPM\www\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.FQ0.resources
+C:\NP.2\SPM\www\Assignment1_2nd_edit\SPM-ASG1\assignment1\obj\Debug\assignment1.HowToPlayBtnAracde.resources

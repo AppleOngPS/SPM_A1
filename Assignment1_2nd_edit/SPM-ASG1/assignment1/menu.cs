@@ -93,6 +93,7 @@ namespace assignment1
             }
             else
             {
+                SharedData.savef=false;
                 lblName.Text = "";
                 button1.Text = "Login";
                 button2.Show();

@@ -28,5 +28,13 @@ namespace assignment1
             menu.Show();
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SharedData.savef=true;
+            arcadeMode arcadeMode = new arcadeMode();
+            arcadeMode.Show();
+            this.Close();
+        }
     }
 }

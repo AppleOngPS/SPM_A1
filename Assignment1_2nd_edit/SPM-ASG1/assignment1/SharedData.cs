@@ -36,5 +36,7 @@ namespace assignment1
         public static bool TFlag2 { get; set; }
         public static bool TFlag3 { get; set; }
         public static string Direction { get; set; }
+         public static bool savef { get; set; }
+
     }
 }

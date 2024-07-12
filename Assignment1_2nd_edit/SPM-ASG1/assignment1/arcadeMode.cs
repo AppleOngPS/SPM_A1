@@ -22,7 +22,7 @@ namespace assignment1
         int coins = 16;
         int point = 0;
         bool flag = false;
-        bool sdflag=false;
+        bool sdflag = false;
 
         int v = 0;
 
@@ -31,9 +31,13 @@ namespace assignment1
             InitializeComponent();
             lblTurn.Text = "Turn " + i;
             SharedData.turn = i;
-            
+
             lblCoins.Text = "Coin " + coins;
             lblPoint.Text = "Point " + point;
+            lbl.Text = "";
+
+
+
         }
 
         private void label8_Click(object sender, EventArgs e)
@@ -51,38 +55,129 @@ namespace assignment1
 
         private void arcadeMode_Load(object sender, EventArgs e)
         {
-            
+
             if (SharedData.t == true)
             {
                 Save.Enabled = true;
             }
             else { Save.Enabled = false; }
-            con.Open();
-            SqlCommand cmd = con.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Select * From [dbo].[Table] WHERE name='" + SharedData.Data + "'";
-            cmd.ExecuteNonQuery();
 
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(dt);
-            con.Close();
-            for (int i = 0; i < dt.Rows.Count; i++)
+            if (SharedData.savef == true)
             {
-                if (dt.Rows[i][1].ToString() == SharedData.Data)
+                con.Open();
+                SqlCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "Select * From [dbo].[Table] WHERE name='" + SharedData.Data + "'";
+                cmd.ExecuteNonQuery();
+
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+                con.Close();
+
+
+                for (int v = 0; v < dt.Rows.Count; v++)
                 {
-                    
-                    PictureBox pictureBox = FindPictureBoxById(dt.Rows[i][2].ToString());
-                    if (pictureBox != null)
+                    if (dt.Rows[v][1].ToString() == SharedData.Data)
                     {
-                        string imagePath = dt.Rows[i][3].ToString();
-                        pictureBox.Image = Image.FromFile(@imagePath);
+
+                        con.Open();
+                        SqlCommand cmd2 = con.CreateCommand();
+                        cmd2.CommandType = CommandType.Text;
+                        cmd2.CommandText = "Select * From [dbo].[SaveData] WHERE SId='" + dt.Rows[v][0].ToString() + "'";
+                        cmd2.ExecuteNonQuery();
+
+                        DataTable dt2 = new DataTable();
+                        SqlDataAdapter da2 = new SqlDataAdapter(cmd2);
+                        da2.Fill(dt2);
+                        con.Close();
+                        con.Open();
+                        SqlCommand cmd3 = con.CreateCommand();
+                        cmd3.CommandType = CommandType.Text;
+                        cmd3.CommandText = "Select * From [dbo].[SaveSystem] WHERE SId='" + dt.Rows[v][0].ToString() + "'";
+                        cmd3.ExecuteNonQuery();
+
+                        DataTable dt3 = new DataTable();
+                        SqlDataAdapter da3 = new SqlDataAdapter(cmd3);
+                        da3.Fill(dt3);
+                        con.Close();
+                        point = Convert.ToInt32(dt3.Rows[0][2]);
+                        coins = Convert.ToInt32(dt3.Rows[0][3]);
+                        i = Convert.ToInt32(dt3.Rows[0][4]);
+                        lblPoint.Text = dt3.Rows[0][2].ToString();
+                        lblCoins.Text = dt3.Rows[0][3].ToString();
+                        lblTurn.Text = dt3.Rows[0][4].ToString();
+
+                        for (int x = 0; x < dt2.Rows.Count; x++)
+                        {
+                            PictureBox pictureBox = FindPictureBoxById(dt2.Rows[x][2].ToString());
+                            if (pictureBox != null)
+                            {
+                                string image = dt2.Rows[x][3].ToString();
+                                if (image == "Road")
+                                {
+
+                                    pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                                    //pictureBox.Image = Image.FromFile(imagePath);
+                                    pictureBox.Image = Resource1.Road;
+                                    pictureBox.Tag = "Road";
+                                }
+                                else if (image == "park")
+                                {
+
+                                    pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                                    //pictureBox.Image = Image.FromFile(imagePath);
+                                    pictureBox.Image = Resource1.park;
+                                    pictureBox.Tag = "park";
+                                }
+                                else if (image == "commercial")
+                                {
+
+                                    pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                                    pictureBox.Image = Resource1.commercial;
+                                    pictureBox.Tag = "commercial";
+                                }
+                                else if (image == "industry")
+                                {
+
+                                    pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                                    pictureBox.Image = Resource1.industry;
+                                    pictureBox.Tag = "industry";
+                                }
+                                else if (image == "residential")
+                                {
+
+                                    pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                                    pictureBox.Image = Resource1.residential;
+                                    pictureBox.Tag = "residential";
+                                }
+                                lbl.Text = dt2.Rows[x][2].ToString();
+                                string inx = dt2.Rows[x][2].ToString(); // Example input string
+
+                                // Assuming the format is always "x{number}y{number}"
+                                int xIndex = inx.IndexOf('X'); // Find the index of 'x'
+                                int yIndex = inx.IndexOf('Y'); // Find the index of 'y'
+
+                                if (xIndex != -1 && yIndex != -1 && yIndex > xIndex + 1)
+                                {
+                                    // Extract the numbers after 'x' and 'y'
+                                    SharedData.Row = inx.Substring(xIndex + 1, yIndex - xIndex - 1);
+                                    SharedData.Column = inx.Substring(yIndex + 1);
+
+
+                                }
+
+                            }
+
+
+
+                        }
                     }
                 }
+
             }
+
         }
-
-
         public PictureBox FindPictureBoxById(string id)
         {
             foreach (Control control in tableLayoutPanel1.Controls)
@@ -125,7 +220,8 @@ namespace assignment1
                         SetBuildingImage(pictureBox);
                         coins -= 1;
                         lblCoins.Text = "Coin " + coins;
-                        lbl.Text = id;
+                        lblPoint.Text = "Point " + point;
+                        lbl.Text =id;
 
                     }
                     else
@@ -191,50 +287,42 @@ namespace assignment1
                         {
                             coins += 1;
                             point += 1;
-                            lblCoins.Text = "Coin " + coins;
-                            lblPoint.Text = "Point " + point;
 
                         }
                         else if (topPic.Tag == "industry" || rightPic.Tag == "industry" || leftPic.Tag == "industry" || bottomPic.Tag == "industry")
                         {
                             point += 1;
-                            lblPoint.Text = "Point " + point;
+             
 
                         }
                         else if (topPic.Tag == "residential" && rightPic.Tag == "residential" && leftPic.Tag == "residential" && bottomPic.Tag == "residential")
                         {
                             coins += 1;
                             point += 1;
-                            lblCoins.Text = "Coin " + coins;
-                            lblPoint.Text = "Point " + point;
+          
                         }
                         else if (topPic.Tag == "residential" && bottomPic.Tag == "residential")
                         {
                             coins += 1;
                             point += 1;
-                            lblCoins.Text = "Coin " + coins;
-                            lblPoint.Text = "Point " + point;
+ 
                         }
                         else if (rightPic.Tag == "residential" && leftPic.Tag == "residential")
                         {
                             coins += 1;
                             point += 1;
-                            lblCoins.Text = "Coin " + coins;
-                            lblPoint.Text = "Point " + point;
+
                         }
                         else if (topPic.Tag == "residential" && rightPic.Tag == "residential" && leftPic.Tag == "residential")
                         {
                             coins += 1;
                             point += 1;
-                            lblCoins.Text = "Coin " + coins;
-                            lblPoint.Text = "Point " + point;
+   
                         }
                         else if (rightPic.Tag == "residential" && leftPic.Tag == "residential" && bottomPic.Tag == "residential")
                         {
                             coins += 1;
                             point += 1;
-                            lblCoins.Text = "Coin " + coins;
-                            lblPoint.Text = "Point " + point;
                         }
 
                     }
@@ -244,16 +332,13 @@ namespace assignment1
                         if (topPic.Tag == "commercial" || rightPic.Tag == "commercial" || leftPic.Tag == "commercial" || bottomPic.Tag == "commercial")
                         {
                             point += 1;
-                            lblPoint.Text = "Point " + point;
-
 
                         }
                         else if (topPic.Tag == "residential" || rightPic.Tag == "residential" || leftPic.Tag == "residential" || bottomPic.Tag == "residential")
                         {
                             coins += 1;
                             point += 1;
-                            lblCoins.Text = "Coin " + coins;
-                            lblPoint.Text = "Point " + point;
+                     
 
                         }
 
@@ -263,7 +348,7 @@ namespace assignment1
                         if (topPic.Tag == "park" || rightPic.Tag == "park" || leftPic.Tag == "park" || bottomPic.Tag == "park")
                         {
                             point += 2;
-                            lblPoint.Text = "Point " + point;
+                            
 
                         }
                         else if (topPic.Tag == "industry" || rightPic.Tag == "industry" || leftPic.Tag == "industry" || bottomPic.Tag == "industry" ||
@@ -271,14 +356,13 @@ namespace assignment1
                         {
                             coins += 1;
                             point += 1;
-                            lblCoins.Text = "Coin " + coins;
-                            lblPoint.Text = "Point " + point;
+                            
 
                         }
                         else if (topPic.Tag == "residential" || rightPic.Tag == "residential" || leftPic.Tag == "residential" || bottomPic.Tag == "residential")
                         {
                             point += 2;
-                            lblPoint.Text = "Point " + point;
+                            
 
                         }
 
@@ -287,28 +371,25 @@ namespace assignment1
                     {
                         if (rightPic.Tag == "Road" || leftPic.Tag == "Road")
                         {
-                            point += 1;
-                            lblPoint.Text = "Point " + point;
+                            point += 2;
+                           
 
                         }
 
                     }
                     else if (SharedData.CurrentOption == "Park")
                     {
-                        if (topPic.Tag == "residential" || rightPic.Tag == "residential" || leftPic.Tag == "residential" || bottomPic.Tag == "residential")
+                        
+                        if (topPic.Tag == "park" || rightPic.Tag == "park" || leftPic.Tag == "park" || bottomPic.Tag == "park")
                         {
                             point += 2;
-                            lblPoint.Text = "Point " + point;
-
-                        }
-                        else if (topPic.Tag == "park" || rightPic.Tag == "park" || leftPic.Tag == "park" || bottomPic.Tag == "park")
-                        {
-                            point += 1;
-                            lblPoint.Text = "Point " + point;
+                           
 
                         }
 
                     }
+                    lblCoins.Text = "Coin " + coins;
+                    lblPoint.Text = "Point " + point;
                 }
                 /*if (SharedData.CurrentOption == "Industry")
                 {
@@ -686,53 +767,79 @@ namespace assignment1
             
         }
 
-        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ongap\\OneDrive\\Desktop\\NP\\SPM\\ASSIGNMENT1_EDIT12\\Assignment1_2nd_edit\\SPM-ASG1\\assignment1\\Database1.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\NP.2\\SPM\\www\\Assignment1_2nd_edit\\SPM-ASG1\\assignment1\\Database1.mdf;Integrated Security=True");
         private void Save_Click(object sender, EventArgs e)
         {
-            SharedData.coins = coins;
-            SharedData.point = point;
-            con.Open();
-            SqlCommand cmd = con.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Select * From [dbo].[Table] WHERE name='" +SharedData.Data +"'";
-            cmd.ExecuteNonQuery();
-
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(dt);
-            con.Close();
-            List<PictureBoxInfo> pictureBoxInfos = GetAllPictureBoxInfos();
-            for (int i = 0; i < dt.Rows.Count; i++)
+            if (i > 1)
             {
-                if (dt.Rows[i][1].ToString() == SharedData.Data)
+                SharedData.coins = coins;
+                SharedData.point = point;
+                con.Open();
+                SqlCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "Select * From [dbo].[Table] WHERE name='" + SharedData.Data + "'";
+                cmd.ExecuteNonQuery();
+
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+                con.Close();
+
+                con.Open();
+                SqlCommand cmd4 = con.CreateCommand();
+                cmd4.CommandType = CommandType.Text;//SELECT Table1.*, Table2.* FROM Table1 INNER JOIN Table2 ON Table1.ID = Table2.ID
+                cmd4.CommandText = "SELECT * FROM [dbo].[SaveData] AS sd INNER JOIN [dbo].[SaveSystem] AS ss ON sd.ID = ss.ID WHERE sd.SId ='" + dt.Rows[0][0].ToString() + "'";
+                cmd4.ExecuteNonQuery();
+
+                DataTable dt2 = new DataTable();
+                SqlDataAdapter da2 = new SqlDataAdapter(cmd4);
+                da2.Fill(dt2);
+                con.Close();
+                if(dt2 != null)
                 {
                     con.Open();
-                    SqlCommand cmd3 = con.CreateCommand();
-                    cmd3.CommandType = CommandType.Text;
-                    cmd3.CommandText = "INSERT INTO [dbo].[SaveSystem] (Point,Coin,Turn,Version) VALUES ('"+SharedData.point+"','"+SharedData.coins+"','"+SharedData.turn+"','"+SharedData.Version+"')";
-                    cmd3.ExecuteNonQuery();
+                    SqlCommand cmd5 = con.CreateCommand();
+                    cmd5.CommandType = CommandType.Text;
+                    cmd5.CommandText = "Delete [dbo].[SaveData] WHERE SId='" + dt.Rows[0][0].ToString() + "';Delete [dbo].[SaveSystem] WHERE SId='" + dt.Rows[0][0].ToString() + "' ";
+                    cmd5.ExecuteNonQuery();
                     con.Close();
-                    con.Open();
-                    foreach (var info in pictureBoxInfos)
-                    {
-                        using (SqlCommand cmd2 = new SqlCommand("INSERT INTO [dbo].[SaveData] (SId,XY,Building,Version) VALUES ('" + dt.Rows[i][0] + "','" + info.ID + "','"+ info.ImageSource + "','"+SharedData.Version+"')", con))
-                        {
-                           
+                }
+             
 
-                            try
+
+                List<PictureBoxInfo> pictureBoxInfos = GetAllPictureBoxInfos();
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    if (dt.Rows[i][1].ToString() == SharedData.Data)
+                    {
+                        con.Open();
+                        SqlCommand cmd3 = con.CreateCommand();
+                        cmd3.CommandType = CommandType.Text;
+                        cmd3.CommandText = "INSERT INTO [dbo].[SaveSystem] (SId,Point,Coin,Turn) VALUES ('" + dt.Rows[i][0] + "','" + SharedData.point + "','" + SharedData.coins + "','" + SharedData.turn + "')";
+                        cmd3.ExecuteNonQuery();
+                        con.Close();
+                        con.Open();
+                        foreach (var info in pictureBoxInfos)
+                        {
+                            using (SqlCommand cmd2 = new SqlCommand("INSERT INTO [dbo].[SaveData] (SId,XY,Building) VALUES ('" + dt.Rows[i][0] + "','" + info.ID + "','" + info.ImageSource + "')", con))
                             {
-                                cmd2.ExecuteNonQuery();
-                              
+
+
+                                try
+                                {
+                                    cmd2.ExecuteNonQuery();
+
+                                }
+                                catch (SqlException ex)
+                                {
+                                    MessageBox.Show("Error inserting data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
+
                             }
-                            catch (SqlException ex)
-                            {
-                                MessageBox.Show("Error inserting data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            }
-                            
                         }
+                        con.Close();
+                        MessageBox.Show("Successfully Save", "Success", MessageBoxButtons.OK);
                     }
-                    con.Close();
-                    MessageBox.Show("Successfully Save","Success",MessageBoxButtons.OK);
                 }
             }
         }
@@ -804,6 +911,7 @@ namespace assignment1
                    
                    
                 }
+                return;
             }
             else
             {
@@ -811,6 +919,7 @@ namespace assignment1
                 //MessageBox.Show($"PictureBox with ID {id} not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 
             }
+            this.Refresh();
 
         }
 
@@ -835,6 +944,15 @@ namespace assignment1
             HowToPlayBtnAracde howToPlay = new HowToPlayBtnAracde();
             howToPlay.Show();
         }
-            
+
+        private void lblPoint_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nav_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
