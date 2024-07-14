@@ -34,7 +34,7 @@ namespace assignment1
 
             lblCoins.Text = "Coin " + coins;
             lblPoint.Text = "Point " + point;
-            lbl.Text = "";
+            lbl.Text = "Location ";
 
 
 

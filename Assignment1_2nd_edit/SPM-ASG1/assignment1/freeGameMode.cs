@@ -26,6 +26,7 @@ namespace assignment1
             SharedData.turn = i;
             lblCoins.Text = "Coin oo";
             lblPoint.Text = "Point " + point;
+            lbl.Text = "Location ";
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -179,6 +180,7 @@ namespace assignment1
 
                 column = SharedData.Column;
                 string id = "X" + row + "Y" + column;
+                lbl.Text = "Location "+ id;
                 PictureBox pictureBox = FindPictureBoxById(id);
                 if (pictureBox != null)
                 {
