@@ -258,8 +258,8 @@ namespace assignment1
 
                             }
                         }*/
-                        pickAlt pickAlt = new pickAlt();
-                        pickAlt.Show();
+                        Q3 q3 = new Q3();
+                        q3.Show();
                         flag = false;
                     }
                 }
@@ -384,6 +384,12 @@ namespace assignment1
                         {
                             point += 2;
                            
+
+                        }
+                        else if (topPic.Tag == "residential" || rightPic.Tag == "residential" || leftPic.Tag == "residential" || bottomPic.Tag == "residential")
+                        {
+                            point += 2;
+
 
                         }
 
@@ -666,6 +672,7 @@ namespace assignment1
                 if (SharedData.Direction == "Top" && itopPic != null && IsPictureBoxEmpty(itopPic))
                 {
                     targetPic = itopPic;
+
                 }
                 else if (SharedData.Direction == "Bottom" && ibottomPic != null && IsPictureBoxEmpty(ibottomPic))
                 {
@@ -679,20 +686,16 @@ namespace assignment1
                 {
                     targetPic = irightPic;
                 }
-                else
-                {
-                    MessageBox.Show("This PictureBox already has an image.",
-                                                             "Warning",
-                                                             MessageBoxButtons.OK,
-                                                             MessageBoxIcon.Warning);
-                }
+               
 
                 if (targetPic != null)
                 {
                     // Found an empty PictureBox, set the image and break out of the loop
                     SetBuildingImage(targetPic);
+                    lbl.Text = targetPic.Name;
                     break;
                 }
+                
 
             }
         }

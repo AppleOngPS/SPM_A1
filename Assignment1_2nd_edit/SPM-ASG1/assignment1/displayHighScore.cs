@@ -24,14 +24,14 @@ namespace assignment1
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "SELECT TOP 10 * FROM [dbo].[Table]  ORDER BY score DESC ";
+            cmd.CommandText = "SELECT TOP 10 t.name, ss.Point FROM [dbo].[SaveSystem] ss INNER JOIN [dbo].[Table] t ON ss.SId = t.Id ORDER BY  ss.Point DESC;";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
             dataGridView1.DataSource = dt;
-            dataGridView1.Columns["password"].Visible = false;
-            dataGridView1.Columns[0].Visible = false;
+          
+           // dataGridView1.Columns[0].Visible = false;
             con.Close();
             CustomizeRowHeaders();
            

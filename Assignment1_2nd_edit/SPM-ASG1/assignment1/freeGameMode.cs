@@ -222,74 +222,56 @@ namespace assignment1
                 {
                     if (SharedData.CurrentOption == "Industry")
                     {
+                        point += 1;
                         if (topPic.Tag == "residential" || rightPic.Tag == "residential" || leftPic.Tag == "residential" || bottomPic.Tag == "residential")
                         {
-                            
+                        
                             point += 1;
-                            
-                            lblPoint.Text = "Point " + point;
+                           
 
                         }
                         else if (topPic.Tag == "industry" || rightPic.Tag == "industry" || leftPic.Tag == "industry" || bottomPic.Tag == "industry")
                         {
                             point += 1;
-                            lblPoint.Text = "Point " + point;
 
                         }
-                        else if (topPic.Tag == "residential" && rightPic.Tag == "residential" && leftPic.Tag == "residential" && bottomPic.Tag == "residential")
-                        {
-                            
-                            point += 1;
-                            
-                            lblPoint.Text = "Point " + point;
-                        }
-                        else if (topPic.Tag == "residential" && bottomPic.Tag == "residential")
-                        {
-                           
-                            point += 1;
-                            
-                            lblPoint.Text = "Point " + point;
-                        }
-                        else if (rightPic.Tag == "residential" && leftPic.Tag == "residential")
-                        {
-                           
-                            point += 1;
-                            
-                            lblPoint.Text = "Point " + point;
-                        }
-                        else if (topPic.Tag == "residential" && rightPic.Tag == "residential" && leftPic.Tag == "residential")
-                        {
-                            
-                            point += 1;
-                           
-                            lblPoint.Text = "Point " + point;
-                        }
-                        else if (rightPic.Tag == "residential" && leftPic.Tag == "residential" && bottomPic.Tag == "residential")
-                        {
-                            
-                            point += 1;
-                            
-                            lblPoint.Text = "Point " + point;
-                        }
-
+                       
+                        
                     }
                     else if (SharedData.CurrentOption == "Commercial")
                     {
 
                         if (topPic.Tag == "commercial" || rightPic.Tag == "commercial" || leftPic.Tag == "commercial" || bottomPic.Tag == "commercial")
                         {
-                            point += 1;
-                            lblPoint.Text = "Point " + point;
-
+                            point += 2;
 
                         }
                         else if (topPic.Tag == "residential" || rightPic.Tag == "residential" || leftPic.Tag == "residential" || bottomPic.Tag == "residential")
                         {
-                            
+                          
                             point += 1;
-                           
-                            lblPoint.Text = "Point " + point;
 
+
+                        }
+                        else if (topPic.Tag == "residential" && bottomPic.Tag == "residential")
+                        {
+                            point += 2;
+                        }
+                        else if (leftPic.Tag == "residential" && rightPic.Tag == "residential")
+                        {
+                            point += 2;
+                        }
+                        else if (topPic.Tag== "residential" && leftPic.Tag == "residential" && rightPic.Tag == "residential")
+                        {
+                            point += 3;
+                        }
+                        else if (bottomPic.Tag == "residential" && leftPic.Tag == "residential" && rightPic.Tag == "residential")
+                        {
+                            point += 3;
+                        }
+                        else if (topPic.Tag == "residential" && bottomPic.Tag == "residential" && leftPic.Tag == "residential" && rightPic.Tag == "residential")
+                        {
+                            point += 3;
                         }
 
                     }
@@ -298,7 +280,7 @@ namespace assignment1
                         if (topPic.Tag == "park" || rightPic.Tag == "park" || leftPic.Tag == "park" || bottomPic.Tag == "park")
                         {
                             point += 2;
-                            lblPoint.Text = "Point " + point;
+
 
                         }
                         else if (topPic.Tag == "industry" || rightPic.Tag == "industry" || leftPic.Tag == "industry" || bottomPic.Tag == "industry" ||
@@ -306,14 +288,13 @@ namespace assignment1
                         {
                           
                             point += 1;
-                         
-                            lblPoint.Text = "Point " + point;
+
 
                         }
                         else if (topPic.Tag == "residential" || rightPic.Tag == "residential" || leftPic.Tag == "residential" || bottomPic.Tag == "residential")
                         {
-                            point += 1;
-                            lblPoint.Text = "Point " + point;
+                            point += 2;
+
 
                         }
 
@@ -322,28 +303,31 @@ namespace assignment1
                     {
                         if (rightPic.Tag == "Road" || leftPic.Tag == "Road")
                         {
-                            point += 1;
-                            lblPoint.Text = "Point " + point;
+                            point += 2;
+
 
                         }
 
                     }
                     else if (SharedData.CurrentOption == "Park")
                     {
-                        if (topPic.Tag == "residential" || rightPic.Tag == "residential" || leftPic.Tag == "residential" || bottomPic.Tag == "residential")
+
+                        if (topPic.Tag == "park" || rightPic.Tag == "park" || leftPic.Tag == "park" || bottomPic.Tag == "park")
                         {
                             point += 2;
-                            lblPoint.Text = "Point " + point;
+
 
                         }
-                        else if (topPic.Tag == "park" || rightPic.Tag == "park" || leftPic.Tag == "park" || bottomPic.Tag == "park")
+                        else if (topPic.Tag == "residential" || rightPic.Tag == "residential" || leftPic.Tag == "residential" || bottomPic.Tag == "residential")
                         {
-                            point += 1;
-                            lblPoint.Text = "Point " + point;
+                            point += 2;
+
 
                         }
 
                     }
+                    
+                    lblPoint.Text = "Point " + point;
                 }
                 SharedData.TFlag2 = CheckPictureBoxesInSection(tableLayoutPanel1, 0, 0, 4, 4);
                 SharedData.TFlag3 = CheckPictureBoxesInSection(tableLayoutPanel1, 5,5 , 14, 14);
