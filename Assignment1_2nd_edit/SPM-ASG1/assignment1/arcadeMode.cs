@@ -221,7 +221,8 @@ namespace assignment1
                         coins -= 1;
                         lblCoins.Text = "Coin " + coins;
                         lblPoint.Text = "Point " + point;
-                        lbl.Text =id;
+                        
+                        lbl.Text = "Location " + id;
 
                     }
                     else
@@ -396,6 +397,7 @@ namespace assignment1
                     }
                     lblCoins.Text = "Coin " + coins;
                     lblPoint.Text = "Point " + point;
+
                 }
                 /*if (SharedData.CurrentOption == "Industry")
                 {
@@ -692,7 +694,9 @@ namespace assignment1
                 {
                     // Found an empty PictureBox, set the image and break out of the loop
                     SetBuildingImage(targetPic);
-                    lbl.Text = targetPic.Name;
+                    lbl.Text = "Location "+targetPic.Name;
+                    
+
                     break;
                 }
                 
@@ -954,6 +958,11 @@ namespace assignment1
         }
 
         private void nav_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void X4Y6_Click(object sender, EventArgs e)
         {
 
         }
