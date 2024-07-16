@@ -119,14 +119,20 @@
   </resheader>
   <data name="label1.Text" xml:space="preserve">
     <value>1.  Press start button to activate the turn
-2.  system will prompt question on which building do you want to select and
-key in the location that you would like to placed
-3.  press end turn button to end the turn
+
+2.  The system will prompt question on which building do you want to select and
+     key in the location that you would like to placed
+
+3.  Press end turn button to end the turn
+
 4.  If you would like to demolish the building, click on the demolish button 
-and the system will prompt a question stating 
-which is the location that you want to remove. After you are done, 
-press demolish button again and the building will be remove
-5.  press save button to save ur progress.
-(You need to be login in order to save your progress)</value>
+     and the system will prompt a question stating which is the location 
+     that you want to remove. After you are done, press demolish button again 
+     and the building will be remove
+
+5.  Press save button to save ur progress.
+
+
+                       (You need to be login in order to save your progress)</value>
   </data>
 </root>

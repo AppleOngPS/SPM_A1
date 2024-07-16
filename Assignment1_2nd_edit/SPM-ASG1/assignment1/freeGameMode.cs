@@ -503,5 +503,20 @@ namespace assignment1
             menu.Show();
             this.Close();
         }
+
+        private void nav_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void X3Y14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPoint_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

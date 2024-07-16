@@ -39,17 +39,20 @@
             this.database1DataSet = new assignment1.Database1DataSet();
             this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tableTableAdapter = new assignment1.Database1DataSetTableAdapters.TableTableAdapter();
+            this.database1DataSet1 = new assignment1.Database1DataSet();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(226, 46);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(177, 45);
             this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 39);
+            this.label1.Size = new System.Drawing.Size(117, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Sign Up";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -57,39 +60,45 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(71, 133);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(62, 141);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(183, 39);
+            this.label2.Size = new System.Drawing.Size(119, 26);
             this.label2.TabIndex = 1;
             this.label2.Text = "Username:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(76, 192);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(63, 287);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(176, 39);
+            this.label3.Size = new System.Drawing.Size(114, 26);
             this.label3.TabIndex = 2;
             this.label3.Text = "Password:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // usernameInput
             // 
-            this.usernameInput.Location = new System.Drawing.Point(235, 133);
+            this.usernameInput.Location = new System.Drawing.Point(64, 191);
             this.usernameInput.Name = "usernameInput";
-            this.usernameInput.Size = new System.Drawing.Size(203, 46);
+            this.usernameInput.Size = new System.Drawing.Size(386, 38);
             this.usernameInput.TabIndex = 3;
             // 
             // passwordInput
             // 
-            this.passwordInput.Location = new System.Drawing.Point(235, 192);
+            this.passwordInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordInput.Location = new System.Drawing.Point(69, 348);
             this.passwordInput.Name = "passwordInput";
             this.passwordInput.PasswordChar = '*';
-            this.passwordInput.Size = new System.Drawing.Size(203, 46);
+            this.passwordInput.Size = new System.Drawing.Size(381, 38);
             this.passwordInput.TabIndex = 4;
             // 
             // SubmitBtn
             // 
-            this.SubmitBtn.Location = new System.Drawing.Point(204, 266);
+            this.SubmitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubmitBtn.Location = new System.Drawing.Point(183, 467);
             this.SubmitBtn.Name = "SubmitBtn";
             this.SubmitBtn.Size = new System.Drawing.Size(132, 41);
             this.SubmitBtn.TabIndex = 5;
@@ -101,9 +110,9 @@
             // 
             this.ErrorLabel.AutoSize = true;
             this.ErrorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ErrorLabel.Location = new System.Drawing.Point(119, 223);
+            this.ErrorLabel.Location = new System.Drawing.Point(135, 232);
             this.ErrorLabel.Name = "ErrorLabel";
-            this.ErrorLabel.Size = new System.Drawing.Size(0, 17);
+            this.ErrorLabel.Size = new System.Drawing.Size(0, 13);
             this.ErrorLabel.TabIndex = 6;
             // 
             // database1DataSet
@@ -120,11 +129,17 @@
             // 
             this.tableTableAdapter.ClearBeforeFill = true;
             // 
+            // database1DataSet1
+            // 
+            this.database1DataSet1.DataSetName = "Database1DataSet";
+            this.database1DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // SignUp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(20F, 39F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(532, 337);
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.ClientSize = new System.Drawing.Size(529, 572);
             this.Controls.Add(this.ErrorLabel);
             this.Controls.Add(this.SubmitBtn);
             this.Controls.Add(this.passwordInput);
@@ -133,12 +148,14 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "SignUp";
             this.Text = "SignUp";
             this.Load += new System.EventHandler(this.SignUp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,5 +173,6 @@
         private Database1DataSet database1DataSet;
         private System.Windows.Forms.BindingSource tableBindingSource;
         private Database1DataSetTableAdapters.TableTableAdapter tableTableAdapter;
+        private Database1DataSet database1DataSet1;
     }
 }
