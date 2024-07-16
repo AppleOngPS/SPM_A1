@@ -132,8 +132,9 @@
             this.lblName.Location = new System.Drawing.Point(29, 14);
             this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(0, 13);
+            this.lblName.Size = new System.Drawing.Size(0, 16);
             this.lblName.TabIndex = 7;
+            this.lblName.Text = "player name";
             // 
             // menu
             // 
