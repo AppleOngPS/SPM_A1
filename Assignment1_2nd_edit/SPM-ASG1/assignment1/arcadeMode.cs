@@ -393,10 +393,11 @@ namespace assignment1
                             }
 
                         }
-                        lblCoins.Text = "Coin " + coins;
-                        lblPoint.Text = "Point " + point;
+                        
 
                     }
+                    lblCoins.Text = "Coin " + coins;
+                    lblPoint.Text = "Point " + point;
                     flag = false;
                 }
 
@@ -623,7 +624,7 @@ namespace assignment1
             }*/
 
             }
-            else { MessageBox.Show("Please Start your turn.", "Turn End! ", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+            else { MessageBox.Show("Please Start your turn.", "Turn End", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         }
 
         /*if (i > 2)
