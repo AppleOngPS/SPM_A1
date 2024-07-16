@@ -194,12 +194,12 @@ namespace assignment1
         {
             // UpdatePictureBoxes();
             lblPoint.Text = "Point " + point;
-            lblCoins.Text =  "Coin " + coins;
-            sdflag =false;
+            lblCoins.Text = "Coin " + coins;
+            sdflag = false;
             // Perform some action if the flag is true
             if (flag == true)
             {
-                
+
                 // Reset the flag if needed
                 flag = false;
             }
@@ -221,13 +221,13 @@ namespace assignment1
                         coins -= 1;
                         lblCoins.Text = "Coin " + coins;
                         lblPoint.Text = "Point " + point;
-                        
+
                         lbl.Text = "Location " + id;
 
                     }
                     else
                     {
-                       
+
                         SharedData.Row = SharedData.TempRow;
                         SharedData.Column = SharedData.TempColumn;
                         SearchForEmptyPictureBox();
@@ -293,20 +293,20 @@ namespace assignment1
                         else if (topPic.Tag == "industry" || rightPic.Tag == "industry" || leftPic.Tag == "industry" || bottomPic.Tag == "industry")
                         {
                             point += 1;
-             
+
 
                         }
                         else if (topPic.Tag == "residential" && rightPic.Tag == "residential" && leftPic.Tag == "residential" && bottomPic.Tag == "residential")
                         {
                             coins += 1;
                             point += 1;
-          
+
                         }
                         else if (topPic.Tag == "residential" && bottomPic.Tag == "residential")
                         {
                             coins += 1;
                             point += 1;
- 
+
                         }
                         else if (rightPic.Tag == "residential" && leftPic.Tag == "residential")
                         {
@@ -318,7 +318,7 @@ namespace assignment1
                         {
                             coins += 1;
                             point += 1;
-   
+
                         }
                         else if (rightPic.Tag == "residential" && leftPic.Tag == "residential" && bottomPic.Tag == "residential")
                         {
@@ -339,7 +339,7 @@ namespace assignment1
                         {
                             coins += 1;
                             point += 1;
-                     
+
 
                         }
 
@@ -349,7 +349,7 @@ namespace assignment1
                         if (topPic.Tag == "park" || rightPic.Tag == "park" || leftPic.Tag == "park" || bottomPic.Tag == "park")
                         {
                             point += 2;
-                            
+
 
                         }
                         else if (topPic.Tag == "industry" || rightPic.Tag == "industry" || leftPic.Tag == "industry" || bottomPic.Tag == "industry" ||
@@ -357,13 +357,13 @@ namespace assignment1
                         {
                             coins += 1;
                             point += 1;
-                            
+
 
                         }
                         else if (topPic.Tag == "residential" || rightPic.Tag == "residential" || leftPic.Tag == "residential" || bottomPic.Tag == "residential")
                         {
                             point += 2;
-                            
+
 
                         }
 
@@ -373,18 +373,18 @@ namespace assignment1
                         if (rightPic.Tag == "Road" || leftPic.Tag == "Road")
                         {
                             point += 2;
-                           
+
 
                         }
 
                     }
                     else if (SharedData.CurrentOption == "Park")
                     {
-                        
+
                         if (topPic.Tag == "park" || rightPic.Tag == "park" || leftPic.Tag == "park" || bottomPic.Tag == "park")
                         {
                             point += 2;
-                           
+
 
                         }
                         else if (topPic.Tag == "residential" || rightPic.Tag == "residential" || leftPic.Tag == "residential" || bottomPic.Tag == "residential")
@@ -688,18 +688,18 @@ namespace assignment1
                 {
                     targetPic = irightPic;
                 }
-               
+
 
                 if (targetPic != null)
                 {
                     // Found an empty PictureBox, set the image and break out of the loop
                     SetBuildingImage(targetPic);
-                    lbl.Text = "Location "+targetPic.Name;
-                    
+                    lbl.Text = "Location " + targetPic.Name;
+
 
                     break;
                 }
-                
+
 
             }
         }
@@ -707,7 +707,7 @@ namespace assignment1
         private bool IsPictureBoxEmpty(PictureBox pictureBox)
         {
             // Implement this method to determine if the PictureBox is empty
-            
+
             return pictureBox.Image == null; ; // Placeholder
         }
         private void SetBuildingImage(PictureBox pictureBox)
@@ -718,15 +718,15 @@ namespace assignment1
                 pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                 //pictureBox.Image = Image.FromFile(imagePath);
                 pictureBox.Image = Resource1.Road;
-                pictureBox.Tag ="Road";
+                pictureBox.Tag = "Road";
             }
             else if (SharedData.building == "Park")
             {
                 string imagePath = @"C:\Users\ongap\OneDrive\Desktop\NP\SPM\10th edit\Assignment1_2nd_edit\SPM-ASG1\assignment1\Resources\park.png";
                 pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
                 //pictureBox.Image = Image.FromFile(imagePath);
-                pictureBox.Image= Resource1.park;
-                pictureBox.Tag ="park";
+                pictureBox.Image = Resource1.park;
+                pictureBox.Tag = "park";
             }
             else if (SharedData.building == "Commercial")
             {
@@ -771,7 +771,7 @@ namespace assignment1
                 this.Refresh();
             }
             else { MessageBox.Show("Please End your turn.", "Turn Start", MessageBoxButtons.OK, MessageBoxIcon.Information); }
-            
+
         }
 
         SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\NP.2\\SPM\\www\\Assignment1_2nd_edit\\SPM-ASG1\\assignment1\\Database1.mdf;Integrated Security=True");
@@ -802,7 +802,7 @@ namespace assignment1
                 SqlDataAdapter da2 = new SqlDataAdapter(cmd4);
                 da2.Fill(dt2);
                 con.Close();
-                if(dt2 != null)
+                if (dt2 != null)
                 {
                     con.Open();
                     SqlCommand cmd5 = con.CreateCommand();
@@ -811,7 +811,7 @@ namespace assignment1
                     cmd5.ExecuteNonQuery();
                     con.Close();
                 }
-             
+
 
 
                 List<PictureBoxInfo> pictureBoxInfos = GetAllPictureBoxInfos();
@@ -905,7 +905,7 @@ namespace assignment1
                     //pictureBox.Image = Resource1.White;
                     // Dispose of the current image to free up resources
                     pictureBox.Image.Dispose();
-                   pictureBox.Image = null; // Clear the reference to the disposed image
+                    pictureBox.Image = null; // Clear the reference to the disposed image
                 }
                 else
                 {
@@ -913,10 +913,10 @@ namespace assignment1
                                     "Warning",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Warning);
-                   
+
                     SharedData.point -= 1;
-                   
-                   
+
+
                 }
                 return;
             }
@@ -924,7 +924,7 @@ namespace assignment1
             {
                 // PictureBox not found with the specified ID
                 //MessageBox.Show($"PictureBox with ID {id} not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                
+
             }
             this.Refresh();
 
