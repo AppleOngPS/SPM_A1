@@ -9152,9 +9152,7 @@
             this.nav.ResumeLayout(false);
             this.nav.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.performanceCounter2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.performanceCounter3)).EndInit();
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 
