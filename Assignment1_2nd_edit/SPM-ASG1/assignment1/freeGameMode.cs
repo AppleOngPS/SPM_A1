@@ -36,6 +36,126 @@ namespace assignment1
 
         private void freeGameMode_Load(object sender, EventArgs e)
         {
+            if (SharedData.t == true)
+            {
+                Save.Enabled = true;
+            }
+            else { Save.Enabled = false; }
+
+            if (SharedData.savef == true)
+            {
+                con.Open();
+                SqlCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "Select * From [dbo].[Table] WHERE name='" + SharedData.Data + "'";
+                cmd.ExecuteNonQuery();
+
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+                con.Close();
+
+
+                for (int v = 0; v < dt.Rows.Count; v++)
+                {
+                    if (dt.Rows[v][1].ToString() == SharedData.Data)
+                    {
+
+                        con.Open();
+                        SqlCommand cmd2 = con.CreateCommand();
+                        cmd2.CommandType = CommandType.Text;
+                        cmd2.CommandText = "Select * From [dbo].[FreeGameModeSaveData] WHERE SId='" + dt.Rows[v][0].ToString() + "'";
+                        cmd2.ExecuteNonQuery();
+
+                        DataTable dt2 = new DataTable();
+                        SqlDataAdapter da2 = new SqlDataAdapter(cmd2);
+                        da2.Fill(dt2);
+                        con.Close();
+                        con.Open();
+                        SqlCommand cmd3 = con.CreateCommand();
+                        cmd3.CommandType = CommandType.Text;
+                        cmd3.CommandText = "Select * From [dbo].[FreeGameModeSaveSystem] WHERE SId='" + dt.Rows[v][0].ToString() + "'";
+                        cmd3.ExecuteNonQuery();
+
+                        DataTable dt3 = new DataTable();
+                        SqlDataAdapter da3 = new SqlDataAdapter(cmd3);
+                        da3.Fill(dt3);
+                        con.Close();
+                        point = Convert.ToInt32(dt3.Rows[0][2]);
+                        
+                        i = Convert.ToInt32(dt3.Rows[0][3]);
+                        lblPoint.Text = "Point"+dt3.Rows[0][2].ToString();
+                       
+                        lblTurn.Text = "Turn"+dt3.Rows[0][3].ToString();
+
+                        for (int x = 0; x < dt2.Rows.Count; x++)
+                        {
+                            PictureBox pictureBox = FindPictureBoxById(dt2.Rows[x][2].ToString());
+                            if (pictureBox != null)
+                            {
+                                string image = dt2.Rows[x][3].ToString();
+                                if (image == "Road")
+                                {
+
+                                    pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                                    //pictureBox.Image = Image.FromFile(imagePath);
+                                    pictureBox.Image = Resource1.Road;
+                                    pictureBox.Tag = "Road";
+                                }
+                                else if (image == "park")
+                                {
+
+                                    pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                                    //pictureBox.Image = Image.FromFile(imagePath);
+                                    pictureBox.Image = Resource1.park;
+                                    pictureBox.Tag = "park";
+                                }
+                                else if (image == "commercial")
+                                {
+
+                                    pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                                    pictureBox.Image = Resource1.commercial;
+                                    pictureBox.Tag = "commercial";
+                                }
+                                else if (image == "industry")
+                                {
+
+                                    pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                                    pictureBox.Image = Resource1.industry;
+                                    pictureBox.Tag = "industry";
+                                }
+                                else if (image == "residential")
+                                {
+
+                                    pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                                    pictureBox.Image = Resource1.residential;
+                                    pictureBox.Tag = "residential";
+                                }
+                                lbl.Text = "Location" + dt2.Rows[x][2].ToString();
+                                string inx = dt2.Rows[x][2].ToString(); // Example input string
+
+                                // Assuming the format is always "x{number}y{number}"
+                                int xIndex = inx.IndexOf('X'); // Find the index of 'x'
+                                int yIndex = inx.IndexOf('Y'); // Find the index of 'y'
+
+                                if (xIndex != -1 && yIndex != -1 && yIndex > xIndex + 1)
+                                {
+                                    // Extract the numbers after 'x' and 'y'
+                                    SharedData.Row = inx.Substring(xIndex + 1, yIndex - xIndex - 1);
+                                    SharedData.Column = inx.Substring(yIndex + 1);
+
+
+                                }
+
+                            }
+
+
+
+                        }
+                    }
+                }
+
+            }
 
         }
 
@@ -342,48 +462,76 @@ namespace assignment1
         SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\NP.2\\SPM\\www\\Assignment1_2nd_edit\\SPM-ASG1\\assignment1\\Database1.mdf;Integrated Security=True");
         private void Save_Click(object sender, EventArgs e)
         {
-            con.Open();
-            SqlCommand cmd = con.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Select * From [dbo].[Table] WHERE name='" + SharedData.Data + "'";
-            cmd.ExecuteNonQuery();
-
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(dt);
-            con.Close();
-            List<PictureBoxInfo> pictureBoxInfos = GetAllPictureBoxInfos();
-            for (int i = 0; i < dt.Rows.Count; i++)
+            if (i > 1)
             {
-                if (dt.Rows[i][1].ToString() == SharedData.Data)
+                //SharedData.coins = coins;
+                SharedData.point = point;
+                con.Open();
+                SqlCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "Select * From [dbo].[Table] WHERE name='" + SharedData.Data + "'";
+                cmd.ExecuteNonQuery();
+
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+                con.Close();
+
+                con.Open();
+                SqlCommand cmd4 = con.CreateCommand();
+                cmd4.CommandType = CommandType.Text;//SELECT Table1.*, Table2.* FROM Table1 INNER JOIN Table2 ON Table1.ID = Table2.ID
+                cmd4.CommandText = "SELECT * FROM [dbo].[FreeGameModeSaveData] AS sd INNER JOIN [dbo].[SaveSystem] AS ss ON sd.ID = ss.ID WHERE sd.SId ='" + dt.Rows[0][0].ToString() + "'";
+                cmd4.ExecuteNonQuery();
+
+                DataTable dt2 = new DataTable();
+                SqlDataAdapter da2 = new SqlDataAdapter(cmd4);
+                da2.Fill(dt2);
+                con.Close();
+                if (dt2 != null)
                 {
                     con.Open();
-                    SqlCommand cmd3 = con.CreateCommand();
-                    cmd3.CommandType = CommandType.Text;
-                    cmd3.CommandText = "INSERT INTO [dbo].[SaveSystem] (Point,Coin,Turn,Version) VALUES ('" + SharedData.point + "','" + SharedData.coins + "','" + SharedData.turn + "','" + SharedData.Version + "')";
-                    cmd3.ExecuteNonQuery();
+                    SqlCommand cmd5 = con.CreateCommand();
+                    cmd5.CommandType = CommandType.Text;
+                    cmd5.CommandText = "Delete [dbo].[FreeGameModeSaveData] WHERE SId='" + dt.Rows[0][0].ToString() + "';Delete [dbo].[SaveSystem] WHERE SId='" + dt.Rows[0][0].ToString() + "' ";
+                    cmd5.ExecuteNonQuery();
                     con.Close();
-                    con.Open();
-                    foreach (var info in pictureBoxInfos)
+                }
+
+
+
+                List<PictureBoxInfo> pictureBoxInfos = GetAllPictureBoxInfos();
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    if (dt.Rows[i][1].ToString() == SharedData.Data)
                     {
-                        using (SqlCommand cmd2 = new SqlCommand("INSERT INTO [dbo].[SaveData] (SId,XY,Building,Version) VALUES ('" + dt.Rows[i][0] + "','" + info.ID + "','" + info.ImageSource + "','" + SharedData.Version + "')", con))
+                        con.Open();
+                        SqlCommand cmd3 = con.CreateCommand();
+                        cmd3.CommandType = CommandType.Text;
+                        cmd3.CommandText = "INSERT INTO [dbo].[FreeGameModeSaveDataSystem] (SId,Point,Turn) VALUES ('" + dt.Rows[i][0] + "','" + SharedData.point + "','" + SharedData.turn + "')";
+                        cmd3.ExecuteNonQuery();
+                        con.Close();
+                        con.Open();
+                        foreach (var info in pictureBoxInfos)
                         {
-
-
-                            try
+                            using (SqlCommand cmd2 = new SqlCommand("INSERT INTO [dbo].[FreeGameModeSaveData] (SId,XY,Building) VALUES ('" + dt.Rows[i][0] + "','" + info.ID + "','" + info.ImageSource + "')", con))
                             {
-                                cmd2.ExecuteNonQuery();
+
+
+                                try
+                                {
+                                    cmd2.ExecuteNonQuery();
+
+                                }
+                                catch (SqlException ex)
+                                {
+                                    MessageBox.Show("Error inserting data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
 
                             }
-                            catch (SqlException ex)
-                            {
-                                MessageBox.Show("Error inserting data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            }
-
                         }
+                        con.Close();
+                        MessageBox.Show("Successfully Save", "Success", MessageBoxButtons.OK);
                     }
-                    con.Close();
-                    MessageBox.Show("Successfully Save", "Success", MessageBoxButtons.OK);
                 }
             }
         }
