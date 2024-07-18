@@ -36,5 +36,13 @@ namespace assignment1
             arcadeMode.Show();
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SharedData.freeGamesavef = true;
+            freeGameMode freeGame = new freeGameMode();
+            freeGame.Show();
+            this.Close();
+        }
     }
 }

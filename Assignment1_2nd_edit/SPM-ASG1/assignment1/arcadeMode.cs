@@ -50,6 +50,10 @@ namespace assignment1
         {
             menu menu = new menu();
             menu.Show();
+            i = 0;
+            point = 0;
+            coins = 16;
+
             this.Close();
         }
 
@@ -104,9 +108,9 @@ namespace assignment1
                         point = Convert.ToInt32(dt3.Rows[0][2]);
                         coins = Convert.ToInt32(dt3.Rows[0][3]);
                         i = Convert.ToInt32(dt3.Rows[0][4]);
-                        lblPoint.Text = dt3.Rows[0][2].ToString();
-                        lblCoins.Text = dt3.Rows[0][3].ToString();
-                        lblTurn.Text = dt3.Rows[0][4].ToString();
+                        lblPoint.Text = "Point" +dt3.Rows[0][2].ToString();
+                        lblCoins.Text = "Coin" + dt3.Rows[0][3].ToString();
+                        lblTurn.Text = "Turn" + dt3.Rows[0][4].ToString();
 
                         for (int x = 0; x < dt2.Rows.Count; x++)
                         {
@@ -151,7 +155,7 @@ namespace assignment1
                                     pictureBox.Image = Resource1.residential;
                                     pictureBox.Tag = "residential";
                                 }
-                                lbl.Text = dt2.Rows[x][2].ToString();
+                                lbl.Text = "Location"+dt2.Rows[x][2].ToString();
                                 string inx = dt2.Rows[x][2].ToString(); // Example input string
 
                                 // Assuming the format is always "x{number}y{number}"
@@ -290,7 +294,7 @@ namespace assignment1
                         }
                         else if (topPic.Tag == "industry" || rightPic.Tag == "industry" || leftPic.Tag == "industry" || bottomPic.Tag == "industry")
                         {
-                            point += 1;
+                            //point += 1;
              
 
                         }
@@ -777,7 +781,7 @@ namespace assignment1
 
         }
 
-        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\NP.2\\SPM\\www\\Assignment1_2nd_edit\\SPM-ASG1\\assignment1\\Database1.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\ongap\\OneDrive\\Desktop\\NP\\SPM\\16th edit\\Assignment1_2nd_edit\\SPM-ASG1\\assignment1\\Database1.mdf\";Integrated Security=True");
         private void Save_Click(object sender, EventArgs e)
         {
             if (i > 1)
@@ -891,46 +895,48 @@ namespace assignment1
 
         private void Demolish_Click(object sender, EventArgs e)
         {
-            Q4 q4 = new Q4();
-            q4.Show();
-            string row;
-            string column;
-            row = SharedData.Dx;
-
-            column = SharedData.Dy;
-            string id = "X" + row + "Y" + column;
-            PictureBox pictureBox = FindPictureBoxById(id);
-
-            if (pictureBox != null)
+            if (i > 1)
             {
-                if (pictureBox.Image != null)
+                Q4 q4 = new Q4();
+                q4.Show();
+                string row;
+                string column;
+                row = SharedData.Dx;
+
+                column = SharedData.Dy;
+                string id = "X" + row + "Y" + column;
+                PictureBox pictureBox = FindPictureBoxById(id);
+
+                if (pictureBox != null)
                 {
-                    //pictureBox.Image = Resource1.White;
-                    // Dispose of the current image to free up resources
-                    pictureBox.Image.Dispose();
-                    pictureBox.Image = null; // Clear the reference to the disposed image
+                    if (pictureBox.Image != null)
+                    {
+                        //pictureBox.Image = Resource1.White;
+                        // Dispose of the current image to free up resources
+                        pictureBox.Image.Dispose();
+                        pictureBox.Image = null; // Clear the reference to the disposed image
+                    }
+                    else
+                    {
+                        MessageBox.Show("This PictureBox already has an image.",
+                                        "Warning",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Warning);
+
+                        SharedData.point -= 1;
+
+
+                    }
+                    return;
                 }
                 else
                 {
-                    MessageBox.Show("This PictureBox already has an image.",
-                                    "Warning",
-                                    MessageBoxButtons.OK,
-                                    MessageBoxIcon.Warning);
-
-                    SharedData.point -= 1;
-
+                    // PictureBox not found with the specified ID
+                    //MessageBox.Show($"PictureBox with ID {id} not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 }
-                return;
+                this.Refresh();
             }
-            else
-            {
-                // PictureBox not found with the specified ID
-                //MessageBox.Show($"PictureBox with ID {id} not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-            }
-            this.Refresh();
-
         }
 
         private void button2_Click_1(object sender, EventArgs e)

@@ -42,7 +42,7 @@ namespace assignment1
             }
             else { Save.Enabled = false; }
 
-            if (SharedData.savef == true)
+            if (SharedData.freeGamesavef == true)
             {
                 con.Open();
                 SqlCommand cmd = con.CreateCommand();
@@ -211,7 +211,8 @@ namespace assignment1
 
         private void Demolish_Click(object sender, EventArgs e)
         {
-            if (dflag == true)
+
+            if (i > 1)
             {
                 Q4 q4 = new Q4();
                 q4.Show();
@@ -232,8 +233,8 @@ namespace assignment1
                         // Dispose of the current image to free up resources
                         pictureBox.Image.Dispose();
                         pictureBox.Image = null; // Clear the reference to the disposed image
-                        
-                        
+
+
                     }
                     else
                     {
@@ -242,11 +243,11 @@ namespace assignment1
                                         MessageBoxButtons.OK,
                                         MessageBoxIcon.Warning);
 
-                       
+
 
 
                     }
-                
+
                 }
                 else
                 {
@@ -254,8 +255,9 @@ namespace assignment1
                     MessageBox.Show($"PictureBox with ID {id} not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 }
-                
             }
+                
+            
         }
 
         private void changeplaceBtn_Click(object sender, EventArgs e)
@@ -354,7 +356,7 @@ namespace assignment1
                         }
                         else if (topPic.Tag == "industry" || rightPic.Tag == "industry" || leftPic.Tag == "industry" || bottomPic.Tag == "industry")
                         {
-                            point += 1;
+                            //point += 1;
 
                         }
                        
@@ -459,7 +461,7 @@ namespace assignment1
         }
 
 
-        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\NP.2\\SPM\\www\\Assignment1_2nd_edit\\SPM-ASG1\\assignment1\\Database1.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\ongap\\OneDrive\\Desktop\\NP\\SPM\\16th edit\\Assignment1_2nd_edit\\SPM-ASG1\\assignment1\\Database1.mdf\";Integrated Security=True");
         private void Save_Click(object sender, EventArgs e)
         {
             if (i > 1)
@@ -507,7 +509,7 @@ namespace assignment1
                         con.Open();
                         SqlCommand cmd3 = con.CreateCommand();
                         cmd3.CommandType = CommandType.Text;
-                        cmd3.CommandText = "INSERT INTO [dbo].[FreeGameModeSaveDataSystem] (SId,Point,Turn) VALUES ('" + dt.Rows[i][0] + "','" + SharedData.point + "','" + SharedData.turn + "')";
+                        cmd3.CommandText = "INSERT INTO [dbo].[FreeGameModeSaveSystem] (SId,Point,Turn) VALUES ('" + dt.Rows[i][0] + "','" + SharedData.point + "','" + SharedData.turn + "')";
                         cmd3.ExecuteNonQuery();
                         con.Close();
                         con.Open();
@@ -649,7 +651,11 @@ namespace assignment1
         {
             menu menu = new menu();
             menu.Show();
+            i = 0;
+            point = 0;
+
             this.Close();
+
         }
 
         private void nav_Paint(object sender, PaintEventArgs e)

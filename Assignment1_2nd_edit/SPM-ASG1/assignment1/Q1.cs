@@ -44,8 +44,8 @@ namespace assignment1
                 SharedData.building = button1.Text;
                 SharedData.CurrentOption = SharedData.building;
 
-                pickAlt pickAlt = new pickAlt();
-                pickAlt.Show();
+                Q3 q3 = new Q3();
+                q3.Show();
                // pointSystem();
                 this.Close();
             }
@@ -78,9 +78,9 @@ namespace assignment1
                 SharedData.building = button2.Text;
                 SharedData.CurrentOption = SharedData.building;
 
-                pickAlt pickAlt = new pickAlt();
-                pickAlt.Show();
-                //pointSystem();
+                Q3 q3 = new Q3();
+                q3.Show();
+                // pointSystem();
                 this.Close();
             }
         }
