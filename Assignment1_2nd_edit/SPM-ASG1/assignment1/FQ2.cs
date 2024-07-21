@@ -87,5 +87,10 @@ namespace assignment1
                 MessageBox.Show("Please enter a number between 1 and 10.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

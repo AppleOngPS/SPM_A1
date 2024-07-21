@@ -42,6 +42,7 @@
             this.label42 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
+            this.X3Y14 = new System.Windows.Forms.PictureBox();
             this.label39 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
@@ -156,7 +157,6 @@
             this.X6Y13 = new System.Windows.Forms.PictureBox();
             this.X1Y14 = new System.Windows.Forms.PictureBox();
             this.X2Y14 = new System.Windows.Forms.PictureBox();
-            this.X3Y14 = new System.Windows.Forms.PictureBox();
             this.X4Y14 = new System.Windows.Forms.PictureBox();
             this.X5Y14 = new System.Windows.Forms.PictureBox();
             this.X6Y14 = new System.Windows.Forms.PictureBox();
@@ -724,6 +724,7 @@
             this.performanceCounter3 = new System.Diagnostics.PerformanceCounter();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.X3Y14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y4)).BeginInit();
@@ -803,7 +804,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.X6Y13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X2Y14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.X3Y14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X4Y14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X5Y14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.X6Y14)).BeginInit();
@@ -1363,7 +1363,7 @@
             this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel1);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(23, 49);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1504, 1629);
             this.flowLayoutPanel1.TabIndex = 0;
@@ -1398,7 +1398,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 356F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 359F));
             this.tableLayoutPanel1.Controls.Add(this.label51, 0, 25);
             this.tableLayoutPanel1.Controls.Add(this.label50, 0, 24);
             this.tableLayoutPanel1.Controls.Add(this.label49, 0, 23);
@@ -2076,7 +2076,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label3, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.label5, 8, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 26;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
@@ -2253,6 +2253,16 @@
             this.label40.TabIndex = 667;
             this.label40.Text = "14";
             this.label40.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // X3Y14
+            // 
+            this.X3Y14.Location = new System.Drawing.Point(1062, 211);
+            this.X3Y14.Margin = new System.Windows.Forms.Padding(2);
+            this.X3Y14.Name = "X3Y14";
+            this.X3Y14.Size = new System.Drawing.Size(71, 74);
+            this.X3Y14.TabIndex = 83;
+            this.X3Y14.TabStop = false;
+            this.X3Y14.Click += new System.EventHandler(this.X3Y14_Click);
             // 
             // label39
             // 
@@ -3386,16 +3396,6 @@
             this.X2Y14.Size = new System.Drawing.Size(71, 74);
             this.X2Y14.TabIndex = 82;
             this.X2Y14.TabStop = false;
-            // 
-            // X3Y14
-            // 
-            this.X3Y14.Location = new System.Drawing.Point(1062, 211);
-            this.X3Y14.Margin = new System.Windows.Forms.Padding(2);
-            this.X3Y14.Name = "X3Y14";
-            this.X3Y14.Size = new System.Drawing.Size(71, 74);
-            this.X3Y14.TabIndex = 83;
-            this.X3Y14.TabStop = false;
-            this.X3Y14.Click += new System.EventHandler(this.X3Y14_Click);
             // 
             // X4Y14
             // 
@@ -8371,7 +8371,7 @@
             this.nav.Controls.Add(this.pictureBox1);
             this.nav.Dock = System.Windows.Forms.DockStyle.Right;
             this.nav.Location = new System.Drawing.Point(962, 0);
-            this.nav.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nav.Margin = new System.Windows.Forms.Padding(2);
             this.nav.Name = "nav";
             this.nav.Size = new System.Drawing.Size(243, 627);
             this.nav.TabIndex = 1;
@@ -8401,7 +8401,7 @@
             // changeplaceBtn
             // 
             this.changeplaceBtn.Location = new System.Drawing.Point(61, 332);
-            this.changeplaceBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.changeplaceBtn.Margin = new System.Windows.Forms.Padding(2);
             this.changeplaceBtn.Name = "changeplaceBtn";
             this.changeplaceBtn.Size = new System.Drawing.Size(120, 40);
             this.changeplaceBtn.TabIndex = 16;
@@ -8412,7 +8412,7 @@
             // Demolish
             // 
             this.Demolish.Location = new System.Drawing.Point(61, 277);
-            this.Demolish.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Demolish.Margin = new System.Windows.Forms.Padding(2);
             this.Demolish.Name = "Demolish";
             this.Demolish.Size = new System.Drawing.Size(120, 40);
             this.Demolish.TabIndex = 15;
@@ -8423,7 +8423,7 @@
             // Save
             // 
             this.Save.Location = new System.Drawing.Point(61, 445);
-            this.Save.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Save.Margin = new System.Windows.Forms.Padding(2);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(120, 40);
             this.Save.TabIndex = 14;
@@ -8455,7 +8455,7 @@
             // lblTurn
             // 
             this.lblTurn.AutoSize = true;
-            this.lblTurn.BackColor = System.Drawing.Color.Snow;
+            this.lblTurn.BackColor = System.Drawing.Color.Transparent;
             this.lblTurn.Location = new System.Drawing.Point(58, 529);
             this.lblTurn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTurn.Name = "lblTurn";
@@ -8466,7 +8466,7 @@
             // EndTurn
             // 
             this.EndTurn.Location = new System.Drawing.Point(61, 389);
-            this.EndTurn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EndTurn.Margin = new System.Windows.Forms.Padding(2);
             this.EndTurn.Name = "EndTurn";
             this.EndTurn.Size = new System.Drawing.Size(120, 40);
             this.EndTurn.TabIndex = 10;
@@ -8477,7 +8477,7 @@
             // start
             // 
             this.start.Location = new System.Drawing.Point(61, 218);
-            this.start.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.start.Margin = new System.Windows.Forms.Padding(2);
             this.start.Name = "start";
             this.start.Size = new System.Drawing.Size(120, 40);
             this.start.TabIndex = 9;
@@ -8517,13 +8517,14 @@
             this.Controls.Add(this.nav);
             this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "freeGameMode";
             this.Text = "freeGameMode";
             this.Load += new System.EventHandler(this.freeGameMode_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.X3Y14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y4)).EndInit();
@@ -8603,7 +8604,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.X6Y13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X1Y14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X2Y14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.X3Y14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X4Y14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X5Y14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.X6Y14)).EndInit();
@@ -9152,7 +9152,9 @@
             this.nav.ResumeLayout(false);
             this.nav.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            
+            ((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.performanceCounter2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.performanceCounter3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

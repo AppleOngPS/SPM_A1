@@ -938,7 +938,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 93F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 151F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 154F));
             this.tableLayoutPanel1.Controls.Add(this.label41, 0, 20);
             this.tableLayoutPanel1.Controls.Add(this.label40, 0, 19);
             this.tableLayoutPanel1.Controls.Add(this.label39, 0, 18);
@@ -1405,7 +1405,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 101F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 101F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 101F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(2043, 2129);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(2046, 2129);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -5478,10 +5478,10 @@
             // 
             // HowToPlayBtn
             // 
-            this.HowToPlayBtn.Location = new System.Drawing.Point(4, 123);
+            this.HowToPlayBtn.Location = new System.Drawing.Point(62, 179);
             this.HowToPlayBtn.Margin = new System.Windows.Forms.Padding(2);
             this.HowToPlayBtn.Name = "HowToPlayBtn";
-            this.HowToPlayBtn.Size = new System.Drawing.Size(84, 27);
+            this.HowToPlayBtn.Size = new System.Drawing.Size(104, 43);
             this.HowToPlayBtn.TabIndex = 11;
             this.HowToPlayBtn.Text = "How To Play";
             this.HowToPlayBtn.UseVisualStyleBackColor = true;
@@ -5490,19 +5490,20 @@
             // lbl
             // 
             this.lbl.AutoSize = true;
-            this.lbl.Location = new System.Drawing.Point(8, 477);
+            this.lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl.Location = new System.Drawing.Point(131, 548);
             this.lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(40, 13);
+            this.lbl.Size = new System.Drawing.Size(54, 15);
             this.lbl.TabIndex = 10;
-            this.lbl.Text = "fffffrfffff";
+            this.lbl.Text = "Location";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(11, 91);
+            this.button2.Location = new System.Drawing.Point(62, 125);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(44, 20);
+            this.button2.Size = new System.Drawing.Size(104, 39);
             this.button2.TabIndex = 9;
             this.button2.Text = "Rules";
             this.button2.UseVisualStyleBackColor = true;
@@ -5510,21 +5511,21 @@
             // 
             // changeplaceBtn
             // 
-            this.changeplaceBtn.Location = new System.Drawing.Point(2, 250);
+            this.changeplaceBtn.Location = new System.Drawing.Point(62, 319);
             this.changeplaceBtn.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.changeplaceBtn.Name = "changeplaceBtn";
-            this.changeplaceBtn.Size = new System.Drawing.Size(66, 35);
+            this.changeplaceBtn.Size = new System.Drawing.Size(104, 52);
             this.changeplaceBtn.TabIndex = 8;
-            this.changeplaceBtn.Text = "change place";
+            this.changeplaceBtn.Text = "Change Place";
             this.changeplaceBtn.UseVisualStyleBackColor = true;
             this.changeplaceBtn.Click += new System.EventHandler(this.changeplaceBtn_Click);
             // 
             // Demolish
             // 
-            this.Demolish.Location = new System.Drawing.Point(9, 207);
+            this.Demolish.Location = new System.Drawing.Point(62, 265);
             this.Demolish.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Demolish.Name = "Demolish";
-            this.Demolish.Size = new System.Drawing.Size(64, 37);
+            this.Demolish.Size = new System.Drawing.Size(104, 48);
             this.Demolish.TabIndex = 7;
             this.Demolish.Text = "Demolish Building";
             this.Demolish.UseVisualStyleBackColor = true;
@@ -5532,10 +5533,10 @@
             // 
             // Save
             // 
-            this.Save.Location = new System.Drawing.Point(11, 341);
+            this.Save.Location = new System.Drawing.Point(62, 432);
             this.Save.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Save.Name = "Save";
-            this.Save.Size = new System.Drawing.Size(56, 19);
+            this.Save.Size = new System.Drawing.Size(104, 48);
             this.Save.TabIndex = 6;
             this.Save.Text = "Save";
             this.Save.UseVisualStyleBackColor = true;
@@ -5544,41 +5545,45 @@
             // lblPoint
             // 
             this.lblPoint.AutoSize = true;
-            this.lblPoint.Location = new System.Drawing.Point(31, 442);
+            this.lblPoint.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPoint.Location = new System.Drawing.Point(54, 546);
             this.lblPoint.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPoint.Name = "lblPoint";
-            this.lblPoint.Size = new System.Drawing.Size(35, 13);
+            this.lblPoint.Size = new System.Drawing.Size(35, 15);
             this.lblPoint.TabIndex = 5;
-            this.lblPoint.Text = "label3";
+            this.lblPoint.Text = "Point";
             this.lblPoint.Click += new System.EventHandler(this.lblPoint_Click);
             // 
             // lblCoins
             // 
             this.lblCoins.AutoSize = true;
-            this.lblCoins.Location = new System.Drawing.Point(28, 409);
+            this.lblCoins.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCoins.Location = new System.Drawing.Point(131, 498);
             this.lblCoins.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCoins.Name = "lblCoins";
-            this.lblCoins.Size = new System.Drawing.Size(35, 13);
+            this.lblCoins.Size = new System.Drawing.Size(32, 15);
             this.lblCoins.TabIndex = 4;
-            this.lblCoins.Text = "label2";
+            this.lblCoins.Text = "Coin";
             // 
             // lblTurn
             // 
             this.lblTurn.AutoSize = true;
             this.lblTurn.BackColor = System.Drawing.Color.Snow;
-            this.lblTurn.Location = new System.Drawing.Point(26, 377);
+            this.lblTurn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTurn.Location = new System.Drawing.Point(54, 498);
             this.lblTurn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTurn.Name = "lblTurn";
-            this.lblTurn.Size = new System.Drawing.Size(42, 13);
+            this.lblTurn.Size = new System.Drawing.Size(32, 15);
             this.lblTurn.TabIndex = 3;
-            this.lblTurn.Text = " lblTurn";
+            this.lblTurn.Text = "Turn";
+            this.lblTurn.Click += new System.EventHandler(this.lblTurn_Click);
             // 
             // EndTurn
             // 
-            this.EndTurn.Location = new System.Drawing.Point(11, 306);
+            this.EndTurn.Location = new System.Drawing.Point(62, 377);
             this.EndTurn.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.EndTurn.Name = "EndTurn";
-            this.EndTurn.Size = new System.Drawing.Size(56, 19);
+            this.EndTurn.Size = new System.Drawing.Size(104, 40);
             this.EndTurn.TabIndex = 2;
             this.EndTurn.Text = "EndTurn";
             this.EndTurn.UseVisualStyleBackColor = true;
@@ -5588,10 +5593,10 @@
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Location = new System.Drawing.Point(72, 167);
+            this.button1.Location = new System.Drawing.Point(62, 230);
             this.button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 19);
+            this.button1.Size = new System.Drawing.Size(104, 29);
             this.button1.TabIndex = 1;
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
@@ -5604,10 +5609,10 @@
             this.homeIconBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.homeIconBtn.Image = global::assignment1.Properties.Resources.homeIcon1;
             this.homeIconBtn.InitialImage = global::assignment1.Properties.Resources.homeIcon1;
-            this.homeIconBtn.Location = new System.Drawing.Point(14, 34);
+            this.homeIconBtn.Location = new System.Drawing.Point(81, 34);
             this.homeIconBtn.Margin = new System.Windows.Forms.Padding(2);
             this.homeIconBtn.Name = "homeIconBtn";
-            this.homeIconBtn.Size = new System.Drawing.Size(37, 44);
+            this.homeIconBtn.Size = new System.Drawing.Size(74, 71);
             this.homeIconBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.homeIconBtn.TabIndex = 0;
             this.homeIconBtn.TabStop = false;

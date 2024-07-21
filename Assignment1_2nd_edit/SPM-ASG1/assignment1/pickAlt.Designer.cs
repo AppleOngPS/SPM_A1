@@ -35,37 +35,40 @@
             // 
             // q2bnt
             // 
-            this.q2bnt.Location = new System.Drawing.Point(11, 145);
+            this.q2bnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q2bnt.Location = new System.Drawing.Point(11, 147);
             this.q2bnt.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.q2bnt.Name = "q2bnt";
             this.q2bnt.Size = new System.Drawing.Size(135, 68);
             this.q2bnt.TabIndex = 0;
-            this.q2bnt.Text = "Choose a new location";
+            this.q2bnt.Text = "Choose A New Location";
             this.q2bnt.UseVisualStyleBackColor = true;
             this.q2bnt.Click += new System.EventHandler(this.q2bnt_Click);
             // 
             // q3bnt
             // 
-            this.q3bnt.Location = new System.Drawing.Point(186, 147);
+            this.q3bnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q3bnt.Location = new System.Drawing.Point(186, 149);
             this.q3bnt.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.q3bnt.Name = "q3bnt";
             this.q3bnt.Size = new System.Drawing.Size(135, 66);
             this.q3bnt.TabIndex = 1;
-            this.q3bnt.Text = "Continue with the current location";
+            this.q3bnt.Text = "Continue With The Current Location";
             this.q3bnt.UseVisualStyleBackColor = true;
             this.q3bnt.Click += new System.EventHandler(this.q3bnt_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(64, 45);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(49, 44);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 60);
+            this.label1.Size = new System.Drawing.Size(249, 60);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Choose the current location \r\n                     or \r\n   Choose a new location\r" +
-    "\n";
+            this.label1.Text = "Choose The Current Location \r\nOr\r\nChoose A New Location";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pickAlt
             // 

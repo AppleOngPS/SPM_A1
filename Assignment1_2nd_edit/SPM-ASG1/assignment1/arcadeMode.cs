@@ -975,5 +975,10 @@ namespace assignment1
         {
 
         }
+
+        private void lblTurn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

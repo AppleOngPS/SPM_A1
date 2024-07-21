@@ -50,6 +50,7 @@
             // 
             // Top
             // 
+            this.Top.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Top.Location = new System.Drawing.Point(32, 103);
             this.Top.Margin = new System.Windows.Forms.Padding(2);
             this.Top.Name = "Top";
@@ -61,6 +62,7 @@
             // 
             // Bot
             // 
+            this.Bot.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bot.Location = new System.Drawing.Point(128, 103);
             this.Bot.Margin = new System.Windows.Forms.Padding(2);
             this.Bot.Name = "Bot";
@@ -72,6 +74,7 @@
             // 
             // left
             // 
+            this.left.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.left.Location = new System.Drawing.Point(32, 161);
             this.left.Margin = new System.Windows.Forms.Padding(2);
             this.left.Name = "left";
@@ -83,6 +86,7 @@
             // 
             // right
             // 
+            this.right.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.right.Location = new System.Drawing.Point(128, 161);
             this.right.Margin = new System.Windows.Forms.Padding(2);
             this.right.Name = "right";

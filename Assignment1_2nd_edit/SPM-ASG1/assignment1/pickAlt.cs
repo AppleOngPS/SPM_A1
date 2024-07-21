@@ -32,5 +32,10 @@ namespace assignment1
             q3.Show();
             this.Close();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

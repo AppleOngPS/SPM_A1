@@ -38,10 +38,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(39, 137);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(33, 137);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(71, 56);
+            this.button1.Size = new System.Drawing.Size(77, 56);
             this.button1.TabIndex = 0;
             this.button1.Text = "Residential";
             this.button1.UseVisualStyleBackColor = true;
@@ -49,6 +50,7 @@
             // 
             // button2
             // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(146, 137);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
@@ -60,10 +62,11 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(250, 137);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(246, 137);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(71, 56);
+            this.button3.Size = new System.Drawing.Size(85, 56);
             this.button3.TabIndex = 2;
             this.button3.Text = "Commercial";
             this.button3.UseVisualStyleBackColor = true;
@@ -71,7 +74,8 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(360, 137);
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(361, 137);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(71, 56);
@@ -82,7 +86,8 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(474, 137);
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(467, 137);
             this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(71, 56);
@@ -94,10 +99,12 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.textBox1.Location = new System.Drawing.Point(167, 46);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(265, 32);
+            this.textBox1.Size = new System.Drawing.Size(265, 25);
             this.textBox1.TabIndex = 5;
             this.textBox1.Text = "Select A Building";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
