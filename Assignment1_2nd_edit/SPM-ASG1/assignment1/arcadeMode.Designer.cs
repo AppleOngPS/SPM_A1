@@ -909,7 +909,7 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(26, 65);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1000, 800);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(2300, 1500);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // tableLayoutPanel1
@@ -5469,7 +5469,7 @@
             this.nav.Controls.Add(this.button1);
             this.nav.Controls.Add(this.homeIconBtn);
             this.nav.Dock = System.Windows.Forms.DockStyle.Right;
-            this.nav.Location = new System.Drawing.Point(1866, 0);
+            this.nav.Location = new System.Drawing.Point(1812, 0);
             this.nav.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.nav.Name = "nav";
             this.nav.Size = new System.Drawing.Size(462, 1175);
@@ -5478,7 +5478,7 @@
             // 
             // HowToPlayBtn
             // 
-            this.HowToPlayBtn.Location = new System.Drawing.Point(136, 268);
+            this.HowToPlayBtn.Location = new System.Drawing.Point(164, 490);
             this.HowToPlayBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HowToPlayBtn.Name = "HowToPlayBtn";
             this.HowToPlayBtn.Size = new System.Drawing.Size(208, 83);
@@ -5491,7 +5491,7 @@
             // 
             this.lbl.AutoSize = true;
             this.lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl.Location = new System.Drawing.Point(243, 954);
+            this.lbl.Location = new System.Drawing.Point(294, 1069);
             this.lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl.Name = "lbl";
             this.lbl.Size = new System.Drawing.Size(104, 29);
@@ -5500,7 +5500,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(132, 185);
+            this.button2.Location = new System.Drawing.Point(164, 288);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(208, 75);
@@ -5511,7 +5511,7 @@
             // 
             // changeplaceBtn
             // 
-            this.changeplaceBtn.Location = new System.Drawing.Point(139, 557);
+            this.changeplaceBtn.Location = new System.Drawing.Point(164, 600);
             this.changeplaceBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.changeplaceBtn.Name = "changeplaceBtn";
             this.changeplaceBtn.Size = new System.Drawing.Size(208, 100);
@@ -5522,7 +5522,7 @@
             // 
             // Demolish
             // 
-            this.Demolish.Location = new System.Drawing.Point(132, 453);
+            this.Demolish.Location = new System.Drawing.Point(164, 388);
             this.Demolish.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Demolish.Name = "Demolish";
             this.Demolish.Size = new System.Drawing.Size(208, 92);
@@ -5533,7 +5533,7 @@
             // 
             // Save
             // 
-            this.Save.Location = new System.Drawing.Point(139, 758);
+            this.Save.Location = new System.Drawing.Point(171, 873);
             this.Save.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(208, 92);
@@ -5546,7 +5546,7 @@
             // 
             this.lblPoint.AutoSize = true;
             this.lblPoint.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPoint.Location = new System.Drawing.Point(108, 954);
+            this.lblPoint.Location = new System.Drawing.Point(140, 1069);
             this.lblPoint.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPoint.Name = "lblPoint";
             this.lblPoint.Size = new System.Drawing.Size(68, 29);
@@ -5558,7 +5558,7 @@
             // 
             this.lblCoins.AutoSize = true;
             this.lblCoins.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCoins.Location = new System.Drawing.Point(262, 890);
+            this.lblCoins.Location = new System.Drawing.Point(294, 998);
             this.lblCoins.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCoins.Name = "lblCoins";
             this.lblCoins.Size = new System.Drawing.Size(63, 29);
@@ -5570,7 +5570,7 @@
             this.lblTurn.AutoSize = true;
             this.lblTurn.BackColor = System.Drawing.Color.Snow;
             this.lblTurn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTurn.Location = new System.Drawing.Point(108, 890);
+            this.lblTurn.Location = new System.Drawing.Point(140, 998);
             this.lblTurn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTurn.Name = "lblTurn";
             this.lblTurn.Size = new System.Drawing.Size(63, 29);
@@ -5580,7 +5580,7 @@
             // 
             // EndTurn
             // 
-            this.EndTurn.Location = new System.Drawing.Point(139, 669);
+            this.EndTurn.Location = new System.Drawing.Point(164, 744);
             this.EndTurn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.EndTurn.Name = "EndTurn";
             this.EndTurn.Size = new System.Drawing.Size(208, 77);
@@ -5593,7 +5593,7 @@
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Location = new System.Drawing.Point(132, 371);
+            this.button1.Location = new System.Drawing.Point(139, -3);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(208, 56);
@@ -5630,11 +5630,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(2328, 1175);
+            this.ClientSize = new System.Drawing.Size(2274, 1175);
             this.Controls.Add(this.nav);
             this.Controls.Add(this.flowLayoutPanel1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "arcadeMode";
             this.Text = "arcadeMode";
