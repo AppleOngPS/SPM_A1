@@ -65,5 +65,12 @@ namespace assignment1
         {
 
         }
+
+        private void backbnt_Click(object sender, EventArgs e)
+        {
+            menu menu = new menu();
+            menu.Show();
+            this.Close();
+        }
     }
 }

@@ -44,5 +44,12 @@ namespace assignment1
             freeGame.Show();
             this.Close();
         }
+
+        private void backbnt_Click(object sender, EventArgs e)
+        {
+            menu menu = new menu();
+            menu.Show();
+            this.Close();
+        }
     }
 }

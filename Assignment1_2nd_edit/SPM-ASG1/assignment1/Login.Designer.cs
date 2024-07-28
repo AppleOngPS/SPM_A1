@@ -34,6 +34,7 @@
             this.usernameInput = new System.Windows.Forms.TextBox();
             this.passwordInput = new System.Windows.Forms.TextBox();
             this.submitBttn = new System.Windows.Forms.Button();
+            this.backbnt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -44,7 +45,7 @@
             this.label1.Location = new System.Drawing.Point(199, 35);
             this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 31);
+            this.label1.Size = new System.Drawing.Size(106, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "Login";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
@@ -54,7 +55,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(57, 127);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(147, 31);
+            this.label2.Size = new System.Drawing.Size(183, 39);
             this.label2.TabIndex = 1;
             this.label2.Text = "Username:";
             // 
@@ -63,7 +64,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(57, 289);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(142, 31);
+            this.label3.Size = new System.Drawing.Size(176, 39);
             this.label3.TabIndex = 2;
             this.label3.Text = "Password:";
             // 
@@ -71,14 +72,14 @@
             // 
             this.usernameInput.Location = new System.Drawing.Point(63, 181);
             this.usernameInput.Name = "usernameInput";
-            this.usernameInput.Size = new System.Drawing.Size(373, 38);
+            this.usernameInput.Size = new System.Drawing.Size(373, 46);
             this.usernameInput.TabIndex = 3;
             // 
             // passwordInput
             // 
             this.passwordInput.Location = new System.Drawing.Point(63, 350);
             this.passwordInput.Name = "passwordInput";
-            this.passwordInput.Size = new System.Drawing.Size(373, 38);
+            this.passwordInput.Size = new System.Drawing.Size(373, 46);
             this.passwordInput.TabIndex = 4;
             // 
             // submitBttn
@@ -92,12 +93,23 @@
             this.submitBttn.UseVisualStyleBackColor = true;
             this.submitBttn.Click += new System.EventHandler(this.submitBttn_Click);
             // 
+            // backbnt
+            // 
+            this.backbnt.Location = new System.Drawing.Point(12, 29);
+            this.backbnt.Name = "backbnt";
+            this.backbnt.Size = new System.Drawing.Size(157, 51);
+            this.backbnt.TabIndex = 6;
+            this.backbnt.Text = "back";
+            this.backbnt.UseVisualStyleBackColor = true;
+            this.backbnt.Click += new System.EventHandler(this.backbnt_Click);
+            // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(20F, 39F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(514, 580);
+            this.Controls.Add(this.backbnt);
             this.Controls.Add(this.submitBttn);
             this.Controls.Add(this.passwordInput);
             this.Controls.Add(this.usernameInput);
@@ -123,5 +135,6 @@
         private System.Windows.Forms.TextBox usernameInput;
         private System.Windows.Forms.TextBox passwordInput;
         private System.Windows.Forms.Button submitBttn;
+        private System.Windows.Forms.Button backbnt;
     }
 }
